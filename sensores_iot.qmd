@@ -1,0 +1,246 @@
+---
+subtitle: "Sensores ciudadanos aplicados al urbanismo táctico"
+editor:
+  markdown:
+    wrap: 72
+---
+
+# Sensores IoT
+
+**Sesión 5.1 · Día 5 · 1,5 horas · Modalidad Presencial · Docentes:
+Denis Berroeta (UAI) + Davor Posavac (Ciudad Emergente)**
+
+## Resumen ejecutivo {.unnumbered}
+
+Las decisiones urbanas se discuten muchas veces sin datos del fenómeno
+que se quiere cambiar: se peatonaliza una calle sin medir flujos, se
+interviene una plaza sin saber cuándo y quién la usa, se debate sobre
+ruido sin un solo registro de decibeles. El **Internet de las Cosas
+(IoT)** —sensores pequeños y baratos conectados— y los **sensores
+ciudadanos** (dispositivos operados por la propia comunidad, incluyendo
+el teléfono que cada vecino lleva en el bolsillo) permiten hoy medir
+flujos peatonales, ruido y calidad del aire **a escala barrial y a
+costo municipal** [@goodchild_citizens_2007].
+
+Esta sesión, co-dictada con Ciudad Emergente, conecta esa capacidad de
+medición con el **urbanismo táctico**: intervenciones ligeras, rápidas
+y reversibles cuyo impacto se evalúa con datos antes de decidir
+inversiones permanentes [@lydon_tactical_2015]. El ciclo *medir →
+intervenir → volver a medir* convierte al sensor en el instrumento de
+evaluación natural de la acción táctica. La IA entra en dos momentos:
+para **diseñar** la medición y para **analizar** los datos que los
+sensores producen — esto último, con el vibe coding que ya dominas del
+Módulo 1.
+
+Al finalizar la sesión serás capaz de:
+
+1.  **Explicar** qué es el IoT y qué es un sensor ciudadano,
+    distinguiendo las tres variables estrella a escala barrial: flujos,
+    ruido y calidad del aire.
+2.  **Asociar sensores a preguntas de gestión urbana**: qué variable
+    responde a qué decisión.
+3.  **Diseñar un plan de medición simple** para una intervención
+    táctica: variable, puntos, duración, línea base y comparación
+    antes/después.
+4.  **Reconocer alternativas de bajo costo y costo cero**: smartphones
+    como sensores, conteos asistidos, redes ciudadanas con datos
+    abiertos.
+5.  **Analizar datos de sensores mediante vibe coding**: cargar
+    lecturas, graficar patrones, detectar anomalías y producir una
+    visualización comunicable.
+6.  **Valorar la dimensión ciudadana**: un vecino que mide es un vecino
+    que participa con evidencia.
+
+## Contenidos de la sesión {.unnumbered}
+
+-   Medir el barrio: qué es un sensor, qué es el IoT.
+-   Las tres variables estrella: flujos, ruido, calidad del aire.
+-   El espectro de costos: del sensor profesional al smartphone.
+-   Sensores + urbanismo táctico: el ciclo medir-intervenir-medir
+    (Ciudad Emergente).
+-   Taller en dos partes: diseñar la medición (canvas) y analizar datos
+    reales (vibe coding).
+-   Realismo operativo: calibración, mantenimiento, privacidad.
+
+## Medir el barrio: IoT y sensores ciudadanos
+
+### Qué es un sensor y qué es el IoT
+
+Un **sensor** es un dispositivo que convierte un fenómeno físico
+(ruido, partículas en el aire, paso de personas) en un dato. El **IoT**
+es la red de esos dispositivos conectados, enviando lecturas de forma
+continua. Y un **sensor ciudadano** es cualquiera de ellos operado por
+la propia comunidad — incluyendo el smartphone que ya está en cada
+bolsillo.
+
+En la sesión presencial los sensores se muestran **en mano**: un sensor
+de calidad del aire de bajo costo, un sonómetro, un contador de flujos.
+
+::: {.callout-note appearance="simple" icon="false"}
+📷 **IMAGEN PENDIENTE**: Fotografía del kit de demostración física de
+la sesión: sensor de calidad del aire de bajo costo, sonómetro (o
+smartphone con app sonómetro) y contador de flujos, sobre una mesa, con
+rótulos de qué mide cada uno y su costo aproximado.
+:::
+
+### Las tres variables estrella a escala barrial
+
+| Variable | Qué decisión informa |
+|----|----|
+| **Flujos peatonales/vehiculares** | Uso del espacio, peatonalizaciones, seguridad |
+| **Ruido** | Convivencia, ordenanzas, localización de actividades |
+| **Calidad del aire** | Arbolado, zonas escolares, justicia ambiental intracomunal |
+
+### El dato barrial como vacío institucional
+
+Las redes oficiales de monitoreo (ej. SINCA en calidad del aire) operan
+a **escala de ciudad**: unas pocas estaciones para millones de
+habitantes. La escala de **barrio** —donde se decide si la plaza, la
+calle o la esquina funcionan— es justamente la que la ciudadanía puede
+llenar.
+
+::: {.callout-tip title="Analogía: el termómetro de la casa"}
+La estación meteorológica del aeropuerto te dice la temperatura de la
+ciudad; el termómetro de tu cocina te dice si hace frío en TU casa. Las
+redes oficiales son el aeropuerto; los sensores ciudadanos son el
+termómetro de la casa. Ninguno reemplaza al otro: operan a escalas
+distintas.
+:::
+
+### El espectro de costos
+
+Del sensor profesional (millones de pesos, calibración certificada) al
+smartphone (costo cero, ya desplegado): entre ambos extremos hay
+sensores de bajo costo, apps de conteo asistido y **redes ciudadanas
+existentes con datos abiertos y consultables hoy mismo**.
+
+## Sensores + urbanismo táctico: el ciclo medir-intervenir-medir
+
+*Bloque a cargo de Davor Posavac (Ciudad Emergente).*
+
+El **urbanismo táctico** son intervenciones ligeras, rápidas,
+reversibles y evaluables: pintar un cruce, instalar mobiliario
+temporal, peatonalizar un fin de semana. Su lógica es probar antes de
+invertir.
+
+El ciclo completo, con un caso real de Ciudad Emergente:
+
+```
+Línea base (medir) → Intervención táctica → Re-medición → Decisión
+                                                (consolidar / ajustar / revertir)
+```
+
+::: {.callout-note appearance="simple" icon="false"}
+📷 **IMAGEN PENDIENTE**: Diagrama circular del ciclo
+medir-intervenir-medir, ilustrado con fotos de un caso real de Ciudad
+Emergente (ej. intervención de calle): foto del antes con cifra de
+línea base, foto de la intervención, foto del después con cifra de
+re-medición y la decisión tomada.
+:::
+
+Dos ideas fuerza:
+
+-   **El sensor como argumento**: el dato de antes/después transforma la
+    conversación con la comunidad y con las autoridades. "La
+    peatonalización triplicó el flujo de personas" es un argumento; "se
+    veía más gente" es una impresión.
+-   **La medición como acto participativo**: vecinos que cuentan flujos,
+    registran ruido o portan sensores **se apropian del proyecto**. La
+    ciencia ciudadana es estrategia de involucramiento, no solo de
+    medición (enlace directo con el crowdsourcing de las sesiones
+    4.1–4.2).
+
+## Realismo operativo: lo que nadie cuenta de los sensores
+
+-   **Calibración, mantenimiento, vandalismo, conectividad**: el costo
+    real no es comprar el sensor sino mantener la medición viva.
+-   Regla práctica del curso: ***mejor una medición corta y bien
+    diseñada que una red permanente abandonada***.
+-   **Privacidad**: medir flujos no es vigilar personas. Criterios
+    mínimos: conteos agregados, no identificación de individuos,
+    transparencia con la comunidad sobre qué se mide y para qué.
+
+## Actividades
+
+### Taller Parte A — Diseñar la medición (15 min, en equipos, en papel)
+
+Cada equipo diseña el plan de medición para su problemática usando el
+**canvas del curso**:
+
+-   ¿Qué **variable**? (flujos / ruido / aire)
+-   ¿En qué **puntos** de medición?
+-   ¿Durante **cuánto tiempo**?
+-   ¿Qué esperamos que **cambie** tras la intervención?
+-   ¿**Quién mide**? (municipio, vecinos, ambos)
+-   ¿Cuál es la **alternativa de costo cero**?
+
+Puesta en común relámpago de 2 equipos con retroalimentación de ambos
+docentes. Este canvas es **insumo directo del proyecto final** (hoja de
+ruta del Módulo 3).
+
+### Taller Parte B — Analizar los datos (20 min, vibe coding)
+
+Con un dataset real de sensores provisto por el curso (lecturas
+horarias de ruido y material particulado de una semana en un punto de
+la RM):
+
+1.  > *"Carga estas lecturas de sensores y muéstrame cómo varía el ruido
+    > por hora del día."*
+2.  > *"Compara días de semana contra fin de semana."*
+3.  > *"Detecta las horas que superan los umbrales recomendados y
+    > márcalas en el gráfico."*
+4.  > *"Genera un gráfico final apto para presentar a la comunidad, en
+    > español, con título y umbral de referencia."*
+
+::: {.callout-note appearance="simple" icon="false"}
+📷 **IMAGEN PENDIENTE**: Gráfico de ejemplo del resultado final del
+taller: serie horaria de ruido de una semana con línea de umbral OMS
+destacada, horas que lo superan marcadas en rojo, título en español y
+anotación semana/fin de semana. Debe verse como producto presentable a
+una junta de vecinos.
+:::
+
+::: callout-tip
+**Mensaje metodológico**: el análisis de datos de sensores es idéntico
+en método a lo aprendido en el Módulo 1; **cambia la fuente, no la
+habilidad**. Una lectura de sensor es una fila en una tabla, igual que
+una plaza o un reclamo.
+:::
+
+## Resumen
+
+-   El IoT y los sensores ciudadanos permiten medir **flujos, ruido y
+    calidad del aire a escala barrial** — justo la escala que las redes
+    institucionales no cubren.
+-   Cada variable responde a una decisión: flujos → peatonalización;
+    ruido → ordenanzas; aire → arbolado y zonas de resguardo.
+-   El urbanismo táctico aporta el método: **medir → intervenir →
+    volver a medir**, y decidir con el antes/después.
+-   Siempre existe una alternativa de costo cero: smartphones, conteos
+    asistidos, redes ciudadanas con datos abiertos. Ningún plan de
+    medición debe depender de hardware que no existe.
+-   Mejor una medición corta y bien diseñada que una red permanente
+    abandonada. Y medir flujos no es vigilar personas: agregación,
+    anonimato y transparencia.
+-   Los sensores capturan lo que el entorno **hace**; la próxima sesión
+    procesa lo que la gente **dice**.
+
+## Recursos
+
+-   **Kit de demostración física**: sensor de calidad del aire de bajo
+    costo, sonómetro (o app calibrada), contador de flujos; estación de
+    demo en vivo si es viable.
+-   **Canvas "Plan de medición barrial" (1 página)**: variable, puntos,
+    duración, línea base, meta de cambio, responsable, costo estimado
+    (con columna "alternativa costo cero").
+-   **Dataset del taller**: lecturas horarias reales (ruido + PM2.5) de
+    una semana, en CSV, documentado en español.
+-   **Notebook Colab / prompts del análisis de sensores** (secuencia de
+    4 prompts de la Parte B).
+-   **Directorio de redes y datos abiertos de sensores**: SINCA (calidad
+    del aire oficial), redes ciudadanas de monitoreo ambiental con API
+    abierta, fuentes de datos de movilidad.
+-   Casos documentados de Ciudad Emergente de urbanismo táctico con
+    medición (material aportado por CEM).
+-   Guía breve de umbrales recomendados de ruido (OMS) y material
+    particulado (OMS/MMA) para interpretar mediciones.

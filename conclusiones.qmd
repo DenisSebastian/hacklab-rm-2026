@@ -1,0 +1,110 @@
+---
+editor:
+  markdown:
+    wrap: 72
+---
+
+# Conclusiones {.unnumbered}
+
+## El recorrido completo
+
+Al inicio de este trayecto, el participante tipo era un profesional
+público que conocía profundamente su territorio pero que nunca había
+escrito una línea de código. Siete sesiones después, ese mismo
+profesional es capaz de recorrer el ciclo completo de la evidencia
+territorial asistida por IA:
+
+```
+del prompt al mapa  →  del mapa a la evidencia  →  de la evidencia a la decisión
+```
+
+El recorrido se construyó por acumulación deliberada:
+
+1.  **Vibe coding (2.2)** instaló el método: dirigir, evaluar e iterar
+    sobre una IA que programa, en vez de programar.
+2.  **El ecosistema espacial (3.1)** entregó el vocabulario —GeoPandas,
+    Shapely, OSMnx— que convierte prompts vagos en instrucciones
+    precisas sobre el territorio.
+3.  **Las operaciones espaciales (3.2)** enseñaron a hacerle preguntas
+    concretas al mapa: medir, cruzar, cubrir, contar; y a evitar el
+    desastre silencioso de las proyecciones.
+4.  **Los sensores ciudadanos (5.1)** abrieron la captura de datos
+    nuevos a escala barrial y el ciclo medir-intervenir-medir del
+    urbanismo táctico.
+5.  **El NLP (5.2)** convirtió las mil voces de la participación en
+    informes temáticos trazables, con la auditoría humana como rito
+    innegociable.
+6.  **El análisis de sentimientos (6.1)** agregó la capa emocional del
+    territorio: no solo qué dice la gente, sino cómo se siente, dónde y
+    cuándo.
+7.  **La integración (6.2)** cerró el ciclo cruzando el dato comunitario
+    con el institucional en el mapa de cuadrantes —convergencia,
+    divergencia, vacío— y produciendo la ficha de evidencia que
+    alimenta la hoja de ruta del Módulo 3.
+
+::: {.callout-note appearance="simple" icon="false"}
+📷 **IMAGEN PENDIENTE**: Versión "completada" del diagrama del hilo
+narrativo de la introducción: las 7 sesiones como camino recorrido, con
+el artefacto producido en cada una (visualización, mapa comunal,
+análisis de cobertura, canvas+gráfico de sensores, informe temático,
+tablero de percepción, ficha de evidencia) y la flecha final hacia la
+hoja de ruta del Módulo 3.
+:::
+
+## Los artefactos: evidencia de aprendizaje
+
+El programa no contempla evaluación formal por sesión; en su lugar,
+cada sesión produce un **artefacto verificable** que se acumula como
+insumo del proyecto final:
+
+| Sesión | Artefacto producido | Aporta al proyecto final |
+|----|----|----|
+| 2.2 | Primera visualización generada por vibe coding (3+ iteraciones) | Método de trabajo del equipo |
+| 3.1 | Mapa y tabla-resumen de equipamientos de la comuna | Diagnóstico territorial |
+| 3.2 | Análisis de cobertura con cifra de población afectada | Evidencia cuantitativa del problema |
+| 5.1 | Canvas de plan de medición + gráfico de análisis de sensores | Componente de medición de la hoja de ruta |
+| 5.2 | Mini-informe temático de participación | Componente de voz ciudadana |
+| 6.1 | Tablero de percepción (hechos vs. interpretaciones) | Lectura de viabilidad social |
+| 6.2 | Ficha de evidencia territorial | Insumo directo de la sesión 7.1 y la hoja de ruta |
+
+## Las ideas que deben sobrevivir
+
+Si de todo el curso solo sobreviviera un puñado de ideas, deberían ser
+estas:
+
+-   **Tú eres el experto territorial; la IA es el instrumento.** La
+    validación final de todo análisis es tu conocimiento de la comuna:
+    la IA propone, el territorio dispone.
+-   **La iteración es el método, no el fracaso.** Describir en lenguaje
+    natural la diferencia entre lo obtenido y lo deseado es la
+    habilidad central del nuevo oficio.
+-   **El vocabulario es la palanca.** Nombrar las herramientas y las
+    fuentes correctas transforma un prompt vago en uno potente.
+-   **La auditoría humana es un rito, no un trámite.** En todo flujo con
+    IA —clasificación, sentimiento, cruce— se revisa una muestra. Sin
+    excepciones.
+-   **Hecho e interpretación se distinguen siempre.** Es lo que separa
+    un informe defendible de una opinión con gráficos.
+-   **Privacidad por defecto.** Nunca datos personales reales en
+    herramientas de IA; anonimización demostrada, no solo declarada; si
+    un análisis fue asistido por IA, se declara.
+-   **Cada mundo de datos solo, engaña distinto.** La evidencia
+    territorial potente nace del cruce entre la medición técnica y la
+    experiencia vivida.
+
+## Lo que sigue
+
+Lo que viene en el Módulo 3 ya no es técnico: es **organizacional**.
+Identificar y priorizar casos de uso (7.1), dimensionar capacidades y
+riesgos —incluido el marco NIST de IA responsable— y construir la hoja
+de ruta con que cada equipo llevará estas capacidades a su institución.
+
+La capacidad ya está instalada. Lo que el curso deja no es un conjunto
+de herramientas —las herramientas cambiarán de nombre en un año— sino
+un **rol nuevo**: el del profesional público que dirige a la IA con
+preguntas bien formuladas, valida con conocimiento territorial y
+convierte datos en decisiones. Ese rol no caduca con la próxima versión
+de ningún modelo.
+
+> Del prompt al mapa, del mapa a la evidencia, de la evidencia a la
+> decisión: el recorrido completo ya es de ustedes.

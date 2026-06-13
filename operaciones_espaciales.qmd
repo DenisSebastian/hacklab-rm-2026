@@ -1,0 +1,219 @@
+---
+subtitle: "Manipulación de geometrías y proyecciones cartográficas"
+editor:
+  markdown:
+    wrap: 72
+---
+
+# Operaciones Espaciales
+
+**Sesión 3.2 · Día 3 · 1,5 horas · Modalidad Meet · Docente: Denis
+Berroeta (UAI)**
+
+## Resumen ejecutivo {.unnumbered}
+
+La sesión anterior te dejó con capas de datos de tu comuna. Esta sesión
+te entrega lo que falta para que esas capas **respondan preguntas**:
+las **operaciones espaciales** —medir distancias y superficies, crear
+zonas de influencia (buffers), cruzar capas para saber qué cae dentro
+de qué— y la noción mínima indispensable de **sistemas de coordenadas y
+proyecciones**, la causa número uno de errores en análisis territorial:
+capas que no calzan, distancias en unidades absurdas, mapas
+desplazados.
+
+La promesa es concreta: al terminar habrás respondido con datos una
+pregunta del tipo *"¿cuántas personas viven a más de 500 metros de un
+área verde en mi comuna?"* — exactamente la clase de evidencia que un
+profesional público necesita para fundamentar un proyecto, priorizar
+inversión o respaldar una postulación a fondos. Todo mediante vibe
+coding: la IA ejecuta las operaciones; tú aportas la pregunta, el
+criterio y la validación.
+
+Al finalizar la sesión serás capaz de:
+
+1.  **Formular preguntas territoriales como operaciones espaciales**:
+    traducir "¿qué tan lejos está X de Y?" a distancia, buffer,
+    intersección y unión.
+2.  **Solicitar mediante prompts las operaciones fundamentales**: áreas
+    y distancias, buffers, intersección y cruce de capas, conteo dentro
+    de polígonos.
+3.  **Comprender funcionalmente qué es un sistema de coordenadas** y las
+    dos "familias" que importan: geográficas (grados, para ubicar) y
+    proyectadas (metros, para medir).
+4.  **Diagnosticar los síntomas clásicos de errores de proyección** y
+    pedir la corrección (para Chile central: EPSG:32719 / UTM 19S).
+5.  **Aplicar la regla de oro**: *para medir, siempre en metros; para
+    publicar en mapas web, en geográficas*.
+6.  **Producir un análisis de accesibilidad o cobertura completo** de tu
+    comuna, integrando capas de distintas fuentes.
+
+## Contenidos de la sesión {.unnumbered}
+
+-   Las preguntas del territorio como operaciones espaciales: medir,
+    buffer, intersección, conteo espacial.
+-   Coordenadas y proyecciones: lo mínimo que evita desastres.
+-   EPSG:4326 vs. EPSG:32719: cuándo usar cada uno.
+-   Taller: análisis de cobertura de áreas verdes de mi comuna.
+-   Síntesis del Módulo 1 y proyección al Módulo 2.
+
+## Las preguntas del territorio son operaciones espaciales
+
+Casi todas las preguntas reales de gestión territorial —"¿dónde falta
+X?", "¿quiénes están lejos de Y?"— se descomponen en cuatro
+operaciones:
+
+| Operación | Qué responde | Ejemplo municipal | Frase de prompt típica |
+|----|----|----|----|
+| **Medir** | Longitud, superficie, distancia | ¿Cuántas hectáreas de áreas verdes hay? | *"Calcula la superficie total en hectáreas"* |
+| **Buffer** | Zona de influencia: "a 500 m de..." | ¿Qué sector queda a 500 m de cada consultorio? | *"Crea un buffer de 500 metros alrededor de cada punto"* |
+| **Intersección / cruce** | Qué parte de A está dentro de B | ¿Qué porcentaje de la zona inundable es residencial? | *"Intersecta la capa A con la capa B y calcula el área resultante"* |
+| **Conteo / join espacial** | Cuántos puntos caen en cada polígono | ¿Cuántos reclamos hay por barrio? | *"Cuenta cuántos puntos caen dentro de cada polígono y agrega la columna"* |
+
+::: {.callout-note appearance="simple" icon="false"}
+📷 **IMAGEN PENDIENTE**: Panel de 4 diagramas conceptuales, uno por
+operación: (1) medir — regla sobre un polígono; (2) buffer — punto con
+anillo de 500 m; (3) intersección — dos polígonos superpuestos con el
+área común destacada; (4) conteo espacial — puntos cayendo dentro de
+polígonos con números. Sin fórmulas ni código.
+:::
+
+::: {.callout-tip title="Analogía: las preguntas del vecino"}
+Estas operaciones son las preguntas que cualquier vecino hace sin saber
+que hace geometría: "¿me queda cerca el consultorio?" (distancia),
+"¿a cuánta gente le sirve esta plaza?" (buffer + conteo), "¿mi casa
+está en la zona de riesgo?" (intersección). El análisis espacial es
+sentido común territorial, formalizado.
+:::
+
+## Coordenadas y proyecciones: lo mínimo que evita desastres
+
+### El problema antes que la teoría
+
+La demostración de la sesión: dos capas reales de la misma comuna que
+**no calzan en el mapa**, y un cálculo de superficie que da un número
+ridículo. ¿Qué pasó? Las capas estaban en sistemas de coordenadas
+distintos.
+
+::: {.callout-note appearance="simple" icon="false"}
+📷 **IMAGEN PENDIENTE**: Captura del "desastre": dos capas de la misma
+comuna visiblemente desplazadas entre sí en el mapa, junto a una tabla
+con una superficie absurda (ej. "área de la comuna: 0,0021"). Al lado,
+la versión corregida tras reproyectar, con las capas calzando.
+:::
+
+### La Tierra es curva, el mapa es plano
+
+::: {.callout-tip title="Analogía: la naranja aplastada"}
+Intenta aplanar la cáscara de una naranja sobre la mesa: se rompe, se
+estira, se deforma. Eso le pasa a la Tierra cada vez que la dibujamos
+plana. Toda representación plana distorsiona algo, y por eso existen
+distintos sistemas de proyección: cada uno elige qué deformar y qué
+preservar [@Tobler_1970].
+:::
+
+### Lo único que hay que memorizar
+
+| Sistema | Unidad | Sirve para | No sirve para |
+|----|----|----|----|
+| **Geográficas (EPSG:4326)** | Grados de latitud/longitud | Ubicar, compartir, mapas web | **Medir** |
+| **Proyectadas UTM 19S (EPSG:32719)** | Metros | **Medir cualquier cosa en Chile central** | — |
+
+**Síntoma → acción**: capas desplazadas o números absurdos →
+
+> *"Reproyecta todas las capas a EPSG:32719 antes de calcular."*
+
+::: callout-important
+**Regla de oro del curso**: para **medir**, siempre en metros
+(EPSG:32719); para **publicar** en mapas web, en geográficas
+(EPSG:4326). No necesitas entender la matemática: necesitas reconocer
+el síntoma y pedir la corrección.
+:::
+
+La verificación en vivo cierra el ciclo: se le pide a la IA
+diagnosticar y corregir el problema inicial, y el resultado se valida
+contra una medida conocida (la superficie oficial de la comuna).
+
+## Actividades
+
+### Taller: análisis de cobertura de mi comuna (35 min)
+
+Caso modelado con Quilicura y replicado por cada equipo con su comuna y
+su equipamiento de interés. Secuencia de prompts:
+
+1.  > *"Carga el límite comunal y las áreas verdes (de la sesión
+    > anterior) y reproyecta todo a EPSG:32719."*
+2.  > *"Crea un buffer de 500 metros alrededor de cada área verde y
+    > muéstralo en el mapa."*
+3.  > *"Une todos los buffers y calcula qué porcentaje de la superficie
+    > comunal queda cubierto."*
+4.  > *"Carga las manzanas censales con población y calcula cuánta
+    > población queda FUERA de la cobertura."*
+5.  > *"Haz un mapa final: zonas cubiertas en verde, zonas descubiertas
+    > en rojo, con un título y la cifra de población sin cobertura."*
+
+Cada paso incluye una micro-validación: ¿el porcentaje es plausible?,
+¿el mapa calza con lo que tú sabes de tu comuna?
+
+::: {.callout-note appearance="simple" icon="false"}
+📷 **IMAGEN PENDIENTE**: El mapa final del taller para Quilicura: zonas
+cubiertas por buffers de áreas verdes en verde, zonas descubiertas en
+rojo, título y cifra destacada de población sin cobertura. Es el
+"diploma emocional" del Módulo 1 y debe verse presentable, digno de una
+minuta para el alcalde.
+:::
+
+::: callout-warning
+**Resultado sensible**: la cifra de población "fuera de cobertura" es
+un ejercicio pedagógico, no una cifra oficial. Depende de la calidad
+del dato OSM y del supuesto de distancia euclidiana (línea recta) en
+vez de caminable. Declarar estas limitaciones es un hábito profesional,
+no una debilidad.
+:::
+
+### Checklist de autodiagnóstico del Módulo 1
+
+Cierre con autoevaluación rápida en 5 preguntas: ¿puedo generar una
+herramienta con un prompt?, ¿puedo traer datos de mi comuna?, ¿puedo
+distinguir punto/línea/polígono?, ¿sé cuándo reproyectar?, ¿puedo
+producir un mapa de cobertura con cifra?
+
+### Tarea puente al Módulo 2
+
+Repite el análisis con el equipamiento central de la problemática de tu
+equipo y lleva el mapa a la sesión 4.1.
+
+## Resumen
+
+-   Casi toda pregunta territorial se descompone en cuatro operaciones:
+    **medir, buffer, intersección y conteo espacial**. Formular bien la
+    pregunta es traducirla a estas operaciones.
+-   La Tierra es curva y el mapa es plano: por eso existen los sistemas
+    de coordenadas. Dos familias bastan: **EPSG:4326** (grados, para
+    ubicar y publicar) y **EPSG:32719** (metros, para medir en Chile
+    central).
+-   Síntoma de error de proyección (capas desplazadas, cifras absurdas)
+    → prompt de corrección: *"reproyecta todo a EPSG:32719 antes de
+    calcular"*.
+-   El arco del Módulo 1 quedó completo: **prompting (2.1) → vibe coding
+    (2.2) → datos del territorio (3.1) → análisis espacial (3.2)**. Ya
+    tienes el flujo: pregunta → datos → análisis → mapa con evidencia.
+-   Lo que viene en el Módulo 2: hasta ahora usamos datos que ya
+    existían; lo siguiente es **crear datos nuevos con la ciudadanía** y
+    procesar lo que la gente dice y siente.
+
+## Recursos
+
+-   **Notebook Colab "Cobertura comunal"**: continúa el de la sesión
+    3.1, con la secuencia completa del taller y celdas de validación.
+-   **Capa censal pre-procesada** (manzanas/zonas censales con
+    población, Censo INE) para las comunas de los participantes.
+-   **Ficha "Coordenadas sin lágrimas" (1 página)**: geográficas vs.
+    proyectadas, EPSG:4326 vs. EPSG:32719, tabla síntoma → prompt de
+    corrección.
+-   **Prompt-book de la sesión**: la secuencia de 5 prompts del taller +
+    variantes (otras distancias de buffer, otros equipamientos,
+    comparación entre comunas).
+-   **Checklist de cierre del Módulo 1** (autoevaluación de 5 puntos).
+-   Referencia breve sobre estándares de accesibilidad a áreas verdes
+    (recomendación OMS y estándares MINVU) para dar contexto normativo a
+    la cifra producida.

@@ -1,0 +1,234 @@
+---
+subtitle: "Percepción emocional en el entorno urbano"
+editor:
+  markdown:
+    wrap: 72
+---
+
+# Análisis de Sentimientos
+
+**Sesión 6.1 · Día 6 · 1,5 horas · Modalidad Meet · Docente: Denis
+Berroeta (UAI)**
+
+## Resumen ejecutivo {.unnumbered}
+
+La sesión anterior enseñó a ordenar **qué** dice la gente. Esta sesión
+agrega la dimensión que más se pierde en los informes técnicos: **cómo
+se siente** la gente con su entorno. Una plaza puede tener excelente
+evaluación técnica y, sin embargo, ser percibida como insegura; una
+obra puede ser objetivamente beneficiosa y generar un rechazo creciente
+que, detectado a tiempo, se podría haber gestionado. El **análisis de
+sentimientos** —técnica de NLP que estima la carga emocional de un
+texto [@liu_sentiment_2012]— permite medir esa capa perceptual de forma
+sistemática, tanto en **consultas públicas** como en **redes
+sociales**, donde la conversación urbana ocurre sin que nadie la
+convoque.
+
+Para la gestión territorial esto tiene un valor doble: como
+**fotografía** (mapa de percepción por barrio o por tema: dónde se
+concentra el malestar) y como **película** (evolución del ánimo ante un
+proyecto: detectar tempranamente un conflicto en gestación). La sesión
+enseña ambos usos, y dedica especial cuidado a los límites: las redes
+sociales **no son la ciudadanía completa**, y un mapa de sentimientos
+mal leído puede inducir peores decisiones que ningún mapa.
+
+Al finalizar la sesión serás capaz de:
+
+1.  **Explicar** qué es el análisis de sentimientos, qué mide (polaridad
+    y emociones) y qué no mide (representatividad, causas).
+2.  **Aplicarlo mediante IA** a textos ciudadanos usando prompts
+    estructurados, sin programar.
+3.  **Cruzar sentimiento con tema y territorio**: "el malestar sobre
+    seguridad se concentra en torno al sector X".
+4.  **Analizar evolución temporal**: detectar cambios de tendencia del
+    ánimo ante un proyecto.
+5.  **Evaluar críticamente la fuente**: sesgos de las redes sociales y
+    resguardos de interpretación.
+6.  **Decidir cuándo el análisis de sentimientos aporta** a una decisión
+    y cuándo es ruido con apariencia de ciencia.
+
+## Contenidos de la sesión {.unnumbered}
+
+-   La capa emocional del territorio: por qué la percepción es un dato
+    de gestión.
+-   Polaridad y emociones: qué entrega y qué no entrega la técnica.
+-   Dos fuentes opuestas: consultas públicas vs. redes sociales.
+-   Cómo se hace: sentimiento con los modelos del curso; ironía y casos
+    difíciles.
+-   Taller: el pulso emocional de un proyecto urbano.
+-   Leer sin sobre-leer: sesgos, ética de la escucha pública.
+
+## La capa emocional del territorio
+
+### La percepción es un dato de gestión
+
+Casos donde la realidad técnica y la percibida divergen —seguridad,
+limpieza, obras— y donde la decisión correcta exigía conocer **ambas**:
+la plaza bien iluminada que igual se percibe insegura; la obra
+beneficiosa que acumula rechazo. Gestionar solo con el dato técnico es
+gestionar a ciegas de la mitad del problema.
+
+### Qué mide (y qué no)
+
+-   **Polaridad**: positivo / negativo / neutro.
+-   **Emociones específicas**: miedo, enojo, orgullo barrial.
+-   Entrega **tendencias agregadas**, no diagnósticos individuales.
+-   No mide **representatividad** (quién habla) ni **causas** (por qué).
+
+### Dos fuentes de naturalezas opuestas
+
+| | Consultas públicas | Redes sociales |
+|----|----|----|
+| Origen | Convocadas | Espontáneas |
+| Alcance | Acotadas, volumen menor | Continuas, masivas |
+| Representatividad | Mayor | Sesgada |
+| Costo de captura | Alto (organizar el proceso) | Bajo (la conversación ya existe) |
+
+Mensaje: **se complementan, no se reemplazan**.
+
+::: {.callout-tip title="Analogía: el fonendoscopio y la conversación de pasillo"}
+La consulta pública es el chequeo médico programado: el paciente
+responde lo que se le pregunta. Las redes sociales son la conversación
+de pasillo: nadie la convocó, fluye sola, y a veces dice cosas que en
+la consulta no se dirían — pero también exagera, repite rumores y solo
+habla quien tiene voz fuerte. Un buen diagnóstico escucha ambas.
+:::
+
+## Cómo se hace: sentimiento con los modelos del curso
+
+### Demostración sobre 20 textos
+
+El modelo asigna a cada texto **polaridad + emoción + justificación**,
+y la discusión se concentra en los casos donde duda o se equivoca:
+
+-   **Ironía y sarcasmo chileno**: *"qué linda la nueva plaza, duró una
+    semana sin rayados"* — literal positivo, real negativo.
+-   **Quejas corteses y elogios con reclamo adentro**: "agradezco la
+    pavimentación, ojalá algún día llegue también a nuestra calle".
+-   **Textos mixtos**: positivo en un tema, negativo en otro → la unidad
+    de análisis importa.
+
+::: {.callout-note appearance="simple" icon="false"}
+📷 **IMAGEN PENDIENTE**: Tabla ilustrada con 4–5 comentarios ciudadanos
+de ejemplo (incluyendo uno irónico), con las columnas que el modelo
+agrega: polaridad (con color verde/rojo/gris), emoción y justificación.
+El caso irónico debe aparecer marcado con el error del modelo y su
+corrección en auditoría.
+:::
+
+### Escalamiento
+
+El mismo prompt aplicado a miles de filas reutiliza el flujo de la
+sesión 5.2. Los créditos de Google Cloud del curso permiten usar las
+APIs de lenguaje para volúmenes mayores (sin entrar en implementación).
+
+### De dónde salen los datos de redes
+
+En la práctica: exportes de las propias cuentas institucionales,
+herramientas de escucha, solicitudes formales. Qué es legal y apropiado
+recolectar se aborda en el Bloque 4; **el curso trabaja con un dataset
+ya preparado**, no con scraping en vivo.
+
+## Actividades
+
+### Taller: el pulso emocional de un proyecto urbano (35 min)
+
+Caso del curso: dataset de comentarios ciudadanos (redes + consulta
+pública) sobre un proyecto de intervención urbana en la RM, con fechas
+y referencias territoriales. Secuencia:
+
+1.  > *"Clasifica cada comentario por sentimiento (positivo / negativo /
+    > neutro) y tema (usando las categorías de la sesión 5.2); agrega
+    > justificación breve."*
+2.  **Auditoría de muestra** (hábito ya instalado): ¿concuerdo con el
+    modelo?, atención especial a las ironías.
+3.  > *"Resume la distribución: ¿qué % es negativo?, ¿qué temas
+    > concentran el malestar?, ¿qué emociones predominan en cada
+    > tema?"*
+4.  > *"Muestra la evolución del sentimiento por semana; ¿hay algún
+    > quiebre? ¿coincide con algún hito del proyecto?"*
+5.  > *"Si los comentarios tienen referencia territorial, mapea dónde se
+    > concentran los negativos."* (síntesis con el Módulo 1: el mapa de
+    > percepción).
+6.  **Lectura ejecutiva final**: cada equipo escribe 3 frases de
+    hallazgo para una autoridad, distinguiendo **hecho** ("el 60% de
+    los comentarios sobre iluminación es negativo") de
+    **interpretación** ("posiblemente por el retraso de la fase 2").
+
+::: {.callout-note appearance="simple" icon="false"}
+📷 **IMAGEN PENDIENTE**: "Tablero de percepción" de ejemplo con los
+productos del taller: gráfico de torta/barras de polaridad por tema,
+línea de evolución temporal del sentimiento con el quiebre marcado y su
+hito anotado, y mini-mapa con la concentración territorial de
+comentarios negativos.
+:::
+
+::: callout-tip
+La distinción **hecho / interpretación** del paso 6 es el hábito
+profesional más transferible de la sesión: es lo que separa un informe
+defendible de una opinión con gráficos.
+:::
+
+## Leer sin sobre-leer: sesgos y uso responsable
+
+### El espejo deformante de las redes
+
+-   **Quién no está** en la conversación digital: brecha etaria,
+    socioeconómica y territorial.
+-   **El enojo se expresa más** que la conformidad.
+-   **Bots y campañas coordinadas** existen.
+
+### Reglas de interpretación del curso
+
+1.  Leer **tendencias y cambios**, nunca cifras absolutas como "la
+    opinión de la comuna".
+2.  **Triangular siempre** con participación formal y datos duros.
+3.  El sentimiento negativo **señala dónde mirar, no qué decidir**.
+
+### Ética de la escucha pública
+
+Analizar conversación pública **agregada** ≠ perfilar vecinos
+individuales. Línea roja explícita: no perfiles individuales, no
+monitoreo de dirigentes, agregación siempre.
+
+## Resumen
+
+-   La percepción es un dato de gestión: cuando lo técnico y lo
+    percibido divergen, decidir con uno solo es decidir a ciegas.
+-   El análisis de sentimientos entrega **polaridad y emociones
+    agregadas**; no entrega representatividad ni causas.
+-   Consultas públicas y redes sociales son fuentes complementarias de
+    naturaleza opuesta: convocada y acotada la primera, espontánea y
+    sesgada la segunda.
+-   El método reutiliza el flujo de la sesión 5.2 (clasificar → auditar
+    → sintetizar) agregando tres dimensiones: **emoción, tiempo y
+    territorio**.
+-   La ironía chilena es la prueba de fuego del modelo: la auditoría
+    humana sigue siendo innegociable.
+-   Reglas de oro: tendencias y no cifras absolutas; triangular siempre;
+    el malestar indica dónde mirar, no qué decidir; agregación siempre,
+    perfilamiento jamás.
+-   Ya tenemos la percepción ciudadana; la próxima sesión la cruza con
+    los datos institucionales para producir evidencia territorial
+    completa.
+
+## Recursos
+
+-   **Dataset del taller**: 1.500–3.000 comentarios (consulta pública +
+    redes sociales) sobre un proyecto urbano de la RM, con fecha, fuente
+    y referencia territorial; incluye ironías reales, textos mixtos, un
+    quiebre temporal asociado a un hito y un sesgo territorial
+    deliberadamente visible.
+-   **Prompt-book de sentimientos**: clasificación con polaridad +
+    emoción + justificación; agregaciones; evolución temporal; mapeo de
+    concentraciones; síntesis ejecutiva hecho/interpretación.
+-   **Ficha "Leer redes sin quemarse" (1 página)**: los 5 sesgos
+    principales de los datos de redes sociales y las 3 reglas de
+    interpretación del curso.
+-   **Plantilla "Tablero de percepción de proyecto"**: distribución,
+    temas críticos, evolución, mapa, hallazgos ejecutivos, limitaciones
+    declaradas.
+-   Referencia breve a las APIs de lenguaje de Google Cloud (mapa de
+    escalamiento futuro con los créditos del curso).
+-   Lectura opcional: caso documentado de uso (y de mal uso) de escucha
+    social en gestión pública.

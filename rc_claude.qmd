@@ -1,0 +1,102 @@
+---
+subtitle: "Documentos largos y redacción cuidadosa"
+editor:
+  markdown:
+    wrap: 72
+---
+
+# Claude
+
+## Resumen ejecutivo {.unnumbered}
+
+**Claude** (Anthropic) destaca en tres tareas críticas para el trabajo
+público: leer documentos largos y complejos, redactar con precisión en
+español formal, y analizar con cuidado cuando la respuesta tiene
+consecuencias. Su ventana de contexto es grande —puede leer un PLADECO
+completo de una vez— y su redacción es especialmente cuidadosa en
+matices legales y administrativos. Está disponible como aplicación web
+y móvil gratuita, y para perfiles técnicos como **Claude Code**, un
+agente de línea de comandos.
+
+**Acceso:** [claude.ai](https://claude.ai) · Gratuito con límites
+diarios; plan Pro para uso intensivo.
+
+## Los modelos
+
+Claude se ofrece en una familia de modelos; el criterio de elección es
+el mismo que con Gemini Flash/Pro:
+
+| Modelo | Carácter | Cuándo usarlo |
+|----|----|----|
+| **Haiku** | Rápido y liviano | Tareas simples y masivas: clasificar, extraer, formatear |
+| **Sonnet** | Equilibrio | El caballo de batalla: redacción, análisis, uso diario |
+| **Opus** | Máxima capacidad | Razonamiento complejo, documentos críticos, análisis delicados |
+
+Regla práctica idéntica a la del curso: empieza con el modelo medio;
+sube solo si el problema lo exige.
+
+## Los formatos
+
+### Aplicación (web, escritorio, móvil)
+
+El uso normal: conversación, carga de PDFs e imágenes, **Proyectos**
+(espacios con contexto persistente: subes una vez los documentos de tu
+unidad y cada conversación nueva ya los conoce) y **Artefactos**
+(documentos, tablas y pequeñas aplicaciones generadas en panel
+separado, listas para copiar).
+
+::: {.callout-tip title="Ejemplos de uso municipal"}
+-   *"Aquí está el PLADECO completo. ¿Cuáles son las tres prioridades
+    más mencionadas en participación ciudadana y en qué páginas?"*
+-   *"Redacta la minuta ejecutiva de este informe de 60 páginas para el
+    Concejo: una página, lenguaje claro, cifras destacadas."*
+-   *"Revisa críticamente este análisis de cobertura de áreas verdes:
+    ¿qué vacíos tiene antes de presentarlo al alcalde?"*
+-   *"Convierte estos hallazgos en una carta de respuesta formal a la
+    junta de vecinos, en tono cercano pero institucional."*
+:::
+
+### Claude Code (CLI)
+
+**Acceso:** terminal; requiere plan de pago o API · Para perfiles
+técnicos.
+
+Agente de línea de comandos: opera sobre carpetas y archivos locales,
+ejecuta tareas de varios pasos y automatiza flujos completos. Es la
+contraparte de Anthropic a Gemini CLI y Codex CLI. Para un equipo
+informático municipal: procesamiento masivo de archivos, generación de
+reportes periódicos, mantención de scripts de análisis del Módulo 1.
+
+A diferencia de Gemini CLI, **no tiene nivel gratuito**: exige
+suscripción o API con pago por uso. Para presupuestos municipales
+reducidos, Gemini CLI es el punto de partida; Claude Code se justifica
+cuando la calidad de razonamiento en tareas largas lo amerita.
+
+### API
+
+Para integraciones institucionales (clasificar reclamos entrantes,
+asistentes internos). Pago por uso; requiere desarrollo. Se menciona
+como mapa de escalamiento, no como punto de partida.
+
+## Cuándo preferir Claude
+
+-   **Un solo documento muy largo** que analizar con detalle (informes,
+    planes, bases de licitación): la ventana de contexto grande evita
+    trocear.
+-   **Redacción institucional delicada**: respuestas a transparencia,
+    cartas sensibles, textos donde el matiz importa.
+-   **Revisión crítica**: pedirle que encuentre debilidades de un
+    análisis antes de que las encuentre el Concejo.
+
+Para sistematizar **muchas** fuentes con citas, NotebookLM sigue siendo
+mejor opción; para todo lo integrado a Workspace, Gemini.
+
+## Ficha rápida
+
+| Aspecto | Detalle |
+|----|----|
+| Costo | Gratuito con límites; Pro de pago; Claude Code sin nivel gratuito |
+| Instalación | Ninguna para la app (navegador/móvil); CLI para perfil técnico |
+| Fortaleza | Documentos largos, redacción formal cuidadosa, revisión crítica |
+| Mejor para | Minutas, oficios, análisis de planes e informes extensos |
+| Riesgo principal | Mismas reglas de privacidad: anonimizar antes de subir |

@@ -1,0 +1,105 @@
+version: 1
+
+email:
+  author: <denis.berroeta@uai.cl>
+
+profesor:
+  name: "[Denis Berroeta](https://cit.uai.cl/denis-berroeta/)"
+  cargo: "Coordinador de Investigación, Centro de Inteligencia Territorial - UAI"
+  email: <denis.berroeta@uai.cl>
+
+
+
+engine:
+  jupyter: "[Jupyter](https://jupyter.org)"
+  knitr: "[Knitr](<https://yihui.name/knitr>)"
+  R: "[R Project](https://www.r-project.org)"
+  python: "[Python](https://docs.python.org/es/3/tutorial/)"
+  
+software:
+  rstudio: "[RStudio](https://posit.co/products/open-source/rstudio/)"
+  
+library:
+  sf: "[Simple Features for R](https://r-spatial.github.io/sf/articles/sf1.html)"
+  dplyr: "[dplyr](https://dplyr.tidyverse.org)"
+  purrr: "[purrr](https://purrr.tidyverse.org)"
+  mapview: "[mapview](https://r-spatial.github.io/mapview/)"
+  lubridate: "[lubridate](https://lubridate.tidyverse.org)"
+  tidyr: "[tidyr](https://tidyr.tidyverse.org)"
+  plotly: "[plotly](https://plotly.com/r/)"
+  ggplot: "[ggplot2](https://ggplot2.tidyverse.org/)"
+  
+organization:
+  ine: "[Instituto Nacional de Estadísticas](https://www.ine.gob.cl)"
+  cran: "[CRAN (Comprehensive R Archive Network)](https://cran.r-project.org/)"
+  bioconductor: "[Bioconductor](https://www.bioconductor.org/)"
+  github: "[Github](https://github.com/)"
+  rforge: "[R-Forge](https://r-forge.r-project.org/)"
+  
+# Insituciones ------------------------------------------------------------
+ine:
+  name: "[Instituto Nacional de Estadísticas (INE)](https://www.ine.gob.cl/)"
+  sigla: "[INE](https://www.ine.gob.cl/)"
+  censo_2017: "[Censo de Población y Vivienda 2017](http://resultados.censo2017.cl/)"
+  censo_2017s: "[Censo 2017](http://resultados.censo2017.cl/)"
+  censo_2024: "[Censo de Población y Vivienda 2024](https://censo2024.ine.gob.cl/)"
+
+mbht:
+  name: "[Matriz de Bienstar Humano Territorial](https://matrizbht.cl/)"
+  sigla: "[MBHT](https://matrizbht.cl/)"
+
+cit:
+  name: "[Centro de Inteligencia Territorial](https://cit.uai.cl/)"
+  sigla: "[CIT](https://cit.uai.cl/)"
+  
+uai:
+  name: "[Universidad Adolfo Ibáñez](https://www.uai.cl)"
+  sigla: "[UAI](https://www.uai.cl/)"
+  
+mma:
+  name: "[Ministerio del Medio Ambiente](https://mma.gob.cl/)"
+  sigla: "[MMA](https://mma.gob.cl/)"
+  
+sinca:
+  name: "[Sistema Nacional de Información de Calidad del Aire](https://sinca.mma.gob.cl/)"
+  sigla: "[SINCA](https://sinca.mma.gob.cl/)"
+
+epa:
+  name: "[Environmental Protection Agency (US)](https://www.epa.gov/)"
+  sigla: "[EPA](https://www.epa.gov/)"
+
+faqsd: 
+  name: "[Fused Air Quality Surface Using Downscaling](https://www.epa.gov/hesc/rsig-related-downloadable-data-files)"
+  sigla: "[FAQSD](https://www.epa.gov/hesc/rsig-related-downloadable-data-files)"
+
+sernageomin:
+  name: "[Servicio Nacional de Geología y Minería](https://www.sernageomin.cl/)"
+  sigla: "[SERNAGEOMIN](https://www.sernageomin.cl/)"
+  
+retc:
+  name: "[Registros de Emisiones y Transferencias Contaminantes](https://retc.mma.gob.cl/)"
+  sigla: "[RETC](https://retc.mma.gob.cl/)"
+  
+mineduc:
+  name: "[Ministerio de Ecucación](https://www.mineduc.cl/)"
+  sigla: "[MINEDUC](https://www.mineduc.cl/)"
+  
+cestudios:
+  name: "[Centro de Estudios del Mineduc](https://centroestudios.mineduc.cl/)"
+
+acalidad:
+  name: "[Agencia de Calidad de la Educación](https://www.agenciaeducacion.cl/)"
+
+simce:
+  name: "[Sistema de Medición de la Calidad de la Educación](https://www.agenciaeducacion.cl/simce/)"
+  sigla: "[SIMCE](https://www.agenciaeducacion.cl/simce/)"
+  
+junji:
+  name: "[Junta Nacional de Jardines Infantiles](https://junji.cl/)"
+  sigla: "[JUNJI](https://junji.cl/)"
+  
+integra:
+  name: "[Integra](https://www.integra.cl/nuestros-jardines-infantiles/)"
+  name_m: "[Fundación Integra](https://www.integra.cl/nuestros-jardines-infantiles/)"
+  name_l: "[Fundación Integra: Red de Salas Cuna y Jardines Infantiles](https://www.integra.cl/nuestros-jardines-infantiles/)"
+  

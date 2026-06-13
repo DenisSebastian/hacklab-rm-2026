@@ -1,0 +1,142 @@
+---
+subtitle: "Recursos complementarios de IA para el trabajo territorial"
+editor:
+  markdown:
+    wrap: 72
+---
+
+# Otras Herramientas
+
+## Resumen ejecutivo {.unnumbered}
+
+Este capítulo reúne herramientas de nicho que resuelven muy bien una
+tarea específica del trabajo público: explorar planillas sin código
+(**Julius AI**), producir presentaciones en minutos (**Gamma**),
+convertir texto en diagramas (**Napkin**), transcribir audios de
+talleres y reuniones (**Whisper**, open source) y ejecutar modelos
+locales (**Ollama / LM Studio**). Ninguna exige programar; dos de ellas
+son completamente open source y corren en hardware propio.
+
+## Julius AI: planillas sin código
+
+**Acceso:** [julius.ai](https://julius.ai) · Plan gratuito con límite
+mensual de consultas.
+
+Un analista de datos conversacional: subes una planilla (Excel, CSV,
+Google Sheets) y le haces preguntas en lenguaje natural. Genera
+gráficos, calcula estadísticas, filtra y detecta patrones, todo desde
+texto.
+
+::: {.callout-tip title="Ejemplos de uso municipal"}
+-   Explorar datos del Censo INE antes del análisis espacial del Módulo
+    1: *"¿Cuántas personas mayores de 65 años viven en cada zona censal
+    de esta tabla?"*
+-   Analizar registros administrativos (reclamos, solicitudes,
+    permisos) para encontrar patrones antes de georreferenciarlos.
+-   Validar resultados del análisis espacial contra tablas planas:
+    *"Compara la cobertura de áreas verdes de estas comunas con sus
+    niveles de ingreso promedio."*
+:::
+
+Alternativa de costo cero si ya usas el ecosistema del curso: el propio
+Gemini sobre Google Sheets, o ChatGPT gratuito con archivos.
+
+## Gamma: presentaciones desde texto
+
+**Acceso:** [gamma.app](https://gamma.app) · Plan gratuito con marca de
+agua; plan de pago para uso profesional.
+
+Genera presentaciones completas a partir de una descripción: das el
+tema, el público y el mensaje central, y obtienes una presentación con
+estructura, diseño y contenido inicial, afinable iterativamente en
+lenguaje natural.
+
+::: {.callout-tip title="Ejemplo de uso municipal"}
+> *"Crea una presentación de 10 diapositivas para el Concejo Municipal
+> sobre los resultados del análisis de cobertura de áreas verdes. El
+> mensaje principal es que el 38% de la población vive a más de 500
+> metros de un área verde. Público: concejales sin formación técnica."*
+
+El tiempo de producción pasa de horas a minutos. La revisión sigue
+siendo del profesional; el diseño inicial ya no.
+:::
+
+## Napkin: de texto a diagramas
+
+**Acceso:** [napkin.ai](https://napkin.ai) · Plan gratuito disponible.
+
+Convierte texto en visualizaciones: pegas un párrafo que explica un
+proceso, una cadena causal o una comparación, y Napkin propone
+diagramas (flujos, matrices, líneas de tiempo) para elegir y exportar.
+
+::: {.callout-tip title="Ejemplos de uso municipal"}
+-   Diagramar el ciclo de una consulta ciudadana o el
+    medir-intervenir-medir del urbanismo táctico para una lámina.
+-   Convertir la metodología de un proyecto en infografía para
+    postulación a fondos.
+-   Material visual para comunicación comunitaria sin diseñador.
+:::
+
+## Whisper: transcripción open source
+
+**Acceso:**
+[github.com/openai/whisper](https://github.com/openai/whisper) ·
+**Open source (MIT)** · Gratuito; corre en computador propio.
+
+Modelo de **transcripción de audio a texto** que funciona muy bien en
+español chileno. Corre localmente: el audio **no sale de la
+institución**, lo que lo hace apto incluso para material sensible.
+
+Para el trabajo participativo es una pieza estratégica: las horas de
+audio de talleres, cabildos y reuniones —que hoy nadie transcribe— se
+convierten en texto procesable con el flujo NLP de la sesión 5.2.
+
+::: {.callout-tip title="El flujo completo de costo cero"}
+1.  Grabar el taller participativo (con consentimiento informado).
+2.  **Whisper** transcribe el audio localmente.
+3.  Modelo local o IA del curso clasifica y sintetiza (flujo 5.2, con
+    auditoría humana).
+4.  Resultado: el acta y el informe temático del taller, en horas en
+    vez de semanas.
+:::
+
+La instalación requiere perfil técnico (o usar las versiones
+integradas en herramientas como LM Studio y aplicaciones de notas);
+el uso, no.
+
+## Ollama y LM Studio: la puerta a los modelos locales
+
+**Acceso:** [ollama.com](https://ollama.com) ·
+[lmstudio.ai](https://lmstudio.ai) · Gratuitos; Ollama es open source.
+
+Los dos programas que hacen viable todo el capítulo de Hermes: se
+instalan como cualquier aplicación, descargan modelos abiertos de un
+catálogo (Hermes, Llama, Qwen, Mistral...) y entregan una interfaz de
+chat local. LM Studio es más amigable para empezar (interfaz gráfica);
+Ollama es más flexible para automatizar (línea de comandos, open
+source).
+
+| | LM Studio | Ollama |
+|----|----|----|
+| Interfaz | Gráfica, tipo chat | Línea de comandos + API local |
+| Perfil | Cualquier usuario | Equipo técnico |
+| Open source | No (gratuito) | **Sí (MIT)** |
+| Mejor para | Probar modelos locales hoy | Integrar modelos locales a flujos |
+
+## Tabla comparativa del capítulo
+
+| Herramienta | Tarea | Costo | Open source | Datos salen de la institución |
+|----|----|----|----|----|
+| Julius AI | Análisis de planillas | Gratuito c/límite | No | Sí (nube) |
+| Gamma | Presentaciones | Gratuito c/marca | No | Sí (nube) |
+| Napkin | Diagramas | Gratuito c/límite | No | Sí (nube) |
+| Whisper | Transcripción de audio | Gratuito | **Sí** | **No (local)** |
+| Ollama | Modelos locales | Gratuito | **Sí** | **No (local)** |
+| LM Studio | Modelos locales | Gratuito | No | **No (local)** |
+
+::: callout-tip
+Patrón a notar: las herramientas de nube gratuitas son cómodas pero
+procesan tus datos afuera; las open source locales exigen algo más de
+instalación pero devuelven el control. Para material público, comodidad;
+para material sensible, control.
+:::

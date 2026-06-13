@@ -1,0 +1,92 @@
+---
+subtitle: "Amplitud de uso y comunidad global"
+editor:
+  markdown:
+    wrap: 72
+---
+
+# ChatGPT
+
+## Resumen ejecutivo {.unnumbered}
+
+**ChatGPT** (OpenAI) es el asistente más conocido globalmente, y esa
+popularidad es en sí una ventaja: la comunidad de usuarios en español
+es enorme y casi cualquier duda de uso ya tiene tutorial. Su fortaleza
+es la **amplitud**: maneja bien desde la redacción hasta el análisis de
+datos y la lectura de imágenes. Para programar desde el terminal,
+OpenAI ofrece **Codex CLI**, open source. Para profesionales que recién
+comienzan con IA, ChatGPT es una buena puerta de entrada.
+
+**Acceso:** [chatgpt.com](https://chatgpt.com) · Gratuito con límites;
+plan Plus para uso intensivo.
+
+## ChatGPT (app)
+
+Qué aporta el nivel gratuito al trabajo municipal:
+
+-   **Multimodal**: lee imágenes, PDFs y tablas además de texto.
+-   **Análisis de datos integrado**: subes una planilla y genera
+    tablas, gráficos y estadísticas conversando.
+-   **Búsqueda web**: puede consultar información actual con enlaces.
+-   **Proyectos y GPTs**: espacios con instrucciones persistentes,
+    reutilizables por el equipo.
+
+::: {.callout-tip title="Ejemplos de uso municipal"}
+-   *"Dame 5 ideas de dinámicas para un taller de diagnóstico vecinal
+    sobre espacio público, para 30 personas y 2 horas."*
+-   Subir la foto de una plaza deteriorada: *"Describe el estado de
+    este espacio y sugiere mejoras de bajo costo desde el diseño
+    urbano."*
+-   *"Genera la primera versión de las bases de un fondo concursable
+    barrial: requisitos, criterios de evaluación y formato de
+    postulación."*
+-   Subir el CSV de reclamos: *"Grafica la evolución mensual por tipo
+    de reclamo y dime qué patrón ves."*
+:::
+
+## Codex: el agente de código
+
+**Acceso:**
+[github.com/openai/codex](https://github.com/openai/codex) · CLI
+**open source (Apache 2.0)**; requiere plan ChatGPT o API.
+
+**Codex** es el agente de programación de OpenAI, en dos formas:
+integrado en ChatGPT (delegarle tareas de código desde el navegador) y
+**Codex CLI** en el terminal, operando sobre carpetas locales. El
+código del CLI es abierto: auditable e instalable en infraestructura
+propia — aunque el modelo que lo impulsa sigue siendo de pago.
+
+Para el perfil técnico municipal cumple el mismo rol que Gemini CLI y
+Claude Code: automatizar procesamiento de archivos, generar scripts de
+análisis, mantener los productos del Módulo 1.
+
+::: {.callout-tip title="Ejemplo de uso (perfil técnico municipal)"}
+> *"Toma estos 12 Excel de ejecución presupuestaria (uno por mes),
+> consolídalos en una sola tabla, normaliza los nombres de programas y
+> genera un gráfico de ejecución acumulada por dirección."*
+:::
+
+## Comparado con sus pares
+
+| | ChatGPT | Gemini | Claude |
+|----|----|----|----|
+| Puerta de entrada para principiantes | ✓✓ (comunidad enorme) | ✓✓ (si ya usas Google) | ✓ |
+| Integración con ofimática institucional | — | ✓✓ (Workspace) | — |
+| Documentos muy largos | ✓ | ✓✓ | ✓✓ |
+| CLI con nivel gratuito | — (Codex requiere plan) | ✓✓ (Gemini CLI) | — |
+| CLI open source | ✓✓ | ✓✓ | — |
+
+La recomendación del curso se mantiene: las herramientas centrales son
+las de Google (créditos del programa incluidos); ChatGPT es el
+complemento generalista más accesible para empezar y para tareas con
+imágenes o planillas sueltas.
+
+## Ficha rápida
+
+| Aspecto | Detalle |
+|----|----|
+| Costo | Gratuito con límites; Plus de pago; Codex requiere plan o API |
+| Instalación | Ninguna para la app; Codex CLI open source para perfil técnico |
+| Fortaleza | Amplitud, multimodal, análisis de planillas, comunidad en español |
+| Mejor para | Puerta de entrada, ideas, primeras versiones de documentos |
+| Riesgo principal | Mismas reglas de privacidad: anonimizar antes de subir |

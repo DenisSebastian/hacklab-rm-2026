@@ -1,0 +1,105 @@
+---
+subtitle: "Modelos abiertos en tu propio computador"
+editor:
+  markdown:
+    wrap: 72
+---
+
+# Hermes
+
+## Resumen ejecutivo {.unnumbered}
+
+**Hermes** (Nous Research) es una familia de modelos de lenguaje de
+**pesos abiertos**: se descargan gratis y corren **en tu propio
+computador**, sin conexión a internet y sin que un solo carácter salga
+de la institución. Representa aquí a toda una categoría —los modelos
+abiertos ejecutados localmente— que es la respuesta directa a la
+pregunta más frecuente del sector público: *"¿y qué hacemos con los
+datos que NO pueden subirse a la nube?"*. La respuesta: se procesan
+localmente, a costo cero de licencias, en hardware que el municipio ya
+tiene o puede tener.
+
+**Acceso:** vía [Ollama](https://ollama.com) o
+[LM Studio](https://lmstudio.ai) (ambos gratuitos) · Pesos del modelo en
+[Hugging Face](https://huggingface.co/NousResearch) · **Open source /
+pesos abiertos**.
+
+## La idea: IA sin nube
+
+| | Modelo en la nube | Modelo local (Hermes) |
+|----|----|----|
+| Dónde se procesa | Servidores del proveedor | **Tu computador** |
+| Datos | Viajan fuera | **No salen nunca** |
+| Costo por uso | Suscripción o API | **Cero** (tras el hardware) |
+| Internet | Imprescindible | Innecesario tras descargar |
+| Capacidad | Frontera | Menor, pero suficiente para tareas acotadas |
+| Continuidad | Depende del proveedor | El archivo del modelo es tuyo para siempre |
+
+::: {.callout-tip title="Analogía: el generador propio"}
+La nube es la red eléctrica: cómoda, potente, pero ajena. Un modelo
+local es el generador del edificio: menos potente, hay que mantenerlo,
+pero funciona aunque se corte la red y nadie de afuera ve lo que
+enchufas. Para lo crítico y lo confidencial, toda institución seria
+tiene generador.
+:::
+
+## Cómo se usa en la práctica
+
+La vía simple es **Ollama** o **LM Studio**: se instalan como cualquier
+programa, se descarga el modelo Hermes desde su catálogo, y se conversa
+en una interfaz local idéntica a un chatbot. La instalación inicial es
+tarea para el perfil técnico del equipo; el uso diario, para
+cualquiera.
+
+Requisitos honestos de hardware: un computador moderno con 16 GB de RAM
+ejecuta versiones pequeñas y medianas del modelo con fluidez razonable;
+hardware mayor permite versiones más capaces. No se necesita un
+servidor especializado para empezar.
+
+::: {.callout-note appearance="simple" icon="false"}
+📷 **IMAGEN PENDIENTE**: Captura de LM Studio u Ollama corriendo un
+modelo Hermes en un notebook común, con el indicador de "sin conexión"
+visible y una conversación en español procesando un texto municipal de
+ejemplo. Mensaje visual: esto corre en la máquina, no en la nube.
+:::
+
+## Casos de uso municipales
+
+Justamente los que las reglas de privacidad prohíben en la nube:
+
+-   **Anonimizar antes de subir**: usar el modelo local como primera
+    pasada que detecta y reemplaza nombres, RUT y direcciones en un
+    corpus, antes de procesarlo con herramientas en la nube. El dato
+    personal nunca sale.
+-   **Clasificar texto sensible**: respuestas de consultas con datos
+    identificables, fichas sociales, registros internos.
+-   **Resumir documentos confidenciales**: borradores, antecedentes de
+    casos, material pre-judicial.
+-   **Operación sin conectividad**: municipios o delegaciones con
+    internet precario mantienen capacidad de IA básica.
+-   **Motor local para OpenClaw**: combinados, asistente permanente +
+    confidencialidad total (ver capítulo anterior).
+
+## Expectativas honestas
+
+-   Un Hermes local **no compite** con Gemini Pro o Claude Opus en
+    razonamiento complejo. Es excelente en tareas acotadas y bien
+    instruidas: clasificar, extraer, resumir, reformatear.
+-   La **auditoría humana** del flujo del curso (sesión 5.2) aplica con
+    más razón: modelos menores se equivocan más.
+-   El ecosistema de modelos abiertos cambia rápido (Llama, Qwen,
+    Mistral y otros compiten en la misma categoría); Hermes es el
+    ejemplo de este capítulo, no la única opción. Lo permanente es la
+    categoría: **modelo abierto + ejecución local = soberanía del
+    dato**.
+
+## Ficha rápida
+
+| Aspecto | Detalle |
+|----|----|
+| Costo | Cero licencias; solo hardware existente o moderado |
+| Instalación | Sí: Ollama / LM Studio (perfil técnico para instalar, cualquiera para usar) |
+| Fortaleza | Los datos no salen de la institución; sin costo por uso; sin internet |
+| Mejor para | Anonimización, texto sensible, operación sin conectividad |
+| Limitación | Menor capacidad que modelos frontera; auditar siempre |
+| Categoría | Modelos abiertos locales (Hermes, Llama, Qwen, Mistral...) |

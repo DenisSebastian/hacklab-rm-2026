@@ -1,0 +1,89 @@
+---
+subtitle: "Investigación con fuentes verificables"
+editor:
+  markdown:
+    wrap: 72
+---
+
+# Perplexity
+
+## Resumen ejecutivo {.unnumbered}
+
+**Perplexity** es un buscador aumentado con IA: en vez de una lista de
+enlaces, entrega una respuesta sintetizada con **citas numeradas
+verificables**. Cada afirmación lleva el enlace a su fuente original.
+Para el sector público, donde una cifra sin respaldo puede terminar en
+un documento oficial, esa trazabilidad hacia la web es su valor
+central: es la herramienta para investigar, no solo para preguntar.
+
+**Acceso:** [perplexity.ai](https://perplexity.ai) · Gratuito con
+límites; plan Pro para búsqueda avanzada y carga de archivos.
+
+## Qué lo distingue
+
+| | Buscador tradicional | Asistente IA general | Perplexity |
+|----|----|----|----|
+| Entrega | Lista de enlaces | Respuesta sin fuentes | Respuesta **con** fuentes |
+| Riesgo | Tiempo de lectura | Alucinación invisible | Bajo: cada frase es verificable |
+| Mejor para | Encontrar un sitio | Redactar, idear | **Investigar con respaldo** |
+
+Funciones útiles del nivel gratuito:
+
+-   **Citas numeradas** en cada respuesta, con enlace directo.
+-   **Preguntas de seguimiento** que mantienen el hilo de
+    investigación.
+-   **Enfoque de búsqueda** (académico, web, social) para priorizar el
+    tipo de fuente.
+
+## Casos de uso municipales
+
+::: {.callout-tip title="Estándares y normativa con respaldo"}
+> *"¿Cuál es la recomendación de la OMS de metros cuadrados de área
+> verde por habitante en zonas urbanas? Dame la fuente exacta."*
+
+La cifra llega con la publicación de origen: lista para citar en el
+diagnóstico que fundamenta la postulación a fondos.
+:::
+
+::: {.callout-tip title="Vigilancia de precedentes"}
+> *"¿Qué municipios chilenos han implementado presupuestos
+> participativos digitales y qué resultados reportaron?"*
+
+Respuesta con enlaces a noticias, informes y sitios municipales:
+material para benchmarking antes de diseñar tu propio proceso.
+:::
+
+::: {.callout-tip title="Verificación cruzada (el caso más importante)"}
+Si Gemini o ChatGPT te dan una cifra y no sabes si es confiable,
+**contrástala en Perplexity**: o aparece la fuente, o aprendiste que la
+cifra era inventada. Este uso —detector de alucinaciones de otras IA—
+justifica por sí solo tenerla en el flujo de trabajo.
+:::
+
+::: {.callout-tip title="Fondos y plazos vigentes"}
+> *"¿Qué fondos concursables están abiertos actualmente en Chile para
+> proyectos de recuperación de espacios públicos municipales?"*
+
+A diferencia de un modelo sin búsqueda, consulta la web del momento;
+igual verifica los plazos en la fuente enlazada antes de planificar.
+:::
+
+## Límites y resguardos
+
+-   **Las fuentes hay que abrirlas**: Perplexity puede citar bien una
+    fuente equivocada (un blog que repite mal una cifra). La calidad de
+    la respuesta es la calidad de sus fuentes; mira de dónde viene.
+-   La síntesis sigue siendo de IA: para decisiones formales, lee el
+    documento original, no solo el resumen.
+-   Las mismas reglas de privacidad: es un servicio en la nube; no
+    pegues en la consulta información sensible.
+
+## Ficha rápida
+
+| Aspecto | Detalle |
+|----|----|
+| Costo | Gratuito con límites; Pro de pago |
+| Instalación | Ninguna (navegador/móvil) |
+| Fortaleza | Respuestas con citas verificables sobre la web actual |
+| Mejor para | Investigar estándares, normativa, precedentes; verificar cifras de otras IA |
+| Riesgo principal | Confiar en la síntesis sin abrir las fuentes citadas |

@@ -1,0 +1,246 @@
+---
+subtitle: "Para ciencia de datos espaciales"
+editor:
+  markdown:
+    wrap: 72
+---
+
+# Ecosistema Python
+
+**Sesión 3.1 · Día 3 · 1,5 horas · Modalidad Meet · Docente: Denis
+Berroeta (UAI)**
+
+## Resumen ejecutivo {.unnumbered}
+
+Si la sesión anterior enseñó a "hablar con la máquina", esta sesión
+enseña **de qué hablarle cuando el problema es territorial**. Los
+problemas que enfrentas —dónde falta arbolado, qué barrios están lejos
+de un consultorio, cómo se distribuyen los microbasurales— son
+problemas *espaciales*, y existe un ecosistema maduro de herramientas
+Python especializado en ellos: **GeoPandas** para trabajar con tablas
+que tienen geometría [@jordahl_geopandas_2020], **Shapely** para operar
+con formas, y **OSMnx** para descargar gratuitamente la cartografía de
+OpenStreetMap de cualquier lugar del mundo [@boeing_osmnx_2017].
+
+El giro pedagógico es fundamental: **no aprenderás a programar con
+estas bibliotecas**, sino a **conocerlas lo suficiente para nombrarlas
+en tus prompts y evaluar lo que producen**. Saber que GeoPandas existe
+transforma el prompt vago "haz un análisis de mi comuna" en el prompt
+potente "usa GeoPandas para cargar los límites de mi comuna y OSMnx
+para descargar sus plazas, y dime cuántas hay por barrio". **El
+vocabulario es la palanca.**
+
+Al finalizar la sesión serás capaz de:
+
+1.  **Explicar** qué son los datos espaciales y sus dos componentes:
+    atributos (la tabla) y geometría (la forma en el mapa).
+2.  **Identificar los tres tipos de geometría** (punto, línea, polígono)
+    y asociar fenómenos territoriales a cada uno.
+3.  **Describir el rol de cada biblioteca** —GeoPandas, Shapely, OSMnx—
+    al nivel necesario para invocarlas en un prompt.
+4.  **Obtener datos espaciales reales de tu comuna** mediante vibe
+    coding: límites, calles, equipamientos, áreas verdes.
+5.  **Producir un primer mapa y una primera tabla-resumen** sin escribir
+    código manualmente.
+6.  **Reconocer fuentes de datos espaciales abiertas** relevantes para
+    Chile.
+
+## Contenidos de la sesión {.unnumbered}
+
+-   Pensar el territorio como datos: atributos + geometría.
+-   Los tres tipos de geometría: punto, línea, polígono.
+-   Formatos de datos espaciales: CSV con coordenadas, GeoJSON,
+    Shapefile, KML.
+-   El ecosistema: GeoPandas, Shapely y OSMnx como vocabulario de
+    prompts.
+-   Taller "Mi comuna en datos": vibe coding aplicado.
+-   Fuentes de datos abiertas para Chile.
+
+## Pensar el territorio como datos
+
+### Todo lo que pasa, pasa en alguna parte
+
+Un **dato espacial** es información que, además de sus atributos,
+tiene ubicación y forma en el mapa. La idea se entiende con una
+planilla municipal real: el registro de luminarias.
+
+| Componente | Qué es | Ejemplo |
+|----|----|----|
+| **Atributos** | La tabla: las columnas que describen cada elemento | Potencia, estado, fecha de instalación de la luminaria |
+| **Geometría** | La forma y posición en el mapa | El punto donde está instalada |
+
+::: {.callout-tip title="Analogía: la ficha y el plano"}
+Piensa en la ficha clínica de un paciente (atributos) y su dirección
+(geometría). Por separado sirven poco para planificar un operativo
+sanitario; juntas permiten preguntar "¿dónde se concentran los
+pacientes crónicos?". El dato espacial es exactamente eso: la ficha
+**y** el plano, unidos.
+:::
+
+### Los tres tipos de geometría
+
+| Geometría | Fenómenos territoriales típicos |
+|----|----|
+| **Punto** | Luminaria, paradero, árbol, consultorio, reclamo georreferenciado |
+| **Línea** | Ciclovía, eje comercial, ruta de recolección, calle |
+| **Polígono** | Barrio, comuna, zona inundable, plaza, área verde |
+
+::: {.callout-note appearance="simple" icon="false"}
+📷 **IMAGEN PENDIENTE**: Ilustración de un mismo sector urbano de la RM
+visto tres veces: una capa de puntos (luminarias/paraderos), una de
+líneas (calles/ciclovías) y una de polígonos (manzanas/plazas), con
+rótulos "Punto", "Línea", "Polígono". Idealmente las tres capas
+superpuestas en una cuarta vista.
+:::
+
+El juego de clasificación de la sesión: el docente nombra fenómenos
+urbanos (paradero, eje comercial, zona inundable, árbol, ruta de
+recolección) y la sala los clasifica como punto, línea o polígono. No
+hay trampa: casi todo el territorio cabe en estas tres formas.
+
+### Formatos que te llegarán en la vida real
+
+Solo para reconocerlos de nombre: planilla con coordenadas (**CSV**),
+**GeoJSON**, **Shapefile**, **KML**.
+
+::: callout-tip
+Mensaje clave: **no importa el formato; la IA sabe abrirlos todos si le
+dices cuál es**. Basta con escribir "tengo un Shapefile con las
+manzanas de mi comuna" y la IA se encarga del resto.
+:::
+
+## El ecosistema: GeoPandas, Shapely y OSMnx
+
+### Tres especialistas de un equipo
+
+| Biblioteca | Rol en el equipo | Qué hace |
+|----|----|----|
+| **GeoPandas** | El analista | Maneja la tabla con geometría: filtra, agrupa, cuenta, mapea |
+| **Shapely** | El geómetra | Crea y opera formas: distancias, áreas, zonas de influencia |
+| **OSMnx** | El cartógrafo | Trae gratis desde OpenStreetMap calles, plazas, edificios y límites de cualquier comuna |
+
+::: {.callout-note appearance="simple" icon="false"}
+📷 **IMAGEN PENDIENTE**: Infografía de los "tres especialistas" como
+personajes o íconos de equipo: GeoPandas (analista con tabla y mapa),
+Shapely (geómetra con compás y formas), OSMnx (cartógrafo descargando
+el mundo desde OpenStreetMap), cada uno con su frase de prompt típica.
+:::
+
+### Por qué los nombres mejoran los prompts
+
+Comparación en vivo de la sesión:
+
+> **Prompt vago**: *"Haz un análisis de mi comuna."*
+>
+> **Prompt potente**: *"Usa GeoPandas para cargar los límites de la
+> comuna de Quilicura y OSMnx para descargar sus plazas, y dime cuántas
+> hay y qué superficie total suman."*
+
+El primero produce algo genérico e impredecible; el segundo, un
+resultado concreto y verificable. Conocer los nombres de las
+herramientas no te convierte en programador: te convierte en un
+director que da instrucciones precisas.
+
+::: {.callout-tip title="Analogía: la ferretería"}
+Puedes pedir "algo para colgar un cuadro" y recibir cualquier cosa, o
+pedir "un tarugo de 6 mm y un tornillo de 4x40" y recibir exactamente
+lo que necesitas. No necesitas saber fabricar tornillos: solo conocer
+sus nombres.
+:::
+
+### Dónde corre esto
+
+-   **Notebook de Google Colab pre-preparado** del curso: cero
+    instalación, se abre en el navegador y se ejecuta celda por celda.
+-   **Antigravity**: para quienes ya lo tienen operativo de la sesión
+    2.2.
+
+## Actividades
+
+### Taller: mi comuna en datos (35 min)
+
+El docente modela cada paso con la comuna ancla (Quilicura) y tú
+replicas con la tuya. Secuencia de prompts:
+
+1.  > *"Descarga con OSMnx el límite de la comuna de [X] y muéstralo en
+    > un mapa."*
+2.  > *"Descarga las plazas y áreas verdes de la comuna y dibújalas
+    > sobre el mapa anterior."*
+3.  > *"Cuenta cuántas áreas verdes hay y calcula la superficie total en
+    > hectáreas."*
+4.  > *"Haz un mapa interactivo donde al pasar el mouse se vea el nombre
+    > de cada área verde."*
+5.  **Iteración libre**: adapta la secuencia al equipamiento pertinente
+    a tu problemática (consultorios, colegios, paraderos, ferias).
+
+::: {.callout-note appearance="simple" icon="false"}
+📷 **IMAGEN PENDIENTE**: Secuencia de 4 capturas del taller con la
+comuna de Quilicura: (1) límite comunal solo, (2) límite + áreas verdes,
+(3) tabla-resumen con conteo y hectáreas, (4) mapa interactivo con
+tooltip mostrando el nombre de un área verde.
+:::
+
+Durante el taller se instalan dos hábitos permanentes:
+
+-   **Leer la tabla antes que el mapa**: ¿los números son plausibles?
+-   **Guardar los prompts que funcionaron**: son tu prompt-book
+    personal.
+
+### Ejercicios de extensión
+
+Para quienes terminan rápido: comparar dos comunas con la misma
+secuencia (¿cuál tiene más áreas verdes por habitante?).
+
+### Tarea puente (20 min, opcional)
+
+Replica la secuencia con un segundo tipo de equipamiento relevante para
+la problemática de tu equipo y guarda el mapa resultante.
+
+## Fuentes de datos para el mundo real
+
+Panorama de fuentes abiertas chilenas:
+
+| Fuente | Qué tiene | Facilidad de uso con IA |
+|----|----|----|
+| **OpenStreetMap** (vía OSMnx) | Calles, equipamientos, áreas verdes, límites de todo el mundo | Muy alta: un prompt basta |
+| **IDE Chile** | Cartografía oficial del Estado | Media: requiere descargar capas |
+| **datos.gob.cl** | Datos públicos de todos los servicios | Media: calidad variable |
+| **INE** | Censo de población y vivienda, manzanas censales | Media: formatos técnicos, pero la IA los abre |
+| **SUBDERE / transparencia municipal** | Información administrativa y territorial comunal | Variable |
+
+::: callout-warning
+**Honestidad sobre OpenStreetMap**: es libre y global, pero su
+completitud varía por comuna. La verificación rápida es contra tu
+conocimiento local: **tú eres el experto en tu territorio**. Si el mapa
+dice que tu comuna tiene 3 plazas y tú conoces 15, el dato está
+incompleto, no tu memoria.
+:::
+
+## Resumen
+
+-   Un dato espacial = **atributos** (la tabla) + **geometría** (la
+    forma en el mapa). Todo fenómeno territorial cabe en tres
+    geometrías: punto, línea o polígono.
+-   No necesitas dominar GeoPandas, Shapely ni OSMnx: necesitas
+    **nombrarlas en tus prompts**. El vocabulario es la palanca.
+-   OSMnx te da acceso gratuito a la cartografía de cualquier comuna del
+    mundo; su completitud se valida contra tu conocimiento local.
+-   Hábitos del oficio: leer la tabla antes que el mapa, y guardar los
+    prompts que funcionaron.
+-   La próxima sesión: ya sabes traer capas; aprenderemos a **cruzarlas**,
+    porque ahí aparecen las respuestas.
+
+## Recursos
+
+-   **Notebook Colab "Mi comuna en datos"**: pre-cargado con la
+    secuencia del taller, celdas comentadas en español llano.
+-   **Notebook de respaldo con datos pre-descargados** de las comunas de
+    los participantes (ante fallas de red/OSM).
+-   **Prompt-book de la sesión**: los 5 prompts de la secuencia + 5
+    variantes por tipo de equipamiento.
+-   **Ficha "Ecosistema espacial en una página"**: qué es y qué hace
+    cada biblioteca, con la frase de prompt típica para invocarla.
+-   **Directorio comentado de fuentes de datos abiertas de Chile**:
+    contenido, formato, dificultad y prompt de ejemplo para cada una.
+-   Galería de 3–4 ejemplos inspiradores de análisis espacial municipal
+    hechos con estas herramientas.

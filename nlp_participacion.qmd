@@ -1,0 +1,247 @@
+---
+subtitle: "Procesamiento de lenguaje natural para la participación ciudadana"
+editor:
+  markdown:
+    wrap: 72
+---
+
+# NLP Comunitario
+
+**Sesión 5.2 · Día 5 · 1,5 horas · Modalidad Presencial · Docente:
+Denis Berroeta (UAI)**
+
+## Resumen ejecutivo {.unnumbered}
+
+Cada proceso participativo serio produce un problema hermoso:
+**demasiadas palabras**. Una consulta ciudadana puede generar 3.000
+respuestas abiertas; un PLADECO, cientos de páginas de actas; una
+cuenta pública, miles de comentarios. Tradicionalmente ese material
+termina sub-analizado —se leen 200 respuestas, se citan 10— o tarda
+meses en sistematizarse, cuando la decisión ya se tomó. El resultado es
+doblemente grave: se pierde información y se traiciona la confianza del
+vecino que se dio el tiempo de opinar.
+
+El **Procesamiento de Lenguaje Natural (NLP)** —la rama de la IA que
+trabaja con texto humano [@jurafsky_speech_2025]— cambia esa ecuación:
+hoy es posible clasificar, agrupar por temas y sintetizar miles de
+opiniones en horas, manteniendo trazabilidad hacia las voces
+originales. Y gracias a los modelos de lenguaje actuales (los mismos
+Gemini del curso), gran parte de ese procesamiento se dirige **en
+español y sin programar**. Esta sesión enseña el flujo completo: del
+archivo caótico de respuestas a un informe temático defendible, con la
+IA como sistematizadora incansable y tú como **supervisor del
+sentido**.
+
+Al finalizar la sesión serás capaz de:
+
+1.  **Explicar** qué es el NLP y sus operaciones útiles para la gestión
+    pública: clasificar, extraer, agrupar, resumir.
+2.  **Preparar un corpus de participación**: estructura mínima del
+    archivo y anonimización básica antes de procesar.
+3.  **Ejecutar una clasificación temática asistida por IA** sobre
+    respuestas abiertas reales: definir categorías, clasificar
+    masivamente, auditar una muestra.
+4.  **Extraer estructura desde texto libre**: de la frase del vecino al
+    dato procesable.
+5.  **Producir una síntesis fiel y trazable**: resúmenes por tema con
+    citas textuales de respaldo.
+6.  **Aplicar salvaguardas éticas**: anonimización, sesgos del modelo, y
+    el principio de supervisión humana.
+
+## Contenidos de la sesión {.unnumbered}
+
+-   El problema de las mil voces: el cuello de botella de la
+    participación.
+-   Qué es el NLP y su menú de operaciones para un municipio.
+-   Preparar el corpus: del archivo caótico a la tabla procesable.
+-   Anonimización y protección de datos personales.
+-   Taller: de 2.000 opiniones a un informe temático en cinco pasos.
+-   Ética y límites: sesgos, voces minoritarias, transparencia.
+
+## El problema de las mil voces
+
+### El cuello de botella de la participación
+
+Ejemplos reales del material participativo sub-analizado: consultas
+ciudadanas, PLADECO, presupuestos participativos. El costo es doble:
+
+-   **Costo institucional**: decisiones tomadas sin la información que
+    ya se había recolectado.
+-   **Costo de confianza**: el vecino que opinó y nunca vio reflejada su
+    voz no vuelve a participar.
+
+### Qué es el NLP
+
+En una frase: **enseñar a la máquina a trabajar con texto humano**.
+Breve genealogía honesta: antes requería equipos especializados; los
+modelos de lenguaje actuales lo pusieron al alcance de un prompt bien
+hecho.
+
+El menú de operaciones útiles para un municipio:
+
+| Operación | Ejemplo municipal |
+|----|----|
+| **Clasificar** | Asignar cada respuesta a un tema (seguridad, áreas verdes, basura...) |
+| **Extraer** | Sacar lugares, problemas y demandas mencionados en el texto |
+| **Agrupar** | Juntar opiniones que dicen lo mismo con palabras distintas |
+| **Resumir** | Condensar 500 respuestas sobre un tema en un párrafo fiel |
+| **Traducir registro** | Pasar del lenguaje técnico al ciudadano y viceversa |
+
+### De la frase del vecino al dato procesable
+
+El ejemplo canónico de la sesión:
+
+> *"La plaza de la esquina de mi casa está oscura y da miedo de noche."*
+
+se convierte en:
+
+| Campo | Valor |
+|----|----|
+| Tema | Seguridad |
+| Subtema | Iluminación |
+| Lugar | Plaza |
+| Tono | Negativo |
+
+::: {.callout-note appearance="simple" icon="false"}
+📷 **IMAGEN PENDIENTE**: Diagrama de transformación: a la izquierda, la
+frase manuscrita/en globo de diálogo del vecino; una flecha con el
+rótulo "NLP"; a la derecha, la tabla estructurada {tema, subtema,
+lugar, tono}. Debe mostrar que la voz no se pierde: se ordena.
+:::
+
+::: {.callout-tip title="Analogía: la secretaria incansable"}
+Imagina una secretaria de actas que lee las 3.000 respuestas sin
+cansarse, las clasifica en carpetas, anota de qué lugar habla cada una
+y te deja una cita textual como respaldo de cada decisión de archivo.
+Eso es el NLP con modelos de lenguaje. Pero como toda secretaria nueva,
+**hay que revisarle el trabajo al principio**: de eso trata la
+auditoría humana.
+:::
+
+## Preparar el corpus: del archivo caótico a la tabla procesable
+
+### El corpus mínimo viable
+
+-   **Una opinión por fila.**
+-   Columnas de contexto si existen: comuna, edad, canal de
+    recolección.
+-   ¿PDFs y actas escaneadas? La IA también extrae texto de documentos:
+    pídeselo.
+
+### Anonimización antes de procesar
+
+Tratado con seriedad y sin tecnicismos: antes de procesar, **detectar y
+remover** nombres, RUT, teléfonos y direcciones exactas. La propia IA
+hace esa limpieza si se la pides:
+
+> *"Antes de cualquier análisis, detecta y reemplaza en esta tabla
+> todos los nombres de personas, RUT, teléfonos y direcciones exactas
+> por etiquetas genéricas como [NOMBRE] o [DIRECCIÓN]. Muéstrame
+> ejemplos de lo que reemplazaste."*
+
+::: callout-important
+**Privacidad no es nota al pie.** En tu organización manejarás datos
+reales de vecinos. La referencia normativa es la **Ley 21.719 de
+Protección de Datos Personales**. Regla del curso: nunca subir datos
+personales reales a herramientas de IA, ni durante el curso ni después
+sin resguardo institucional.
+:::
+
+## Actividades
+
+### Taller: de 2.000 opiniones a un informe temático (40 min)
+
+Flujo completo modelado por el docente y replicado por los equipos con
+el corpus del curso (~2.000 respuestas de una consulta urbana de la
+RM):
+
+**Paso 1 — Definir categorías (humano).** Cada equipo propone 5–8
+categorías temáticas pertinentes a su problemática. ¿Las define la IA o
+el equipo? Respuesta del curso: **primero el equipo** (conocimiento
+territorial), luego se contrasta pidiéndole a la IA que proponga las
+suyas y se comparan. A menudo la IA detecta un tema que el equipo no
+vio, y viceversa.
+
+**Paso 2 — Clasificar masivamente (IA).**
+
+> *"Clasifica cada respuesta en estas categorías; si no calza en
+> ninguna, márcala como 'otra'; agrega una columna con la cita textual
+> que justifica la clasificación."*
+
+**Paso 3 — Auditar (humano, obligatorio e innegociable).** Revisar
+10–15 clasificaciones al azar. ¿Concuerdo? Si no, corregir las
+instrucciones y re-clasificar.
+
+**Paso 4 — Extraer estructura (IA).** Menciones de lugares, problemas
+concretos y demandas explícitas; tabla de frecuencias por tema.
+
+**Paso 5 — Sintetizar con trazabilidad (IA + humano).**
+
+> *"Resume los hallazgos por tema en lenguaje claro; cada afirmación
+> debe llevar entre paréntesis el número de respuestas que la respaldan
+> y 2 citas textuales de ejemplo."*
+
+**Producto final**: mini-informe temático (1–2 páginas) que cada equipo
+lleva consigo.
+
+::: {.callout-note appearance="simple" icon="false"}
+📷 **IMAGEN PENDIENTE**: Diagrama del flujo de 5 pasos del taller como
+cadena con íconos, alternando los rótulos "HUMANO" e "IA": definir
+categorías (humano) → clasificar (IA) → auditar (humano, destacado en
+color como paso crítico) → extraer (IA) → sintetizar (IA+humano). El
+paso de auditoría debe sobresalir visualmente.
+:::
+
+### Tarea puente (opcional)
+
+Aplica el flujo a un corpus propio (anonimizado) de tu organización y
+lleva los hallazgos a la sesión 6.1. Todos tienen un archivo de
+respuestas sin procesar esperando.
+
+## Ética y límites
+
+Los tres riesgos y su control:
+
+| Riesgo | Control |
+|----|----|
+| El modelo clasifica con sesgos | Auditoría humana de muestras, siempre |
+| El resumen "alisa" las voces minoritarias | Pedir explícitamente disensos y opiniones minoritarias |
+| Sobre-confianza institucional | El informe IA es borrador para el analista, no producto final firmable |
+
+Regla de comunicación pública: **si un análisis fue asistido por IA, se
+declara**. Transparencia como política por defecto.
+
+## Resumen
+
+-   El material participativo sub-analizado es información perdida y
+    confianza traicionada; el NLP permite procesarlo completo, en
+    horas y en español.
+-   El corpus mínimo viable: una opinión por fila, contexto en
+    columnas, **anonimización antes de procesar** (Ley 21.719).
+-   El flujo del curso tiene 5 pasos: categorías (humano) → clasificación
+    (IA) → **auditoría (humano, innegociable)** → extracción (IA) →
+    síntesis trazable (IA + humano).
+-   La trazabilidad es el sello de calidad: cada afirmación del informe
+    lleva su frecuencia y sus citas textuales de respaldo.
+-   La IA propone, el profesional dispone: el informe asistido por IA es
+    borrador del analista y se declara como tal.
+-   Hasta aquí clasificamos **qué** dice la gente; la próxima sesión
+    mide **cómo se siente** respecto del entorno urbano.
+
+## Recursos
+
+-   **Corpus del curso**: ~2.000 respuestas abiertas (reales
+    anonimizadas o sintéticas de alta verosimilitud) de una consulta
+    ciudadana urbana de la RM, en planilla lista para cargar.
+-   **Prompt-book NLP**: los prompts de las 5 etapas del flujo + prompt
+    de anonimización.
+-   **Plantilla "Informe temático de participación"** (2 páginas):
+    metodología declarada, categorías, frecuencias, síntesis por tema
+    con citas, disensos, limitaciones.
+-   **Ficha "Datos personales y participación" (1 página)**: qué es dato
+    personal, qué limpiar antes de procesar, referencia a la Ley 21.719
+    y su pertinencia municipal.
+-   **Checklist de auditoría de clasificaciones IA**: tamaño de muestra,
+    qué mirar, cuándo re-clasificar.
+-   Caso documentado breve de sistematización masiva de participación
+    con IA, como referencia inspiradora.

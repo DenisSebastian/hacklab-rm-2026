@@ -1,0 +1,63 @@
+project:
+  type: book
+
+book:
+  title: "AcademIA HackLab: Santiago Región Sustentable"
+  subtitle: "Inteligencia Artificial en Acción para la Transformación Sustentable del Territorio"
+  author:
+    - name: Denis Berroeta González
+      url: https://cit.uai.cl/denis-berroeta/
+      affiliation: Centro de Inteligencia Territorial
+      affiliation-url: https://cit.uai.cl
+      email: denis.berroeta@uai.cl
+  date: "2026-06-12"
+  page-footer:
+    left: "Copyright 2026, Denis Berroeta"
+  chapters:
+    - index.qmd
+    - part: "Módulo 1: Conceptos & Casos"
+      chapters:
+        - vibe_coding.qmd
+        - ecosistema_python.qmd
+        - operaciones_espaciales.qmd
+    - part: "Módulo 2: Modelos IA"
+      chapters:
+        - sensores_iot.qmd
+        - nlp_participacion.qmd
+        - analisis_sentimientos.qmd
+        - integracion_datos.qmd
+    - part: recursos_complementarios.qmd
+      chapters:
+        - rc_google.qmd
+        - rc_notebooklm.qmd
+        - rc_claude.qmd
+        - rc_chatgpt.qmd
+        - rc_perplexity.qmd
+        - rc_latamgpt.qmd
+        - rc_openclaw.qmd
+        - rc_hermes.qmd
+        - rc_otras_herramientas.qmd
+    - conclusiones.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    html-math-method: katex
+    css: styles/style.css
+    fig-align: "center"
+    fig-cap-location: "margin"
+    tab-cap-location: "left"
+    mailto: "denis.berroeta@uai.cl"
+    toc-title: "Contenidos"
+    toc-depth: 3
+    number-sections: true
+    number-depth: 3
+
+execute:
+  warning: false
+
+editor: source
+always_allow_html: true

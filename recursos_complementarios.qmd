@@ -1,0 +1,121 @@
+---
+subtitle: "Herramientas de IA para el sector público"
+editor:
+  markdown:
+    wrap: 72
+---
+
+# Recursos Complementarios {.unnumbered}
+
+El curso usa Gemini y Antigravity como herramientas centrales, pero el
+ecosistema de IA crece rápido y conviene conocer el mapa completo. Esta
+parte del libro documenta, capítulo por capítulo, las herramientas más
+útiles para un profesional del sector público que trabaja con datos
+territoriales, textos ciudadanos y documentos institucionales — **sin
+necesidad de programar y con presupuesto reducido o nulo**.
+
+## Criterios de selección
+
+Cada herramienta incluida cumple al menos uno de estos criterios,
+pensados para la realidad de municipios y servicios públicos con
+recursos limitados:
+
+1.  **Acceso libre**: tiene un plan gratuito utilizable en trabajo real,
+    no solo de prueba.
+2.  **Open source**: el código es abierto, se puede instalar en
+    infraestructura propia y no depende de la voluntad comercial de un
+    proveedor.
+3.  **Soberanía de datos posible**: existe un camino para usarla sin
+    enviar información sensible a servidores de terceros.
+
+Ninguna reemplaza a las herramientas del curso; todas las extienden
+para tareas específicas donde brillan de forma particular.
+
+## Mapa de esta parte
+
+| Capítulo | Herramienta | Tipo | Costo base |
+|----|----|----|----|
+| Ecosistema Google | Gemini, AI Studio, Nano Banana, Gemini CLI, Colab | Asistente, imágenes, CLI | Gratuito (CLI open source) |
+| NotebookLM | NotebookLM | Análisis de documentos con trazabilidad | Gratuito |
+| Claude | App, Claude Code (CLI), API | Asistente, agente de terminal | Gratuito con límites |
+| ChatGPT | App, Codex (CLI) | Asistente, agente de código | Gratuito con límites (CLI open source) |
+| Perplexity | Perplexity | Investigación con fuentes | Gratuito con límites |
+| LatamGPT | LatamGPT (CENIA) | Modelo abierto regional | Open source |
+| OpenClaw | OpenClaw | Asistente personal autoalojado | Open source |
+| Hermes | Hermes (Nous Research) | Modelo abierto para uso local | Open source |
+| Otras herramientas | Julius, Gamma, Napkin, Whisper, Ollama | Datos, presentaciones, diagramas, transcripción | Gratuito / open source |
+
+## Cómo elegir: árbol de decisión rápido
+
+Ante una tarea nueva, usa esta lógica antes de abrir la primera
+herramienta que se te ocurra:
+
+```
+¿Necesitas producir código o un mapa?
+    → Antigravity + Gemini (herramientas del curso)
+    → Gemini CLI / Claude Code / Codex si trabajas desde el terminal
+
+¿Tienes documentos largos que analizar o sistematizar?
+    → NotebookLM si son múltiples fuentes y necesitas trazabilidad
+    → Claude si es un solo documento largo o redacción formal
+
+¿Tienes una planilla de datos para explorar?
+    → Julius AI (o el propio Gemini sobre Google Sheets)
+
+¿Necesitas una presentación o un diagrama rápido?
+    → Gamma (presentaciones) / Napkin (diagramas)
+
+¿Necesitas investigar con fuentes verificables?
+    → Perplexity
+
+¿Necesitas transcribir audios de talleres o reuniones?
+    → Whisper (open source, local)
+
+¿La información es sensible y NO puede salir de tu institución?
+    → Modelos abiertos en hardware propio: Hermes vía Ollama, LatamGPT
+
+¿Quieres un asistente permanente en WhatsApp/Telegram institucional?
+    → OpenClaw (autoalojado; requiere perfil técnico y resguardos)
+
+¿Es una tarea general de texto, ideas o redacción?
+    → Claude, ChatGPT o Gemini según preferencia
+    → LatamGPT si el contexto chileno/latinoamericano es clave
+```
+
+::: {.callout-note appearance="simple" icon="false"}
+📷 **IMAGEN PENDIENTE**: Versión gráfica del árbol de decisión como
+diagrama de flujo, con los logos de las herramientas en las hojas y
+colores que distingan tres familias: gratuitas en la nube, open source
+autoalojadas, y herramientas del curso.
+:::
+
+## Principios de uso responsable
+
+Independientemente de la herramienta:
+
+1.  **Nunca subas datos personales reales** (RUT, nombres, teléfonos,
+    direcciones de personas) a ninguna herramienta de IA en la nube,
+    salvo acuerdo de datos institucional y anonimización previa. Si el
+    dato no puede salir, usa modelos locales (capítulos de Hermes y
+    LatamGPT).
+2.  **Declara el uso de IA** en cualquier producto institucional: si un
+    informe fue asistido por IA, se indica en la metodología.
+    Transparencia como política por defecto.
+3.  **Verifica siempre** lo que la IA produce antes de firmarlo o
+    presentarlo. Las alucinaciones no distinguen entre herramientas.
+4.  **Las herramientas gratuitas cambian**: límites, precios y
+    funcionalidades evolucionan rápido. Verifica el estado actual antes
+    de construir flujos de trabajo críticos sobre ellas.
+5.  **Prefiere lo open source para lo permanente**: un flujo
+    institucional crítico montado sobre una herramienta cerrada
+    gratuita puede desaparecer con un cambio de política comercial; el
+    software abierto se puede conservar, auditar y migrar.
+
+::: {.callout-note title="Nota sobre datos y soberanía"}
+La mayoría de las herramientas en la nube listadas son de empresas
+privadas con servidores fuera de Chile. Para información sensible o
+confidencial, consulta con tu encargado de seguridad de la información
+antes de usarlas. Criterio general: **lo que no publicarías en un
+comunicado oficial, no lo subas a una IA de uso libre** — o procésalo
+con un modelo local en hardware institucional.
+:::

@@ -1,0 +1,232 @@
+---
+subtitle: "Small Data comunitario + Big Data institucional"
+editor:
+  markdown:
+    wrap: 72
+---
+
+# Integración de Datos
+
+**Sesión 6.2 · Día 6 · 1,5 horas · Modalidad Meet · Docente: Denis
+Berroeta (UAI)**
+
+## Resumen ejecutivo {.unnumbered}
+
+Al llegar a esta sesión manejas dos mundos de datos que normalmente no
+se hablan entre sí. Por un lado, el **Small Data comunitario**: lo que
+el módulo te enseñó a generar y procesar — mapeos participativos
+(4.1–4.2), mediciones de sensores ciudadanos (5.1), opiniones
+sistematizadas (5.2) y percepciones (6.1). Es un dato rico, situado,
+cargado de sentido local, pero **parcial**: cubre los barrios donde
+hubo taller, las voces que participaron, la semana que se midió. Por
+otro lado, el **Big Data institucional**: censos, registros
+administrativos, cartografía oficial — exhaustivo y sistemático, pero
+**ciego a la experiencia vivida** y frecuentemente desactualizado
+[@kitchin_data_2014].
+
+La tesis de esta sesión —y en buena medida del programa completo— es
+que **la evidencia territorial potente nace del cruce de ambos**: el
+dato comunitario aporta el *qué importa y dónde duele*; el
+institucional aporta el *cuánto, para cuántos y comparado con qué*. La
+IA es el pegamento que hace ese cruce viable para equipos sin
+especialistas. Esta sesión cierra el Módulo 2 produciendo la **ficha de
+evidencia territorial** con que cada equipo entrará al Módulo 3 a
+construir su hoja de ruta.
+
+Al finalizar la sesión serás capaz de:
+
+1.  **Distinguir Small Data y Big Data territorial**, con las fortalezas
+    y puntos ciegos de cada uno.
+2.  **Evaluar la representatividad de un dato comunitario** con
+    preguntas simples: ¿quién participó y quién no?, ¿qué territorios
+    cubre?
+3.  **Ejecutar el cruce básico mediante vibe coding**: llevar ambos
+    datos a una unidad territorial común y compararlos en tabla y mapa.
+4.  **Interpretar los tres resultados del cruce**: convergencia,
+    divergencia y vacío.
+5.  **Comprender conceptualmente la extrapolación asistida** y sus
+    condiciones de honestidad.
+6.  **Producir la "ficha de evidencia territorial"** de tu problemática:
+    la síntesis que alimenta la hoja de ruta del Módulo 3.
+
+## Contenidos de la sesión {.unnumbered}
+
+-   Dos mundos de datos que no se hablan: caracterización y puntos
+    ciegos.
+-   ¿Qué significa "representativo" sin estadística?
+-   El método del cruce: la unidad territorial común.
+-   El mapa de cuadrantes: convergencia / divergencia / vacío.
+-   Taller: la ficha de evidencia de mi problemática.
+-   Extrapolar sin mentir: condiciones de honestidad.
+-   Síntesis del Módulo 2 y puente al Módulo 3.
+
+## Dos mundos de datos que no se hablan
+
+### Caracterización con lo que ya hiciste
+
+Lo que produjiste en este módulo **es** el Small Data (tu mapeo, tus
+opiniones procesadas, tu percepción medida); lo que descargaste en el
+Módulo 1 **es** el Big Data (censo, cartografía, equipamientos).
+
+| Criterio | Small Data comunitario | Big Data institucional |
+|----|----|----|
+| Cobertura | Parcial (donde hubo taller/medición) | Exhaustiva |
+| Actualidad | Fresca | Frecuentemente desactualizado |
+| Riqueza de significado | Alta: sentido local, experiencia vivida | Baja: homogéneo, escalas gruesas |
+| Sesgo de participación | Alto: quién participó | Bajo (por diseño) |
+| Costo | Bajo por dato, alto por cobertura | Ya pagado por el Estado |
+| Legitimidad comunitaria | Alta | Variable |
+
+### Cada mundo solo, engaña distinto
+
+Dos historias espejo:
+
+-   La decisión **técnicamente impecable que fracasó** por ignorar la
+    percepción: la infraestructura correcta en el lugar que la
+    comunidad no usa ni cuida.
+-   La **demanda vecinal intensa que era territorialmente minoritaria**:
+    la voz fuerte de un sector pequeño leída como "la opinión de la
+    comuna".
+
+::: {.callout-tip title="Analogía: el doctor y el paciente"}
+El Big Data es el examen de laboratorio: preciso, comparable, pero no
+sabe cómo te sientes. El Small Data es el relato del paciente: rico y
+directo, pero subjetivo y parcial. Ningún buen médico diagnostica solo
+con uno de los dos. La evidencia territorial funciona igual.
+:::
+
+### ¿Qué significa "representativo" sin estadística?
+
+Una pregunta basta: **¿a quiénes les estamos creyendo que hablan por
+quiénes?** ¿Quién participó y quién no? ¿Qué territorios cubre el dato?
+¿Qué tan distinta es la población cubierta de la no cubierta?
+
+## El método del cruce: unidad territorial común
+
+La idea clave de toda la sesión: **para cruzar dos datos deben
+compartir unidad territorial** (la manzana, la zona censal, el barrio,
+la grilla). La IA hace la traducción entre escalas (puntos → conteos
+por zona; opiniones georreferenciadas → indicadores por barrio); tú
+eliges la unidad y validas.
+
+### El mapa de cuadrantes
+
+Demostración con el caso del curso en 3 mapas: (1) percepción de
+inseguridad por barrio (small data de 6.1), (2) luminarias e
+incivilidades registradas por barrio (big data institucional), (3) el
+cruce: cada barrio queda en un cuadrante **percepción alta/baja × dato
+duro alto/bajo**.
+
+| Cuadrante | Lectura | Acción |
+|----|----|----|
+| Percepción alta + dato duro alto | **Convergencia**: el problema es real y sentido | Prioridad máxima de inversión |
+| Percepción baja + dato duro alto | Problema físico no percibido | Invertir (y comunicar) |
+| Percepción alta + dato duro bajo | Problema perceptual | Comunicar / activar comunidad |
+| Sin dato comunitario | **Vacío**: territorio sin voz | Ir a terreno, levantar datos |
+
+::: {.callout-note appearance="simple" icon="false"}
+📷 **IMAGEN PENDIENTE**: La imagen central de la sesión: secuencia de 3
+mapas del mismo conjunto de barrios — (1) percepción de inseguridad,
+(2) dato institucional (luminarias/incivilidades), (3) mapa bivariado
+de cuadrantes con colores por convergencia/divergencia/vacío — junto a
+la matriz 2×2 de cuadrantes con sus lecturas de decisión. Si solo una
+imagen sobrevive del capítulo, es esta.
+:::
+
+::: callout-important
+**Los vacíos territoriales son hallazgo, no defecto.** Descubrir "de
+este sector no sabemos nada" es un resultado valioso que orienta el
+siguiente levantamiento participativo. El ciclo recomienza (conexión
+con 4.1–4.2).
+:::
+
+## Extrapolar sin mentir
+
+¿Qué hace la IA al "completar" territorios sin dato? Busca **similitud
+en características conocidas**: "si los barrios donde medimos se
+parecen en X al barrio Z, ¿qué podemos —y qué NO podemos— decir de Z?".
+
+Las dos condiciones de honestidad:
+
+1.  **Declarar siempre** qué es dato observado y qué es estimación.
+2.  **Nunca tomar una decisión irreversible** sobre un territorio donde
+    solo hay estimación.
+
+El "modelamiento territorial representativo" es una **brújula para
+decidir dónde levantar más datos**, no un sustituto de hacerlo.
+
+## Actividades
+
+### Taller: la ficha de evidencia de mi problemática (35 min)
+
+El docente modela el flujo completo con el caso ancla (Quilicura);
+luego cada equipo construye su síntesis con vibe coding y los
+materiales acumulados del curso:
+
+1.  > *"Agrega mis datos comunitarios [mapeo / opiniones / percepción
+    > del curso] por [unidad territorial elegida]."*
+2.  > *"Trae el dato institucional pertinente [población censal,
+    > equipamientos del Módulo 1, registros provistos] a la misma
+    > unidad."*
+3.  > *"Crea la tabla integrada y clasifica cada territorio en los
+    > cuadrantes convergencia / divergencia / vacío."*
+4.  > *"Genera el mapa síntesis con los cuadrantes y una tabla de los 5
+    > territorios prioritarios."*
+5.  **Redacción asistida de la ficha de evidencia territorial**
+    (plantilla del curso): problemática, datos usados, hallazgo
+    principal, territorios prioritarios, vacíos de información
+    declarados, y la pregunta que el equipo llevará al Módulo 3.
+
+::: {.callout-note appearance="simple" icon="false"}
+📷 **IMAGEN PENDIENTE**: Mockup de la "Ficha de evidencia territorial"
+de 2 páginas con sus secciones rotuladas: problemática, fuentes
+comunitarias e institucionales, método de cruce, mapa de cuadrantes en
+miniatura, tabla de territorios prioritarios, vacíos declarados y
+pregunta para el Módulo 3.
+:::
+
+La ficha es **insumo formal requerido en la sesión 7.1** (identificación
+y priorización de casos de uso): el trabajo de este taller tiene
+consecuencia directa en el programa.
+
+## Resumen
+
+-   Small Data comunitario: rico, situado, parcial. Big Data
+    institucional: exhaustivo, sistemático, ciego a la experiencia.
+    **Cada uno solo, engaña distinto; la evidencia potente nace del
+    cruce.**
+-   Para cruzar, ambos datos deben compartir **unidad territorial
+    común**; la IA traduce entre escalas, tú eliges la unidad y validas.
+-   El **mapa de cuadrantes** (convergencia / divergencia / vacío) es la
+    imagen que debe quedar: traduce todo el aparato técnico a lenguaje
+    de decisión pública.
+-   Los vacíos son hallazgo: "aquí no sabemos nada" orienta el próximo
+    levantamiento.
+-   Extrapolación honesta: declarar qué es observado y qué es estimado;
+    nunca decidir de forma irreversible sobre territorio solo estimado.
+-   Con esto se cierra el ciclo del dato ciudadano del Módulo 2:
+    **capturar (4.x/5.1) → procesar (5.2) → percibir (6.1) → integrar
+    (6.2)**. Del prompt al mapa, del mapa a la evidencia, de la
+    evidencia a la decisión: ya sabes hacer el recorrido completo.
+
+## Recursos
+
+-   **Kit del caso ancla (Quilicura)**: datasets comunitarios e
+    institucionales ya preparados por unidad territorial, para equipos
+    sin material propio completo.
+-   **Plantilla "Ficha de evidencia territorial" (2 páginas)**:
+    problemática, fuentes usadas, método de cruce, mapa de cuadrantes,
+    territorios prioritarios, vacíos declarados, pregunta para el
+    Módulo 3.
+-   **Prompt-book de integración**: agregación por unidad territorial,
+    cruce de tablas, clasificación en cuadrantes, mapa bivariado simple,
+    redacción de ficha.
+-   **Ficha conceptual "Small Data + Big Data" (1 página)**: tabla
+    comparativa, los tres resultados del cruce y las dos reglas de la
+    extrapolación honesta.
+-   **Notebook Colab "Cruce territorial"** con el flujo del taller
+    pre-armado.
+-   Capa censal y unidades territoriales (manzanas/zonas censales INE)
+    de las comunas participantes, heredadas de la sesión 3.2.
+-   Lectura opcional: artículo breve sobre integración de datos
+    ciudadanos e institucionales en planificación urbana.
