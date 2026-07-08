@@ -1,0 +1,1142 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "AcademIA HackLab: Santiago Región Sustentable",
+    "section": "",
+    "text": "Introducción",
+    "crumbs": [
+      "Introducción"
+    ]
+  },
+  {
+    "objectID": "index.html#el-programa",
+    "href": "index.html#el-programa",
+    "title": "AcademIA HackLab: Santiago Región Sustentable",
+    "section": "El programa",
+    "text": "El programa\nAcademIA HackLab: Santiago Región Sustentable es un programa de formación aplicada cuyo objetivo es acelerar y escalar la acción climática en la Región Metropolitana de Santiago, utilizando la Inteligencia Artificial (IA) y la ciencia ciudadana para la transformación sustentable de espacios públicos, barrios y comunidades.\nEl curso convoca a 80 participantes organizados en 20 equipos de 4 personas, provenientes principalmente del sector público (municipios, gobierno regional, servicios), además de organizaciones de la sociedad civil y el sector privado. Los equipos trabajan sobre problemáticas territoriales reales de sus propias comunas, culminando con la presentación de una hoja de ruta de aplicación de IA en sus organizaciones.\nEste documento reúne los contenidos de las siete sesiones a cargo de Denis Berroeta (UAI), que recorren el camino completo desde aprender a “hablar con la máquina” hasta producir evidencia territorial integrada para la toma de decisiones.",
+    "crumbs": [
+      "Introducción"
+    ]
+  },
+  {
+    "objectID": "index.html#docente",
+    "href": "index.html#docente",
+    "title": "AcademIA HackLab: Santiago Región Sustentable",
+    "section": "Docente",
+    "text": "Docente\nProfesor: Denis Berroeta\nContacto: denis.berroeta@uai.cl · https://www.linkedin.com/in/denis-berroeta/\nDenis Berroeta es magíster en Inteligencia Artificial por la Universidad Adolfo Ibáñez, máster en Data Science y actualmente cursa un PhD en Data Science. Se desempeña como Coordinador de Investigación del Centro de Inteligencia Territorial de la Universidad Adolfo Ibáñez.\nSu trayectoria se ha desarrollado en el modelamiento y análisis de datos espaciales, participando en proyectos de investigación públicos y privados vinculados al CIT. En ese rol ha diseñado, coordinado y gestionado la implementación de metodologías de análisis de datos territoriales para apoyar procesos de diagnóstico, planificación y toma de decisiones.\nCuenta además con experiencia docente en geoestadística, análisis criminal, análisis de imágenes satelitales para el monitoreo ambiental y ciencia de datos.",
+    "crumbs": [
+      "Introducción"
+    ]
+  },
+  {
+    "objectID": "index.html#para-quién-es-este-libro",
+    "href": "index.html#para-quién-es-este-libro",
+    "title": "AcademIA HackLab: Santiago Región Sustentable",
+    "section": "¿Para quién es este libro?",
+    "text": "¿Para quién es este libro?\nEl diseño de estos contenidos asume explícitamente el siguiente perfil de participante:\n\nProfesionales del mundo público: planificadores, gestores territoriales, encargados de medio ambiente, SECPLA, DIDECO, profesionales de participación ciudadana.\nSin conocimientos previos de programación: nunca han escrito código ni se les pedirá aprender a programar.\nSin formación en estadística ni en inteligencia artificial: los conceptos técnicos se introducen solo en la medida en que habilitan la toma de decisiones.\nCon profundo conocimiento del territorio y de sus problemáticas: este es su activo principal y el curso se construye sobre él.",
+    "crumbs": [
+      "Introducción"
+    ]
+  },
+  {
+    "objectID": "index.html#principio-pedagógico-central",
+    "href": "index.html#principio-pedagógico-central",
+    "title": "AcademIA HackLab: Santiago Región Sustentable",
+    "section": "Principio pedagógico central",
+    "text": "Principio pedagógico central\nLa IA se enseña aquí como instrumento, no como contenido. Tres reglas de diseño lo concretan:\n\nNadie programa “a mano”: todo el código del curso se genera mediante vibe coding (descripción en lenguaje natural → la IA genera el código → el participante evalúa el resultado). El participante aprende a dirigir, evaluar e iterar, no a escribir sintaxis.\nLos conceptos técnicos se enseñan como criterios de decisión, no como teoría. No se enseña qué es matemáticamente una proyección cartográfica, sino cómo darse cuenta de que dos capas no calzan y qué pedirle a la IA para arreglarlo.\nCada sesión termina con un artefacto utilizable (un mapa, una tabla, un análisis, un informe) que el equipo lleva a su proyecto comunal. El criterio de éxito no es “entendí el concepto” sino “produje algo con esto”.",
+    "crumbs": [
+      "Introducción"
+    ]
+  },
+  {
+    "objectID": "index.html#stack-de-herramientas",
+    "href": "index.html#stack-de-herramientas",
+    "title": "AcademIA HackLab: Santiago Región Sustentable",
+    "section": "Stack de herramientas",
+    "text": "Stack de herramientas\nCoherente con las alianzas del programa, las sesiones utilizan herramientas del ecosistema Google:\n\n\n\nHerramienta\nRol en el curso\nRequiere instalación\n\n\n\n\nAntigravity (IDE)\nEntorno principal de vibe coding, con selección de modelos Gemini Flash / Gemini Pro según complejidad de la tarea\nSí (guiada en la Sesión 2.2)\n\n\nGemini / Google AI Studio\nAsistente conversacional para prompting, exploración de ideas y análisis de texto\nNo (navegador)\n\n\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nAntes de la Sesión 2.2 cada participante debe contar con cuenta Google activa, créditos de Google Cloud asignados y Antigravity instalado o, en su defecto, acceso verificado a Google Colab. La guía de preparación se envía una semana antes.",
+    "crumbs": [
+      "Introducción"
+    ]
+  },
+  {
+    "objectID": "index.html#mapa-de-sesiones",
+    "href": "index.html#mapa-de-sesiones",
+    "title": "AcademIA HackLab: Santiago Región Sustentable",
+    "section": "Mapa de sesiones",
+    "text": "Mapa de sesiones\n\n\n\n\n\n\n\n\n\n\nMódulo\nSesión\nTítulo\nHoras\nModalidad\n\n\n\n\nM1: Conceptos & Casos\n2.2\nVibe Coding: programar describiendo en lenguaje natural\n1,5\nMeet\n\n\nM1: Conceptos & Casos\n3.1\nEcosistema Python para ciencia de datos espaciales\n1,5\nMeet\n\n\nM1: Conceptos & Casos\n3.2\nManipulación de geometrías y proyecciones\n1,5\nMeet\n\n\nM2: Modelos IA\n5.1\nSensores ciudadanos e IoT aplicados al urbanismo táctico\n1,5\nMeet\n\n\nM2: Modelos IA\n5.2\nProcesamiento de Lenguaje Natural (NLP) para la participación comunitaria\n1,5\nMeet\n\n\nM2: Modelos IA\n6.1\nAnálisis de sentimientos en redes sociales y consultas públicas\n1,5\nMeet\n\n\nM2: Modelos IA\n6.2\nIntegración de Small Data comunitario con Big Data institucional\n1,5\nMeet",
+    "crumbs": [
+      "Introducción"
+    ]
+  },
+  {
+    "objectID": "index.html#hilo-narrativo",
+    "href": "index.html#hilo-narrativo",
+    "title": "AcademIA HackLab: Santiago Región Sustentable",
+    "section": "Hilo narrativo",
+    "text": "Hilo narrativo\nLas siete sesiones forman una progresión única, pensada para que cada una se apoye en la anterior:\n2.2 Aprendo a \"hablar con la máquina\" (vibe coding)\n        ↓\n3.1 Uso ese lenguaje para obtener y explorar datos de MI territorio\n        ↓\n3.2 Aprendo a superponer capas y medir cosas sobre el mapa\n        ↓\n5.1 Descubro que también puedo capturar datos nuevos (sensores, ciudadanía)\n        ↓\n5.2 Proceso lo que la gente DICE (texto masivo de consultas públicas)\n        ↓\n6.1 Mido cómo se SIENTE la gente respecto de su entorno\n        ↓\n6.2 Junto todo: percepción ciudadana + datos institucionales = evidencia territorial",
+    "crumbs": [
+      "Introducción"
+    ]
+  },
+  {
+    "objectID": "index.html#cómo-usar-este-libro",
+    "href": "index.html#cómo-usar-este-libro",
+    "title": "AcademIA HackLab: Santiago Región Sustentable",
+    "section": "Cómo usar este libro",
+    "text": "Cómo usar este libro\nCada capítulo corresponde a una sesión y sigue la misma estructura:\n\nResumen ejecutivo: qué aprenderás y por qué importa, en dos minutos de lectura.\nContenidos de la sesión: el índice de lo que se cubre.\nDesarrollo de contenidos: los conceptos explicados con ejemplos municipales y analogías, sin tecnicismos innecesarios.\nActividades: los talleres y ejercicios prácticos, con los prompts listos para copiar y adaptar a tu comuna.\nResumen: las ideas clave que deben quedar.\nRecursos: materiales, plantillas, datasets y lecturas de apoyo.\n\nLos bloques de prompts aparecen siempre en formato citable, listos para pegar en Antigravity, Gemini o Google Colab. La invitación permanente es una sola: reemplaza la comuna de ejemplo por la tuya. Tu conocimiento del territorio es el insumo más valioso del curso; la IA solo lo amplifica.",
+    "crumbs": [
+      "Introducción"
+    ]
+  },
+  {
+    "objectID": "vibe_coding.html",
+    "href": "vibe_coding.html",
+    "title": "1  Vibe Coding",
+    "section": "",
+    "text": "Resumen ejecutivo\nSesión 2.2 · Día 2 · 1,5 horas · Modalidad Meet · Docentes: Denis Berroeta (UAI) + Pedro Mancillo\nHasta hace muy poco, convertir una idea de análisis territorial en una herramienta funcional exigía saber programar o contratar a alguien que supiera. Esa barrera se está moviendo. El vibe coding, entendido como generar código mediante descripciones en lenguaje natural (Karpathy 2025), permite que una persona que conoce profundamente un problema público pueda construir un primer prototipo conversando con una IA en español.\nLa sesión trabaja una idea central: el teclado dejó de ser la principal barrera. La nueva barrera es saber qué pedir, qué contexto entregar, cómo evaluar lo que aparece en pantalla y cuándo desconfiar. En el marco del nuevo ciclo de vida del desarrollo de software, esta transición se describe como un paso desde la sintaxis hacia la intención: la IA puede implementar, pero la persona sigue aportando intención, contexto, criterio y verificación (Osmani, Saboo, and Kartakis 2026).\nEsta sesión es la piedra angular metodológica de todo el curso: todas las sesiones posteriores (Python espacial, NLP, análisis de sentimientos e integración de datos) asumen que dominas el ciclo básico de trabajo: prompt → código → ejecución → evaluación → nuevo prompt. No se trata de aprender a programar por una vía alternativa; se trata de asumir un rol nuevo: el de director técnico de una IA que programa.\nAl finalizar la sesión serás capaz de:",
+    "crumbs": [
+      "Módulo 1: Conceptos & Casos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Vibe Coding</span>"
+    ]
+  },
+  {
+    "objectID": "vibe_coding.html#resumen-ejecutivo",
+    "href": "vibe_coding.html#resumen-ejecutivo",
+    "title": "1  Vibe Coding",
+    "section": "",
+    "text": "Explicar qué es el vibe coding y por qué cambia quién puede construir soluciones digitales en una organización pública.\nOperar el ciclo iterativo fundamental: prompt → código → ejecución → evaluación → nuevo prompt.\nUsar Antigravity (IDE), seleccionando entre Gemini Flash y Gemini Pro según la naturaleza de la tarea.\nRedactar prompts efectivos para generar código, incluyendo contexto, datos, resultado esperado y restricciones.\nEvaluar resultados sin leer el código línea a línea, usando casos conocidos, revisión visual y contraste con los datos.\nReconocer los límites del vibe coding: cuándo sirve para prototipar, cuándo requiere revisión y cuándo exige verificación sistemática.",
+    "crumbs": [
+      "Módulo 1: Conceptos & Casos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Vibe Coding</span>"
+    ]
+  },
+  {
+    "objectID": "vibe_coding.html#contenidos-de-la-sesión",
+    "href": "vibe_coding.html#contenidos-de-la-sesión",
+    "title": "1  Vibe Coding",
+    "section": "Contenidos de la sesión",
+    "text": "Contenidos de la sesión\nPresentación: Google Slides: 2.2 Vibe Coding\n\nEl cambio de paradigma: de “saber programar” a “saber pedir”.\nQué es un agente: percibir, planificar, actuar, observar e iterar.\nAntigravity y los modelos Gemini (Flash / Pro).\nEl ciclo iterativo: prompt → código → resultado → mejora.\nLa plantilla de prompt del curso: contexto, datos, resultado, restricciones.\nManejo de errores sin pánico.\nLímites, criterio, alucinaciones y verificación proporcional al riesgo.\nPrimer prompt del proyecto final del equipo.",
+    "crumbs": [
+      "Módulo 1: Conceptos & Casos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Vibe Coding</span>"
+    ]
+  },
+  {
+    "objectID": "vibe_coding.html#hoja-de-ruta-de-la-sesión",
+    "href": "vibe_coding.html#hoja-de-ruta-de-la-sesión",
+    "title": "1  Vibe Coding",
+    "section": "1.1 Hoja de ruta de la sesión",
+    "text": "1.1 Hoja de ruta de la sesión\n\n\n\n\n\n\n\n\n\nBloque\nDuración\nFoco\nProducto esperado\n\n\n\n\n1\n20 min\nCambio de paradigma\nEntender qué cambia cuando se programa desde la intención\n\n\n2\n25 min\nAntigravity y Gemini\nReproducir una demo simple con la propia comuna\n\n\n3\n30 min\nCiclo iterativo\nConstruir y refinar una visualización en 3 iteraciones\n\n\n4\n15 min\nLímites y proyecto\nEscribir el primer prompt del proyecto real\n\n\n\nLa regla de la sesión es simple: nadie necesita haber programado antes. Lo que sí se necesita es observar, describir, corregir y decidir.",
+    "crumbs": [
+      "Módulo 1: Conceptos & Casos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Vibe Coding</span>"
+    ]
+  },
+  {
+    "objectID": "vibe_coding.html#el-cambio-de-paradigma",
+    "href": "vibe_coding.html#el-cambio-de-paradigma",
+    "title": "1  Vibe Coding",
+    "section": "1.2 El cambio de paradigma",
+    "text": "1.2 El cambio de paradigma\n\n1.2.1 De “saber programar” a “saber pedir”\nDurante décadas, la programación funcionó como un idioma extranjero con traductores escasos y caros: si un municipio necesitaba un mapa interactivo de sus puntos limpios, debía encontrar a alguien que “hablara código”. El vibe coding invierte esa relación: ahora la máquina puede traducir una intención escrita en lenguaje natural a código ejecutable.\n\n\n\nAndrej Karpathy — cofundador de OpenAI, ex director de IA de Tesla, acuño el término de “Vibe Coding”\n\n\nEn febrero de 2025, Andrej Karpathy describió esta práctica como una forma de programar en la que la persona se “entrega a las vibras”, describe lo que quiere, acepta lo que la IA produce y, cuando algo falla, pega el error para que la IA lo corrija (Karpathy 2025). La frase se volvió popular porque nombró algo que ya estaba ocurriendo: muchas personas estaban dejando de escribir cada línea de código y empezando a dirigir sistemas que escriben código.\nEl cambio de fondo puede resumirse así:\n\n\n\n\n\n\n\nAntes\nAhora\n\n\n\n\nPara construir software había que escribir sintaxis exacta.\nSe describe qué se necesita; la IA propone cómo implementarlo.\n\n\nLa persona que conocía el problema dependía de alguien que conocía el código.\nLa persona experta en el problema puede producir un primer prototipo.\n\n\nCada idea esperaba presupuesto, licitación o apoyo técnico escaso.\nMuchas ideas pueden explorarse en minutos antes de invertir más recursos.\n\n\nEl valor estaba principalmente en escribir implementación.\nEl valor se desplaza hacia intención, contexto, evaluación y juicio.\n\n\n\n\n\n\n\n\n\nAnalogía: el alcalde y la plaza\n\n\n\nEl alcalde no construye la plaza con sus manos: define qué plaza necesita el barrio, revisa los avances y evalúa si quedó bien construida. El vibe coding te pone en ese rol frente al código: tú diriges, la IA ejecuta. Lo que aportas no es técnica de construcción, sino criterio sobre qué se necesita y si el resultado sirve.\n\n\n\n\n1.2.2 Principio territorial 1: la IA no conoce tu territorio\nLa IA puede conocer lenguajes de programación, bibliotecas y patrones de interfaz. Pero no conoce como tú la historia de una comuna, los puntos de conflicto, las restricciones políticas, las zonas donde un dato suele fallar o los nombres locales que no aparecen en los manuales.\nPor eso, un prompt sin territorio produce soluciones genéricas. El contexto local es el insumo que ningún modelo trae incorporado: dónde duele, qué se intentó antes, qué es viable y qué resultado sería útil para decidir. En términos del nuevo SDLC, esta es una forma práctica de ingeniería de contexto: darle a la IA la información que necesitaría una persona nueva que llega hoy al equipo para hacer bien el trabajo (Osmani, Saboo, and Kartakis 2026).\n\n\n\n\n\n\nIdea clave\n\n\n\nLa IA es el ejecutor. La persona experta en el territorio sigue siendo quien define el problema, entrega el contexto y valida si el resultado calza con la realidad.\n\n\n\n\n1.2.3 Una historia: el ajedrez centauro\nEn 1997, Deep Blue derrotó a Garry Kasparov. La lectura fácil habría sido: la máquina reemplazó al campeón. Pero Kasparov propuso otra forma de jugar: humano + máquina. En el llamado “ajedrez avanzado”, el valor no estaba solo en el cálculo de la computadora, sino en la persona capaz de dirigirlo.\n\n\n\n\n\nPosteriormente en 2005 — en un torneo abierto no ganan ni los grandes maestros ni las supercomputadoras solas … ganan dos aficionados con computadores corrientes y un MÉTODO superior para dirigirlos (Referencia).\nLa lección para esta sesión es directa: no gana necesariamente quien más programa, sino quien mejor dirige la capacidad de la máquina. En el trabajo público, eso significa traducir conocimiento territorial en instrucciones claras, observar el resultado y corregir el rumbo.",
+    "crumbs": [
+      "Módulo 1: Conceptos & Casos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Vibe Coding</span>"
+    ]
+  },
+  {
+    "objectID": "vibe_coding.html#qué-es-vibe-coding",
+    "href": "vibe_coding.html#qué-es-vibe-coding",
+    "title": "1  Vibe Coding",
+    "section": "1.3 ¿Qué es vibe coding?",
+    "text": "1.3 ¿Qué es vibe coding?\nPara este curso, vibe coding significa crear programas describiendo en lenguaje natural lo que se necesita: la IA escribe el código; la persona dirige, observa y evalúa.\nEl ciclo mínimo tiene cinco pasos:\n\nDescribo lo que necesito, en español.\nLa IA genera código y lo ejecuta.\nMiro el resultado: mapa, tabla, gráfico, página o error.\nPido ajustes describiendo la diferencia entre lo obtenido y lo esperado.\nRepito hasta que el resultado sirva para explorar, comunicar o decidir.\n\nEl ciclo no reemplaza el juicio profesional. Lo desplaza hacia los puntos donde más importa: especificar, evaluar y verificar.\n\n1.3.1 Del chat al agente\nUn chatbot responde y espera. Un agente trabaja en ciclo: recibe un objetivo, planifica pasos, actúa usando herramientas, observa el resultado y se corrige. El whitepaper The New SDLC with Vibe Coding describe este bucle como una secuencia de percepción, planificación, acción, observación e iteración (Osmani, Saboo, and Kartakis 2026).\nEsto explica algo que verás en Antigravity: a veces la IA parece “pensar”, probar, fallar y reintentar sola. No está rota; está iterando. Tu tarea no es leer cada línea que escribió, sino mirar si el resultado cumple el objetivo y si el camino es aceptable para el nivel de riesgo de la tarea.",
+    "crumbs": [
+      "Módulo 1: Conceptos & Casos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Vibe Coding</span>"
+    ]
+  },
+  {
+    "objectID": "vibe_coding.html#demostración-de-una-frase-a-una-herramienta",
+    "href": "vibe_coding.html#demostración-de-una-frase-a-una-herramienta",
+    "title": "1  Vibe Coding",
+    "section": "1.4 Demostración: de una frase a una herramienta",
+    "text": "1.4 Demostración: de una frase a una herramienta\nLa demostración central de la sesión es obtener una herramienta funcionando a partir de una frase en español:\n\n“Crea una página web que muestre un mapa de Santiago con un marcador en el punto limpio de La Florida y un círculo de 500 metros a su alrededor. Todo en español.”\n\n\n\n\nInstrucción y plan ejecutado por el Modelo de Genini Flash en Antogrivity\n\n\nEl objetivo de la demo no es mostrar un truco, sino hacer visible el cambio: una persona que conoce el problema territorial puede producir un primer artefacto funcional sin empezar por la sintaxis.\n\n\n\nResultado de la instrucción generando una aplicación que se puede visualizar en el navegador web.\n\n\nDespués de la demo, la pregunta importante no es “¿qué código escribió?” sino:\n\n¿El marcador quedó donde debía?\n¿El radio corresponde a lo solicitado?\n¿El texto está en español?\n¿El resultado sirve para explicar o decidir algo?\n¿Qué falta para que sea útil en mi comuna?",
+    "crumbs": [
+      "Módulo 1: Conceptos & Casos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Vibe Coding</span>"
+    ]
+  },
+  {
+    "objectID": "vibe_coding.html#la-herramienta-antigravity-y-los-modelos-gemini",
+    "href": "vibe_coding.html#la-herramienta-antigravity-y-los-modelos-gemini",
+    "title": "1  Vibe Coding",
+    "section": "1.5 La herramienta: Antigravity y los modelos Gemini",
+    "text": "1.5 La herramienta: Antigravity y los modelos Gemini\n\n1.5.1 Las tres zonas esenciales del IDE\nAntigravity es el entorno de trabajo (IDE) del curso. De toda su interfaz solo necesitas reconocer tres zonas:\n\nZona del prompt: donde escribes lo que necesitas. Es tu lugar de trabajo principal.\nZona del código: donde la IA escribe. Se mira de reojo; no se edita durante esta sesión.\nZona del resultado: donde corre la herramienta. Aquí se evalúa y se decide.\n\nEl resto de la interfaz se ignora deliberadamente: está pensada para programadores y tú no necesitas dominarla para lograr el objetivo de la sesión.\n\n\n\nZona del prompt y se selecciona el modelo\n\n\n\n\n\nZona del código, se visualiza solo la drescipción del código generado\n\n\n\n\n\nZona del resultado, alojado en una carpeta del directorio y desplegada en un servidor local.",
+    "crumbs": [
+      "Módulo 1: Conceptos & Casos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Vibe Coding</span>"
+    ]
+  },
+  {
+    "objectID": "vibe_coding.html#la-plantilla-recomendada",
+    "href": "vibe_coding.html#la-plantilla-recomendada",
+    "title": "1  Vibe Coding",
+    "section": "1.6 La plantilla recomendada",
+    "text": "1.6 La plantilla recomendada\nLa calidad de lo que la IA produce depende menos de palabras mágicas y más de la calidad del contexto que recibe. La pregunta correcta no es “¿cómo engaño a la IA para que lo haga bien?”, sino “¿qué necesitaría saber una persona nueva que llega hoy a mi equipo para hacer bien este trabajo?”.\nLa plantilla del curso tiene cuatro piezas:\n\nContexto: quién soy, dónde trabajo y para qué necesito la herramienta.\nDatos: qué información tengo, en qué formato y con qué columnas o campos.\nResultado esperado: qué quiero ver al final y cómo sabré que está bien.\nRestricciones: qué debe y no debe hacer la solución.\n\n\n\n\nLas cuatro piezas mínimas para un prompt que funcione\n\n\n\n1.6.1 Ejemplo de prompt completo\n\nTrabajo en la unidad de medio ambiente de un municipio y necesito priorizar retiros de microbasurales. Tengo una planilla con dirección, fecha del reclamo, tipo de residuo y comuna. Quiero un mapa donde cada reclamo aparezca como un punto coloreado por tipo, con un conteo por sector. Que funcione en el navegador, esté en español, no pida claves de acceso y no use datos personales.\n\n\n\n1.6.2 Prompt vago versus prompt con contexto\n\n\n\n\n\n\n\nPrompt vago\nPrompt con contexto\n\n\n\n\n“Haz un análisis de los reclamos de mi comuna.”\nContexto + datos + resultado + restricciones.\n\n\nLa IA inventa supuestos para rellenar lo que no dijiste.\nLa IA trabaja con tu problema y tus datos.\n\n\nEl resultado puede verse profesional, pero no servir para decidir.\nEl resultado es más específico, evaluable y accionable.",
+    "crumbs": [
+      "Módulo 1: Conceptos & Casos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Vibe Coding</span>"
+    ]
+  },
+  {
+    "objectID": "vibe_coding.html#iterar-es-el-método",
+    "href": "vibe_coding.html#iterar-es-el-método",
+    "title": "1  Vibe Coding",
+    "section": "1.7 Iterar es el método",
+    "text": "1.7 Iterar es el método\nEl primer resultado casi nunca es el final. Y eso no es un fracaso: es el método. Un primer resultado es un borrador de trabajo, como la primera versión de un informe.\nLa habilidad central es describir en español la diferencia entre lo que obtuviste y lo que querías:\n\n“El mapa está bien, pero los puntos son muy pequeños y no se distinguen los tipos de reclamo. Hazlos más grandes, agrega una leyenda con los colores y muestra un conteo por categoría.”\n\nTres iteraciones bien descritas valen más que un prompt supuestamente perfecto. Cada iteración enseña algo sobre el problema, los datos y las limitaciones de la herramienta.\n\n\n\n\n\n\nAnalogía: el peluquero\n\n\n\nNadie le dice al peluquero “aplica la técnica de degradado con tijera de entresacar”. Le dice “más corto a los lados, arriba déjalo como está”. Y si el resultado no convence, lo corrige mirando el espejo: “un poco más corto atrás”. Con la IA es igual: describes el cambio que ves necesario, no la técnica para lograrlo.",
+    "crumbs": [
+      "Módulo 1: Conceptos & Casos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Vibe Coding</span>"
+    ]
+  },
+  {
+    "objectID": "vibe_coding.html#cuando-algo-falla",
+    "href": "vibe_coding.html#cuando-algo-falla",
+    "title": "1  Vibe Coding",
+    "section": "1.8 Cuando algo falla",
+    "text": "1.8 Cuando algo falla\nCuando algo falla, la pantalla puede mostrar texto rojo o un mensaje que parece escrito en otro idioma. La respuesta del curso es un reflejo simple:\n\nCopia el mensaje de error completo.\nPégaselo a la IA.\nPide una explicación simple y una corrección.\nMira nuevamente el resultado.\n\nPrompt de reparación:\n\n“Apareció este error: [pegar mensaje completo]. Explícame en simple qué pasó y corrígelo sin cambiar el objetivo de la herramienta.”\n\nEl error deja de ser un muro y pasa a ser un mensaje más de la conversación. Aun así, no todos los errores son visibles: algunos resultados se ven correctos y están mal calculados. Por eso la siguiente sección es tan importante.",
+    "crumbs": [
+      "Módulo 1: Conceptos & Casos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Vibe Coding</span>"
+    ]
+  },
+  {
+    "objectID": "vibe_coding.html#límites-y-criterio",
+    "href": "vibe_coding.html#límites-y-criterio",
+    "title": "1  Vibe Coding",
+    "section": "1.9 Límites y criterio",
+    "text": "1.9 Límites y criterio\n\n1.9.1 El problema del 80%\nLa IA puede producir rápido el 80% de una solución: una interfaz que se ve bien, un mapa que carga, una tabla ordenada, un gráfico convincente. El 20% restante, es decir, casos raros, datos sucios, supuestos invisibles, restricciones locales y decisiones de uso, es exactamente donde entra el criterio profesional.\nEl whitepaper de SDLC lo plantea como una diferencia entre vibe coding y prácticas más estructuradas: para un prototipo puede bastar con que algo parezca funcionar; para software o análisis en los que una organización depende del resultado, se necesitan pruebas, revisión, restricciones y supervisión humana (Osmani, Saboo, and Kartakis 2026).\n\n\n1.9.2 No todo se “vibra”: espectro de confianza\n\n\n\n\n\n\n\n\nUso\nNivel de confianza aceptable\nVerificación mínima\n\n\n\n\nExplorar / prototipar\nVibe coding rápido: “parece que funciona” puede bastar.\nRevisión visual y sentido común territorial.\n\n\nAnalizar / informar\nRevisión selectiva: no basta con que se vea bien.\nValidar cifras, muestras y supuestos.\n\n\nDecidir / publicar\nVerificación sistemática.\nContrastar datos, revisar metodología y documentar fuentes.\n\n\n\nLa pregunta clave no es “¿usé IA?”, sino “¿cómo verifiqué lo que produjo?”.\n\n\n1.9.3 Tres reglas de verificación para no programadores\n\nPrueba siempre con un caso cuyo resultado ya conoces. Si sabes que tu comuna tiene cerca de 14 puntos limpios y el mapa muestra 3, algo anda mal.\nDesconfía de cifras y nombres que no salieron de tus datos. Si la IA cita totales, lugares o fuentes que no le entregaste, pídele el origen o descártalo.\nNunca uses datos personales o sensibles reales en estos ejercicios. Nombres, RUT, teléfonos, direcciones exactas y casos identificables se quitan antes de procesar. Esta dimensión se profundiza en el Módulo 3.\n\n\n\n1.9.4 Alucinaciones: plausibilidad no es verdad\nUna alucinación ocurre cuando la IA completa vacíos con información plausible pero falsa. El riesgo es mayor cuando el resultado “suena” bien o se ve profesional. En gestión pública, una cifra inventada en una minuta, un nombre de programa inexistente o una ubicación mal asignada pueden producir decisiones equivocadas.\nLa postura profesional es usar la IA para lo que hace bien: proponer, generar, ordenar y prototipar. La atención humana se reserva para lo que hace peor: contexto local, casos límite, verificación y responsabilidad.",
+    "crumbs": [
+      "Módulo 1: Conceptos & Casos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Vibe Coding</span>"
+    ]
+  },
+  {
+    "objectID": "vibe_coding.html#actividades",
+    "href": "vibe_coding.html#actividades",
+    "title": "1  Vibe Coding",
+    "section": "1.10 Actividades",
+    "text": "1.10 Actividades\n\n1.10.1 Ejercicio 1: tu comuna, tu primer prompt\nAdapta la demostración a tu territorio:\n\n“Crea una página web que muestre un mapa con un marcador en [un lugar importante de TU comuna] y un círculo de [500] metros a su alrededor. Todo en español.”\n\nCuando funcione, realiza una iteración: cambia el radio, el lugar, el color del círculo o el texto visible. Una mejora concreta cuenta como éxito.\nVerifica:\n\n¿El marcador quedó realmente sobre el lugar correcto?\n¿El círculo tiene sentido para la escala del barrio?\n¿El mapa está en una zona reconocible para ti?\n¿Qué corregirías antes de mostrarlo a otra persona?\n\n\n\n1.10.2 Ejercicio 2: de la planilla al mapa, en 3 iteraciones\nUsa el dataset del curso de puntos de interés comunales de la Región Metropolitana (plazas, consultorios, sedes vecinales y puntos limpios). Trabaja en equipos y produce una visualización refinada en al menos tres iteraciones:\n\nIteración 1: carga la planilla y muestra los puntos en un mapa.\nIteración 2: mejora algo sustantivo: colores por tipo, tamaños, filtros por comuna o etiquetas.\nIteración 3: hazlo presentable: título, leyenda en español, conteo por categoría y una lectura clara.\n\nUsa la plantilla completa: contexto, datos, resultado y restricciones. Guarda los prompts que funcionaron. Son capital de trabajo para la sesión 3.1.\n\n\n1.10.3 Cierre: el primer prompt de tu proyecto\nCada equipo escribe, aunque todavía no lo ejecute, el primer prompt de su problemática real:\n\nContexto: quiénes somos y qué problema territorial queremos abordar.\nDatos: qué tenemos hoy, aunque sea una planilla incompleta o desordenada.\nResultado: qué querríamos ver en pantalla.\nRestricciones: qué no debe pasar, qué datos no se pueden usar y qué supuestos deben respetarse.\n\nEse prompt es la semilla de la hoja de ruta final. En la sesión 3.1 se retomará con datos reales del territorio.",
+    "crumbs": [
+      "Módulo 1: Conceptos & Casos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Vibe Coding</span>"
+    ]
+  },
+  {
+    "objectID": "vibe_coding.html#resumen",
+    "href": "vibe_coding.html#resumen",
+    "title": "1  Vibe Coding",
+    "section": "1.11 Resumen",
+    "text": "1.11 Resumen\n\nEl vibe coding cambia la pregunta de “¿quién sabe programar?” a “¿quién sabe qué se necesita?”.\nLa IA no conoce tu territorio: tu contexto local es el insumo más importante.\nEl ciclo de trabajo permanente es prompt → código → ejecución → evaluación → nuevo prompt.\nUn buen prompt incluye contexto, datos, resultado esperado y restricciones.\nEmpieza con Gemini Flash; sube a Pro cuando el problema tenga muchas partes o requiera razonamiento más cuidadoso.\nAnte un error: copiar, pegar, pedir explicación y corrección.\nNo todo se “vibra”: prototipar, informar y decidir requieren niveles distintos de verificación.\nGenerar código ya está resuelto. Dirigir, evaluar y decidir es el nuevo oficio.",
+    "crumbs": [
+      "Módulo 1: Conceptos & Casos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Vibe Coding</span>"
+    ]
+  },
+  {
+    "objectID": "vibe_coding.html#recursos",
+    "href": "vibe_coding.html#recursos",
+    "title": "1  Vibe Coding",
+    "section": "1.12 Recursos",
+    "text": "1.12 Recursos\n\nGuía de preparación previa: creación de cuenta Google, activación de créditos, instalación de Antigravity y prueba de acceso.\nPlantilla de prompt del curso: Contexto / Datos / Resultado esperado / Restricciones, con ejemplos territoriales.\nLectura opcional: The New SDLC with Vibe Coding, para profundizar en el paso desde vibe coding hacia ingeniería agéntica, verificación, contexto y nuevos roles humanos en el desarrollo de software (Osmani, Saboo, and Kartakis 2026).\n\n\n\n\n\nKarpathy, Andrej. 2025. “Vibe Coding.” Publicación en X (Twitter). https://x.com/karpathy/status/1886192184808149383.\n\n\nOsmani, Addy, Shubham Saboo, and Sokratis Kartakis. 2026. “The New SDLC with Vibe Coding: From Ad-Hoc Prompting to Agentic Engineering.” Google.",
+    "crumbs": [
+      "Módulo 1: Conceptos & Casos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Vibe Coding</span>"
+    ]
+  },
+  {
+    "objectID": "recursos_complementarios.html",
+    "href": "recursos_complementarios.html",
+    "title": "Recursos Complementarios",
+    "section": "",
+    "text": "Criterios de selección\nEl curso usa Gemini y Antigravity como herramientas centrales, pero el ecosistema de IA crece rápido y conviene ordenar el mapa completo. Esta parte del libro no está organizada por marcas, sino por decisiones de uso: qué modelo o asistente elegir, en qué entorno trabajar, qué herramienta complementaria usar y qué conceptos conviene entender antes de instalar conectores o automatizaciones.\nCada herramienta incluida cumple al menos uno de estos criterios, pensados para la realidad de municipios y servicios públicos con recursos limitados:\nNinguna reemplaza a las herramientas del curso; todas las extienden para tareas específicas donde brillan de forma particular.",
+    "crumbs": [
+      "Recursos Complementarios"
+    ]
+  },
+  {
+    "objectID": "recursos_complementarios.html#criterios-de-selección",
+    "href": "recursos_complementarios.html#criterios-de-selección",
+    "title": "Recursos Complementarios",
+    "section": "",
+    "text": "Acceso libre: tiene un plan gratuito utilizable en trabajo real, no solo de prueba.\nOpen source: el código es abierto, se puede instalar en infraestructura propia y no depende de la voluntad comercial de un proveedor.\nSoberanía de datos posible: existe un camino para usarla sin enviar información sensible a servidores de terceros.",
+    "crumbs": [
+      "Recursos Complementarios"
+    ]
+  },
+  {
+    "objectID": "recursos_complementarios.html#mapa-de-esta-parte",
+    "href": "recursos_complementarios.html#mapa-de-esta-parte",
+    "title": "Recursos Complementarios",
+    "section": "Mapa de esta parte",
+    "text": "Mapa de esta parte\n\nModelos\n\n\n\nCapítulo\nHerramienta\nTipo\nCosto base\n\n\n\n\nGoogle\nGemini, Google AI Studio, imágenes con IA, Gemini CLI, Google Colab\nAsistente, modelos, laboratorio, imágenes y notebooks del ecosistema Google\nGratuito (CLI open source)\n\n\nChatGPT\nChatGPT, modelos OpenAI, Codex\nAsistente generalista, análisis de datos y entrada al ecosistema OpenAI\nGratuito con límites\n\n\nClaude\nClaude, modelos Claude Haiku / Claude Sonnet / Claude Opus, API\nModelos para documentos largos y redacción formal\nGratuito con límites\n\n\nLatamGPT\nLatamGPT (CENIA)\nModelo abierto regional\nOpen source\n\n\n\n\n\nIDEs\n\n\n\nCapítulo\nHerramienta\nTipo\nCosto base\n\n\n\n\nMapa IDEs\nMapa comparativo\nCómo elegir superficie: escritorio, CLI, IDE, web\nGratuito con límites / plan según proveedor\n\n\nAntigravity\nAntigravity Desktop, CLI y agentes\nIDE agéntico centrado en proyectos del curso\nGratuito con límites / verificar plan vigente\n\n\nCodex\nCodex App, CLI, IDE extension, Web\nAgente de código de OpenAI para repositorios y automatización\nPlan ChatGPT o API\n\n\nClaude\nClaude Desktop, Claude Code CLI, IDEs, Web\nEntorno documental y agente de código con MCP\nApp gratuita; Code requiere plan/API\n\n\n\n\n\nOtros Recursos\n\n\n\nCapítulo\nHerramienta\nTipo\nCosto base\n\n\n\n\nNotebookLM\nNotebookLM\nAnálisis de documentos con trazabilidad\nGratuito\n\n\nPerplexity\nPerplexity\nInvestigación con fuentes\nGratuito con límites\n\n\nProductividad\nJulius AI, Gamma, Napkin, Whisper, Ollama, LM Studio\nDatos, presentaciones, diagramas, transcripción y modelos locales\nGratuito / open source\n\n\nHermes Agent\nHermes Agent\nAgente autoalojado para automatización de flujos internos\nOpen source\n\n\nOpenClaw\nOpenClaw\nAsistente personal autoalojado\nOpen source\n\n\n\n\n\nGlosario\n\n\n\n\n\n\n\n\nCapítulo\nContenido\nPara qué sirve\n\n\n\n\nGlosario\nModelo, asistente, agente, IDE, CLI, API, skill, MCP, plugin, marketplace, app, modelo local, pesos abiertos, nube, soberanía de datos\nEvitar que los conceptos técnicos aparezcan como capítulos sueltos o como nombres de herramientas",
+    "crumbs": [
+      "Recursos Complementarios"
+    ]
+  },
+  {
+    "objectID": "recursos_complementarios.html#cómo-elegir-árbol-de-decisión-rápido",
+    "href": "recursos_complementarios.html#cómo-elegir-árbol-de-decisión-rápido",
+    "title": "Recursos Complementarios",
+    "section": "Cómo elegir: árbol de decisión rápido",
+    "text": "Cómo elegir: árbol de decisión rápido\nAnte una tarea nueva, usa esta lógica antes de abrir la primera herramienta que se te ocurra:\n¿Necesitas producir código, un mapa o modificar archivos de proyecto?\n    → Antigravity + Gemini (herramientas del curso)\n    → Codex si trabajas con proyectos de código desde terminal o IDE\n    → Claude Desktop si necesitas conversar con documentos y contexto local\n\n¿Tienes documentos largos que analizar o sistematizar?\n    → NotebookLM si son múltiples fuentes y necesitas trazabilidad\n    → Claude si es un solo documento largo o redacción formal\n\n¿Tienes una planilla de datos para explorar?\n    → Julius AI (o el propio Gemini sobre Google Sheets)\n\n¿Necesitas una presentación o un diagrama rápido?\n    → Gamma (presentaciones) / Napkin (diagramas)\n\n¿Necesitas investigar con fuentes verificables?\n    → Perplexity\n\n¿Necesitas transcribir audios de talleres o reuniones?\n    → Whisper (open source, local)\n\n¿La información es sensible y NO puede salir de tu institución?\n    → Modelos abiertos en hardware propio vía Ollama/LM Studio\n    → LatamGPT si además importa el contexto latinoamericano\n\n¿Quieres un asistente permanente en WhatsApp/Telegram institucional?\n    → OpenClaw (autoalojado; requiere perfil técnico y resguardos)\n\n¿Quieres automatizar un procedimiento interno repetitivo con un agente autoalojado?\n    → Hermes Agent (similar a OpenClaw, pero orientado a flujos y memoria de proceso)\n\n¿Quieres conectar un asistente a datos, APIs o herramientas internas?\n    → MCP si necesitas acceso controlado a sistemas externos\n    → Revisa el Glosario: MCP, skill, plugin, marketplace y app\n\n¿Es una tarea general de texto, ideas o redacción?\n    → Claude, ChatGPT o Gemini según preferencia\n    → LatamGPT si el contexto chileno/latinoamericano es clave\n\n\n\n\n\n\n📷 IMAGEN PENDIENTE: Versión gráfica del árbol de decisión como diagrama de flujo, con los logos de las herramientas en las hojas y colores que distingan las tres familias prácticas: Modelos, IDEs y Otros Recursos.",
+    "crumbs": [
+      "Recursos Complementarios"
+    ]
+  },
+  {
+    "objectID": "recursos_complementarios.html#principios-de-uso-responsable",
+    "href": "recursos_complementarios.html#principios-de-uso-responsable",
+    "title": "Recursos Complementarios",
+    "section": "Principios de uso responsable",
+    "text": "Principios de uso responsable\nIndependientemente de la herramienta:\n\nNunca subas datos personales reales (RUT, nombres, teléfonos, direcciones de personas) a ninguna herramienta de IA en la nube, salvo acuerdo de datos institucional y anonimización previa. Si el dato no puede salir, usa modelos locales vía Ollama / LM Studio o modelos abiertos en infraestructura propia (LatamGPT cuando esté disponible para ese despliegue).\nDeclara el uso de IA en cualquier producto institucional: si un informe fue asistido por IA, se indica en la metodología. Transparencia como política por defecto.\nVerifica siempre lo que la IA produce antes de firmarlo o presentarlo. Las alucinaciones no distinguen entre herramientas.\nLas herramientas gratuitas cambian: límites, precios y funcionalidades evolucionan rápido. Verifica el estado actual antes de construir flujos de trabajo críticos sobre ellas.\nPrefiere lo open source para lo permanente: un flujo institucional crítico montado sobre una herramienta cerrada gratuita puede desaparecer con un cambio de política comercial; el software abierto se puede conservar, auditar y migrar.\n\n\n\n\n\n\n\nNota sobre datos y soberanía\n\n\n\nLa mayoría de las herramientas en la nube listadas son de empresas privadas con servidores fuera de Chile. Para información sensible o confidencial, consulta con tu encargado de seguridad de la información antes de usarlas. Criterio general: lo que no publicarías en un comunicado oficial, no lo subas a una IA de uso libre — o procésalo con un modelo local en hardware institucional.",
+    "crumbs": [
+      "Recursos Complementarios"
+    ]
+  },
+  {
+    "objectID": "rc_google.html",
+    "href": "rc_google.html",
+    "title": "2  Google",
+    "section": "",
+    "text": "Resumen ejecutivo\nGoogle ofrece uno de los ecosistemas de IA gratuitos más completos disponibles hoy para un funcionario público: un asistente conversacional de primera línea (Gemini), un laboratorio para usar los modelos sin restricciones de interfaz (Google AI Studio), generación y edición de imágenes con IA, una herramienta de línea de comandos open source con cuota gratuita generosa (Gemini CLI) y un entorno para ejecutar análisis sin instalar nada (Google Colab). Es además el ecosistema central del curso: los créditos de Google Cloud del programa amplían todo lo anterior. Modelos de Google - Visitado 07-07-2026",
+    "crumbs": [
+      "Modelos",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Google</span>"
+    ]
+  },
+  {
+    "objectID": "rc_google.html#gemini-app-y-web",
+    "href": "rc_google.html#gemini-app-y-web",
+    "title": "2  Google",
+    "section": "2.1 Gemini (app y web)",
+    "text": "2.1 Gemini (app y web)\n\n\n\n\n\nAcceso: Gemini · Gratuito con cuenta Google; nivel de pago para uso intensivo.\nEl asistente conversacional de Google. Los dos modelos que importan:\n\n\n\nModelo\nCuándo usarlo\n\n\n\n\nGemini Flash\nTareas acotadas, respuestas rápidas, iteración ágil: la mayoría de los casos\n\n\nGemini Pro\nRazonamiento complejo, documentos extensos, análisis con muchas condiciones\n\n\n\nSu ventaja diferencial para el sector público chileno es la integración nativa con Google Workspace: lee archivos de Drive, analiza Sheets, resume Docs y redacta en Gmail directamente. Si tu municipio ya trabaja sobre Google Workspace, Gemini opera dentro de los documentos que ya tienes, sin exportar nada.\n\n\n\n\n\n\nEjemplos de uso municipal\n\n\n\n\n“Lee esta planilla de reclamos de Drive y dime qué tipo de reclamo creció más en los últimos tres meses, por sector.”\n“Resume este informe técnico de 40 páginas en una minuta de una página para la alcaldesa, en lenguaje no técnico.”\n“A partir de estas notas de la reunión de la mesa barrial, redacta el acta formal con acuerdos y responsables.”",
+    "crumbs": [
+      "Modelos",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Google</span>"
+    ]
+  },
+  {
+    "objectID": "rc_google.html#google-ai-studio",
+    "href": "rc_google.html#google-ai-studio",
+    "title": "2  Google",
+    "section": "2.2 Google AI Studio",
+    "text": "2.2 Google AI Studio\nAcceso: Google AI Studio · Gratuito.\nLa puerta “de laboratorio” a los mismos modelos: permite elegir el modelo exacto, ajustar parámetros, trabajar con instrucciones de sistema y procesar volúmenes mayores de texto que la app. Es el lugar para convertir un prompt que funciona en una plantilla institucional reutilizable: defines una vez la instrucción (“clasifica respuestas ciudadanas en estas categorías…”) y la reutilizas con cada nuevo corpus.\n\n\n\n\n\n\n📷 IMAGEN PENDIENTE: Captura de Google AI Studio con una conversación de análisis de documento municipal, destacando la barra lateral de selección de modelo (Flash / Pro) y el campo de instrucciones de sistema.",
+    "crumbs": [
+      "Modelos",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Google</span>"
+    ]
+  },
+  {
+    "objectID": "rc_google.html#generación-y-edición-de-imágenes-con-ia",
+    "href": "rc_google.html#generación-y-edición-de-imágenes-con-ia",
+    "title": "2  Google",
+    "section": "2.3 Generación y edición de imágenes con IA",
+    "text": "2.3 Generación y edición de imágenes con IA\nAcceso: dentro de la app Gemini y de AI Studio · Gratuito con límites.\nGemini incluye modelos de generación y edición de imágenes. Más allá de la curiosidad, tienen usos institucionales concretos: editar y generar imágenes con instrucciones en español, manteniendo consistencia entre versiones.\n\n\n\n\n\n\nEjemplos de uso municipal\n\n\n\n\nVisualizar intervenciones antes de ejecutarlas: subir la foto de una esquina y pedir “muestra esta misma esquina con un paso peatonal pintado, maceteros y una banca” — el render barato del urbanismo táctico, para conversar con vecinos sobre algo visible.\nMaterial gráfico de difusión: afiches e ilustraciones para convocatorias de talleres participativos sin contratar diseño.\nLimpieza de material fotográfico: quitar elementos que distraen de una foto de terreno para una presentación.\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nUna imagen generada por IA en comunicación institucional se declara como tal. Y nunca generes imágenes de personas reales identificables.",
+    "crumbs": [
+      "Modelos",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Google</span>"
+    ]
+  },
+  {
+    "objectID": "rc_google.html#gemini-cli-open-source-en-el-terminal",
+    "href": "rc_google.html#gemini-cli-open-source-en-el-terminal",
+    "title": "2  Google",
+    "section": "2.4 Gemini CLI: open source en el terminal",
+    "text": "2.4 Gemini CLI: open source en el terminal\nAcceso: Gemini CLI · Open source (Apache 2.0) · Cuota gratuita generosa con cuenta Google personal.\nHerramienta de línea de comandos: la misma lógica de vibe coding del curso, pero desde el terminal del computador. Para el perfil del curso es material avanzado, pero importa por tres razones:\n\nEs open source: el equipo informático municipal puede auditarla, fijar la versión e integrarla a procesos internos.\nSu cuota gratuita permite automatizar tareas repetitivas (clasificar archivos, generar resúmenes periódicos) sin costo.\nTrabaja sobre carpetas locales: puede leer y procesar los archivos de un proyecto completo de una vez.\n\n\n\n\n\n\n\nEjemplo de uso (perfil técnico municipal)\n\n\n\n\n“Lee todos los PDF de la carpeta actas_2025/ y genera una tabla CSV con fecha, organización solicitante y materia de cada acta.”\n\nUna tarea de días de digitación, en minutos, dentro del computador institucional.",
+    "crumbs": [
+      "Modelos",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Google</span>"
+    ]
+  },
+  {
+    "objectID": "rc_google.html#google-colab",
+    "href": "rc_google.html#google-colab",
+    "title": "2  Google",
+    "section": "2.5 Google Colab",
+    "text": "2.5 Google Colab\nAcceso: Google Colab · Gratuito.\nEl entorno donde corren los notebooks del curso: Python en el navegador, sin instalar nada. Fuera del curso, es la vía de costo cero para que un equipo municipal ejecute y conserve los análisis espaciales del Módulo 1 como documentos reutilizables y compartibles.",
+    "crumbs": [
+      "Modelos",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Google</span>"
+    ]
+  },
+  {
+    "objectID": "rc_google.html#ficha-rápida",
+    "href": "rc_google.html#ficha-rápida",
+    "title": "2  Google",
+    "section": "2.6 Ficha rápida",
+    "text": "2.6 Ficha rápida\n\n\n\n\n\n\n\n\nHerramienta\nPara qué\nCosto\n\n\n\n\nGemini (app)\nAsistente general + Workspace\nGratuito\n\n\nAI Studio\nPlantillas y procesamiento avanzado\nGratuito\n\n\nImágenes con IA\nGeneración/edición de imágenes\nGratuito con límites\n\n\nGemini CLI\nAutomatización en terminal\nGratuito, open source\n\n\nColab\nNotebooks Python sin instalación\nGratuito",
+    "crumbs": [
+      "Modelos",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Google</span>"
+    ]
+  },
+  {
+    "objectID": "rc_google.html#limitaciones",
+    "href": "rc_google.html#limitaciones",
+    "title": "2  Google",
+    "section": "2.7 Limitaciones",
+    "text": "2.7 Limitaciones\n\nLos límites del nivel gratuito cambian con frecuencia; verificar antes de planificar un flujo crítico.\nDatos enviados a la nube de Google: aplicar los principios de uso responsable de esta parte (anonimizar; lo sensible no sale de la institución).\nLa integración Workspace requiere que la institución use Google Workspace; con Microsoft 365 el equivalente es Copilot (no cubierto aquí).",
+    "crumbs": [
+      "Modelos",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Google</span>"
+    ]
+  },
+  {
+    "objectID": "rc_chatgpt.html",
+    "href": "rc_chatgpt.html",
+    "title": "3  ChatGPT",
+    "section": "",
+    "text": "Resumen ejecutivo\nChatGPT (OpenAI) es el asistente más conocido globalmente, y esa popularidad es en sí una ventaja: la comunidad de usuarios en español es enorme y casi cualquier duda de uso ya tiene tutorial. Su fortaleza es la amplitud: maneja bien desde la redacción hasta el análisis de datos y la lectura de imágenes. Para programar desde el terminal, OpenAI ofrece Codex CLI, open source. Para profesionales que recién comienzan con IA, ChatGPT es una buena puerta de entrada.\nAcceso: ChatGPT · Gratuito con límites; plan Plus para uso intensivo.",
+    "crumbs": [
+      "Modelos",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>ChatGPT</span>"
+    ]
+  },
+  {
+    "objectID": "rc_chatgpt.html#chatgpt-app",
+    "href": "rc_chatgpt.html#chatgpt-app",
+    "title": "3  ChatGPT",
+    "section": "3.1 ChatGPT (app)",
+    "text": "3.1 ChatGPT (app)\nQué aporta el nivel gratuito al trabajo municipal:\n\nMultimodal: lee imágenes, PDFs y tablas además de texto.\nAnálisis de datos integrado: subes una planilla y genera tablas, gráficos y estadísticas conversando.\nBúsqueda web: puede consultar información actual con enlaces.\nProyectos y GPTs: espacios con instrucciones persistentes, reutilizables por el equipo.\n\n\n\n\n\n\n\nEjemplos de uso municipal\n\n\n\n\n“Dame 5 ideas de dinámicas para un taller de diagnóstico vecinal sobre espacio público, para 30 personas y 2 horas.”\nSubir la foto de una plaza deteriorada: “Describe el estado de este espacio y sugiere mejoras de bajo costo desde el diseño urbano.”\n“Genera la primera versión de las bases de un fondo concursable barrial: requisitos, criterios de evaluación y formato de postulación.”\nSubir el CSV de reclamos: “Grafica la evolución mensual por tipo de reclamo y dime qué patrón ves.”",
+    "crumbs": [
+      "Modelos",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>ChatGPT</span>"
+    ]
+  },
+  {
+    "objectID": "rc_chatgpt.html#codex-el-agente-de-código",
+    "href": "rc_chatgpt.html#codex-el-agente-de-código",
+    "title": "3  ChatGPT",
+    "section": "3.2 Codex: el agente de código",
+    "text": "3.2 Codex: el agente de código\nAcceso: Codex CLI · CLI open source (Apache 2.0); requiere plan ChatGPT o API.\nCodex es el agente de programación de OpenAI, en dos formas: integrado en ChatGPT (delegarle tareas de código desde el navegador) y Codex CLI en el terminal, operando sobre carpetas locales. El código del CLI es abierto: auditable e instalable en infraestructura propia — aunque el modelo que lo impulsa sigue siendo de pago.\nPara el perfil técnico municipal cumple el mismo rol que Gemini CLI y Claude Code: automatizar procesamiento de archivos, generar scripts de análisis, mantener los productos del Módulo 1.\n\n\n\n\n\n\nEjemplo de uso (perfil técnico municipal)\n\n\n\n\n“Toma estos 12 Excel de ejecución presupuestaria (uno por mes), consolídalos en una sola tabla, normaliza los nombres de programas y genera un gráfico de ejecución acumulada por dirección.”",
+    "crumbs": [
+      "Modelos",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>ChatGPT</span>"
+    ]
+  },
+  {
+    "objectID": "rc_chatgpt.html#comparado-con-sus-pares",
+    "href": "rc_chatgpt.html#comparado-con-sus-pares",
+    "title": "3  ChatGPT",
+    "section": "3.3 Comparado con sus pares",
+    "text": "3.3 Comparado con sus pares\n\n\n\n\n\n\n\n\n\n\nChatGPT\nGemini\nClaude\n\n\n\n\nPuerta de entrada para principiantes\n✓✓ (comunidad enorme)\n✓✓ (si ya usas Google)\n✓\n\n\nIntegración con ofimática institucional\n—\n✓✓ (Workspace)\n—\n\n\nDocumentos muy largos\n✓\n✓✓\n✓✓\n\n\nCLI con nivel gratuito\n— (Codex requiere plan)\n✓✓ (Gemini CLI)\n—\n\n\nCLI open source\n✓✓\n✓✓\n—\n\n\n\nLa recomendación del curso se mantiene: las herramientas centrales son las de Google (créditos del programa incluidos); ChatGPT es el complemento generalista más accesible para empezar y para tareas con imágenes o planillas sueltas.",
+    "crumbs": [
+      "Modelos",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>ChatGPT</span>"
+    ]
+  },
+  {
+    "objectID": "rc_chatgpt.html#ficha-rápida",
+    "href": "rc_chatgpt.html#ficha-rápida",
+    "title": "3  ChatGPT",
+    "section": "3.4 Ficha rápida",
+    "text": "3.4 Ficha rápida\n\n\n\n\n\n\n\nAspecto\nDetalle\n\n\n\n\nCosto\nGratuito con límites; Plus de pago; Codex requiere plan o API\n\n\nInstalación\nNinguna para la app; Codex CLI open source para perfil técnico\n\n\nFortaleza\nAmplitud, multimodal, análisis de planillas, comunidad en español\n\n\nMejor para\nPuerta de entrada, ideas, primeras versiones de documentos\n\n\nRiesgo principal\nMismas reglas de privacidad: anonimizar antes de subir",
+    "crumbs": [
+      "Modelos",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>ChatGPT</span>"
+    ]
+  },
+  {
+    "objectID": "rc_claude.html",
+    "href": "rc_claude.html",
+    "title": "4  Claude",
+    "section": "",
+    "text": "Resumen ejecutivo\nClaude (Anthropic) destaca en tres tareas críticas para el trabajo público: leer documentos largos y complejos, redactar con precisión en español formal, y analizar con cuidado cuando la respuesta tiene consecuencias. Su ventana de contexto es grande —puede leer un PLADECO completo de una vez— y su redacción es especialmente cuidadosa en matices legales y administrativos. Está disponible como aplicación web y móvil gratuita, y para perfiles técnicos como Claude Code, un agente de línea de comandos.\nAcceso: Claude · Gratuito con límites diarios; plan Pro para uso intensivo.",
+    "crumbs": [
+      "Modelos",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Claude</span>"
+    ]
+  },
+  {
+    "objectID": "rc_claude.html#los-modelos",
+    "href": "rc_claude.html#los-modelos",
+    "title": "4  Claude",
+    "section": "4.1 Los modelos",
+    "text": "4.1 Los modelos\nClaude se ofrece en una familia de modelos; el criterio de elección es el mismo que con Gemini Flash/Pro:\n\n\n\nModelo\nCarácter\nCuándo usarlo\n\n\n\n\nClaude Haiku\nRápido y liviano\nTareas simples y masivas: clasificar, extraer, formatear\n\n\nClaude Sonnet\nEquilibrio\nEl caballo de batalla: redacción, análisis, uso diario\n\n\nClaude Opus\nMáxima capacidad\nRazonamiento complejo, documentos críticos, análisis delicados\n\n\n\nRegla práctica idéntica a la del curso: empieza con el modelo medio; sube solo si el problema lo exige.",
+    "crumbs": [
+      "Modelos",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Claude</span>"
+    ]
+  },
+  {
+    "objectID": "rc_claude.html#los-formatos",
+    "href": "rc_claude.html#los-formatos",
+    "title": "4  Claude",
+    "section": "4.2 Los formatos",
+    "text": "4.2 Los formatos\n\n4.2.1 Aplicación (web, escritorio, móvil)\nEl uso normal: conversación, carga de PDFs e imágenes, Proyectos (espacios con contexto persistente: subes una vez los documentos de tu unidad y cada conversación nueva ya los conoce) y Artefactos (documentos, tablas y pequeñas aplicaciones generadas en panel separado, listas para copiar).\n\n\n\n\n\n\nEjemplos de uso municipal\n\n\n\n\n“Aquí está el PLADECO completo. ¿Cuáles son las tres prioridades más mencionadas en participación ciudadana y en qué páginas?”\n“Redacta la minuta ejecutiva de este informe de 60 páginas para el Concejo: una página, lenguaje claro, cifras destacadas.”\n“Revisa críticamente este análisis de cobertura de áreas verdes: ¿qué vacíos tiene antes de presentarlo al alcalde?”\n“Convierte estos hallazgos en una carta de respuesta formal a la junta de vecinos, en tono cercano pero institucional.”\n\n\n\n\n\n4.2.2 Claude Code (CLI)\nAcceso: terminal; requiere plan de pago o API · Para perfiles técnicos.\nAgente de línea de comandos: opera sobre carpetas y archivos locales, ejecuta tareas de varios pasos y automatiza flujos completos. Es la contraparte de Anthropic a Gemini CLI y Codex CLI. Para un equipo informático municipal: procesamiento masivo de archivos, generación de reportes periódicos, mantención de scripts de análisis del Módulo 1.\nA diferencia de Gemini CLI, no tiene nivel gratuito: exige suscripción o API con pago por uso. Para presupuestos municipales reducidos, Gemini CLI es el punto de partida; Claude Code se justifica cuando la calidad de razonamiento en tareas largas lo amerita.\n\n\n4.2.3 API\nPara integraciones institucionales (clasificar reclamos entrantes, asistentes internos). Pago por uso; requiere desarrollo. Se menciona como mapa de escalamiento, no como punto de partida.",
+    "crumbs": [
+      "Modelos",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Claude</span>"
+    ]
+  },
+  {
+    "objectID": "rc_claude.html#cuándo-preferir-claude",
+    "href": "rc_claude.html#cuándo-preferir-claude",
+    "title": "4  Claude",
+    "section": "4.3 Cuándo preferir Claude",
+    "text": "4.3 Cuándo preferir Claude\n\nUn solo documento muy largo que analizar con detalle (informes, planes, bases de licitación): la ventana de contexto grande evita trocear.\nRedacción institucional delicada: respuestas a transparencia, cartas sensibles, textos donde el matiz importa.\nRevisión crítica: pedirle que encuentre debilidades de un análisis antes de que las encuentre el Concejo.\n\nPara sistematizar muchas fuentes con citas, NotebookLM sigue siendo mejor opción; para todo lo integrado a Google Workspace, Gemini.",
+    "crumbs": [
+      "Modelos",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Claude</span>"
+    ]
+  },
+  {
+    "objectID": "rc_claude.html#ficha-rápida",
+    "href": "rc_claude.html#ficha-rápida",
+    "title": "4  Claude",
+    "section": "4.4 Ficha rápida",
+    "text": "4.4 Ficha rápida\n\n\n\n\n\n\n\nAspecto\nDetalle\n\n\n\n\nCosto\nGratuito con límites; Pro de pago; Claude Code sin nivel gratuito\n\n\nInstalación\nNinguna para la app (navegador/móvil); CLI para perfil técnico\n\n\nFortaleza\nDocumentos largos, redacción formal cuidadosa, revisión crítica\n\n\nMejor para\nMinutas, oficios, análisis de planes e informes extensos\n\n\nRiesgo principal\nMismas reglas de privacidad: anonimizar antes de subir",
+    "crumbs": [
+      "Modelos",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Claude</span>"
+    ]
+  },
+  {
+    "objectID": "rc_latamgpt.html",
+    "href": "rc_latamgpt.html",
+    "title": "5  LatamGPT",
+    "section": "",
+    "text": "Resumen ejecutivo\nLatamGPT es el proyecto de modelo de lenguaje abierto y latinoamericano liderado desde Chile por el CENIA (Centro Nacional de Inteligencia Artificial), con colaboración de instituciones de toda la región. Su apuesta es doble: un modelo entrenado con datos de América Latina —su español, sus instituciones, sus contextos— y un modelo abierto, que universidades, estados y municipios pueden usar y desplegar sin depender de la voluntad comercial de una empresa extranjera. Para el sector público chileno no es solo una herramienta: es la pieza de soberanía tecnológica del mapa de esta parte.\nAcceso: LatamGPT · Modelo abierto; verificar canales de acceso vigentes (demo web, descarga de pesos, despliegue institucional).",
+    "crumbs": [
+      "Modelos",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>LatamGPT</span>"
+    ]
+  },
+  {
+    "objectID": "rc_latamgpt.html#por-qué-importa-un-modelo-regional",
+    "href": "rc_latamgpt.html#por-qué-importa-un-modelo-regional",
+    "title": "5  LatamGPT",
+    "section": "5.1 Por qué importa un modelo regional",
+    "text": "5.1 Por qué importa un modelo regional\nLos modelos globales se entrenan predominantemente con contenido en inglés y de contexto anglosajón. Las consecuencias prácticas para un funcionario chileno:\n\nConocen menos la institucionalidad local: SUBDERE, SEREMI, SECPLA, DIDECO, el sistema municipal chileno.\nSu español tiende al neutro o peninsular; matices chilenos y regionales se pierden.\nLos ejemplos y referencias que proponen vienen de otros contextos normativos y urbanos.\n\nUn modelo entrenado con corpus latinoamericano invierte esa relación: el contexto regional no es la excepción que hay que explicar en el prompt, sino el terreno nativo del modelo.\n\n\n\nInstuticiones participantes en el proyecto de Latam-GPT por país. Fuente: https://cenia.cl/2025/02/13/cenia-impulsa-el-primer-modelo-de-lenguaje-colaborativo-de-latinoamerica/\n\n\n\n\n\n\n\n\nEjemplos de uso municipal\n\n\n\n\n“Explica qué instrumentos de planificación territorial chilenos (PLADECO, PRC, PROT) corresponden a cada escala de decisión y cómo se relacionan.”\n“Redacta la fundamentación de un proyecto de recuperación de espacio público usando terminología del sistema público chileno.”\n“¿Qué experiencias latinoamericanas de presupuesto participativo son comparables con una comuna de 100.000 habitantes?”",
+    "crumbs": [
+      "Modelos",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>LatamGPT</span>"
+    ]
+  },
+  {
+    "objectID": "rc_latamgpt.html#la-dimensión-de-soberanía",
+    "href": "rc_latamgpt.html#la-dimensión-de-soberanía",
+    "title": "5  LatamGPT",
+    "section": "5.2 La dimensión de soberanía",
+    "text": "5.2 La dimensión de soberanía\nPor ser un modelo abierto, LatamGPT habilita lo que los servicios comerciales en la nube no pueden ofrecer:\n\nDespliegue en infraestructura propia: un servicio público puede ejecutarlo en sus servidores; los datos no salen de la institución (mismo argumento de los modelos locales, con la ventaja del contexto regional).\nAuditabilidad: saber con qué datos y criterios fue construido, condición cada vez más relevante para el uso estatal de IA.\nContinuidad: no desaparece ni cambia de precio por decisión comercial de un tercero.\nEcosistema regional: usarlo y reportar errores fortalece una capacidad pública latinoamericana en IA.\n\n\n\n\n\n\n\nWarning\n\n\n\nExpectativas honestas: un modelo regional abierto no compite hoy en capacidad bruta con los modelos frontera (Gemini Pro, Claude Opus, modelos GPT). La elección es de criterio: para razonamiento complejo, modelos frontera; para contexto regional, datos sensibles o independencia tecnológica, el modelo abierto regional. No es uno u otro: es saber cuándo cada cual.",
+    "crumbs": [
+      "Modelos",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>LatamGPT</span>"
+    ]
+  },
+  {
+    "objectID": "rc_latamgpt.html#ficha-rápida",
+    "href": "rc_latamgpt.html#ficha-rápida",
+    "title": "5  LatamGPT",
+    "section": "5.3 Ficha rápida",
+    "text": "5.3 Ficha rápida\n\n\n\nAspecto\nDetalle\n\n\n\n\nCosto\nAbierto / gratuito\n\n\nQuién está detrás\nCENIA (Chile) + red de instituciones latinoamericanas\n\n\nFortaleza\nContexto latinoamericano nativo; apertura y soberanía\n\n\nMejor para\nTexto con contexto chileno/regional; despliegues institucionales\n\n\nLimitación\nMenor capacidad bruta que modelos frontera; canales de acceso en evolución\n\n\nVerificar\nEstado actual del proyecto y formas de acceso en latamgpt.org",
+    "crumbs": [
+      "Modelos",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>LatamGPT</span>"
+    ]
+  },
+  {
+    "objectID": "rc_ide_antigravity.html",
+    "href": "rc_ide_antigravity.html",
+    "title": "6  Antigravity",
+    "section": "",
+    "text": "Resumen ejecutivo\nAntigravity es el entorno principal del curso para vibe coding: combina editor, terminal, navegador y agentes capaces de producir artefactos verificables. Su valor pedagógico está en que el trabajo no queda escondido en una conversación: se ve el proyecto, se ven los archivos y se pueden revisar los resultados.\nAcceso: Antigravity · aplicación de escritorio para trabajo con proyectos. Verificar siempre la disponibilidad vigente de CLI, modelos y límites antes de preparar una sesión institucional.",
+    "crumbs": [
+      "IDEs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Antigravity</span>"
+    ]
+  },
+  {
+    "objectID": "rc_ide_antigravity.html#superficies-disponibles",
+    "href": "rc_ide_antigravity.html#superficies-disponibles",
+    "title": "6  Antigravity",
+    "section": "6.1 Superficies disponibles",
+    "text": "6.1 Superficies disponibles\n\n\n\n\n\n\n\n\nSuperficie\nPara qué sirve\nCuándo usarla\n\n\n\n\nAplicación de escritorio\nTrabajar con editor, terminal, navegador y agentes en una sola interfaz\nSesiones del curso, mapas, notebooks, sitios simples y automatizaciones guiadas\n\n\nCLI\nEjecutar tareas agénticas desde terminal y automatizar flujos\nCuando el equipo técnico necesita reproducibilidad y registro de comandos\n\n\nAgentes / manager\nCoordinar varias tareas o revisar artefactos generados por agentes\nProyectos con varios pasos: planificar, escribir, probar, capturar evidencia",
+    "crumbs": [
+      "IDEs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Antigravity</span>"
+    ]
+  },
+  {
+    "objectID": "rc_ide_antigravity.html#características-distintivas",
+    "href": "rc_ide_antigravity.html#características-distintivas",
+    "title": "6  Antigravity",
+    "section": "6.2 Características distintivas",
+    "text": "6.2 Características distintivas\n\nOrientación a artefactos: planes, listas de tareas, capturas, registros de navegador o evidencia de ejecución ayudan a revisar lo que hizo el agente.\nTrabajo sobre proyecto completo: no solo responde preguntas; opera sobre carpetas, archivos y comandos.\nBuen punto de entrada para aprender: al estar integrado en una interfaz visual, reduce la fricción inicial frente a un CLI puro.\nModelo y herramienta no son lo mismo: Antigravity es el entorno; Gemini, Claude u otros modelos son capacidades que pueden estar disponibles según configuración y plan.",
+    "crumbs": [
+      "IDEs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Antigravity</span>"
+    ]
+  },
+  {
+    "objectID": "rc_ide_antigravity.html#uso-municipal-recomendado",
+    "href": "rc_ide_antigravity.html#uso-municipal-recomendado",
+    "title": "6  Antigravity",
+    "section": "6.3 Uso municipal recomendado",
+    "text": "6.3 Uso municipal recomendado\nAntigravity conviene cuando el producto final debe ser visible y revisable: un mapa de accesibilidad, una limpieza de datos simple, un notebook de análisis, un sitio de resultados o una automatización de reportes. Para participantes sin perfil técnico fuerte, es la superficie más didáctica porque mantiene juntos prompt, archivos y resultado.\n\n\n\n\n\n\nEjemplo de tarea\n\n\n\n\n“Crea un notebook que lea estos puntos de equipamientos, calcule cobertura a 500 metros, genere un mapa y deje una tabla resumen por comuna. Antes de modificar archivos, explícame el plan y después muéstrame cómo verificaste el resultado.”",
+    "crumbs": [
+      "IDEs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Antigravity</span>"
+    ]
+  },
+  {
+    "objectID": "rc_ide_antigravity.html#lectura-y-documentación-relevante",
+    "href": "rc_ide_antigravity.html#lectura-y-documentación-relevante",
+    "title": "6  Antigravity",
+    "section": "6.4 Lectura y documentación relevante",
+    "text": "6.4 Lectura y documentación relevante\n\n\n\nRecurso\nPor qué leerlo\n\n\n\n\nAntigravity\nDescargar, verificar plataformas soportadas y condiciones vigentes\n\n\nThe Verge: agent-first coding tool\nResumen periodístico de editor, manager, agentes y artefactos\n\n\nAre AI-assisted Development Tools Immune to Prompt Injection?\nRiesgos de seguridad en herramientas con agentes y MCP",
+    "crumbs": [
+      "IDEs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Antigravity</span>"
+    ]
+  },
+  {
+    "objectID": "rc_ide_antigravity.html#resguardos",
+    "href": "rc_ide_antigravity.html#resguardos",
+    "title": "6  Antigravity",
+    "section": "6.5 Resguardos",
+    "text": "6.5 Resguardos\n\nNo abrir carpetas con credenciales, datos personales o contratos sensibles sin revisar permisos.\nUsar repositorios o carpetas de práctica para enseñar.\nPedir siempre artefactos verificables: plan, archivos modificados, pruebas, capturas o explicación de validación.\nSi se usa CLI, guardar comandos y salida relevante en el cuaderno metodológico del proyecto.",
+    "crumbs": [
+      "IDEs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Antigravity</span>"
+    ]
+  },
+  {
+    "objectID": "rc_ide_codex.html",
+    "href": "rc_ide_codex.html",
+    "title": "7  Codex",
+    "section": "",
+    "text": "Resumen ejecutivo\nCodex es el agente de código de OpenAI. Puede trabajar desde una aplicación de escritorio, desde el terminal, desde extensiones de IDE y desde la web. Su fortaleza es operar sobre repositorios: leer archivos, proponer cambios, ejecutar comandos, revisar errores y devolver un resultado auditable.\nAcceso: Codex · Codex CLI · requiere plan ChatGPT compatible o API, según superficie.",
+    "crumbs": [
+      "IDEs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Codex</span>"
+    ]
+  },
+  {
+    "objectID": "rc_ide_codex.html#superficies-disponibles",
+    "href": "rc_ide_codex.html#superficies-disponibles",
+    "title": "7  Codex",
+    "section": "7.1 Superficies disponibles",
+    "text": "7.1 Superficies disponibles\n\n\n\n\n\n\n\n\nSuperficie\nPara qué sirve\nCuándo usarla\n\n\n\n\nCodex App\nAplicación de escritorio para planificar, revisar cambios y coordinar sesiones\nTareas largas, revisión visual, trabajo paralelo y seguimiento\n\n\nCodex CLI\nAgente local en terminal\nAutomatizar scripts, limpiar datos, correr pruebas, trabajar con carpetas locales\n\n\nIDE Extension\nCodex dentro del editor\nRevisar diffs, pedir cambios sobre archivos abiertos, mantener flujo de programación\n\n\nCodex Web / Remote\nAgente en entorno hospedado\nTareas que pueden correr fuera del computador local, revisión posterior",
+    "crumbs": [
+      "IDEs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Codex</span>"
+    ]
+  },
+  {
+    "objectID": "rc_ide_codex.html#características-distintivas",
+    "href": "rc_ide_codex.html#características-distintivas",
+    "title": "7  Codex",
+    "section": "7.2 Características distintivas",
+    "text": "7.2 Características distintivas\n\nCLI instalable: el repositorio oficial indica instalación por script, npm, Homebrew o binarios de release.\nIntegración con IDEs: la documentación de Codex lista app, extensión de IDE, CLI y web como superficies de uso.\nConfiguración por proyecto: permite reglas, permisos, sandboxing, hooks, MCP, plugins y skills según el flujo de trabajo.\nBuen ajuste para repositorios: funciona mejor cuando hay una carpeta organizada, pruebas o una forma clara de verificar el resultado.",
+    "crumbs": [
+      "IDEs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Codex</span>"
+    ]
+  },
+  {
+    "objectID": "rc_ide_codex.html#uso-municipal-recomendado",
+    "href": "rc_ide_codex.html#uso-municipal-recomendado",
+    "title": "7  Codex",
+    "section": "7.3 Uso municipal recomendado",
+    "text": "7.3 Uso municipal recomendado\nCodex es útil para el perfil técnico del equipo: consolidar planillas, escribir scripts de limpieza, convertir notebooks en reportes reproducibles, generar pruebas, documentar repositorios y revisar cambios antes de publicarlos.\n\n\n\n\n\n\nEjemplo de tarea\n\n\n\n\n“Lee la carpeta datos_crudos/, identifica formatos de fecha inconsistentes, crea un script reproducible de limpieza y ejecuta una validación que cuente filas antes y después por archivo.”",
+    "crumbs": [
+      "IDEs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Codex</span>"
+    ]
+  },
+  {
+    "objectID": "rc_ide_codex.html#lectura-y-documentación-relevante",
+    "href": "rc_ide_codex.html#lectura-y-documentación-relevante",
+    "title": "7  Codex",
+    "section": "7.4 Lectura y documentación relevante",
+    "text": "7.4 Lectura y documentación relevante\n\n\n\nRecurso\nPor qué leerlo\n\n\n\n\nCodex\nSuperficies: App, IDE Extension, CLI, Web, configuración y automatización\n\n\nCodex CLI\nInstalación del CLI, licencia, releases y uso desde terminal\n\n\nUsing skills to accelerate OSS maintenance\nEjemplo aplicado de skills en mantención de software\n\n\nBuild iterative repair loops with Codex\nPatrón avanzado: ejecutar, detectar error, reparar y repetir",
+    "crumbs": [
+      "IDEs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Codex</span>"
+    ]
+  },
+  {
+    "objectID": "rc_ide_codex.html#resguardos",
+    "href": "rc_ide_codex.html#resguardos",
+    "title": "7  Codex",
+    "section": "7.5 Resguardos",
+    "text": "7.5 Resguardos\n\nDar acceso solo a carpetas necesarias para la tarea.\nRevisar cambios antes de aprobarlos, especialmente si toca datos o automatizaciones.\nPreferir tareas con prueba verificable: conteos, tests, render, validaciones o comparación de resultados.\nNo pegar tokens, claves API ni datos personales en prompts ni en archivos de trabajo.",
+    "crumbs": [
+      "IDEs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Codex</span>"
+    ]
+  },
+  {
+    "objectID": "rc_ide_claude.html",
+    "href": "rc_ide_claude.html",
+    "title": "8  Claude Code",
+    "section": "",
+    "text": "Resumen ejecutivo\nClaude combina dos superficies relevantes para el curso: Claude Desktop, orientado al trabajo cotidiano con documentos, archivos, ventanas y conectores; y Claude Code, el agente de programación disponible en terminal, IDE, escritorio y web. Su fortaleza está en documentos largos, revisión crítica, redacción cuidadosa y conexión con herramientas externas vía MCP.\nAcceso: Claude Desktop · Claude Code.",
+    "crumbs": [
+      "IDEs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Claude Code</span>"
+    ]
+  },
+  {
+    "objectID": "rc_ide_claude.html#superficies-disponibles",
+    "href": "rc_ide_claude.html#superficies-disponibles",
+    "title": "8  Claude Code",
+    "section": "8.1 Superficies disponibles",
+    "text": "8.1 Superficies disponibles\n\n\n\n\n\n\n\n\nSuperficie\nPara qué sirve\nCuándo usarla\n\n\n\n\nClaude Desktop\nAplicación de escritorio, acceso rápido, archivos, capturas, extensiones y conectores\nMinutas, informes, revisión documental y flujos con archivos locales\n\n\nClaude Code CLI\nAgente completo desde terminal\nProgramar, correr comandos, revisar repositorios y automatizar tareas\n\n\nVS Code / JetBrains\nClaude Code dentro del IDE\nRevisión visual de diffs, contexto del archivo activo y navegación del proyecto\n\n\nWeb / móvil\nSesiones remotas y continuidad entre dispositivos\nTareas largas, revisión asincrónica o trabajo fuera del computador principal",
+    "crumbs": [
+      "IDEs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Claude Code</span>"
+    ]
+  },
+  {
+    "objectID": "rc_ide_claude.html#características-distintivas",
+    "href": "rc_ide_claude.html#características-distintivas",
+    "title": "8  Claude Code",
+    "section": "8.2 Características distintivas",
+    "text": "8.2 Características distintivas\n\nDesktop con contexto local: la página de descarga destaca acceso desde cualquier app, compartir ventanas o archivos y conectar herramientas.\nClaude Code multiplaforma: la documentación oficial lo describe disponible en terminal, IDE, app de escritorio y navegador.\nMCP integrado: puede conectar fuentes externas como Drive, Slack, Jira, bases de datos o herramientas internas mediante servidores MCP.\nSkills, hooks y memoria: permite empaquetar flujos repetibles, guardar instrucciones y automatizar acciones alrededor del trabajo.",
+    "crumbs": [
+      "IDEs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Claude Code</span>"
+    ]
+  },
+  {
+    "objectID": "rc_ide_claude.html#uso-municipal-recomendado",
+    "href": "rc_ide_claude.html#uso-municipal-recomendado",
+    "title": "8  Claude Code",
+    "section": "8.3 Uso municipal recomendado",
+    "text": "8.3 Uso municipal recomendado\nClaude Desktop conviene cuando el insumo principal son documentos: bases de licitación, informes largos, actas, oficios, criterios de evaluación o borradores sensibles que requieren revisión cuidadosa. Claude Code conviene cuando esos documentos se transforman en productos técnicos: scripts, validaciones, repositorios, pruebas o reportes reproducibles.\n\n\n\n\n\n\nEjemplo de tarea\n\n\n\n\n“Lee estas bases y este borrador de proyecto. Detecta requisitos no cubiertos, sugiere cambios al texto y genera una lista de verificación para revisar antes de postular.”",
+    "crumbs": [
+      "IDEs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Claude Code</span>"
+    ]
+  },
+  {
+    "objectID": "rc_ide_claude.html#lectura-y-documentación-relevante",
+    "href": "rc_ide_claude.html#lectura-y-documentación-relevante",
+    "title": "8  Claude Code",
+    "section": "8.4 Lectura y documentación relevante",
+    "text": "8.4 Lectura y documentación relevante\n\n\n\nRecurso\nPor qué leerlo\n\n\n\n\nClaude Desktop\nCapacidades de escritorio, archivos, conectores y despliegue institucional\n\n\nClaude Code\nSuperficies: terminal, VS Code, escritorio, web y JetBrains\n\n\nClaude Code MCP\nCómo conectar herramientas, bases de datos y APIs\n\n\nDive into Claude Code\nAnálisis técnico de arquitectura, permisos, MCP, plugins, skills y hooks\n\n\nOn the Use of Agentic Coding Manifests\nEstudio sobre archivos de instrucciones para agentes de código",
+    "crumbs": [
+      "IDEs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Claude Code</span>"
+    ]
+  },
+  {
+    "objectID": "rc_ide_claude.html#resguardos",
+    "href": "rc_ide_claude.html#resguardos",
+    "title": "8  Claude Code",
+    "section": "8.5 Resguardos",
+    "text": "8.5 Resguardos\n\nSeparar la app general de Claude del uso técnico con Claude Code: no todo documento necesita acceso a una carpeta completa.\nSi se conecta MCP, revisar qué servidor se instala, qué permisos pide y qué datos puede leer o modificar.\nPara documentos administrativos, pedir siempre citas o ubicación de origen dentro del documento.\nPara código, exigir pruebas, diff revisable y explicación de validación.",
+    "crumbs": [
+      "IDEs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Claude Code</span>"
+    ]
+  },
+  {
+    "objectID": "rc_notebooklm.html",
+    "href": "rc_notebooklm.html",
+    "title": "9  NotebookLM",
+    "section": "",
+    "text": "Resumen ejecutivo\nNotebookLM es probablemente la herramienta más valiosa de esta parte para el perfil del curso, y es gratuita. Funciona así: subes tus fuentes (PDF, Google Docs, páginas web, videos de YouTube, audios) y luego conversas con ese conjunto de documentos como si fuera un experto que los hubiera leído todos. Toda respuesta incluye cita del documento fuente. Lo que la distingue de un asistente convencional es que no inventa: solo responde con información que está en los documentos que subiste, y señala exactamente de dónde viene cada afirmación.\nAcceso: NotebookLM · Gratuito con cuenta Google.",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>NotebookLM</span>"
+    ]
+  },
+  {
+    "objectID": "rc_notebooklm.html#cómo-funciona",
+    "href": "rc_notebooklm.html#cómo-funciona",
+    "title": "9  NotebookLM",
+    "section": "9.1 Cómo funciona",
+    "text": "9.1 Cómo funciona\n\nCrear un notebook por tema o proyecto (ej.: “Actualización PLADECO 2026”).\nSubir las fuentes: hasta decenas de documentos por notebook — PDFs, Docs, enlaces, transcripciones, audios de reuniones.\nPreguntar en español: cada respuesta llega con citas numeradas que enlazan al pasaje exacto del documento original.\nGenerar productos: resúmenes estructurados, guías de estudio, preguntas frecuentes, e incluso un resumen en audio estilo conversación (útil para socializar un diagnóstico con el equipo).\n\n\n\n\n\n\n\n📷 IMAGEN PENDIENTE: Captura de NotebookLM con un notebook abierto: panel izquierdo con fuentes cargadas (PDFs municipales reconocibles: PLADECO, ordenanza, actas), panel central con una respuesta que muestra sus citas numeradas, y panel derecho con las opciones de generación (resumen, audio, FAQ).",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>NotebookLM</span>"
+    ]
+  },
+  {
+    "objectID": "rc_notebooklm.html#casos-de-uso-municipales",
+    "href": "rc_notebooklm.html#casos-de-uso-municipales",
+    "title": "9  NotebookLM",
+    "section": "9.2 Casos de uso municipales",
+    "text": "9.2 Casos de uso municipales\n\n\n\n\n\n\nSistematizar participación ciudadana\n\n\n\n\nSube las actas de 8 talleres participativos del proceso de actualización del PLADECO y pregunta: “¿Cuáles son los cinco problemas territoriales más mencionados y en qué talleres aparecieron?”\n\nCada problema citado lleva el enlace al acta y párrafo de origen: trazabilidad lista para el informe.\n\n\n\n\n\n\n\n\nAnálisis normativo\n\n\n\n\nSube el Plan Regulador Comunal, la Ordenanza Local y el Plan de Gestión de Residuos y pregunta: “¿Qué restricciones de uso de suelo existen para instalar un punto limpio en zonas residenciales?”\n\nRespuesta con artículos citados, verificable antes de responder un oficio.\n\n\n\n\n\n\n\n\nMemoria institucional\n\n\n\n\nSube los informes finales de los últimos 5 programas de recuperación de espacios públicos y pregunta: “¿Qué problemas de ejecución se repiten entre programas y qué soluciones se aplicaron?”\n\nEl conocimiento que se va con cada rotación de personal, recuperado en minutos.\n\n\n\n\n\n\n\n\nPreparación de postulaciones a fondos\n\n\n\n\nSube las bases del fondo, tu diagnóstico territorial y dos proyectos ganadores anteriores y pregunta: “¿Qué requisitos de las bases no están cubiertos aún por nuestro borrador?”",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>NotebookLM</span>"
+    ]
+  },
+  {
+    "objectID": "rc_notebooklm.html#por-qué-importa-la-trazabilidad",
+    "href": "rc_notebooklm.html#por-qué-importa-la-trazabilidad",
+    "title": "9  NotebookLM",
+    "section": "9.3 Por qué importa la trazabilidad",
+    "text": "9.3 Por qué importa la trazabilidad\nEn el sector público, una afirmación sin fuente es un riesgo: puede terminar en un informe oficial, un oficio o una respuesta por transparencia. NotebookLM invierte la lógica del chatbot: en vez de “confía en mí”, cada frase dice “esto está en la página 14 del documento que tú me diste”. Eso lo hace apto para trabajo institucional de una forma que los asistentes generales no logran.\n\n\n\n\n\n\nLímite importante\n\n\n\nNotebookLM trabaja solo con lo que le subiste. Si la respuesta no está en esos documentos, lo dirá. Es una limitación que es también una garantía. Corolario: la calidad de las respuestas depende de la calidad y completitud del corpus que armes.",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>NotebookLM</span>"
+    ]
+  },
+  {
+    "objectID": "rc_notebooklm.html#ficha-rápida",
+    "href": "rc_notebooklm.html#ficha-rápida",
+    "title": "9  NotebookLM",
+    "section": "9.4 Ficha rápida",
+    "text": "9.4 Ficha rápida\n\n\n\nAspecto\nDetalle\n\n\n\n\nCosto\nGratuito (cuenta Google)\n\n\nInstalación\nNinguna (navegador)\n\n\nFortaleza\nTrazabilidad: toda respuesta cita su fuente\n\n\nMejor para\nSistematizar múltiples documentos institucionales\n\n\nRiesgo principal\nSubir documentos con datos personales sin anonimizar\n\n\nAlternativa si el dato es sensible\nModelo local vía Ollama / LM Studio",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>NotebookLM</span>"
+    ]
+  },
+  {
+    "objectID": "rc_perplexity.html",
+    "href": "rc_perplexity.html",
+    "title": "10  Perplexity",
+    "section": "",
+    "text": "Resumen ejecutivo\nPerplexity es un buscador aumentado con IA: en vez de una lista de enlaces, entrega una respuesta sintetizada con citas numeradas verificables. Cada afirmación lleva el enlace a su fuente original. Para el sector público, donde una cifra sin respaldo puede terminar en un documento oficial, esa trazabilidad hacia la web es su valor central: es la herramienta para investigar, no solo para preguntar.\nAcceso: Perplexity · Gratuito con límites; plan Pro para búsqueda avanzada y carga de archivos.",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Perplexity</span>"
+    ]
+  },
+  {
+    "objectID": "rc_perplexity.html#qué-lo-distingue",
+    "href": "rc_perplexity.html#qué-lo-distingue",
+    "title": "10  Perplexity",
+    "section": "10.1 Qué lo distingue",
+    "text": "10.1 Qué lo distingue\n\n\n\n\n\n\n\n\n\n\nBuscador tradicional\nAsistente IA general\nPerplexity\n\n\n\n\nEntrega\nLista de enlaces\nRespuesta sin fuentes\nRespuesta con fuentes\n\n\nRiesgo\nTiempo de lectura\nAlucinación invisible\nBajo: cada frase es verificable\n\n\nMejor para\nEncontrar un sitio\nRedactar, idear\nInvestigar con respaldo\n\n\n\nFunciones útiles del nivel gratuito:\n\nCitas numeradas en cada respuesta, con enlace directo.\nPreguntas de seguimiento que mantienen el hilo de investigación.\nEnfoque de búsqueda (académico, web, social) para priorizar el tipo de fuente.",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Perplexity</span>"
+    ]
+  },
+  {
+    "objectID": "rc_perplexity.html#casos-de-uso-municipales",
+    "href": "rc_perplexity.html#casos-de-uso-municipales",
+    "title": "10  Perplexity",
+    "section": "10.2 Casos de uso municipales",
+    "text": "10.2 Casos de uso municipales\n\n\n\n\n\n\nEstándares y normativa con respaldo\n\n\n\n\n“¿Cuál es la recomendación de la OMS de metros cuadrados de área verde por habitante en zonas urbanas? Dame la fuente exacta.”\n\nLa cifra llega con la publicación de origen: lista para citar en el diagnóstico que fundamenta la postulación a fondos.\n\n\n\n\n\n\n\n\nVigilancia de precedentes\n\n\n\n\n“¿Qué municipios chilenos han implementado presupuestos participativos digitales y qué resultados reportaron?”\n\nRespuesta con enlaces a noticias, informes y sitios municipales: material para benchmarking antes de diseñar tu propio proceso.\n\n\n\n\n\n\n\n\nVerificación cruzada (el caso más importante)\n\n\n\nSi Gemini o ChatGPT te dan una cifra y no sabes si es confiable, contrástala en Perplexity: o aparece la fuente, o aprendiste que la cifra era inventada. Este uso —detector de alucinaciones de otras IA— justifica por sí solo tenerla en el flujo de trabajo.\n\n\n\n\n\n\n\n\nFondos y plazos vigentes\n\n\n\n\n“¿Qué fondos concursables están abiertos actualmente en Chile para proyectos de recuperación de espacios públicos municipales?”\n\nA diferencia de un modelo sin búsqueda, consulta la web del momento; igual verifica los plazos en la fuente enlazada antes de planificar.",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Perplexity</span>"
+    ]
+  },
+  {
+    "objectID": "rc_perplexity.html#límites-y-resguardos",
+    "href": "rc_perplexity.html#límites-y-resguardos",
+    "title": "10  Perplexity",
+    "section": "10.3 Límites y resguardos",
+    "text": "10.3 Límites y resguardos\n\nLas fuentes hay que abrirlas: Perplexity puede citar bien una fuente equivocada (un blog que repite mal una cifra). La calidad de la respuesta es la calidad de sus fuentes; mira de dónde viene.\nLa síntesis sigue siendo de IA: para decisiones formales, lee el documento original, no solo el resumen.\nLas mismas reglas de privacidad: es un servicio en la nube; no pegues en la consulta información sensible.",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Perplexity</span>"
+    ]
+  },
+  {
+    "objectID": "rc_perplexity.html#ficha-rápida",
+    "href": "rc_perplexity.html#ficha-rápida",
+    "title": "10  Perplexity",
+    "section": "10.4 Ficha rápida",
+    "text": "10.4 Ficha rápida\n\n\n\n\n\n\n\nAspecto\nDetalle\n\n\n\n\nCosto\nGratuito con límites; Pro de pago\n\n\nInstalación\nNinguna (navegador/móvil)\n\n\nFortaleza\nRespuestas con citas verificables sobre la web actual\n\n\nMejor para\nInvestigar estándares, normativa, precedentes; verificar cifras de otras IA\n\n\nRiesgo principal\nConfiar en la síntesis sin abrir las fuentes citadas",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Perplexity</span>"
+    ]
+  },
+  {
+    "objectID": "rc_otras_herramientas.html",
+    "href": "rc_otras_herramientas.html",
+    "title": "11  Productividad",
+    "section": "",
+    "text": "Resumen ejecutivo\nEste capítulo reúne herramientas de tarea que resuelven muy bien una necesidad específica del trabajo público: explorar planillas sin código (Julius AI), producir presentaciones en minutos (Gamma), convertir texto en diagramas (Napkin), transcribir audios de talleres y reuniones (Whisper, open source) y ejecutar modelos locales (Ollama / LM Studio). Ninguna exige programar; dos de ellas son completamente open source y corren en hardware propio.",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Productividad</span>"
+    ]
+  },
+  {
+    "objectID": "rc_otras_herramientas.html#julius-ai-planillas-sin-código",
+    "href": "rc_otras_herramientas.html#julius-ai-planillas-sin-código",
+    "title": "11  Productividad",
+    "section": "11.1 Julius AI: planillas sin código",
+    "text": "11.1 Julius AI: planillas sin código\nAcceso: Julius AI · Plan gratuito con límite mensual de consultas.\nUn analista de datos conversacional: subes una planilla (Excel, CSV, Google Sheets) y le haces preguntas en lenguaje natural. Genera gráficos, calcula estadísticas, filtra y detecta patrones, todo desde texto.\n\n\n\n\n\n\nEjemplos de uso municipal\n\n\n\n\nExplorar datos del Censo INE antes del análisis espacial del Módulo 1: “¿Cuántas personas mayores de 65 años viven en cada zona censal de esta tabla?”\nAnalizar registros administrativos (reclamos, solicitudes, permisos) para encontrar patrones antes de georreferenciarlos.\nValidar resultados del análisis espacial contra tablas planas: “Compara la cobertura de áreas verdes de estas comunas con sus niveles de ingreso promedio.”\n\n\n\nAlternativa de costo cero si ya usas el ecosistema del curso: el propio Gemini sobre Google Sheets, o ChatGPT gratuito con archivos.",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Productividad</span>"
+    ]
+  },
+  {
+    "objectID": "rc_otras_herramientas.html#gamma-presentaciones-desde-texto",
+    "href": "rc_otras_herramientas.html#gamma-presentaciones-desde-texto",
+    "title": "11  Productividad",
+    "section": "11.2 Gamma: presentaciones desde texto",
+    "text": "11.2 Gamma: presentaciones desde texto\nAcceso: Gamma · Plan gratuito con marca de agua; plan de pago para uso profesional.\nGenera presentaciones completas a partir de una descripción: das el tema, el público y el mensaje central, y obtienes una presentación con estructura, diseño y contenido inicial, afinable iterativamente en lenguaje natural.\n\n\n\n\n\n\nEjemplo de uso municipal\n\n\n\n\n“Crea una presentación de 10 diapositivas para el Concejo Municipal sobre los resultados del análisis de cobertura de áreas verdes. El mensaje principal es que el 38% de la población vive a más de 500 metros de un área verde. Público: concejales sin formación técnica.”\n\nEl tiempo de producción pasa de horas a minutos. La revisión sigue siendo del profesional; el diseño inicial ya no.",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Productividad</span>"
+    ]
+  },
+  {
+    "objectID": "rc_otras_herramientas.html#napkin-de-texto-a-diagramas",
+    "href": "rc_otras_herramientas.html#napkin-de-texto-a-diagramas",
+    "title": "11  Productividad",
+    "section": "11.3 Napkin: de texto a diagramas",
+    "text": "11.3 Napkin: de texto a diagramas\nAcceso: Napkin · Plan gratuito disponible.\nConvierte texto en visualizaciones: pegas un párrafo que explica un proceso, una cadena causal o una comparación, y Napkin propone diagramas (flujos, matrices, líneas de tiempo) para elegir y exportar.\n\n\n\n\n\n\nEjemplos de uso municipal\n\n\n\n\nDiagramar el ciclo de una consulta ciudadana o el medir-intervenir-medir del urbanismo táctico para una lámina.\nConvertir la metodología de un proyecto en infografía para postulación a fondos.\nMaterial visual para comunicación comunitaria sin diseñador.",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Productividad</span>"
+    ]
+  },
+  {
+    "objectID": "rc_otras_herramientas.html#whisper-transcripción-open-source",
+    "href": "rc_otras_herramientas.html#whisper-transcripción-open-source",
+    "title": "11  Productividad",
+    "section": "11.4 Whisper: transcripción open source",
+    "text": "11.4 Whisper: transcripción open source\nAcceso: Whisper · Open source (MIT) · Gratuito; corre en computador propio.\nModelo de transcripción de audio a texto que funciona muy bien en español chileno. Corre localmente: el audio no sale de la institución, lo que lo hace apto incluso para material sensible.\nPara el trabajo participativo es una pieza estratégica: las horas de audio de talleres, cabildos y reuniones —que hoy nadie transcribe— se convierten en texto procesable con el flujo NLP de la sesión 5.2.\n\n\n\n\n\n\nEl flujo completo de costo cero\n\n\n\n\nGrabar el taller participativo (con consentimiento informado).\nWhisper transcribe el audio localmente.\nModelo local o IA del curso clasifica y sintetiza (flujo 5.2, con auditoría humana).\nResultado: el acta y el informe temático del taller, en horas en vez de semanas.\n\n\n\nLa instalación requiere perfil técnico (o usar las versiones integradas en herramientas como LM Studio y aplicaciones de notas); el uso, no.",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Productividad</span>"
+    ]
+  },
+  {
+    "objectID": "rc_otras_herramientas.html#ollama-y-lm-studio-la-puerta-a-los-modelos-locales",
+    "href": "rc_otras_herramientas.html#ollama-y-lm-studio-la-puerta-a-los-modelos-locales",
+    "title": "11  Productividad",
+    "section": "11.5 Ollama y LM Studio: la puerta a los modelos locales",
+    "text": "11.5 Ollama y LM Studio: la puerta a los modelos locales\nAcceso: Ollama · LM Studio · Gratuitos; Ollama es open source.\nEstos dos programas hacen viable el uso cotidiano de modelos locales: se instalan como cualquier aplicación, descargan modelos abiertos de un catálogo (Llama, Qwen, Mistral, Hermes y otros) y entregan una interfaz de chat local. LM Studio es más amigable para empezar (interfaz gráfica); Ollama es más flexible para automatizar (línea de comandos, open source).\n\n\n\n\n\n\n\n\n\nLM Studio\nOllama\n\n\n\n\nInterfaz\nGráfica, tipo chat\nLínea de comandos + API local\n\n\nPerfil\nCualquier usuario\nEquipo técnico\n\n\nOpen source\nNo (gratuito)\nSí (MIT)\n\n\nMejor para\nProbar modelos locales hoy\nIntegrar modelos locales a flujos",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Productividad</span>"
+    ]
+  },
+  {
+    "objectID": "rc_otras_herramientas.html#tabla-comparativa-del-capítulo",
+    "href": "rc_otras_herramientas.html#tabla-comparativa-del-capítulo",
+    "title": "11  Productividad",
+    "section": "11.6 Tabla comparativa del capítulo",
+    "text": "11.6 Tabla comparativa del capítulo\n\n\n\n\n\n\n\n\n\n\nHerramienta\nTarea\nCosto\nOpen source\nDatos salen de la institución\n\n\n\n\nJulius AI\nAnálisis de planillas\nGratuito c/límite\nNo\nSí (nube)\n\n\nGamma\nPresentaciones\nGratuito c/marca\nNo\nSí (nube)\n\n\nNapkin\nDiagramas\nGratuito c/límite\nNo\nSí (nube)\n\n\nWhisper\nTranscripción de audio\nGratuito\nSí\nNo (local)\n\n\nOllama\nModelos locales\nGratuito\nSí\nNo (local)\n\n\nLM Studio\nModelos locales\nGratuito\nNo\nNo (local)\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nPatrón a notar: las herramientas de nube gratuitas son cómodas pero procesan tus datos afuera; las open source locales exigen algo más de instalación pero devuelven el control. Para material público, comodidad; para material sensible, control.",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Productividad</span>"
+    ]
+  },
+  {
+    "objectID": "rc_openclaw.html",
+    "href": "rc_openclaw.html",
+    "title": "12  OpenClaw",
+    "section": "",
+    "text": "Resumen ejecutivo\nOpenClaw es un asistente personal de IA open source y autoalojado: se instala en un computador propio y conversa contigo por los canales que ya usas —WhatsApp, Telegram, correo— de forma permanente. A diferencia de un chatbot de navegador, OpenClaw recuerda, ejecuta tareas y opera de manera continua: puede revisar información periódicamente, mantener listas y recordatorios, y automatizar flujos completos. Es de las herramientas más potentes de esta parte y también la que exige más criterio: requiere perfil técnico para instalarla y resguardos serios para operarla.",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>OpenClaw</span>"
+    ]
+  },
+  {
+    "objectID": "rc_openclaw.html#resumen-ejecutivo",
+    "href": "rc_openclaw.html#resumen-ejecutivo",
+    "title": "12  OpenClaw",
+    "section": "",
+    "text": "Acceso: OpenClaw\nOpen source · El software es gratuito; el modelo de IA que lo impulsa se contrata aparte (API de pago) o se ejecuta localmente.",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>OpenClaw</span>"
+    ]
+  },
+  {
+    "objectID": "rc_openclaw.html#qué-lo-hace-distinto",
+    "href": "rc_openclaw.html#qué-lo-hace-distinto",
+    "title": "12  OpenClaw",
+    "section": "12.1 Qué lo hace distinto",
+    "text": "12.1 Qué lo hace distinto\n\n\n\n\nChatbot de navegador\nOpenClaw\n\n\n\n\nDónde vive\nServidor de la empresa\nTu computador/servidor\n\n\nMemoria\nPor conversación\nPersistente, en archivos tuyos\n\n\nCanales\nLa web del proveedor\nWhatsApp, Telegram, correo y más\n\n\nIniciativa\nSolo responde\nPuede actuar de forma programada\n\n\nCódigo\nCerrado\nAbierto, auditable\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalogía: el funcionario de turno\n\n\n\nUn chatbot es una ventanilla de atención: respondes cuando alguien llega. OpenClaw es un funcionario de turno: tiene tareas asignadas, las ejecuta aunque nadie le esté hablando, y te avisa cuando algo requiere tu decisión. Y como todo funcionario con acceso a sistemas, necesita perfil de cargo, claves acotadas y supervisión.",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>OpenClaw</span>"
+    ]
+  },
+  {
+    "objectID": "rc_openclaw.html#casos-de-uso-institucionales-con-perfil-técnico",
+    "href": "rc_openclaw.html#casos-de-uso-institucionales-con-perfil-técnico",
+    "title": "12  OpenClaw",
+    "section": "12.2 Casos de uso institucionales (con perfil técnico)",
+    "text": "12.2 Casos de uso institucionales (con perfil técnico)\n\nVigilancia de información pública: “Revisa cada mañana el Diario Oficial y los portales de fondos concursables; avísame por Telegram si aparece algo sobre espacios públicos o medio ambiente.”\nAsistente interno de equipo: conectado al canal del equipo, responde sobre los documentos de la unidad, agenda hitos y prepara borradores de minutas.\nAutomatización de reportes: generar el resumen semanal de reclamos georreferenciados (flujo del Módulo 1) y distribuirlo sin intervención manual.\nMemoria de gestión: registro conversacional de acuerdos y pendientes consultable en lenguaje natural.",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>OpenClaw</span>"
+    ]
+  },
+  {
+    "objectID": "rc_openclaw.html#advertencias-serias",
+    "href": "rc_openclaw.html#advertencias-serias",
+    "title": "12  OpenClaw",
+    "section": "12.3 Advertencias serias",
+    "text": "12.3 Advertencias serias\n\n\n\n\n\n\nWarning\n\n\n\nOpenClaw ejecuta acciones reales con acceso real. Antes de usarlo institucionalmente:\n\nNunca instalarlo con acceso a datos personales de vecinos ni a sistemas críticos. Empezar con tareas de solo lectura sobre información pública.\nCuentas dedicadas: número de WhatsApp/Telegram y correo propios para el asistente, nunca los personales de un funcionario.\nEl modelo que lo impulsa puede ser remoto: si usa una API en la nube, lo que el asistente lee viaja a ese proveedor. Para confidencialidad real, combinarlo con un modelo local vía Ollama / LM Studio o infraestructura institucional.\nRequiere mantención: es un proyecto open source joven y de evolución rápida; exige a alguien del equipo informático a cargo, con actualizaciones y revisión de permisos.",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>OpenClaw</span>"
+    ]
+  },
+  {
+    "objectID": "rc_openclaw.html#cómo-empezar-sin-riesgo",
+    "href": "rc_openclaw.html#cómo-empezar-sin-riesgo",
+    "title": "12  OpenClaw",
+    "section": "12.4 Cómo empezar sin riesgo",
+    "text": "12.4 Cómo empezar sin riesgo\n\nProbar en un computador personal con tareas triviales (recordatorios, resúmenes de páginas públicas).\nMedir el costo real de API tras una semana de uso.\nRecién entonces evaluar un piloto institucional acotado, con el encargado de seguridad informática en la mesa.",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>OpenClaw</span>"
+    ]
+  },
+  {
+    "objectID": "rc_openclaw.html#ficha-rápida",
+    "href": "rc_openclaw.html#ficha-rápida",
+    "title": "12  OpenClaw",
+    "section": "12.5 Ficha rápida",
+    "text": "12.5 Ficha rápida\n\n\n\n\n\n\n\nAspecto\nDetalle\n\n\n\n\nCosto\nSoftware gratuito (open source); modelo de IA aparte (API o local)\n\n\nInstalación\nSí: requiere perfil técnico (computador o servidor propio)\n\n\nFortaleza\nAsistente permanente, multicanal, con memoria y automatización\n\n\nMejor para\nVigilancia de información, reportes periódicos, asistente de equipo\n\n\nRiesgo principal\nAcceso amplio mal configurado; proyecto joven que exige mantención\n\n\nRegla de oro\nEmpezar en solo lectura, con cuentas dedicadas y sin datos personales",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>OpenClaw</span>"
+    ]
+  },
+  {
+    "objectID": "rc_hermes.html",
+    "href": "rc_hermes.html",
+    "title": "13  Hermes Agent",
+    "section": "",
+    "text": "Resumen ejecutivo\nHermes Agent es un agente de IA open source y autoalojado: vive en un computador o servidor propio, mantiene memoria de trabajo, usa herramientas y puede ejecutar tareas repetitivas con supervisión. Por eso no corresponde tratarlo como una familia de modelos. Está más cerca de OpenClaw: ambos son arneses agénticos que se conectan a un modelo de lenguaje, a canales de comunicación y a herramientas externas para transformar instrucciones en acciones.\nLa diferencia práctica es de enfoque. OpenClaw privilegia el asistente permanente multicanal, mientras Hermes Agent se entiende mejor como un agente de automatización que aprende de flujos repetidos y convierte patrones de trabajo en procedimientos reutilizables. En un municipio o servicio público, eso lo vuelve interesante para tareas internas acotadas, auditables y de bajo riesgo al inicio.",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Hermes Agent</span>"
+    ]
+  },
+  {
+    "objectID": "rc_hermes.html#resumen-ejecutivo",
+    "href": "rc_hermes.html#resumen-ejecutivo",
+    "title": "13  Hermes Agent",
+    "section": "",
+    "text": "Acceso: Hermes Agent; verificar repositorio y guía de instalación vigentes antes de usarlo en producción.\nModelo de IA: se configura aparte. Puede usar una API en la nube o un modelo local vía herramientas como Ollama / LM Studio.",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Hermes Agent</span>"
+    ]
+  },
+  {
+    "objectID": "rc_hermes.html#qué-lo-hace-distinto",
+    "href": "rc_hermes.html#qué-lo-hace-distinto",
+    "title": "13  Hermes Agent",
+    "section": "13.1 Qué lo hace distinto",
+    "text": "13.1 Qué lo hace distinto\n\n\n\n\n\n\n\n\n\nChatbot de navegador\nHermes Agent\n\n\n\n\nDónde vive\nServidor del proveedor\nTu computador/servidor\n\n\nModo de trabajo\nResponde cuando le escribes\nEjecuta flujos de varios pasos\n\n\nMemoria\nConversación aislada\nMemoria operativa y procedimientos reutilizables\n\n\nHerramientas\nLimitadas a la app\nArchivos, APIs, comandos y conectores configurados\n\n\nRiesgo\nBajo si solo conversa\nMayor: puede actuar sobre sistemas reales\n\n\n\n\n\n\n\n\n\nAnalogía: el analista que documenta su método\n\n\n\nUn chatbot contesta una pregunta y termina. Hermes Agent se parece más a un analista junior que, después de resolver una tarea, deja anotado el procedimiento para repetirlo mejor la próxima vez. Esa capacidad es valiosa, pero también exige revisar qué aprendió, qué permisos tiene y cuándo debe pedir autorización humana.",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Hermes Agent</span>"
+    ]
+  },
+  {
+    "objectID": "rc_hermes.html#relación-con-openclaw",
+    "href": "rc_hermes.html#relación-con-openclaw",
+    "title": "13  Hermes Agent",
+    "section": "13.2 Relación con OpenClaw",
+    "text": "13.2 Relación con OpenClaw\nHermes Agent y OpenClaw no compiten con Gemini, Claude o ChatGPT en el mismo plano. Esos son modelos o asistentes de propósito general; Hermes Agent y OpenClaw son entornos para operar agentes.\n\n\n\n\n\n\n\n\nCriterio\nOpenClaw\nHermes Agent\n\n\n\n\nMejor punto de partida\nAsistente permanente por canales de mensajería\nAutomatización de flujos internos repetibles\n\n\nFortaleza\nMulticanalidad, presencia continua, tareas programadas\nAprendizaje de procedimientos y refinamiento de tareas\n\n\nInstalación\nPerfil técnico\nPerfil técnico\n\n\nModelo subyacente\nAPI externa o modelo local\nAPI externa o modelo local\n\n\nUso recomendado\nAlertas, seguimiento, recordatorios, reportes recurrentes\nClasificación, revisión, extracción y ejecución de procesos internos\n\n\n\nLa decisión no es “Hermes Agent o OpenClaw” en abstracto. La pregunta útil es qué tipo de operación se quiere delegar: si el foco está en un asistente siempre disponible por WhatsApp/Telegram, OpenClaw suele ser más natural; si el foco está en mejorar un procedimiento interno que se repite, Hermes Agent es una alternativa razonable para evaluar.",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Hermes Agent</span>"
+    ]
+  },
+  {
+    "objectID": "rc_hermes.html#casos-de-uso-institucionales",
+    "href": "rc_hermes.html#casos-de-uso-institucionales",
+    "title": "13  Hermes Agent",
+    "section": "13.3 Casos de uso institucionales",
+    "text": "13.3 Casos de uso institucionales\n\nClasificación recurrente de solicitudes: leer archivos o formularios ya anonimizados, asignar categorías y producir una tabla revisable por el equipo.\nPreparación de minutas: transformar notas, acuerdos y antecedentes públicos en una minuta con estructura institucional.\nRevisión de consistencia: detectar campos faltantes, fechas incompatibles o duplicados en documentos de trabajo.\nFlujos con memoria de proceso: repetir una metodología acordada por el equipo, dejando trazabilidad de pasos y decisiones.\nComplemento de OpenClaw: OpenClaw puede servir como interfaz permanente; Hermes Agent puede ejecutar procedimientos más estructurados detrás, siempre con permisos acotados.",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Hermes Agent</span>"
+    ]
+  },
+  {
+    "objectID": "rc_hermes.html#advertencias-serias",
+    "href": "rc_hermes.html#advertencias-serias",
+    "title": "13  Hermes Agent",
+    "section": "13.4 Advertencias serias",
+    "text": "13.4 Advertencias serias\n\n\n\n\n\n\nWarning\n\n\n\nHermes Agent debe tratarse como software con capacidad de actuar, no como un chat. Antes de usarlo institucionalmente:\n\nNo conectarlo al inicio a datos personales ni sistemas críticos. Empezar con información pública, archivos de prueba o datos anonimizados.\nLimitar permisos por tarea. Si solo debe leer una carpeta, no debe tener acceso a todo el computador ni a credenciales generales.\nRevisar lo que aprende. Un procedimiento reutilizable puede codificar errores, sesgos o atajos indebidos si nadie lo audita.\nSeparar agente y modelo. Aunque Hermes Agent sea autoalojado, el modelo que usa puede estar en la nube. Para confidencialidad real, combinarlo con un modelo local o infraestructura institucional.\nMantención técnica permanente. Requiere actualizaciones, revisión de conectores, manejo de llaves API y bitácora de acciones.",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Hermes Agent</span>"
+    ]
+  },
+  {
+    "objectID": "rc_hermes.html#cómo-empezar-sin-riesgo",
+    "href": "rc_hermes.html#cómo-empezar-sin-riesgo",
+    "title": "13  Hermes Agent",
+    "section": "13.5 Cómo empezar sin riesgo",
+    "text": "13.5 Cómo empezar sin riesgo\n\nElegir una tarea administrativa pública y repetitiva, sin datos personales.\nEjecutarla primero con archivos de prueba y comparar el resultado con el procedimiento humano actual.\nDocumentar entradas, salidas, permisos y responsables.\nRecién después evaluar un piloto acotado con datos reales anonimizados y revisión humana obligatoria.",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Hermes Agent</span>"
+    ]
+  },
+  {
+    "objectID": "rc_hermes.html#ficha-rápida",
+    "href": "rc_hermes.html#ficha-rápida",
+    "title": "13  Hermes Agent",
+    "section": "13.6 Ficha rápida",
+    "text": "13.6 Ficha rápida\n\n\n\nAspecto\nDetalle\n\n\n\n\nCosto\nSoftware open source; costo depende del modelo usado y del hardware\n\n\nInstalación\nSí: requiere perfil técnico\n\n\nFortaleza\nAutomatización de flujos repetitivos con memoria/procedimientos\n\n\nMejor para\nProcesos internos acotados, revisión, clasificación y preparación de documentos\n\n\nRiesgo principal\nPermisos excesivos, aprendizaje no auditado y conexión inadvertida a modelos en la nube\n\n\nCategoría\nAgente autoalojado, alternativa/complemento a OpenClaw",
+    "crumbs": [
+      "Otros Recursos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Hermes Agent</span>"
+    ]
+  },
+  {
+    "objectID": "rc_glosario.html",
+    "href": "rc_glosario.html",
+    "title": "14  Glosario",
+    "section": "",
+    "text": "Resumen ejecutivo\nEste glosario ordena los conceptos que pueden confundir a estudiantes sin formación previa en IA o programación. Cada entrada tiene el nombre, un resumen ejecutivo, una recomendación de uso y un enlace de referencia cuando existe una fuente oficial o una herramienta concreta.",
+    "crumbs": [
+      "Glosario",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Glosario</span>"
+    ]
+  },
+  {
+    "objectID": "rc_glosario.html#resumen-ejecutivo",
+    "href": "rc_glosario.html#resumen-ejecutivo",
+    "title": "14  Glosario",
+    "section": "",
+    "text": "Nombre\nResumen ejecutivo\nRecomendación: cuándo usarlo\nLink\n\n\n\n\nAgente\nSistema que puede planificar y ejecutar pasos con cierto grado de autonomía sobre archivos, herramientas o tareas.\nÚsalo cuando la tarea requiere varios pasos, revisión de archivos o acciones repetidas, no solo una respuesta breve.\nOpenClaw\n\n\nAlucinación\nRespuesta plausible pero falsa, incompleta o sin respaldo suficiente.\nAsume que puede ocurrir en cualquier asistente; verifica cifras, citas, leyes y decisiones formales.\n\n\n\nAPI\nInterfaz para que un sistema use un modelo o servicio desde código.\nÚsala solo si hay perfil técnico y una necesidad de integración estable.\nOpenAI API\n\n\nApp integrada\nInterfaz visual que permite usar capacidades dentro o junto a un asistente.\nÚsala cuando el usuario final necesita botones, filtros o paneles, no comandos.\nApps SDK\n\n\nAsistente\nAplicación conversacional que usa modelos y agrega interfaz, archivos, memoria o búsqueda.\nÚsalo para redactar, resumir, revisar documentos, explorar ideas o resolver tareas generales.\nChatGPT\n\n\nCLI\nInterfaz de línea de comandos usada desde el terminal. Deja acciones reproducibles.\nÚsala con perfil técnico cuando importa trabajar sobre carpetas, scripts o proyectos completos.\nGemini CLI\n\n\nContexto\nInformación que el sistema tiene disponible para responder: documentos, mensajes, archivos o reglas.\nAumenta el contexto cuando la respuesta depende de documentos propios; reduce contexto si la tarea es simple.\n\n\n\nEcosistema\nConjunto de herramientas conectadas de un proveedor o comunidad. No es una sola herramienta.\nÚsalo como categoría cuando una marca ofrece app, modelos, laboratorio, CLI y notebooks.\nGoogle\n\n\nIA generativa\nSistemas que producen texto, código, imágenes, audio o estructuras nuevas a partir de instrucciones.\nÚsala para crear borradores, clasificar, resumir, transformar formatos o idear alternativas.\n\n\n\nIDE\nEntorno integrado para trabajar con archivos, código, terminal, vista previa y control de cambios.\nÚsalo cuando hay proyecto, código, notebooks, sitio web o mapa que mantener.\nAntigravity\n\n\nMarketplace / directorio\nLugar para descubrir e instalar plugins, apps o conectores.\nÚsalo con cautela: revisa mantenedor, permisos, lectura/escritura y datos de prueba antes de instalar.\nMCP Servers\n\n\nMCP\nProtocolo abierto para conectar asistentes o agentes con datos, archivos, APIs y herramientas externas.\nÚsalo cuando necesitas acceso controlado a sistemas externos sin copiar y pegar información manualmente.\nModel Context Protocol\n\n\nModelo\nMotor estadístico entrenado para generar respuestas. No es la aplicación completa.\nElige modelo según tarea: rápido para tareas simples, avanzado para análisis complejo.\nGoogle AI Studio\n\n\nModelo local\nModelo que corre en computador o servidor propio, sin enviar datos a la nube.\nÚsalo para información sensible, operación sin internet o control institucional del dato.\nOllama\n\n\nMultimodal\nCapacidad de trabajar con texto, imagen, audio, video o tablas.\nÚsalo cuando la tarea incluye fotos de terreno, PDFs, planillas, mapas o audios.\nGemini\n\n\nNotebook\nDocumento ejecutable que combina texto, código y resultados.\nÚsalo para análisis reproducibles del curso, especialmente Python y datos territoriales.\nGoogle Colab\n\n\nNube\nInfraestructura de servidores externos donde se procesa información.\nÚsala para información pública o anonimizada; evita subir datos personales o confidenciales.\n\n\n\nOpen source\nSoftware cuyo código fuente puede revisarse, modificarse y redistribuirse según su licencia.\nPrefiérelo para flujos institucionales permanentes, auditables o autoalojados.\nWhisper\n\n\nPesos abiertos\nArchivos del modelo disponibles para descargar y ejecutar bajo una licencia definida.\nÚsalos cuando necesitas independencia del proveedor o ejecución local.\nNous Research\n\n\nPlugin / extensión\nPaquete instalable que agrega capacidades a un cliente. Puede incluir skills, MCP o configuración.\nÚsalo para distribuir una configuración completa al equipo; audita permisos antes de instalar.\nClaude Plugins\n\n\nPrompt\nInstrucción que se entrega al sistema de IA.\nÚsalo como encargo claro: tarea, contexto, formato esperado, criterios y restricciones.\n\n\n\nProveedor\nOrganización que ofrece modelos, apps, APIs o infraestructura.\nEvalúalo por costo, privacidad, continuidad, integración institucional y soporte.\n\n\n\nSkill\nPaquete de instrucciones, criterios y pasos para repetir una metodología.\nÚsala cuando el problema es repetir bien un procedimiento, no conectar una herramienta.\nClaude Skills\n\n\nSoberanía de datos\nCapacidad de controlar dónde se almacenan, procesan y auditan los datos institucionales.\nPriorízala cuando hay datos personales, información sensible o dependencia crítica.\n\n\n\nTrazabilidad\nPosibilidad de saber de dónde salió una respuesta o qué pasos se ejecutaron.\nExígela para informes, oficios, cifras públicas y decisiones que deben justificarse.\nNotebookLM\n\n\nVentana de contexto\nCantidad máxima de información que el modelo puede considerar en una interacción.\nImporta cuando trabajas con documentos largos, muchos archivos o instrucciones extensas.\nClaude",
+    "crumbs": [
+      "Glosario",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Glosario</span>"
+    ]
+  },
+  {
+    "objectID": "rc_glosario.html#regla-práctica-de-lectura",
+    "href": "rc_glosario.html#regla-práctica-de-lectura",
+    "title": "14  Glosario",
+    "section": "14.1 Regla práctica de lectura",
+    "text": "14.1 Regla práctica de lectura\nSi el nombre responde a “qué motor razona”, probablemente hablamos de un modelo. Si responde a “dónde trabajo”, hablamos de una aplicación, IDE o CLI. Si responde a “qué tarea delego”, hablamos de una herramienta o agente. Si responde a “cómo conecto o extiendo”, hablamos de skills, MCP, plugins, marketplaces o apps.",
+    "crumbs": [
+      "Glosario",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Glosario</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "Referencias Bibliográficas",
+    "section": "",
+    "text": "Karpathy, Andrej. 2025. “Vibe Coding.” Publicación en X\n(Twitter). https://x.com/karpathy/status/1886192184808149383.\n\n\nOsmani, Addy, Shubham Saboo, and Sokratis Kartakis. 2026. “The New\nSDLC with Vibe Coding: From Ad-Hoc Prompting to Agentic\nEngineering.” Google.",
+    "crumbs": [
+      "Referencias Bibliográficas"
+    ]
+  }
+]
