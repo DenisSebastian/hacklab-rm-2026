@@ -9,8 +9,8 @@ editor:
 
 ## Resumen ejecutivo {.unnumbered}
 
-**LatamGPT** es el proyecto de modelo de lenguaje **abierto y
-latinoamericano** liderado desde Chile por el **CENIA** (Centro
+{{< var ai.tool.latamgpt >}} es el proyecto de modelo de lenguaje **abierto y
+latinoamericano** liderado desde Chile por el {{< var ai.provider.cenia >}} (Centro
 Nacional de Inteligencia Artificial), con colaboración de instituciones
 de toda la región. Su apuesta es doble: un modelo **entrenado con datos
 de América Latina** —su español, sus instituciones, sus contextos— y un
@@ -19,7 +19,9 @@ y desplegar sin depender de la voluntad comercial de una empresa
 extranjera. Para el sector público chileno no es solo una herramienta:
 es la pieza de **soberanía tecnológica** del mapa de esta parte.
 
-**Acceso:** [latamgpt.org](https://www.latamgpt.org) · Modelo abierto;
+![](images/latam_gpt.png){fig-align="center" width="500"}
+
+**Acceso:** {{< var ai.tool.latamgpt >}} · Modelo abierto;
 verificar canales de acceso vigentes (demo web, descarga de pesos,
 despliegue institucional).
 
@@ -40,6 +42,8 @@ Un modelo entrenado con corpus latinoamericano invierte esa relación:
 el contexto regional no es la excepción que hay que explicar en el
 prompt, sino el terreno nativo del modelo.
 
+![Instuticiones participantes en el proyecto de Latam-GPT por país. Fuente: [https://cenia.cl/2025/02/13/cenia-impulsa-el-primer-modelo-de-lenguaje-colaborativo-de-latinoamerica/](https://cenia.cl/2025/02/13/cenia-impulsa-el-primer-modelo-de-lenguaje-colaborativo-de-latinoamerica/)](images/inst_cenia.jpg){fig-align="center" width="400"}
+
 ::: {.callout-tip title="Ejemplos de uso municipal"}
 -   *"Explica qué instrumentos de planificación territorial chilenos
     (PLADECO, PRC, PROT) corresponden a cada escala de decisión y cómo
@@ -52,13 +56,13 @@ prompt, sino el terreno nativo del modelo.
 
 ## La dimensión de soberanía
 
-Por ser un modelo abierto, LatamGPT habilita lo que los servicios
+Por ser un modelo abierto, {{< var ai.tool.latamgpt >}} habilita lo que los servicios
 comerciales en la nube no pueden ofrecer:
 
 1.  **Despliegue en infraestructura propia**: un servicio público puede
     ejecutarlo en sus servidores; los datos no salen de la institución
-    (mismo argumento del capítulo de Hermes, con la ventaja del
-    contexto regional).
+    (mismo argumento de los modelos locales, con la ventaja del contexto
+    regional).
 2.  **Auditabilidad**: saber con qué datos y criterios fue construido,
     condición cada vez más relevante para el uso estatal de IA.
 3.  **Continuidad**: no desaparece ni cambia de precio por decisión
@@ -68,26 +72,24 @@ comerciales en la nube no pueden ofrecer:
 
 ::: callout-warning
 **Expectativas honestas**: un modelo regional abierto no compite hoy en
-capacidad bruta con los modelos frontera (Gemini Pro, Claude Opus,
-GPT). La elección es de criterio: para razonamiento complejo, modelos
-frontera; para contexto regional, datos sensibles o independencia
-tecnológica, el modelo abierto regional. No es uno u otro: es saber
-cuándo cada cual.
+capacidad bruta con los modelos frontera ({{< var ai.model.gemini_pro >}},
+{{< var ai.model.claude_opus >}}, {{< var ai.model.gpt >}}). La
+elección es de criterio: para razonamiento complejo, modelos frontera;
+para contexto regional, datos sensibles o independencia tecnológica, el
+modelo abierto regional. No es uno u otro: es saber cuándo cada cual.
 :::
 
-::: {.callout-note appearance="simple" icon="false"}
-📷 **IMAGEN PENDIENTE**: Mapa de América Latina destacando la red de
-instituciones colaboradoras de LatamGPT (con Chile/CENIA como nodo
-coordinador), acompañado del logo del proyecto y una línea de tiempo
-breve del desarrollo del modelo.
-:::
+
+<!-- ![](images/Latam-gpt-map.png){fig-align="center" width="500"} -->
+
+
 
 ## Ficha rápida
 
 | Aspecto | Detalle |
 |----|----|
 | Costo | Abierto / gratuito |
-| Quién está detrás | CENIA (Chile) + red de instituciones latinoamericanas |
+| Quién está detrás | {{< var ai.provider.cenia >}} (Chile) + red de instituciones latinoamericanas |
 | Fortaleza | Contexto latinoamericano nativo; apertura y soberanía |
 | Mejor para | Texto con contexto chileno/regional; despliegues institucionales |
 | Limitación | Menor capacidad bruta que modelos frontera; canales de acceso en evolución |

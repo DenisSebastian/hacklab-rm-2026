@@ -1,0 +1,81 @@
+---
+subtitle: "Claude Desktop y Claude Code para documentos, código y MCP"
+editor:
+  markdown:
+    wrap: 72
+---
+
+# Claude Code
+
+## Resumen ejecutivo {.unnumbered}
+
+{{< var ai.tool.claude >}} combina dos superficies relevantes para el
+curso: {{< var ai.tool.claude_desktop >}}, orientado al trabajo
+cotidiano con documentos, archivos, ventanas y conectores; y
+{{< var ai.tool.claude_code >}}, el agente de programación disponible
+en terminal, IDE, escritorio y web. Su fortaleza está en documentos
+largos, revisión crítica, redacción cuidadosa y conexión con
+herramientas externas vía MCP.
+
+![](images/logo-anthropic.svg){fig-alt="Logo de Anthropic" width=90px}
+
+**Acceso:** {{< var ai.tool.claude_desktop >}} ·
+{{< var ai.tool.claude_code >}}.
+
+## Superficies disponibles
+
+| Superficie | Para qué sirve | Cuándo usarla |
+|----|----|----|
+| **Claude Desktop** | Aplicación de escritorio, acceso rápido, archivos, capturas, extensiones y conectores | Minutas, informes, revisión documental y flujos con archivos locales |
+| **Claude Code CLI** | Agente completo desde terminal | Programar, correr comandos, revisar repositorios y automatizar tareas |
+| **VS Code / JetBrains** | Claude Code dentro del IDE | Revisión visual de diffs, contexto del archivo activo y navegación del proyecto |
+| **Web / móvil** | Sesiones remotas y continuidad entre dispositivos | Tareas largas, revisión asincrónica o trabajo fuera del computador principal |
+
+## Características distintivas
+
+-   **Desktop con contexto local**: la página de descarga destaca
+    acceso desde cualquier app, compartir ventanas o archivos y
+    conectar herramientas.
+-   **Claude Code multiplaforma**: la documentación oficial lo
+    describe disponible en terminal, IDE, app de escritorio y navegador.
+-   **MCP integrado**: puede conectar fuentes externas como Drive,
+    Slack, Jira, bases de datos o herramientas internas mediante
+    servidores MCP.
+-   **Skills, hooks y memoria**: permite empaquetar flujos repetibles,
+    guardar instrucciones y automatizar acciones alrededor del trabajo.
+
+## Uso municipal recomendado
+
+Claude Desktop conviene cuando el insumo principal son documentos:
+bases de licitación, informes largos, actas, oficios, criterios de
+evaluación o borradores sensibles que requieren revisión cuidadosa.
+Claude Code conviene cuando esos documentos se transforman en
+productos técnicos: scripts, validaciones, repositorios, pruebas o
+reportes reproducibles.
+
+::: {.callout-tip title="Ejemplo de tarea"}
+> *"Lee estas bases y este borrador de proyecto. Detecta requisitos no
+> cubiertos, sugiere cambios al texto y genera una lista de verificación
+> para revisar antes de postular."*
+:::
+
+## Lectura y documentación relevante
+
+| Recurso | Por qué leerlo |
+|----|----|
+| {{< var ai.tool.claude_desktop >}} | Capacidades de escritorio, archivos, conectores y despliegue institucional |
+| {{< var ai.tool.claude_code >}} | Superficies: terminal, VS Code, escritorio, web y JetBrains |
+| [Claude Code MCP](https://code.claude.com/docs/en/mcp) | Cómo conectar herramientas, bases de datos y APIs |
+| [Dive into Claude Code](https://arxiv.org/abs/2604.14228) | Análisis técnico de arquitectura, permisos, MCP, plugins, skills y hooks |
+| [On the Use of Agentic Coding Manifests](https://arxiv.org/abs/2509.14744) | Estudio sobre archivos de instrucciones para agentes de código |
+
+## Resguardos
+
+-   Separar la app general de Claude del uso técnico con Claude Code:
+    no todo documento necesita acceso a una carpeta completa.
+-   Si se conecta MCP, revisar qué servidor se instala, qué permisos
+    pide y qué datos puede leer o modificar.
+-   Para documentos administrativos, pedir siempre citas o ubicación de
+    origen dentro del documento.
+-   Para código, exigir pruebas, diff revisable y explicación de
+    validación.

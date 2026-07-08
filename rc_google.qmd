@@ -1,40 +1,47 @@
 ---
-subtitle: "Gemini, Nano Banana y más herramientas integradas"
+subtitle: "Asistente, modelos, laboratorio, imágenes y notebooks"
 editor:
   markdown:
     wrap: 72
 ---
 
-# Ecosistema Google
+# Google
 
 ## Resumen ejecutivo {.unnumbered}
 
-Google ofrece el ecosistema de IA gratuito más completo disponible hoy
+{{< var ai.provider.google >}} ofrece uno de los ecosistemas de IA gratuitos más completos
+disponibles hoy
 para un funcionario público: un asistente conversacional de primera
-línea (**Gemini**), un laboratorio para usar los modelos sin
-restricciones de interfaz (**AI Studio**), un generador y editor de
-imágenes (**Nano Banana**), una herramienta de línea de comandos open
-source con cuota gratuita generosa (**Gemini CLI**) y un entorno para
-ejecutar análisis sin instalar nada (**Colab**). Es además el
-ecosistema central del curso: los créditos de Google Cloud del programa
-amplían todo lo anterior.
+línea ({{< var ai.tool.gemini >}}), un laboratorio para usar los modelos sin
+restricciones de interfaz ({{< var ai.tool.ai_studio >}}), generación y edición de
+imágenes con IA, una herramienta de línea de comandos open source con
+cuota gratuita generosa ({{< var ai.tool.gemini_cli >}}) y un entorno para ejecutar
+análisis sin instalar nada ({{< var ai.tool.colab >}}). Es además el
+ecosistema central del curso: los créditos de {{< var ai.tool.google_cloud >}} del programa
+amplían todo lo anterior. [Modelos de Google - Visitado 07-07-2026](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models?hl=es-419)
+
 
 ## Gemini (app y web)
 
-**Acceso:** [gemini.google.com](https://gemini.google.com) · Gratuito
+
+![](images/gemini.jpg){fig-align="center" width="300"}
+
+**Acceso:** {{< var ai.tool.gemini >}} · Gratuito
 con cuenta Google; nivel de pago para uso intensivo.
 
 El asistente conversacional de Google. Los dos modelos que importan:
 
 | Modelo | Cuándo usarlo |
 |----|----|
-| **Gemini Flash** | Tareas acotadas, respuestas rápidas, iteración ágil: la mayoría de los casos |
-| **Gemini Pro** | Razonamiento complejo, documentos extensos, análisis con muchas condiciones |
+| **{{< var ai.model.gemini_flash >}}** | Tareas acotadas, respuestas rápidas, iteración ágil: la mayoría de los casos |
+| **{{< var ai.model.gemini_pro >}}** | Razonamiento complejo, documentos extensos, análisis con muchas condiciones |
+
+
 
 Su ventaja diferencial para el sector público chileno es la
-**integración nativa con Google Workspace**: lee archivos de Drive,
+**integración nativa con {{< var ai.tool.workspace >}}**: lee archivos de Drive,
 analiza Sheets, resume Docs y redacta en Gmail directamente. Si tu
-municipio ya trabaja sobre Google Workspace, Gemini opera dentro de los
+municipio ya trabaja sobre {{< var ai.tool.workspace >}}, Gemini opera dentro de los
 documentos que ya tienes, sin exportar nada.
 
 ::: {.callout-tip title="Ejemplos de uso municipal"}
@@ -48,7 +55,7 @@ documentos que ya tienes, sin exportar nada.
 
 ## Google AI Studio
 
-**Acceso:** [aistudio.google.com](https://aistudio.google.com) ·
+**Acceso:** {{< var ai.tool.ai_studio >}} ·
 Gratuito.
 
 La puerta "de laboratorio" a los mismos modelos: permite elegir el
@@ -66,15 +73,15 @@ lateral de selección de modelo (Flash / Pro) y el campo de
 instrucciones de sistema.
 :::
 
-## Nano Banana: imágenes con IA
+## Generación y edición de imágenes con IA
 
 **Acceso:** dentro de la app Gemini y de AI Studio · Gratuito con
 límites.
 
-"Nano Banana" es el nombre popular del modelo de **generación y edición
-de imágenes** de Gemini. Más allá de la curiosidad, tiene usos
-institucionales concretos: editar y generar imágenes con instrucciones
-en español, manteniendo consistencia entre versiones.
+Gemini incluye modelos de **generación y edición de imágenes**. Más
+allá de la curiosidad, tienen usos institucionales concretos: editar y
+generar imágenes con instrucciones en español, manteniendo consistencia
+entre versiones.
 
 ::: {.callout-tip title="Ejemplos de uso municipal"}
 -   **Visualizar intervenciones antes de ejecutarlas**: subir la foto de
@@ -94,7 +101,7 @@ como tal**. Y nunca generes imágenes de personas reales identificables.
 
 ## Gemini CLI: open source en el terminal
 
-**Acceso:** [github.com/google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli)
+**Acceso:** {{< var ai.tool.gemini_cli >}}
 · **Open source (Apache 2.0)** · Cuota gratuita generosa con cuenta
 Google personal.
 
@@ -119,7 +126,7 @@ institucional.
 
 ## Google Colab
 
-**Acceso:** [colab.research.google.com](https://colab.research.google.com)
+**Acceso:** {{< var ai.tool.colab >}}
 · Gratuito.
 
 El entorno donde corren los notebooks del curso: Python en el
@@ -133,7 +140,7 @@ del Módulo 1 como documentos reutilizables y compartibles.
 |----|----|----|
 | Gemini (app) | Asistente general + Workspace | Gratuito |
 | AI Studio | Plantillas y procesamiento avanzado | Gratuito |
-| Nano Banana | Generación/edición de imágenes | Gratuito con límites |
+| Imágenes con IA | Generación/edición de imágenes | Gratuito con límites |
 | Gemini CLI | Automatización en terminal | Gratuito, open source |
 | Colab | Notebooks Python sin instalación | Gratuito |
 
@@ -144,6 +151,6 @@ del Módulo 1 como documentos reutilizables y compartibles.
 -   Datos enviados a la nube de Google: aplicar los principios de uso
     responsable de esta parte (anonimizar; lo sensible no sale de la
     institución).
--   La integración Workspace requiere que la institución use Google
-    Workspace; con Microsoft 365 el equivalente es Copilot (no cubierto
-    aquí).
+-   La integración Workspace requiere que la institución use
+    {{< var ai.tool.workspace >}}; con Microsoft 365 el equivalente es
+    Copilot (no cubierto aquí).

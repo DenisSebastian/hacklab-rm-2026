@@ -9,16 +9,18 @@ editor:
 
 ## Resumen ejecutivo {.unnumbered}
 
-**Claude** (Anthropic) destaca en tres tareas críticas para el trabajo
+{{< var ai.tool.claude >}} ({{< var ai.provider.anthropic >}}) destaca en tres tareas críticas para el trabajo
 público: leer documentos largos y complejos, redactar con precisión en
 español formal, y analizar con cuidado cuando la respuesta tiene
 consecuencias. Su ventana de contexto es grande —puede leer un PLADECO
 completo de una vez— y su redacción es especialmente cuidadosa en
 matices legales y administrativos. Está disponible como aplicación web
-y móvil gratuita, y para perfiles técnicos como **Claude Code**, un
+y móvil gratuita, y para perfiles técnicos como {{< var ai.tool.claude_code >}}, un
 agente de línea de comandos.
 
-**Acceso:** [claude.ai](https://claude.ai) · Gratuito con límites
+![](images/claude-icon-logo.png){fig-align="center" width="100"}
+
+**Acceso:** {{< var ai.tool.claude >}} · Gratuito con límites
 diarios; plan Pro para uso intensivo.
 
 ## Los modelos
@@ -28,9 +30,9 @@ el mismo que con Gemini Flash/Pro:
 
 | Modelo | Carácter | Cuándo usarlo |
 |----|----|----|
-| **Haiku** | Rápido y liviano | Tareas simples y masivas: clasificar, extraer, formatear |
-| **Sonnet** | Equilibrio | El caballo de batalla: redacción, análisis, uso diario |
-| **Opus** | Máxima capacidad | Razonamiento complejo, documentos críticos, análisis delicados |
+| **{{< var ai.model.claude_haiku >}}** | Rápido y liviano | Tareas simples y masivas: clasificar, extraer, formatear |
+| **{{< var ai.model.claude_sonnet >}}** | Equilibrio | El caballo de batalla: redacción, análisis, uso diario |
+| **{{< var ai.model.claude_opus >}}** | Máxima capacidad | Razonamiento complejo, documentos críticos, análisis delicados |
 
 Regla práctica idéntica a la del curso: empieza con el modelo medio;
 sube solo si el problema lo exige.
@@ -63,14 +65,17 @@ técnicos.
 
 Agente de línea de comandos: opera sobre carpetas y archivos locales,
 ejecuta tareas de varios pasos y automatiza flujos completos. Es la
-contraparte de Anthropic a Gemini CLI y Codex CLI. Para un equipo
-informático municipal: procesamiento masivo de archivos, generación de
-reportes periódicos, mantención de scripts de análisis del Módulo 1.
+contraparte de {{< var ai.provider.anthropic >}} a
+{{< var ai.tool.gemini_cli >}} y {{< var ai.tool.codex_cli >}}. Para un
+equipo informático municipal: procesamiento masivo de archivos,
+generación de reportes periódicos, mantención de scripts de análisis
+del Módulo 1.
 
 A diferencia de Gemini CLI, **no tiene nivel gratuito**: exige
 suscripción o API con pago por uso. Para presupuestos municipales
-reducidos, Gemini CLI es el punto de partida; Claude Code se justifica
-cuando la calidad de razonamiento en tareas largas lo amerita.
+reducidos, {{< var ai.tool.gemini_cli >}} es el punto de partida;
+{{< var ai.tool.claude_code >}} se justifica cuando la calidad de
+razonamiento en tareas largas lo amerita.
 
 ### API
 
@@ -88,8 +93,9 @@ como mapa de escalamiento, no como punto de partida.
 -   **Revisión crítica**: pedirle que encuentre debilidades de un
     análisis antes de que las encuentre el Concejo.
 
-Para sistematizar **muchas** fuentes con citas, NotebookLM sigue siendo
-mejor opción; para todo lo integrado a Workspace, Gemini.
+Para sistematizar **muchas** fuentes con citas,
+{{< var ai.tool.notebooklm >}} sigue siendo mejor opción; para todo lo
+integrado a {{< var ai.tool.workspace >}}, {{< var ai.tool.gemini >}}.
 
 ## Ficha rápida
 

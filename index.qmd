@@ -6,14 +6,11 @@ editor:
 
 # Introducción {.unnumbered}
 
-![](images/logo-CIT-GOBLAB.png){fig-align="center" width="350"}
+![](images/logo-hacklab.png){fig-align="center" width="300"}
 
-::: {.callout-note appearance="simple" icon="false"}
-📷 **IMAGEN PENDIENTE**: Banner del programa AcademIA HackLab con los
-logos de las instituciones aliadas (UAI, Fundación Ciudad Emergente,
-Google, Axmos, CINNDA, Gobierno Regional Metropolitano) y una imagen de
-fondo de la Región Metropolitana de Santiago.
-:::
+![](images/organizadores.png){fig-align="center" width="850"}
+
+
 
 ## El programa
 
@@ -35,6 +32,28 @@ Este documento reúne los contenidos de las **siete sesiones a cargo de
 Denis Berroeta (UAI)**, que recorren el camino completo desde aprender a
 "hablar con la máquina" hasta producir evidencia territorial integrada
 para la toma de decisiones.
+
+## Docente
+
+**Profesor:** {{< var profesor.name >}}
+
+**Contacto:** {{< var profesor.email >}} · {{< var profesor.linkedin >}}
+
+Denis Berroeta es magíster en Inteligencia Artificial por la Universidad
+Adolfo Ibáñez, máster en Data Science y actualmente cursa un PhD en Data
+Science. Se desempeña como {{< var profesor.cargo >}} del
+{{< var cit.name >}} de la {{< var uai.name >}}.
+
+Su trayectoria se ha desarrollado en el modelamiento y análisis de datos
+espaciales, participando en proyectos de investigación públicos y
+privados vinculados al {{< var cit.sigla >}}. En ese rol ha diseñado,
+coordinado y gestionado la implementación de metodologías de análisis de datos
+territoriales para apoyar procesos de diagnóstico, planificación y toma
+de decisiones.
+
+Cuenta además con experiencia docente en geoestadística, análisis
+criminal, análisis de imágenes satelitales para el monitoreo ambiental y
+ciencia de datos.
 
 ## ¿Para quién es este libro?
 
@@ -74,21 +93,22 @@ reglas de diseño lo concretan:
 ## Stack de herramientas
 
 Coherente con las alianzas del programa, las sesiones utilizan
-herramientas del ecosistema Google:
+herramientas del ecosistema {{< var ai.provider.google >}}:
 
 | Herramienta | Rol en el curso | Requiere instalación |
 |----|----|----|
-| **Antigravity (IDE)** | Entorno principal de vibe coding, con selección de modelos Google (Gemini Flash / Gemini Pro) según complejidad de la tarea | Sí (guiada en la Sesión 2.2) |
-| **Gemini (app / AI Studio)** | Asistente conversacional para prompting, exploración de ideas y análisis de texto | No (navegador) |
-| **Google Colab** | Ejecución de notebooks Python sin instalar nada; respaldo cuando Antigravity no esté disponible | No (navegador) |
-| **Google My Maps / Sheets** | Visualización y organización de datos sin código | No (navegador) |
-| **Google Cloud** | APIs de IA (NLP, análisis de sentimientos) para el Módulo 2, con los créditos del curso | No (navegador) |
+| **{{< var ai.tool.antigravity >}} (IDE)** | Entorno principal de vibe coding, con selección de modelos {{< var ai.model.gemini_flash >}} / {{< var ai.model.gemini_pro >}} según complejidad de la tarea | Sí (guiada en la Sesión 2.2) |
+| **{{< var ai.tool.gemini >}} / {{< var ai.tool.ai_studio >}}** | Asistente conversacional para prompting, exploración de ideas y análisis de texto | No (navegador) |
+<!-- | **{{< var ai.tool.colab >}}** | Ejecución de notebooks Python sin instalar nada; respaldo cuando {{< var ai.tool.antigravity >}} no esté disponible | No (navegador) | -->
+<!-- | **Google My Maps / Sheets** | Visualización y organización de datos sin código | No (navegador) | -->
+<!-- | **{{< var ai.tool.google_cloud >}}** | APIs de IA (NLP, análisis de sentimientos) para el Módulo 2, con los créditos del curso | No (navegador) | -->
 
 ::: callout-important
 Antes de la Sesión 2.2 cada participante debe contar con cuenta Google
-activa, créditos de Google Cloud asignados y Antigravity instalado o,
-en su defecto, acceso verificado a Google Colab. La guía de preparación
-se envía una semana antes.
+activa, créditos de {{< var ai.tool.google_cloud >}} asignados y
+{{< var ai.tool.antigravity >}} instalado o, en su defecto, acceso
+verificado a {{< var ai.tool.colab >}}. La guía de preparación se envía
+una semana antes.
 :::
 
 ## Mapa de sesiones
@@ -98,8 +118,8 @@ se envía una semana antes.
 | M1: Conceptos & Casos | 2.2 | Vibe Coding: programar describiendo en lenguaje natural | 1,5 | Meet |
 | M1: Conceptos & Casos | 3.1 | Ecosistema Python para ciencia de datos espaciales | 1,5 | Meet |
 | M1: Conceptos & Casos | 3.2 | Manipulación de geometrías y proyecciones | 1,5 | Meet |
-| M2: Modelos IA | 5.1 | Sensores ciudadanos e IoT aplicados al urbanismo táctico | 1,5 | Presencial |
-| M2: Modelos IA | 5.2 | Procesamiento de Lenguaje Natural (NLP) para la participación comunitaria | 1,5 | Presencial |
+| M2: Modelos IA | 5.1 | Sensores ciudadanos e IoT aplicados al urbanismo táctico | 1,5 | Meet |
+| M2: Modelos IA | 5.2 | Procesamiento de Lenguaje Natural (NLP) para la participación comunitaria | 1,5 | Meet |
 | M2: Modelos IA | 6.1 | Análisis de sentimientos en redes sociales y consultas públicas | 1,5 | Meet |
 | M2: Modelos IA | 6.2 | Integración de Small Data comunitario con Big Data institucional | 1,5 | Meet |
 
@@ -124,13 +144,13 @@ una se apoye en la anterior:
 6.2 Junto todo: percepción ciudadana + datos institucionales = evidencia territorial
 ```
 
-::: {.callout-note appearance="simple" icon="false"}
-📷 **IMAGEN PENDIENTE**: Diagrama del hilo narrativo de las 7 sesiones
-como una escalera o camino ascendente, donde cada peldaño es una sesión
-con su ícono (chat/código, mapa, capas superpuestas, sensor, texto,
-emociones, puzzle de integración), culminando en "evidencia territorial
-para decidir".
-:::
+<!-- ::: {.callout-note appearance="simple" icon="false"} -->
+<!-- 📷 **IMAGEN PENDIENTE**: Diagrama del hilo narrativo de las 7 sesiones -->
+<!-- como una escalera o camino ascendente, donde cada peldaño es una sesión -->
+<!-- con su ícono (chat/código, mapa, capas superpuestas, sensor, texto, -->
+<!-- emociones, puzzle de integración), culminando en "evidencia territorial -->
+<!-- para decidir". -->
+<!-- ::: -->
 
 ## Cómo usar este libro
 
@@ -147,7 +167,7 @@ Cada capítulo corresponde a una sesión y sigue la misma estructura:
 -   **Recursos**: materiales, plantillas, datasets y lecturas de apoyo.
 
 Los bloques de prompts aparecen siempre en formato citable, listos para
-pegar en Antigravity, Gemini o Colab. La invitación permanente es una
-sola: **reemplaza la comuna de ejemplo por la tuya**. Tu conocimiento
-del territorio es el insumo más valioso del curso; la IA solo lo
-amplifica.
+pegar en {{< var ai.tool.antigravity >}}, {{< var ai.tool.gemini >}} o
+{{< var ai.tool.colab >}}. La invitación permanente es una sola:
+**reemplaza la comuna de ejemplo por la tuya**. Tu conocimiento del
+territorio es el insumo más valioso del curso; la IA solo lo amplifica.

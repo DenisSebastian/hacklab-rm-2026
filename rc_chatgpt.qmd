@@ -9,15 +9,18 @@ editor:
 
 ## Resumen ejecutivo {.unnumbered}
 
-**ChatGPT** (OpenAI) es el asistente más conocido globalmente, y esa
+{{< var ai.tool.chatgpt >}} ({{< var ai.provider.openai >}}) es el asistente más conocido globalmente, y esa
 popularidad es en sí una ventaja: la comunidad de usuarios en español
 es enorme y casi cualquier duda de uso ya tiene tutorial. Su fortaleza
 es la **amplitud**: maneja bien desde la redacción hasta el análisis de
 datos y la lectura de imágenes. Para programar desde el terminal,
-OpenAI ofrece **Codex CLI**, open source. Para profesionales que recién
-comienzan con IA, ChatGPT es una buena puerta de entrada.
+{{< var ai.provider.openai >}} ofrece {{< var ai.tool.codex_cli >}},
+open source. Para profesionales que recién comienzan con IA,
+{{< var ai.tool.chatgpt >}} es una buena puerta de entrada.
 
-**Acceso:** [chatgpt.com](https://chatgpt.com) · Gratuito con límites;
+![](images/chagpt.png){fig-align="center" width="300"}
+
+**Acceso:** {{< var ai.tool.chatgpt >}} · Gratuito con límites;
 plan Plus para uso intensivo.
 
 ## ChatGPT (app)
@@ -47,18 +50,21 @@ Qué aporta el nivel gratuito al trabajo municipal:
 ## Codex: el agente de código
 
 **Acceso:**
-[github.com/openai/codex](https://github.com/openai/codex) · CLI
+{{< var ai.tool.codex_cli >}} · CLI
 **open source (Apache 2.0)**; requiere plan ChatGPT o API.
 
-**Codex** es el agente de programación de OpenAI, en dos formas:
-integrado en ChatGPT (delegarle tareas de código desde el navegador) y
-**Codex CLI** en el terminal, operando sobre carpetas locales. El
-código del CLI es abierto: auditable e instalable en infraestructura
-propia — aunque el modelo que lo impulsa sigue siendo de pago.
+{{< var ai.tool.codex >}} es el agente de programación de
+{{< var ai.provider.openai >}}, en dos formas: integrado en
+{{< var ai.tool.chatgpt >}} (delegarle tareas de código desde el
+navegador) y {{< var ai.tool.codex_cli >}} en el terminal, operando
+sobre carpetas locales. El código del CLI es abierto: auditable e
+instalable en infraestructura propia — aunque el modelo que lo impulsa
+sigue siendo de pago.
 
-Para el perfil técnico municipal cumple el mismo rol que Gemini CLI y
-Claude Code: automatizar procesamiento de archivos, generar scripts de
-análisis, mantener los productos del Módulo 1.
+Para el perfil técnico municipal cumple el mismo rol que
+{{< var ai.tool.gemini_cli >}} y {{< var ai.tool.claude_code >}}:
+automatizar procesamiento de archivos, generar scripts de análisis,
+mantener los productos del Módulo 1.
 
 ::: {.callout-tip title="Ejemplo de uso (perfil técnico municipal)"}
 > *"Toma estos 12 Excel de ejecución presupuestaria (uno por mes),

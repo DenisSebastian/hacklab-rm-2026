@@ -1,25 +1,27 @@
 ---
-subtitle: "Recursos complementarios de IA para el trabajo territorial"
+subtitle: "Datos, presentaciones, diagramas, transcripción y modelos locales"
 editor:
   markdown:
     wrap: 72
 ---
 
-# Otras Herramientas
+# Productividad
 
 ## Resumen ejecutivo {.unnumbered}
 
-Este capítulo reúne herramientas de nicho que resuelven muy bien una
-tarea específica del trabajo público: explorar planillas sin código
-(**Julius AI**), producir presentaciones en minutos (**Gamma**),
-convertir texto en diagramas (**Napkin**), transcribir audios de
-talleres y reuniones (**Whisper**, open source) y ejecutar modelos
-locales (**Ollama / LM Studio**). Ninguna exige programar; dos de ellas
-son completamente open source y corren en hardware propio.
+Este capítulo reúne herramientas de tarea que resuelven muy bien una
+necesidad específica del trabajo público: explorar planillas sin código
+({{< var ai.tool.julius >}}), producir presentaciones en minutos
+({{< var ai.tool.gamma >}}), convertir texto en diagramas
+({{< var ai.tool.napkin >}}), transcribir audios de talleres y
+reuniones ({{< var ai.tool.whisper >}}, open source) y ejecutar modelos
+locales ({{< var ai.tool.ollama >}} / {{< var ai.tool.lm_studio >}}).
+Ninguna exige programar; dos de ellas son completamente open source y
+corren en hardware propio.
 
 ## Julius AI: planillas sin código
 
-**Acceso:** [julius.ai](https://julius.ai) · Plan gratuito con límite
+**Acceso:** {{< var ai.tool.julius >}} · Plan gratuito con límite
 mensual de consultas.
 
 Un analista de datos conversacional: subes una planilla (Excel, CSV,
@@ -39,11 +41,12 @@ texto.
 :::
 
 Alternativa de costo cero si ya usas el ecosistema del curso: el propio
-Gemini sobre Google Sheets, o ChatGPT gratuito con archivos.
+{{< var ai.tool.gemini >}} sobre Google Sheets, o
+{{< var ai.tool.chatgpt >}} gratuito con archivos.
 
 ## Gamma: presentaciones desde texto
 
-**Acceso:** [gamma.app](https://gamma.app) · Plan gratuito con marca de
+**Acceso:** {{< var ai.tool.gamma >}} · Plan gratuito con marca de
 agua; plan de pago para uso profesional.
 
 Genera presentaciones completas a partir de una descripción: das el
@@ -63,7 +66,7 @@ siendo del profesional; el diseño inicial ya no.
 
 ## Napkin: de texto a diagramas
 
-**Acceso:** [napkin.ai](https://napkin.ai) · Plan gratuito disponible.
+**Acceso:** {{< var ai.tool.napkin >}} · Plan gratuito disponible.
 
 Convierte texto en visualizaciones: pegas un párrafo que explica un
 proceso, una cadena causal o una comparación, y Napkin propone
@@ -80,7 +83,7 @@ diagramas (flujos, matrices, líneas de tiempo) para elegir y exportar.
 ## Whisper: transcripción open source
 
 **Acceso:**
-[github.com/openai/whisper](https://github.com/openai/whisper) ·
+{{< var ai.tool.whisper >}} ·
 **Open source (MIT)** · Gratuito; corre en computador propio.
 
 Modelo de **transcripción de audio a texto** que funciona muy bien en
@@ -93,7 +96,7 @@ convierten en texto procesable con el flujo NLP de la sesión 5.2.
 
 ::: {.callout-tip title="El flujo completo de costo cero"}
 1.  Grabar el taller participativo (con consentimiento informado).
-2.  **Whisper** transcribe el audio localmente.
+2.  {{< var ai.tool.whisper >}} transcribe el audio localmente.
 3.  Modelo local o IA del curso clasifica y sintetiza (flujo 5.2, con
     auditoría humana).
 4.  Resultado: el acta y el informe temático del taller, en horas en
@@ -101,20 +104,21 @@ convierten en texto procesable con el flujo NLP de la sesión 5.2.
 :::
 
 La instalación requiere perfil técnico (o usar las versiones
-integradas en herramientas como LM Studio y aplicaciones de notas);
+integradas en herramientas como {{< var ai.tool.lm_studio >}} y
+aplicaciones de notas);
 el uso, no.
 
 ## Ollama y LM Studio: la puerta a los modelos locales
 
-**Acceso:** [ollama.com](https://ollama.com) ·
-[lmstudio.ai](https://lmstudio.ai) · Gratuitos; Ollama es open source.
+**Acceso:** {{< var ai.tool.ollama >}} ·
+{{< var ai.tool.lm_studio >}} · Gratuitos; Ollama es open source.
 
-Los dos programas que hacen viable todo el capítulo de Hermes: se
-instalan como cualquier aplicación, descargan modelos abiertos de un
-catálogo (Hermes, Llama, Qwen, Mistral...) y entregan una interfaz de
-chat local. LM Studio es más amigable para empezar (interfaz gráfica);
-Ollama es más flexible para automatizar (línea de comandos, open
-source).
+Estos dos programas hacen viable el uso cotidiano de modelos locales:
+se instalan como cualquier aplicación, descargan modelos abiertos de un
+catálogo (Llama, Qwen, Mistral, Hermes y otros) y entregan una interfaz
+de chat local. {{< var ai.tool.lm_studio >}} es más amigable para
+empezar (interfaz gráfica); {{< var ai.tool.ollama >}} es más flexible
+para automatizar (línea de comandos, open source).
 
 | | LM Studio | Ollama |
 |----|----|----|

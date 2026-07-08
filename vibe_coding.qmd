@@ -8,25 +8,39 @@ editor:
 # Vibe Coding
 
 **Sesión 2.2 · Día 2 · 1,5 horas · Modalidad Meet · Docentes: Denis
-Berroeta (UAI) + Axmos**
+Berroeta (UAI) + Pedro Mancillo**
 
 ## Resumen ejecutivo {.unnumbered}
 
+<!-- ![](images/vibe-coding.jpg){fig-align="center" width="850"} -->
+![](images/clase_2.2.png){fig-align="center" width="850"}
+
+
+
 Hasta hace muy poco, convertir una idea de análisis territorial en una
 herramienta funcional exigía saber programar o contratar a alguien que
-supiera. Esa barrera acaba de caer. El *vibe coding* —generar código
-mediante descripciones en lenguaje natural [@karpathy_vibe_2025]—
-permite que un profesional municipal que conoce su problema mejor que
-nadie pueda construir directamente la herramienta que lo resuelve,
-conversando con una IA en español.
+supiera. Esa barrera se está moviendo. El *vibe coding*, entendido como
+generar código mediante descripciones en lenguaje natural
+[@karpathy_vibe_2025], permite que una persona que conoce profundamente
+un problema público pueda construir un primer prototipo conversando con
+una IA en español.
+
+
+
+La sesión trabaja una idea central: el teclado dejó de ser la principal
+barrera. La nueva barrera es saber **qué pedir, qué contexto entregar,
+cómo evaluar lo que aparece en pantalla y cuándo desconfiar**. En el
+marco del nuevo ciclo de vida del desarrollo de software, esta transición
+se describe como un paso desde la sintaxis hacia la intención: la IA
+puede implementar, pero la persona sigue aportando intención, contexto,
+criterio y verificación [@osmani_new_sdlc_2026].
 
 Esta sesión es la **piedra angular metodológica de todo el curso**:
 todas las sesiones posteriores (Python espacial, NLP, análisis de
-sentimientos) asumen que dominas el ciclo básico de vibe coding. No se
-trata de aprender a programar por una vía alternativa; se trata de
-asumir un rol nuevo: el de **director técnico de una IA que programa**,
-donde lo valioso es saber qué pedir, cómo evaluar lo que se recibe y
-cuándo iterar.
+sentimientos e integración de datos) asumen que dominas el ciclo básico
+de trabajo: *prompt → código → ejecución → evaluación → nuevo prompt*. No
+se trata de aprender a programar por una vía alternativa; se trata de
+asumir un rol nuevo: el de **director técnico de una IA que programa**.
 
 Al finalizar la sesión serás capaz de:
 
@@ -36,21 +50,42 @@ Al finalizar la sesión serás capaz de:
     ejecución → evaluación → nuevo prompt*.
 3.  **Usar Antigravity (IDE)**, seleccionando entre Gemini Flash y
     Gemini Pro según la naturaleza de la tarea.
-4.  **Redactar prompts efectivos para generar código**: contexto, datos,
-    resultado esperado y restricciones.
-5.  **Evaluar resultados sin leer el código** y pedir correcciones en
-    lenguaje natural.
-6.  **Reconocer los límites** del vibe coding: cuándo confiar, cuándo
-    verificar y cuándo pedir ayuda experta.
+4.  **Redactar prompts efectivos para generar código**, incluyendo
+    contexto, datos, resultado esperado y restricciones.
+5.  **Evaluar resultados sin leer el código línea a línea**, usando
+    casos conocidos, revisión visual y contraste con los datos.
+6.  **Reconocer los límites** del vibe coding: cuándo sirve para
+    prototipar, cuándo requiere revisión y cuándo exige verificación
+    sistemática.
 
 ## Contenidos de la sesión {.unnumbered}
 
+
+
+Presentación: [Google Slides: 2.2 Vibe Coding](https://docs.google.com/presentation/d/1mcsFB1hi_nkagV-bx1nRUdiph_QtwDMCWa54UJ6ZR2M/edit?slide=id.p#slide=id.p)
+
 -   El cambio de paradigma: de "saber programar" a "saber pedir".
--   La herramienta: Antigravity y los modelos Gemini (Flash / Pro).
--   El ciclo iterativo: prompt → código → resultado → iteración.
--   Anatomía de un buen prompt para generar código.
+-   Qué es un agente: percibir, planificar, actuar, observar e iterar.
+-   Antigravity y los modelos Gemini (Flash / Pro).
+-   El ciclo iterativo: prompt → código → resultado → mejora.
+-   La plantilla de prompt del curso: contexto, datos, resultado,
+    restricciones.
 -   Manejo de errores sin pánico.
--   Límites, criterio y verificación para no programadores.
+-   Límites, criterio, alucinaciones y verificación proporcional al
+    riesgo.
+-   Primer prompt del proyecto final del equipo.
+
+## Hoja de ruta de la sesión
+
+| Bloque | Duración | Foco | Producto esperado |
+|---|---:|---|---|
+| 1 | 20 min | Cambio de paradigma | Entender qué cambia cuando se programa desde la intención |
+| 2 | 25 min | Antigravity y Gemini | Reproducir una demo simple con la propia comuna |
+| 3 | 30 min | Ciclo iterativo | Construir y refinar una visualización en 3 iteraciones |
+| 4 | 15 min | Límites y proyecto | Escribir el primer prompt del proyecto real |
+
+La regla de la sesión es simple: nadie necesita haber programado antes.
+Lo que sí se necesita es observar, describir, corregir y decidir.
 
 ## El cambio de paradigma
 
@@ -58,10 +93,29 @@ Al finalizar la sesión serás capaz de:
 
 Durante décadas, la programación funcionó como un idioma extranjero con
 traductores escasos y caros: si un municipio necesitaba un mapa
-interactivo de sus luminarias, debía encontrar a alguien que "hablara
-código". El vibe coding invierte esa relación: ahora la máquina habla
-nuestro idioma. Describes lo que necesitas en español y la IA escribe
-el código por ti.
+interactivo de sus puntos limpios, debía encontrar a alguien que
+"hablara código". El vibe coding invierte esa relación: ahora la máquina
+puede traducir una intención escrita en lenguaje natural a código
+ejecutable.
+
+![Andrej Karpathy — cofundador de OpenAI, ex director de IA de Tesla, acuño el término de "Vibe Coding"](images/karpathy.jpg){fig-align="center" width="250"}
+
+En febrero de 2025, Andrej Karpathy describió esta práctica como una
+forma de programar en la que la persona se "entrega a las vibras",
+describe lo que quiere, acepta lo que la IA produce y, cuando algo falla,
+pega el error para que la IA lo corrija [@karpathy_vibe_2025]. La frase
+se volvió popular porque nombró algo que ya estaba ocurriendo: muchas
+personas estaban dejando de escribir cada línea de código y empezando a
+dirigir sistemas que escriben código.
+
+El cambio de fondo puede resumirse así:
+
+| Antes | Ahora |
+|---|---|
+| Para construir software había que escribir sintaxis exacta. | Se describe qué se necesita; la IA propone cómo implementarlo. |
+| La persona que conocía el problema dependía de alguien que conocía el código. | La persona experta en el problema puede producir un primer prototipo. |
+| Cada idea esperaba presupuesto, licitación o apoyo técnico escaso. | Muchas ideas pueden explorarse en minutos antes de invertir más recursos. |
+| El valor estaba principalmente en escribir implementación. | El valor se desplaza hacia intención, contexto, evaluación y juicio. |
 
 ::: {.callout-tip title="Analogía: el alcalde y la plaza"}
 El alcalde no construye la plaza con sus manos: define qué plaza
@@ -71,26 +125,103 @@ diriges, la IA ejecuta**. Lo que aportas no es técnica de construcción,
 sino criterio sobre qué se necesita y si el resultado sirve.
 :::
 
-### El efecto "wow": de una frase a una herramienta
+### Principio territorial 1: la IA no conoce tu territorio
 
-La demostración central de la sesión: a partir de una sola frase en
-español, obtener una herramienta funcionando en menos de 5 minutos.
+La IA puede conocer lenguajes de programación, bibliotecas y patrones de
+interfaz. Pero no conoce como tú la historia de una comuna, los puntos de
+conflicto, las restricciones políticas, las zonas donde un dato suele
+fallar o los nombres locales que no aparecen en los manuales.
 
-> *"Crea una página que muestre un mapa de Santiago con un marcador en
-> la municipalidad de Quilicura y un círculo de 500 metros a su
-> alrededor."*
+Por eso, un prompt sin territorio produce soluciones genéricas. El
+contexto local es el insumo que ningún modelo trae incorporado: dónde
+duele, qué se intentó antes, qué es viable y qué resultado sería útil
+para decidir. En términos del nuevo SDLC, esta es una forma práctica de
+**ingeniería de contexto**: darle a la IA la información que necesitaría
+una persona nueva que llega hoy al equipo para hacer bien el trabajo
+[@osmani_new_sdlc_2026].
 
-::: {.callout-note appearance="simple" icon="false"}
-📷 **IMAGEN PENDIENTE**: Captura en dos paneles "antes/después": a la
-izquierda el prompt escrito en Antigravity; a la derecha el mapa
-resultante de Santiago con el marcador en la municipalidad de Quilicura
-y el círculo de 500 metros. Debe transmitir el salto directo de frase a
-herramienta.
+::: {.callout-note title="Idea clave"}
+La IA es el ejecutor. La persona experta en el territorio sigue siendo
+quien define el problema, entrega el contexto y valida si el resultado
+calza con la realidad.
 :::
 
-Lo importante no es el truco, sino lo que habilita: el profesional que
-conoce el problema territorial puede ahora producir directamente la
-herramienta que lo aborda, sin intermediarios.
+### Una historia: el ajedrez centauro
+
+En 1997, Deep Blue derrotó a Garry Kasparov. La lectura fácil habría
+sido: la máquina reemplazó al campeón. Pero Kasparov propuso otra forma
+de jugar: humano + máquina. En el llamado "ajedrez avanzado", el valor no
+estaba solo en el cálculo de la computadora, sino en la persona capaz de
+dirigirlo.
+
+![](images/kasparov.jpeg){fig-align="center" width="550"}
+
+
+Posteriormente en 2005 — en un torneo abierto no ganan ni los grandes maestros ni las supercomputadoras solas … ganan dos aficionados con computadores corrientes y un MÉTODO superior para dirigirlos [(Referencia)](https://en.chessbase.com/post/dark-horse-zacks-wins-freestyle-che-tournament).
+
+La lección para esta sesión es directa: no gana necesariamente quien más
+programa, sino quien mejor dirige la capacidad de la máquina. En el
+trabajo público, eso significa traducir conocimiento territorial en
+instrucciones claras, observar el resultado y corregir el rumbo.
+
+## ¿Qué es vibe coding?
+
+Para este curso, **vibe coding** significa crear programas describiendo
+en lenguaje natural lo que se necesita: la IA escribe el código; la
+persona dirige, observa y evalúa.
+
+El ciclo mínimo tiene cinco pasos:
+
+1.  **Describo** lo que necesito, en español.
+2.  **La IA genera** código y lo ejecuta.
+3.  **Miro el resultado**: mapa, tabla, gráfico, página o error.
+4.  **Pido ajustes** describiendo la diferencia entre lo obtenido y lo
+    esperado.
+5.  **Repito** hasta que el resultado sirva para explorar, comunicar o
+    decidir.
+
+El ciclo no reemplaza el juicio profesional. Lo desplaza hacia los puntos
+donde más importa: especificar, evaluar y verificar.
+
+### Del chat al agente
+
+Un chatbot responde y espera. Un agente trabaja en ciclo: recibe un
+objetivo, planifica pasos, actúa usando herramientas, observa el
+resultado y se corrige. El whitepaper *The New SDLC with Vibe Coding*
+describe este bucle como una secuencia de percepción, planificación,
+acción, observación e iteración [@osmani_new_sdlc_2026].
+
+Esto explica algo que verás en Antigravity: a veces la IA parece
+"pensar", probar, fallar y reintentar sola. No está rota; está
+iterando. Tu tarea no es leer cada línea que escribió, sino mirar si el
+resultado cumple el objetivo y si el camino es aceptable para el nivel de
+riesgo de la tarea.
+
+## Demostración: de una frase a una herramienta
+
+La demostración central de la sesión es obtener una herramienta
+funcionando a partir de una frase en español:
+
+> *"Crea una página web que muestre un mapa de Santiago con un marcador
+> en el punto limpio de La Florida y un círculo de 500 metros a su
+> alrededor. Todo en español."*
+
+![Instrucción y plan ejecutado por el Modelo de Genini Flash en Antogrivity](images/reciclaje_plan.png)
+
+El objetivo de la demo no es mostrar un truco, sino hacer visible el
+cambio: una persona que conoce el problema territorial puede producir un
+primer artefacto funcional sin empezar por la sintaxis.
+
+![Resultado de la instrucción generando una aplicación que se puede visualizar en el navegador web.](images/reciclaje_app.png)
+
+Después de la demo, la pregunta importante no es "¿qué código escribió?"
+sino:
+
+-   ¿El marcador quedó donde debía?
+-   ¿El radio corresponde a lo solicitado?
+-   ¿El texto está en español?
+-   ¿El resultado sirve para explicar o decidir algo?
+-   ¿Qué falta para que sea útil en mi comuna?
 
 ## La herramienta: Antigravity y los modelos Gemini
 
@@ -99,169 +230,257 @@ herramienta que lo aborda, sin intermediarios.
 Antigravity es el entorno de trabajo (IDE) del curso. De toda su
 interfaz solo necesitas reconocer tres zonas:
 
-1.  **Dónde se escribe el prompt** (la conversación con la IA).
-2.  **Dónde aparece el código** (lo que la IA escribió por ti; no
-    necesitas leerlo).
-3.  **Dónde se ve el resultado** (el mapa, la tabla, la página).
+1.  **Zona del prompt**: donde escribes lo que necesitas. Es tu lugar de
+    trabajo principal.
+2.  **Zona del código**: donde la IA escribe. Se mira de reojo; no se
+    edita durante esta sesión.
+3.  **Zona del resultado**: donde corre la herramienta. Aquí se evalúa y
+    se decide.
 
 El resto de la interfaz se ignora deliberadamente: está pensada para
-programadores y tú no necesitas serlo.
+programadores y tú no necesitas dominarla para lograr el objetivo de la
+sesión.
 
-::: {.callout-note appearance="simple" icon="false"}
-📷 **IMAGEN PENDIENTE**: Captura de pantalla de Antigravity con las
-tres zonas esenciales destacadas con recuadros de color y rótulos: (1)
-zona de prompt, (2) zona de código generado, (3) zona de resultado/
-vista previa.
-:::
+![Zona del prompt y se selecciona el modelo](images/app_prompt.png){fig-align="center" width="450"}
 
-### Elegir el modelo: Flash o Pro
+![Zona del código, se visualiza solo la drescipción del código generado](images/app_codigo.png){fig-align="center" width="450"}
 
-| Modelo | Cuándo usarlo |
-|----|----|
-| **Gemini Flash** | Tareas acotadas, respuestas rápidas, iteración ágil. La mayoría de los casos del curso. |
-| **Gemini Pro** | Razonamiento complejo, múltiples pasos, análisis con muchas condiciones. |
+![Zona del resultado, alojado en una carpeta del directorio y desplegada en un servidor local.](images/app_cuadrado.png){fig-align="center" width="450"}
 
-::: {.callout-tip title="Regla práctica"}
-Empieza con **Flash**; si el resultado se queda corto o el problema
-tiene muchas partes, sube a **Pro**. Es como elegir entre la bicicleta
-y la camioneta municipal: para la mayoría de los trámites del día basta
-la bicicleta.
-:::
+<!-- ### Plan B permanente: Google Colab -->
 
-## El ciclo iterativo: prompt → código → resultado
+<!-- Si Antigravity falla, no se instala o presenta un problema técnico, el -->
+<!-- curso usará Google Colab como plan B. La lógica de trabajo es la misma: -->
+<!-- describir, ejecutar, observar e iterar. La herramienta cambia; el método -->
+<!-- no. -->
 
-### Anatomía de un buen prompt
+<!-- ### Elegir el modelo: Flash o Pro -->
 
-La plantilla del curso tiene cuatro partes:
+<!-- | Modelo | Cuándo usarlo | -->
+<!-- |---|---| -->
+<!-- | **Gemini Flash** | Tareas acotadas, respuestas rápidas, iteración ágil. La mayoría de los ejercicios del curso. | -->
+<!-- | **Gemini Pro** | Problemas de varios pasos, muchas condiciones, razonamiento más exigente o resultados donde Flash se queda corto. | -->
 
-1.  **Contexto**: quién soy y para qué lo necesito. *"Trabajo en un
-    municipio y necesito..."*
-2.  **Datos**: qué información tengo y en qué formato. *"Tengo una
-    planilla con direcciones y tipos de reclamo..."*
-3.  **Resultado esperado**: qué quiero ver al final. *"Quiero un mapa
-    donde cada reclamo aparezca como un punto coloreado por tipo."*
-4.  **Restricciones**: qué debe y no debe hacer. *"Que funcione en el
-    navegador, en español, sin pedir claves de acceso."*
+<!-- ::: {.callout-tip title="Regla práctica"} -->
+<!-- Empieza siempre con **Flash**. Si el resultado se queda corto, el -->
+<!-- problema tiene muchas partes o necesitas razonamiento más cuidadoso, -->
+<!-- sube a **Pro**. -->
+<!-- ::: -->
 
-::: {.callout-note appearance="simple" icon="false"}
-📷 **IMAGEN PENDIENTE**: Infografía de la plantilla de prompt en cuatro
-bloques apilados (Contexto / Datos / Resultado esperado /
-Restricciones), cada bloque con su ícono y un ejemplo municipal de una
-línea al costado.
-:::
+## La plantilla recomendada
 
-### La iteración como método, no como fracaso
+La calidad de lo que la IA produce depende menos de palabras mágicas y
+más de la calidad del contexto que recibe. La pregunta correcta no es
+"¿cómo engaño a la IA para que lo haga bien?", sino "¿qué necesitaría
+saber una persona nueva que llega hoy a mi equipo para hacer bien este
+trabajo?".
 
-El primer resultado casi nunca es el final, y eso no es un error: es el
-método. La habilidad central del vibe coding es **describir en lenguaje
-natural la diferencia entre lo que obtuviste y lo que querías**:
+La plantilla del curso tiene cuatro piezas:
+
+1.  **Contexto**: quién soy, dónde trabajo y para qué necesito la
+    herramienta.
+2.  **Datos**: qué información tengo, en qué formato y con qué columnas
+    o campos.
+3.  **Resultado esperado**: qué quiero ver al final y cómo sabré que
+    está bien.
+4.  **Restricciones**: qué debe y no debe hacer la solución.
+
+![Las cuatro piezas mínimas para un prompt que funcione](images/piezas-prompt.png)
+
+### Ejemplo de prompt completo
+
+> Trabajo en la unidad de medio ambiente de un municipio y necesito
+> priorizar retiros de microbasurales. Tengo una planilla con dirección,
+> fecha del reclamo, tipo de residuo y comuna. Quiero un mapa donde cada
+> reclamo aparezca como un punto coloreado por tipo, con un conteo por
+> sector. Que funcione en el navegador, esté en español, no pida claves
+> de acceso y no use datos personales.
+
+### Prompt vago versus prompt con contexto
+
+| Prompt vago | Prompt con contexto |
+|---|---|
+| "Haz un análisis de los reclamos de mi comuna." | Contexto + datos + resultado + restricciones. |
+| La IA inventa supuestos para rellenar lo que no dijiste. | La IA trabaja con tu problema y tus datos. |
+| El resultado puede verse profesional, pero no servir para decidir. | El resultado es más específico, evaluable y accionable. |
+
+## Iterar es el método
+
+El primer resultado casi nunca es el final. Y eso no es un fracaso: es
+el método. Un primer resultado es un borrador de trabajo, como la primera
+versión de un informe.
+
+La habilidad central es describir en español la diferencia entre lo que
+obtuviste y lo que querías:
 
 > *"El mapa está bien, pero los puntos son muy pequeños y no se
-> distinguen los tipos de reclamo. Hazlos más grandes y agrega una
-> leyenda con los colores."*
+> distinguen los tipos de reclamo. Hazlos más grandes, agrega una
+> leyenda con los colores y muestra un conteo por categoría."*
+
+Tres iteraciones bien descritas valen más que un prompt supuestamente
+perfecto. Cada iteración enseña algo sobre el problema, los datos y las
+limitaciones de la herramienta.
 
 ::: {.callout-tip title="Analogía: el peluquero"}
-Nadie le dice al peluquero "aplica la técnica de degradado con tijera
-de entresacar". Le dice "más corto a los lados, arriba déjalo como
-está". Y si el resultado no convence, lo corrige mirando el espejo:
-"un poco más corto atrás". Con la IA es igual: describes el cambio que
-ves necesario, no la técnica para lograrlo.
+Nadie le dice al peluquero "aplica la técnica de degradado con tijera de
+entresacar". Le dice "más corto a los lados, arriba déjalo como está". Y
+si el resultado no convence, lo corrige mirando el espejo: "un poco más
+corto atrás". Con la IA es igual: describes el cambio que ves necesario,
+no la técnica para lograrlo.
 :::
 
-### Manejo de errores sin pánico
+## Cuando algo falla
 
-Cuando algo falla, la pantalla muestra un mensaje de error que parece
-escrito en otro idioma. La respuesta del curso es un reflejo simple:
-**copiar el mensaje de error completo y pegárselo a la IA** pidiendo
-que lo explique y lo corrija.
+Cuando algo falla, la pantalla puede mostrar texto rojo o un mensaje que
+parece escrito en otro idioma. La respuesta del curso es un reflejo
+simple:
 
-> *"Me apareció este error: [pegar mensaje]. Explícame en simple qué
-> pasó y corrígelo."*
+1.  Copia el mensaje de error completo.
+2.  Pégaselo a la IA.
+3.  Pide una explicación simple y una corrección.
+4.  Mira nuevamente el resultado.
+
+Prompt de reparación:
+
+> *"Apareció este error: [pegar mensaje completo]. Explícame en simple
+> qué pasó y corrígelo sin cambiar el objetivo de la herramienta."*
 
 El error deja de ser un muro y pasa a ser un mensaje más de la
-conversación.
+conversación. Aun así, no todos los errores son visibles: algunos
+resultados se ven correctos y están mal calculados. Por eso la siguiente
+sección es tan importante.
 
-## Límites y criterio: cuándo desconfiar
+## Límites y criterio
 
-El vibe coding no es magia y puede fallar de formas específicas:
+### El problema del 80%
 
--   **Código que "funciona" pero hace otra cosa**: corre sin errores,
-    pero no calcula lo que pediste.
--   **Alucinaciones**: la IA inventa datos plausibles pero falsos
-    (cifras, nombres de calles, comunas).
--   **Resultados plausibles pero incorrectos**: el mapa se ve bien, pero
-    los puntos están en el lugar equivocado.
+La IA puede producir rápido el 80% de una solución: una interfaz que se
+ve bien, un mapa que carga, una tabla ordenada, un gráfico convincente.
+El 20% restante, es decir, casos raros, datos sucios, supuestos
+invisibles, restricciones locales y decisiones de uso, es exactamente
+donde entra el
+criterio profesional.
 
-Reglas de verificación para no programadores:
+El whitepaper de SDLC lo plantea como una diferencia entre vibe coding y
+prácticas más estructuradas: para un prototipo puede bastar con que algo
+parezca funcionar; para software o análisis en los que una organización
+depende del resultado, se necesitan pruebas, revisión, restricciones y
+supervisión humana [@osmani_new_sdlc_2026].
 
-1.  **Probar siempre con un caso cuyo resultado conoces de antemano**
-    (si sabes que tu comuna tiene 12 plazas y la IA dice 200, algo anda
-    mal).
-2.  **Desconfiar de cifras y nombres que la IA no obtuvo de los datos
-    que tú le entregaste.**
-3.  **Nunca usar datos personales o sensibles reales en estos
-    ejercicios.** La dimensión de responsabilidad se desarrolla en el
-    Módulo 3 con el marco NIST.
+### No todo se "vibra": espectro de confianza
+
+| Uso | Nivel de confianza aceptable | Verificación mínima |
+|---|---|---|
+| **Explorar / prototipar** | Vibe coding rápido: "parece que funciona" puede bastar. | Revisión visual y sentido común territorial. |
+| **Analizar / informar** | Revisión selectiva: no basta con que se vea bien. | Validar cifras, muestras y supuestos. |
+| **Decidir / publicar** | Verificación sistemática. | Contrastar datos, revisar metodología y documentar fuentes. |
+
+La pregunta clave no es "¿usé IA?", sino "¿cómo verifiqué lo que produjo?".
+
+### Tres reglas de verificación para no programadores
+
+1.  **Prueba siempre con un caso cuyo resultado ya conoces.** Si sabes
+    que tu comuna tiene cerca de 14 puntos limpios y el mapa muestra 3,
+    algo anda mal.
+2.  **Desconfía de cifras y nombres que no salieron de tus datos.** Si
+    la IA cita totales, lugares o fuentes que no le entregaste, pídele el
+    origen o descártalo.
+3.  **Nunca uses datos personales o sensibles reales en estos
+    ejercicios.** Nombres, RUT, teléfonos, direcciones exactas y casos
+    identificables se quitan antes de procesar. Esta dimensión se
+    profundiza en el Módulo 3.
+
+### Alucinaciones: plausibilidad no es verdad
+
+Una alucinación ocurre cuando la IA completa vacíos con información
+plausible pero falsa. El riesgo es mayor cuando el resultado "suena" bien
+o se ve profesional. En gestión pública, una cifra inventada en una
+minuta, un nombre de programa inexistente o una ubicación mal asignada
+pueden producir decisiones equivocadas.
+
+La postura profesional es usar la IA para lo que hace bien: proponer,
+generar, ordenar y prototipar. La atención humana se reserva para lo que
+hace peor: contexto local, casos límite, verificación y responsabilidad.
 
 ## Actividades
 
-### Ejercicio guiado 1: el mapa de mi comuna
+### Ejercicio 1: tu comuna, tu primer prompt
 
-Reproduce la demostración inicial con tu propia comuna:
+Adapta la demostración a tu territorio:
 
-> *"Crea una página que muestre un mapa de Santiago con un marcador en
-> la municipalidad de [TU COMUNA] y un círculo de 500 metros a su
-> alrededor."*
+> *"Crea una página web que muestre un mapa con un marcador en [un lugar
+> importante de TU comuna] y un círculo de [500] metros a su alrededor.
+> Todo en español."*
 
-Verifica: ¿el marcador quedó realmente sobre tu municipalidad? Tú
-conoces tu comuna; la IA, no necesariamente.
+Cuando funcione, realiza una iteración: cambia el radio, el lugar, el
+color del círculo o el texto visible. Una mejora concreta cuenta como
+éxito.
 
-### Ejercicio guiado 2: tres iteraciones mínimo
+Verifica:
 
-A partir de la planilla de puntos de interés comunales entregada por el
-curso (plazas, consultorios, sedes vecinales), genera una visualización
-y refínala en **al menos 3 iteraciones**:
+-   ¿El marcador quedó realmente sobre el lugar correcto?
+-   ¿El círculo tiene sentido para la escala del barrio?
+-   ¿El mapa está en una zona reconocible para ti?
+-   ¿Qué corregirías antes de mostrarlo a otra persona?
 
-1.  Primer prompt usando la plantilla (contexto / datos / resultado /
-    restricciones).
-2.  Evalúa el resultado y describe en español qué falta o sobra.
-3.  Itera hasta que el producto te sirva de verdad.
+### Ejercicio 2: de la planilla al mapa, en 3 iteraciones
 
-Guarda los prompts que funcionaron: son tu nuevo capital de trabajo.
+Usa el dataset del curso de puntos de interés comunales de la Región
+Metropolitana (plazas, consultorios, sedes vecinales y puntos limpios).
+Trabaja en equipos y produce una visualización refinada en al menos tres
+iteraciones:
 
-### Tarea puente (15 min, opcional)
+1.  **Iteración 1**: carga la planilla y muestra los puntos en un mapa.
+2.  **Iteración 2**: mejora algo sustantivo: colores por tipo, tamaños,
+    filtros por comuna o etiquetas.
+3.  **Iteración 3**: hazlo presentable: título, leyenda en español,
+    conteo por categoría y una lectura clara.
 
-Genera una visualización con datos de tu propia comuna y compártela en
-el espacio común del curso.
+Usa la plantilla completa: contexto, datos, resultado y restricciones.
+Guarda los prompts que funcionaron. Son capital de trabajo para la
+sesión 3.1.
+
+### Cierre: el primer prompt de tu proyecto
+
+Cada equipo escribe, aunque todavía no lo ejecute, el primer prompt de su
+problemática real:
+
+-   **Contexto**: quiénes somos y qué problema territorial queremos
+    abordar.
+-   **Datos**: qué tenemos hoy, aunque sea una planilla incompleta o
+    desordenada.
+-   **Resultado**: qué querríamos ver en pantalla.
+-   **Restricciones**: qué no debe pasar, qué datos no se pueden usar y
+    qué supuestos deben respetarse.
+
+Ese prompt es la semilla de la hoja de ruta final. En la sesión 3.1 se
+retomará con datos reales del territorio.
 
 ## Resumen
 
 -   El vibe coding cambia la pregunta de "¿quién sabe programar?" a
-    "¿quién sabe qué se necesita?" — y esa respuesta eres tú.
--   El ciclo de trabajo permanente es **prompt → código → resultado →
-    iteración**; el primer intento casi nunca es el último, y eso es el
-    método, no un fracaso.
--   Un buen prompt tiene **contexto, datos, resultado esperado y
+    "¿quién sabe qué se necesita?".
+-   La IA no conoce tu territorio: tu contexto local es el insumo más
+    importante.
+-   El ciclo de trabajo permanente es **prompt → código → ejecución →
+    evaluación → nuevo prompt**.
+-   Un buen prompt incluye **contexto, datos, resultado esperado y
     restricciones**.
 -   Empieza con Gemini **Flash**; sube a **Pro** cuando el problema
-    tenga muchas partes.
+    tenga muchas partes o requiera razonamiento más cuidadoso.
 -   Ante un error: copiar, pegar, pedir explicación y corrección.
--   La IA puede alucinar: valida siempre contra un caso conocido y
-    desconfía de datos que no le entregaste. Nunca uses datos personales
-    reales en los ejercicios.
+-   No todo se "vibra": prototipar, informar y decidir requieren niveles
+    distintos de verificación.
+-   Generar código ya está resuelto. Dirigir, evaluar y decidir es el
+    nuevo oficio.
 
 ## Recursos
 
--   **Guía de preparación previa** (enviada 1 semana antes): creación de
-    cuenta Google, activación de créditos, instalación de Antigravity,
-    prueba de acceso. Incluye video de 5 minutos.
--   **Plantilla de prompt del curso** (1 página): Contexto / Datos /
-    Resultado esperado / Restricciones, con 5 ejemplos territoriales
-    resueltos.
--   **Dataset de práctica**: planilla CSV/Google Sheets con puntos de
-    interés de comunas de la RM.
--   **Prompt-book de la sesión**: los 6–8 prompts usados en las
-    demostraciones, copiables.
--   **Video de respaldo** de la demostración inicial.
--   Documentación oficial de Antigravity y de los modelos Gemini
-    (lectura opcional).
+-   **Guía de preparación previa**: creación de cuenta Google, activación
+    de créditos, instalación de Antigravity y prueba de acceso.
+-   **Plantilla de prompt del curso**: Contexto / Datos / Resultado
+    esperado / Restricciones, con ejemplos territoriales.
+-   **Lectura opcional**: *The New SDLC with Vibe Coding*, para
+    profundizar en el paso desde vibe coding hacia ingeniería agéntica,
+    verificación, contexto y nuevos roles humanos en el desarrollo de
+    software [@osmani_new_sdlc_2026].

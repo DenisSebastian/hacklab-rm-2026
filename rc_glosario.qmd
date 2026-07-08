@@ -1,0 +1,52 @@
+---
+subtitle: "Conceptos, uso recomendado y enlaces de referencia"
+editor:
+  markdown:
+    wrap: 72
+---
+
+# Glosario
+
+## Resumen ejecutivo {.unnumbered}
+
+Este glosario ordena los conceptos que pueden confundir a estudiantes
+sin formación previa en IA o programación. Cada entrada tiene el nombre,
+un resumen ejecutivo, una recomendación de uso y un enlace de referencia
+cuando existe una fuente oficial o una herramienta concreta.
+
+| Nombre | Resumen ejecutivo | Recomendación: cuándo usarlo | Link |
+|----|----|----|----|
+| **Agente** | Sistema que puede planificar y ejecutar pasos con cierto grado de autonomía sobre archivos, herramientas o tareas. | Úsalo cuando la tarea requiere varios pasos, revisión de archivos o acciones repetidas, no solo una respuesta breve. | {{< var ai.tool.openclaw >}} |
+| **Alucinación** | Respuesta plausible pero falsa, incompleta o sin respaldo suficiente. | Asume que puede ocurrir en cualquier asistente; verifica cifras, citas, leyes y decisiones formales. |  |
+| **API** | Interfaz para que un sistema use un modelo o servicio desde código. | Úsala solo si hay perfil técnico y una necesidad de integración estable. | [OpenAI API](https://platform.openai.com/docs) |
+| **App integrada** | Interfaz visual que permite usar capacidades dentro o junto a un asistente. | Úsala cuando el usuario final necesita botones, filtros o paneles, no comandos. | [Apps SDK](https://developers.openai.com/apps-sdk/) |
+| **Asistente** | Aplicación conversacional que usa modelos y agrega interfaz, archivos, memoria o búsqueda. | Úsalo para redactar, resumir, revisar documentos, explorar ideas o resolver tareas generales. | {{< var ai.tool.chatgpt >}} |
+| **CLI** | Interfaz de línea de comandos usada desde el terminal. Deja acciones reproducibles. | Úsala con perfil técnico cuando importa trabajar sobre carpetas, scripts o proyectos completos. | {{< var ai.tool.gemini_cli >}} |
+| **Contexto** | Información que el sistema tiene disponible para responder: documentos, mensajes, archivos o reglas. | Aumenta el contexto cuando la respuesta depende de documentos propios; reduce contexto si la tarea es simple. |  |
+| **Ecosistema** | Conjunto de herramientas conectadas de un proveedor o comunidad. No es una sola herramienta. | Úsalo como categoría cuando una marca ofrece app, modelos, laboratorio, CLI y notebooks. | {{< var ai.provider.google >}} |
+| **IA generativa** | Sistemas que producen texto, código, imágenes, audio o estructuras nuevas a partir de instrucciones. | Úsala para crear borradores, clasificar, resumir, transformar formatos o idear alternativas. |  |
+| **IDE** | Entorno integrado para trabajar con archivos, código, terminal, vista previa y control de cambios. | Úsalo cuando hay proyecto, código, notebooks, sitio web o mapa que mantener. | {{< var ai.tool.antigravity >}} |
+| **Marketplace / directorio** | Lugar para descubrir e instalar plugins, apps o conectores. | Úsalo con cautela: revisa mantenedor, permisos, lectura/escritura y datos de prueba antes de instalar. | [MCP Servers](https://modelcontextprotocol.io/examples) |
+| **MCP** | Protocolo abierto para conectar asistentes o agentes con datos, archivos, APIs y herramientas externas. | Úsalo cuando necesitas acceso controlado a sistemas externos sin copiar y pegar información manualmente. | [Model Context Protocol](https://modelcontextprotocol.io/docs/getting-started/intro) |
+| **Modelo** | Motor estadístico entrenado para generar respuestas. No es la aplicación completa. | Elige modelo según tarea: rápido para tareas simples, avanzado para análisis complejo. | {{< var ai.tool.ai_studio >}} |
+| **Modelo local** | Modelo que corre en computador o servidor propio, sin enviar datos a la nube. | Úsalo para información sensible, operación sin internet o control institucional del dato. | {{< var ai.tool.ollama >}} |
+| **Multimodal** | Capacidad de trabajar con texto, imagen, audio, video o tablas. | Úsalo cuando la tarea incluye fotos de terreno, PDFs, planillas, mapas o audios. | {{< var ai.tool.gemini >}} |
+| **Notebook** | Documento ejecutable que combina texto, código y resultados. | Úsalo para análisis reproducibles del curso, especialmente Python y datos territoriales. | {{< var ai.tool.colab >}} |
+| **Nube** | Infraestructura de servidores externos donde se procesa información. | Úsala para información pública o anonimizada; evita subir datos personales o confidenciales. |  |
+| **Open source** | Software cuyo código fuente puede revisarse, modificarse y redistribuirse según su licencia. | Prefiérelo para flujos institucionales permanentes, auditables o autoalojados. | {{< var ai.tool.whisper >}} |
+| **Pesos abiertos** | Archivos del modelo disponibles para descargar y ejecutar bajo una licencia definida. | Úsalos cuando necesitas independencia del proveedor o ejecución local. | [Nous Research](https://huggingface.co/NousResearch) |
+| **Plugin / extensión** | Paquete instalable que agrega capacidades a un cliente. Puede incluir skills, MCP o configuración. | Úsalo para distribuir una configuración completa al equipo; audita permisos antes de instalar. | [Claude Plugins](https://code.claude.com/docs/en/plugins) |
+| **Prompt** | Instrucción que se entrega al sistema de IA. | Úsalo como encargo claro: tarea, contexto, formato esperado, criterios y restricciones. |  |
+| **Proveedor** | Organización que ofrece modelos, apps, APIs o infraestructura. | Evalúalo por costo, privacidad, continuidad, integración institucional y soporte. |  |
+| **Skill** | Paquete de instrucciones, criterios y pasos para repetir una metodología. | Úsala cuando el problema es repetir bien un procedimiento, no conectar una herramienta. | [Claude Skills](https://code.claude.com/docs/en/skills) |
+| **Soberanía de datos** | Capacidad de controlar dónde se almacenan, procesan y auditan los datos institucionales. | Priorízala cuando hay datos personales, información sensible o dependencia crítica. |  |
+| **Trazabilidad** | Posibilidad de saber de dónde salió una respuesta o qué pasos se ejecutaron. | Exígela para informes, oficios, cifras públicas y decisiones que deben justificarse. | {{< var ai.tool.notebooklm >}} |
+| **Ventana de contexto** | Cantidad máxima de información que el modelo puede considerar en una interacción. | Importa cuando trabajas con documentos largos, muchos archivos o instrucciones extensas. | {{< var ai.tool.claude >}} |
+
+## Regla práctica de lectura
+
+Si el nombre responde a **"qué motor razona"**, probablemente hablamos
+de un modelo. Si responde a **"dónde trabajo"**, hablamos de una
+aplicación, IDE o CLI. Si responde a **"qué tarea delego"**, hablamos de
+una herramienta o agente. Si responde a **"cómo conecto o extiendo"**,
+hablamos de skills, MCP, plugins, marketplaces o apps.

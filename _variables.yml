@@ -5,8 +5,10 @@ email:
 
 profesor:
   name: "[Denis Berroeta](https://cit.uai.cl/denis-berroeta/)"
-  cargo: "Coordinador de Investigación, Centro de Inteligencia Territorial - UAI"
+  cargo: "Coordinador de Investigación"
   email: <denis.berroeta@uai.cl>
+  linkedin: "[https://www.linkedin.com/in/denis-berroeta/](https://www.linkedin.com/in/denis-berroeta/)"
+  web: "[https://denissebastian.github.io/architect-ai-solutions/](https://denissebastian.github.io/architect-ai-solutions/)"
 
 
 
@@ -29,13 +31,7 @@ library:
   plotly: "[plotly](https://plotly.com/r/)"
   ggplot: "[ggplot2](https://ggplot2.tidyverse.org/)"
   
-organization:
-  ine: "[Instituto Nacional de Estadísticas](https://www.ine.gob.cl)"
-  cran: "[CRAN (Comprehensive R Archive Network)](https://cran.r-project.org/)"
-  bioconductor: "[Bioconductor](https://www.bioconductor.org/)"
-  github: "[Github](https://github.com/)"
-  rforge: "[R-Forge](https://r-forge.r-project.org/)"
-  
+
 # Insituciones ------------------------------------------------------------
 ine:
   name: "[Instituto Nacional de Estadísticas (INE)](https://www.ine.gob.cl/)"
@@ -64,13 +60,6 @@ sinca:
   name: "[Sistema Nacional de Información de Calidad del Aire](https://sinca.mma.gob.cl/)"
   sigla: "[SINCA](https://sinca.mma.gob.cl/)"
 
-epa:
-  name: "[Environmental Protection Agency (US)](https://www.epa.gov/)"
-  sigla: "[EPA](https://www.epa.gov/)"
-
-faqsd: 
-  name: "[Fused Air Quality Surface Using Downscaling](https://www.epa.gov/hesc/rsig-related-downloadable-data-files)"
-  sigla: "[FAQSD](https://www.epa.gov/hesc/rsig-related-downloadable-data-files)"
 
 sernageomin:
   name: "[Servicio Nacional de Geología y Minería](https://www.sernageomin.cl/)"
@@ -79,27 +68,47 @@ sernageomin:
 retc:
   name: "[Registros de Emisiones y Transferencias Contaminantes](https://retc.mma.gob.cl/)"
   sigla: "[RETC](https://retc.mma.gob.cl/)"
-  
-mineduc:
-  name: "[Ministerio de Ecucación](https://www.mineduc.cl/)"
-  sigla: "[MINEDUC](https://www.mineduc.cl/)"
-  
-cestudios:
-  name: "[Centro de Estudios del Mineduc](https://centroestudios.mineduc.cl/)"
 
-acalidad:
-  name: "[Agencia de Calidad de la Educación](https://www.agenciaeducacion.cl/)"
-
-simce:
-  name: "[Sistema de Medición de la Calidad de la Educación](https://www.agenciaeducacion.cl/simce/)"
-  sigla: "[SIMCE](https://www.agenciaeducacion.cl/simce/)"
-  
-junji:
-  name: "[Junta Nacional de Jardines Infantiles](https://junji.cl/)"
-  sigla: "[JUNJI](https://junji.cl/)"
-  
-integra:
-  name: "[Integra](https://www.integra.cl/nuestros-jardines-infantiles/)"
-  name_m: "[Fundación Integra](https://www.integra.cl/nuestros-jardines-infantiles/)"
-  name_l: "[Fundación Integra: Red de Salas Cuna y Jardines Infantiles](https://www.integra.cl/nuestros-jardines-infantiles/)"
+# Ecosistema IA -----------------------------------------------------------
+ai:
+  provider:
+    google: "[Google](https://ai.google/)"
+    openai: "[OpenAI](https://openai.com/)"
+    anthropic: "[Anthropic](https://www.anthropic.com/)"
+    perplexity: "[Perplexity](https://www.perplexity.ai/)"
+    cenia: "[CENIA](https://www.cenia.cl/)"
+    meta: "[Meta AI](https://ai.meta.com/)"
+    mistral: "[Mistral AI](https://mistral.ai/)"
+  tool:
+    antigravity: "[Antigravity](https://antigravity.google/)"
+    gemini: "[Gemini](https://gemini.google.com/)"
+    ai_studio: "[Google AI Studio](https://aistudio.google.com/)"
+    gemini_cli: "[Gemini CLI](https://github.com/google-gemini/gemini-cli)"
+    colab: "[Google Colab](https://colab.research.google.com/)"
+    google_cloud: "[Google Cloud](https://cloud.google.com/)"
+    workspace: "[Google Workspace](https://workspace.google.com/)"
+    chatgpt: "[ChatGPT](https://chatgpt.com/)"
+    codex: "[Codex](https://developers.openai.com/codex/)"
+    codex_cli: "[Codex CLI](https://github.com/openai/codex)"
+    claude: "[Claude](https://claude.ai/)"
+    claude_desktop: "[Claude Desktop](https://claude.com/download)"
+    claude_code: "[Claude Code](https://code.claude.com/docs/en/overview)"
+    notebooklm: "[NotebookLM](https://notebooklm.google.com/)"
+    perplexity: "[Perplexity](https://www.perplexity.ai/)"
+    latamgpt: "[LatamGPT](https://www.latamgpt.org/)"
+    ollama: "[Ollama](https://ollama.com/)"
+    lm_studio: "[LM Studio](https://lmstudio.ai/)"
+    openclaw: "[OpenClaw](https://github.com/openclaw/openclaw)"
+    hermes_agent: "[Hermes Agent](https://github.com/trycua/cua/tree/main/libs/python/hermes)"
+    whisper: "[Whisper](https://github.com/openai/whisper)"
+    julius: "[Julius AI](https://julius.ai/)"
+    gamma: "[Gamma](https://gamma.app/)"
+    napkin: "[Napkin](https://napkin.ai/)"
+  model:
+    gemini_flash: "[Gemini Flash](https://ai.google.dev/gemini-api/docs/models)"
+    gemini_pro: "[Gemini Pro](https://ai.google.dev/gemini-api/docs/models)"
+    claude_haiku: "[Claude Haiku](https://docs.anthropic.com/en/docs/about-claude/models)"
+    claude_sonnet: "[Claude Sonnet](https://docs.anthropic.com/en/docs/about-claude/models)"
+    claude_opus: "[Claude Opus](https://docs.anthropic.com/en/docs/about-claude/models)"
+    gpt: "[modelos GPT](https://platform.openai.com/docs/models)"
   

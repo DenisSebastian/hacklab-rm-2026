@@ -9,18 +9,22 @@ editor:
 
 ## Resumen ejecutivo {.unnumbered}
 
-**OpenClaw** es un asistente personal de IA **open source y
+{{< var ai.tool.openclaw >}} es un asistente personal de IA **open source y
 autoalojado**: se instala en un computador propio y conversa contigo
 por los canales que ya usas —WhatsApp, Telegram, correo— de forma
-permanente. A diferencia de un chatbot de navegador, OpenClaw
-**recuerda, ejecuta tareas y opera de manera continua**: puede revisar
-información periódicamente, mantener listas y recordatorios, y
-automatizar flujos completos. Es de las herramientas más potentes de
-esta parte y también la que exige más criterio: requiere perfil
-técnico para instalarla y resguardos serios para operarla.
+permanente. A diferencia de un chatbot de navegador,
+{{< var ai.tool.openclaw >}} **recuerda, ejecuta tareas y opera de
+manera continua**: puede revisar información periódicamente, mantener
+listas y recordatorios, y automatizar flujos completos. Es de las
+herramientas más potentes de esta parte y también la que exige más
+criterio: requiere perfil técnico para instalarla y resguardos serios
+para operarla.
 
-**Acceso:** [github.com/openclaw/openclaw](https://github.com/openclaw/openclaw)
-· **Open source** · El software es gratuito; el modelo de IA que lo
+![](images/openclaw.png){fig-align="center" width="250"}
+
+
+- **Acceso:** {{< var ai.tool.openclaw >}}
+- **Open source** · El software es gratuito; el modelo de IA que lo
 impulsa se contrata aparte (API de pago) o se ejecuta localmente.
 
 ## Qué lo hace distinto
@@ -33,9 +37,11 @@ impulsa se contrata aparte (API de pago) o se ejecuta localmente.
 | Iniciativa | Solo responde | Puede actuar de forma programada |
 | Código | Cerrado | Abierto, auditable |
 
+![](images/Beware-of-OpenClaw.png){fig-align="center" width="550"}
+
 ::: {.callout-tip title="Analogía: el funcionario de turno"}
 Un chatbot es una ventanilla de atención: respondes cuando alguien
-llega. OpenClaw es un funcionario de turno: tiene tareas asignadas, las
+llega. {{< var ai.tool.openclaw >}} es un funcionario de turno: tiene tareas asignadas, las
 ejecuta aunque nadie le esté hablando, y te avisa cuando algo requiere
 tu decisión. Y como todo funcionario con acceso a sistemas, necesita
 **perfil de cargo, claves acotadas y supervisión**.
@@ -59,7 +65,7 @@ tu decisión. Y como todo funcionario con acceso a sistemas, necesita
 ## Advertencias serias
 
 ::: callout-warning
-OpenClaw ejecuta acciones reales con acceso real. Antes de usarlo
+{{< var ai.tool.openclaw >}} ejecuta acciones reales con acceso real. Antes de usarlo
 institucionalmente:
 
 1.  **Nunca instalarlo con acceso a datos personales de vecinos** ni a
@@ -69,8 +75,9 @@ institucionalmente:
     propios para el asistente, nunca los personales de un funcionario.
 3.  **El modelo que lo impulsa puede ser remoto**: si usa una API en la
     nube, lo que el asistente lee viaja a ese proveedor. Para
-    confidencialidad real, combinarlo con un modelo local (capítulo
-    Hermes).
+    confidencialidad real, combinarlo con un modelo local vía
+    {{< var ai.tool.ollama >}} / {{< var ai.tool.lm_studio >}} o
+    infraestructura institucional.
 4.  **Requiere mantención**: es un proyecto open source joven y de
     evolución rápida; exige a alguien del equipo informático a cargo,
     con actualizaciones y revisión de permisos.

@@ -1,0 +1,75 @@
+---
+subtitle: "Agente de código de OpenAI en app, CLI e IDE"
+editor:
+  markdown:
+    wrap: 72
+---
+
+# Codex
+
+## Resumen ejecutivo {.unnumbered}
+
+{{< var ai.tool.codex >}} es el agente de código de
+{{< var ai.provider.openai >}}. Puede trabajar desde una aplicación de
+escritorio, desde el terminal, desde extensiones de IDE y desde la web.
+Su fortaleza es operar sobre repositorios: leer archivos, proponer
+cambios, ejecutar comandos, revisar errores y devolver un resultado
+auditable.
+
+![](images/logo-openai.png){fig-alt="Logo de OpenAI" width=80px}
+
+**Acceso:** {{< var ai.tool.codex >}} · {{< var ai.tool.codex_cli >}} · requiere
+plan ChatGPT compatible o API, según superficie.
+
+## Superficies disponibles
+
+| Superficie | Para qué sirve | Cuándo usarla |
+|----|----|----|
+| **Codex App** | Aplicación de escritorio para planificar, revisar cambios y coordinar sesiones | Tareas largas, revisión visual, trabajo paralelo y seguimiento |
+| **Codex CLI** | Agente local en terminal | Automatizar scripts, limpiar datos, correr pruebas, trabajar con carpetas locales |
+| **IDE Extension** | Codex dentro del editor | Revisar diffs, pedir cambios sobre archivos abiertos, mantener flujo de programación |
+| **Codex Web / Remote** | Agente en entorno hospedado | Tareas que pueden correr fuera del computador local, revisión posterior |
+
+## Características distintivas
+
+-   **CLI instalable**: el repositorio oficial indica instalación por
+    script, npm, Homebrew o binarios de release.
+-   **Integración con IDEs**: la documentación de Codex lista app,
+    extensión de IDE, CLI y web como superficies de uso.
+-   **Configuración por proyecto**: permite reglas, permisos,
+    sandboxing, hooks, MCP, plugins y skills según el flujo de trabajo.
+-   **Buen ajuste para repositorios**: funciona mejor cuando hay una
+    carpeta organizada, pruebas o una forma clara de verificar el
+    resultado.
+
+## Uso municipal recomendado
+
+Codex es útil para el perfil técnico del equipo: consolidar planillas,
+escribir scripts de limpieza, convertir notebooks en reportes
+reproducibles, generar pruebas, documentar repositorios y revisar
+cambios antes de publicarlos.
+
+::: {.callout-tip title="Ejemplo de tarea"}
+> *"Lee la carpeta `datos_crudos/`, identifica formatos de fecha
+> inconsistentes, crea un script reproducible de limpieza y ejecuta una
+> validación que cuente filas antes y después por archivo."*
+:::
+
+## Lectura y documentación relevante
+
+| Recurso | Por qué leerlo |
+|----|----|
+| {{< var ai.tool.codex >}} | Superficies: App, IDE Extension, CLI, Web, configuración y automatización |
+| {{< var ai.tool.codex_cli >}} | Instalación del CLI, licencia, releases y uso desde terminal |
+| [Using skills to accelerate OSS maintenance](https://developers.openai.com/codex/blog/using-skills-to-accelerate-oss-maintenance) | Ejemplo aplicado de skills en mantención de software |
+| [Build iterative repair loops with Codex](https://cookbook.openai.com/examples/build_iterative_repair_loops_with_codex) | Patrón avanzado: ejecutar, detectar error, reparar y repetir |
+
+## Resguardos
+
+-   Dar acceso solo a carpetas necesarias para la tarea.
+-   Revisar cambios antes de aprobarlos, especialmente si toca datos o
+    automatizaciones.
+-   Preferir tareas con prueba verificable: conteos, tests, render,
+    validaciones o comparación de resultados.
+-   No pegar tokens, claves API ni datos personales en prompts ni en
+    archivos de trabajo.

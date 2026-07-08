@@ -1,32 +1,43 @@
-# macOS and filesystem noise
+# macOS, Windows, and filesystem noise
 .DS_Store
+.DS_Store?
 .AppleDouble
 .LSOverride
 Icon?
 ._*
+Desktop.ini
 Thumbs.db
 ehthumbs.db
-Desktop.ini
+$RECYCLE.BIN/
+
+# Source/reference material not published with the book
+documentos/
 
 # Editor and IDE state
 .vscode/
 .idea/
+.zed/
 *.swp
 *.swo
+*.swn
 *~
 .Rproj.user/
 .Rhistory
 .RData
 .Ruserdata
 
-# Quarto outputs, caches, and temporary files
+# Quarto outputs, standalone renders, caches, and temporary files
 _book/
 _site/
 .quarto/
 /.quarto/
 /.quarto-*/
+_freeze/
 *_cache/
 *_files/
+/*_files/
+/*.html
+*.nb.html
 *.knit.md
 *.utf8.md
 *.tex
@@ -55,13 +66,17 @@ rsconnect/
 # Python and notebook artifacts
 __pycache__/
 *.py[cod]
+.jupyter_cache/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.coverage
+htmlcov/
 .ipynb_checkpoints/
 .venv/
 venv/
 env/
+.envrc
 
 # Node and frontend artifacts
 node_modules/
@@ -69,8 +84,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+.pnpm-store/
 dist/
 build/
+.vite/
 
 # Assistant, agent, and local automation records
 .codex/
@@ -83,22 +100,30 @@ codex.md
 *.codex.log
 *.claude.log
 graphify-out/
+.graphify/
 
 # Local logs, diagnostics, and temporary files
 logs/
 *.log
 *.tmp
 *.temp
+*.cache
 *.bak
 *.orig
 *.rej
+.tmp/
+tmp/
+temp/
 
 # Secrets and local configuration
 .env
 .env.*
 !.env.example
+*.local
 *.pem
 *.key
 *.p12
 *.pfx
+*.crt
+*.csr
 secrets/

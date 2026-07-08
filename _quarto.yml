@@ -18,26 +18,38 @@ book:
     - part: "Módulo 1: Conceptos & Casos"
       chapters:
         - vibe_coding.qmd
-        - ecosistema_python.qmd
-        - operaciones_espaciales.qmd
+        # - ecosistema_python.qmd
+        # - operaciones_espaciales.qmd
     - part: "Módulo 2: Modelos IA"
-      chapters:
-        - sensores_iot.qmd
-        - nlp_participacion.qmd
-        - analisis_sentimientos.qmd
-        - integracion_datos.qmd
-    - part: recursos_complementarios.qmd
+      # chapters:
+        # - sensores_iot.qmd
+        # - nlp_participacion.qmd
+        # - analisis_sentimientos.qmd
+        # - integracion_datos.qmd
+    - recursos_complementarios.qmd
+    - part: "Modelos"
       chapters:
         - rc_google.qmd
-        - rc_notebooklm.qmd
-        - rc_claude.qmd
         - rc_chatgpt.qmd
-        - rc_perplexity.qmd
+        - rc_claude.qmd
         - rc_latamgpt.qmd
+    - part: "IDEs"
+      chapters:
+        # - rc_ides.qmd
+        - rc_ide_antigravity.qmd
+        - rc_ide_codex.qmd
+        - rc_ide_claude.qmd
+    - part: "Otros Recursos"
+      chapters:
+        - rc_notebooklm.qmd
+        - rc_perplexity.qmd
+        - rc_otras_herramientas.qmd
         - rc_openclaw.qmd
         - rc_hermes.qmd
-        - rc_otras_herramientas.qmd
-    - conclusiones.qmd
+    - part: "Glosario"
+      chapters:
+        - rc_glosario.qmd
+    # - conclusiones.qmd
     - references.qmd
 
 bibliography: references.bib

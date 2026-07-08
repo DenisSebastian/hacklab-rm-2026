@@ -9,14 +9,16 @@ editor:
 
 ## Resumen ejecutivo {.unnumbered}
 
-**Perplexity** es un buscador aumentado con IA: en vez de una lista de
+{{< var ai.tool.perplexity >}} es un buscador aumentado con IA: en vez de una lista de
 enlaces, entrega una respuesta sintetizada con **citas numeradas
 verificables**. Cada afirmación lleva el enlace a su fuente original.
 Para el sector público, donde una cifra sin respaldo puede terminar en
 un documento oficial, esa trazabilidad hacia la web es su valor
 central: es la herramienta para investigar, no solo para preguntar.
 
-**Acceso:** [perplexity.ai](https://perplexity.ai) · Gratuito con
+![](images/Perplexity-Logo.png){fig-align="center" width="400"}
+
+**Acceso:** {{< var ai.tool.perplexity >}} · Gratuito con
 límites; plan Pro para búsqueda avanzada y carga de archivos.
 
 ## Qué lo distingue
@@ -54,10 +56,11 @@ material para benchmarking antes de diseñar tu propio proceso.
 :::
 
 ::: {.callout-tip title="Verificación cruzada (el caso más importante)"}
-Si Gemini o ChatGPT te dan una cifra y no sabes si es confiable,
-**contrástala en Perplexity**: o aparece la fuente, o aprendiste que la
-cifra era inventada. Este uso —detector de alucinaciones de otras IA—
-justifica por sí solo tenerla en el flujo de trabajo.
+Si {{< var ai.tool.gemini >}} o {{< var ai.tool.chatgpt >}} te dan una
+cifra y no sabes si es confiable, **contrástala en
+{{< var ai.tool.perplexity >}}**: o aparece la fuente, o aprendiste que
+la cifra era inventada. Este uso —detector de alucinaciones de otras
+IA— justifica por sí solo tenerla en el flujo de trabajo.
 :::
 
 ::: {.callout-tip title="Fondos y plazos vigentes"}
@@ -70,7 +73,7 @@ igual verifica los plazos en la fuente enlazada antes de planificar.
 
 ## Límites y resguardos
 
--   **Las fuentes hay que abrirlas**: Perplexity puede citar bien una
+-   **Las fuentes hay que abrirlas**: {{< var ai.tool.perplexity >}} puede citar bien una
     fuente equivocada (un blog que repite mal una cifra). La calidad de
     la respuesta es la calidad de sus fuentes; mira de dónde viene.
 -   La síntesis sigue siendo de IA: para decisiones formales, lee el

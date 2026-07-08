@@ -9,7 +9,7 @@ editor:
 
 ## Resumen ejecutivo {.unnumbered}
 
-**NotebookLM** es probablemente la herramienta más valiosa de esta
+{{< var ai.tool.notebooklm >}} es probablemente la herramienta más valiosa de esta
 parte para el perfil del curso, y es gratuita. Funciona así: subes tus
 fuentes (PDF, Google Docs, páginas web, videos de YouTube, audios) y
 luego **conversas con ese conjunto de documentos** como si fuera un
@@ -19,7 +19,9 @@ que **no inventa**: solo responde con información que está en los
 documentos que subiste, y señala exactamente de dónde viene cada
 afirmación.
 
-**Acceso:** [notebooklm.google.com](https://notebooklm.google.com) ·
+![](images/NotebookLM.jpg){fig-align="center" width="400"}
+
+**Acceso:** {{< var ai.tool.notebooklm >}} ·
 Gratuito con cuenta Google.
 
 ## Cómo funciona
@@ -82,13 +84,13 @@ minutos.
 
 En el sector público, una afirmación sin fuente es un riesgo: puede
 terminar en un informe oficial, un oficio o una respuesta por
-transparencia. NotebookLM invierte la lógica del chatbot: en vez de
+transparencia. {{< var ai.tool.notebooklm >}} invierte la lógica del chatbot: en vez de
 "confía en mí", cada frase dice "esto está en la página 14 del
 documento que tú me diste". Eso lo hace apto para trabajo institucional
 de una forma que los asistentes generales no logran.
 
 ::: {.callout-warning title="Límite importante"}
-NotebookLM trabaja **solo con lo que le subiste**. Si la respuesta no
+{{< var ai.tool.notebooklm >}} trabaja **solo con lo que le subiste**. Si la respuesta no
 está en esos documentos, lo dirá. Es una limitación que es también una
 garantía. Corolario: la calidad de las respuestas depende de la calidad
 y completitud del corpus que armes.
@@ -103,4 +105,4 @@ y completitud del corpus que armes.
 | Fortaleza | Trazabilidad: toda respuesta cita su fuente |
 | Mejor para | Sistematizar múltiples documentos institucionales |
 | Riesgo principal | Subir documentos con datos personales sin anonimizar |
-| Alternativa si el dato es sensible | Modelo local (ver capítulo Hermes) |
+| Alternativa si el dato es sensible | Modelo local vía {{< var ai.tool.ollama >}} / {{< var ai.tool.lm_studio >}} |

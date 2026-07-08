@@ -1,0 +1,121 @@
+---
+subtitle: "Cómo extender agentes con instrucciones, conectores y apps"
+editor:
+  markdown:
+    wrap: 72
+---
+
+# Extensiones, conectores y apps
+
+## Resumen ejecutivo {.unnumbered}
+
+Este capítulo no es un listado de IDEs ni de modelos. Es el vocabulario
+mínimo para entender cómo un agente deja de ser solo una conversación y
+empieza a trabajar con instrucciones reutilizables, datos externos,
+permisos e interfaces. Las piezas clave son **skills**, **MCP**,
+**plugins / marketplaces** y **apps**. No son sinónimos: una skill
+enseña un procedimiento repetible; MCP conecta herramientas y datos; un
+marketplace ayuda a descubrir e instalar extensiones; una app entrega
+una experiencia interactiva para usar dentro o junto al asistente.
+
+## Mapa conceptual
+
+| Pieza | Qué es | Ejemplo municipal |
+|----|----|----|
+| **Skill** | Instrucciones empaquetadas para una tarea repetible | "Revisar bases de fondos concursables y devolver brechas del proyecto" |
+| **MCP server** | Conector estándar hacia datos, APIs o herramientas | Leer tickets, consultar una base PostgreSQL, acceder a Drive institucional |
+| **Plugin / extensión** | Paquete instalable que puede incluir skills, MCP, comandos o configuración | Plugin interno de una unidad para reportes semanales |
+| **Marketplace / directorio** | Lugar para descubrir conectores o plugins prearmados | Directorio de conectores MCP o marketplace del cliente usado |
+| **MCP App / app integrada** | Interfaz interactiva que corre dentro de un cliente compatible | Panel para revisar indicadores territoriales y ejecutar acciones |
+
+## Skills
+
+Una skill sirve cuando el problema no es conectar una herramienta, sino
+repetir bien una metodología. Por ejemplo: auditar un informe, revisar
+una postulación, generar una minuta ejecutiva o transformar resultados
+de análisis en una lámina para concejo.
+
+La documentación de Claude Code describe skills como una forma de
+empaquetar flujos repetibles; la documentación de Codex también lista
+skills como superficie de personalización. En ambos casos, la regla de
+diseño es la misma: una skill debe contener criterios, pasos,
+plantillas y verificaciones, no solo un prompt largo.
+
+## MCP
+
+**MCP (Model Context Protocol)** es un estándar abierto para conectar
+aplicaciones de IA con sistemas externos: archivos locales, bases de
+datos, buscadores, calendarios, gestores de tickets, repositorios o
+herramientas internas. La documentación oficial lo presenta como un
+puerto estándar para IA: el agente no copia y pega desde un sistema;
+consulta o actúa mediante un servidor autorizado.
+
+Ejemplos razonables para sector público:
+
+-   Leer documentos desde una carpeta institucional ya autorizada.
+-   Consultar una base de datos de indicadores sin exportar CSVs.
+-   Crear borradores de tickets o tareas a partir de acuerdos de una
+    reunión.
+-   Conectar Figma, GitHub, Jira, Slack o un sistema interno cuando el
+    equipo técnico controla permisos.
+
+## Marketplaces y directorios
+
+Los marketplaces reducen fricción, pero aumentan el riesgo de instalar
+cosas sin auditoría. Antes de usar un conector:
+
+1.  Verifica quién lo mantiene.
+2.  Revisa qué permisos pide.
+3.  Distingue lectura de escritura.
+4.  Prueba con datos ficticios.
+5.  Documenta qué servidor o plugin quedó instalado.
+
+En Claude, la documentación menciona un directorio de conectores MCP y
+plugins preconstruidos. En Codex, la documentación lista plugins, MCP,
+skills, hooks y configuración como piezas de personalización. En
+ChatGPT, las apps basadas en MCP permiten construir interfaces
+interactivas conectadas a herramientas.
+
+## Apps
+
+Una app es útil cuando el usuario final no debe escribir comandos ni
+entender el sistema interno. En vez de pedir "consulta la base y haz un
+gráfico", una app puede mostrar controles, filtros, tablas y botones
+para ejecutar acciones seguras.
+
+Para un municipio, una app MCP podría ser:
+
+-   Panel de indicadores comunales consultable desde el asistente.
+-   Revisor de completitud de postulaciones.
+-   Generador de minutas con campos obligatorios y trazabilidad.
+-   Explorador de reclamos anonimizados con filtros por fecha y sector.
+
+## Cuándo usar cada pieza
+
+| Necesidad | Mejor pieza |
+|----|----|
+| Repetir una metodología con criterios propios | Skill |
+| Dar acceso a datos o herramientas externas | MCP server |
+| Distribuir una configuración completa al equipo | Plugin |
+| Encontrar conectores ya hechos | Marketplace / directorio |
+| Crear una experiencia visual para usuarios no técnicos | App |
+
+## Lectura y documentación relevante
+
+| Recurso | Por qué leerlo |
+|----|----|
+| [Model Context Protocol](https://modelcontextprotocol.io/docs/getting-started/intro) | Definición oficial, arquitectura y casos de uso |
+| [Claude Code MCP](https://code.claude.com/docs/en/mcp) | Instalación, scopes, autenticación, servidores locales y remotos |
+| [Claude Code Skills](https://code.claude.com/docs/en/skills) | Cómo empaquetar flujos repetibles |
+| [Claude Code Plugins](https://code.claude.com/docs/en/plugins) | Instalación y creación de plugins |
+| [Codex documentation](https://developers.openai.com/codex/) | Personalización con MCP, plugins, hooks, skills y configuración |
+| [Apps SDK](https://developers.openai.com/apps-sdk/) | Construcción de apps interactivas sobre MCP para ChatGPT |
+| [Are AI-assisted Development Tools Immune to Prompt Injection?](https://arxiv.org/abs/2603.21642) | Riesgos de prompt injection y tool poisoning en clientes MCP |
+
+::: callout-warning
+MCP y plugins amplían capacidades, pero también amplían superficie de
+riesgo. Un conector puede leer datos, escribir en sistemas, ejecutar
+comandos o traer contenido externo con instrucciones maliciosas. En
+instituciones públicas, ningún MCP debería instalarse sin responsable,
+alcance de permisos, prueba controlada y registro de uso.
+:::

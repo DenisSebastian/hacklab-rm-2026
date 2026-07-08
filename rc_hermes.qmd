@@ -1,105 +1,134 @@
 ---
-subtitle: "Modelos abiertos en tu propio computador"
+subtitle: "Agente autoalojado para automatización institucional"
 editor:
   markdown:
     wrap: 72
 ---
 
-# Hermes
+# Hermes Agent
 
 ## Resumen ejecutivo {.unnumbered}
 
-**Hermes** (Nous Research) es una familia de modelos de lenguaje de
-**pesos abiertos**: se descargan gratis y corren **en tu propio
-computador**, sin conexión a internet y sin que un solo carácter salga
-de la institución. Representa aquí a toda una categoría —los modelos
-abiertos ejecutados localmente— que es la respuesta directa a la
-pregunta más frecuente del sector público: *"¿y qué hacemos con los
-datos que NO pueden subirse a la nube?"*. La respuesta: se procesan
-localmente, a costo cero de licencias, en hardware que el municipio ya
-tiene o puede tener.
+{{< var ai.tool.hermes_agent >}} es un agente de IA **open source y autoalojado**:
+vive en un computador o servidor propio, mantiene memoria de trabajo,
+usa herramientas y puede ejecutar tareas repetitivas con supervisión.
+Por eso no corresponde tratarlo como una familia de modelos. Está más
+cerca de {{< var ai.tool.openclaw >}}: ambos son arneses agénticos que se conectan a un
+modelo de lenguaje, a canales de comunicación y a herramientas externas
+para transformar instrucciones en acciones.
 
-**Acceso:** vía [Ollama](https://ollama.com) o
-[LM Studio](https://lmstudio.ai) (ambos gratuitos) · Pesos del modelo en
-[Hugging Face](https://huggingface.co/NousResearch) · **Open source /
-pesos abiertos**.
+![](images/hermes-logo.png){fig-align="center" width="200"}
 
-## La idea: IA sin nube
+La diferencia práctica es de enfoque. {{< var ai.tool.openclaw >}}
+privilegia el asistente permanente multicanal, mientras
+{{< var ai.tool.hermes_agent >}} se entiende mejor como un agente de
+automatización que aprende de flujos repetidos y convierte patrones de
+trabajo en procedimientos reutilizables. En un municipio o servicio
+público, eso lo vuelve interesante para tareas internas acotadas,
+auditables y de bajo riesgo al inicio.
 
-| | Modelo en la nube | Modelo local (Hermes) |
+- **Acceso:** {{< var ai.tool.hermes_agent >}}; verificar repositorio y guía de
+  instalación vigentes antes de usarlo en producción.
+- **Modelo de IA:** se configura aparte. Puede usar una API en la nube o
+  un modelo local vía herramientas como {{< var ai.tool.ollama >}} /
+  {{< var ai.tool.lm_studio >}}.
+
+## Qué lo hace distinto
+
+| | Chatbot de navegador | Hermes Agent |
 |----|----|----|
-| Dónde se procesa | Servidores del proveedor | **Tu computador** |
-| Datos | Viajan fuera | **No salen nunca** |
-| Costo por uso | Suscripción o API | **Cero** (tras el hardware) |
-| Internet | Imprescindible | Innecesario tras descargar |
-| Capacidad | Frontera | Menor, pero suficiente para tareas acotadas |
-| Continuidad | Depende del proveedor | El archivo del modelo es tuyo para siempre |
+| Dónde vive | Servidor del proveedor | **Tu computador/servidor** |
+| Modo de trabajo | Responde cuando le escribes | Ejecuta flujos de varios pasos |
+| Memoria | Conversación aislada | Memoria operativa y procedimientos reutilizables |
+| Herramientas | Limitadas a la app | Archivos, APIs, comandos y conectores configurados |
+| Riesgo | Bajo si solo conversa | Mayor: puede actuar sobre sistemas reales |
 
-::: {.callout-tip title="Analogía: el generador propio"}
-La nube es la red eléctrica: cómoda, potente, pero ajena. Un modelo
-local es el generador del edificio: menos potente, hay que mantenerlo,
-pero funciona aunque se corte la red y nadie de afuera ve lo que
-enchufas. Para lo crítico y lo confidencial, toda institución seria
-tiene generador.
+::: {.callout-tip title="Analogía: el analista que documenta su método"}
+Un chatbot contesta una pregunta y termina.
+{{< var ai.tool.hermes_agent >}} se parece más a un analista junior que,
+después de resolver una tarea, deja anotado el procedimiento para
+repetirlo mejor la próxima vez. Esa capacidad es valiosa, pero también
+exige revisar qué aprendió, qué permisos tiene y cuándo debe pedir
+autorización humana.
 :::
 
-## Cómo se usa en la práctica
+## Relación con OpenClaw
 
-La vía simple es **Ollama** o **LM Studio**: se instalan como cualquier
-programa, se descarga el modelo Hermes desde su catálogo, y se conversa
-en una interfaz local idéntica a un chatbot. La instalación inicial es
-tarea para el perfil técnico del equipo; el uso diario, para
-cualquiera.
+{{< var ai.tool.hermes_agent >}} y {{< var ai.tool.openclaw >}} no
+compiten con {{< var ai.tool.gemini >}}, {{< var ai.tool.claude >}} o
+{{< var ai.tool.chatgpt >}} en el mismo plano. Esos son modelos o
+asistentes de propósito general; {{< var ai.tool.hermes_agent >}} y
+{{< var ai.tool.openclaw >}} son **entornos para operar agentes**.
 
-Requisitos honestos de hardware: un computador moderno con 16 GB de RAM
-ejecuta versiones pequeñas y medianas del modelo con fluidez razonable;
-hardware mayor permite versiones más capaces. No se necesita un
-servidor especializado para empezar.
+| Criterio | OpenClaw | Hermes Agent |
+|----|----|----|
+| Mejor punto de partida | Asistente permanente por canales de mensajería | Automatización de flujos internos repetibles |
+| Fortaleza | Multicanalidad, presencia continua, tareas programadas | Aprendizaje de procedimientos y refinamiento de tareas |
+| Instalación | Perfil técnico | Perfil técnico |
+| Modelo subyacente | API externa o modelo local | API externa o modelo local |
+| Uso recomendado | Alertas, seguimiento, recordatorios, reportes recurrentes | Clasificación, revisión, extracción y ejecución de procesos internos |
 
-::: {.callout-note appearance="simple" icon="false"}
-📷 **IMAGEN PENDIENTE**: Captura de LM Studio u Ollama corriendo un
-modelo Hermes en un notebook común, con el indicador de "sin conexión"
-visible y una conversación en español procesando un texto municipal de
-ejemplo. Mensaje visual: esto corre en la máquina, no en la nube.
+La decisión no es "{{< var ai.tool.hermes_agent >}} o
+{{< var ai.tool.openclaw >}}" en abstracto. La pregunta útil es qué tipo
+de operación se quiere delegar: si el foco está en un asistente siempre
+disponible por WhatsApp/Telegram, {{< var ai.tool.openclaw >}} suele ser
+más natural; si el foco está en mejorar un procedimiento interno que se
+repite, {{< var ai.tool.hermes_agent >}} es una alternativa razonable
+para evaluar.
+
+## Casos de uso institucionales
+
+-   **Clasificación recurrente de solicitudes**: leer archivos o
+    formularios ya anonimizados, asignar categorías y producir una
+    tabla revisable por el equipo.
+-   **Preparación de minutas**: transformar notas, acuerdos y
+    antecedentes públicos en una minuta con estructura institucional.
+-   **Revisión de consistencia**: detectar campos faltantes, fechas
+    incompatibles o duplicados en documentos de trabajo.
+-   **Flujos con memoria de proceso**: repetir una metodología acordada
+    por el equipo, dejando trazabilidad de pasos y decisiones.
+-   **Complemento de {{< var ai.tool.openclaw >}}**:
+    {{< var ai.tool.openclaw >}} puede servir como interfaz
+    permanente; {{< var ai.tool.hermes_agent >}} puede ejecutar procedimientos más
+    estructurados detrás, siempre con permisos acotados.
+
+## Advertencias serias
+
+::: callout-warning
+{{< var ai.tool.hermes_agent >}} debe tratarse como software con capacidad de actuar, no
+como un chat. Antes de usarlo institucionalmente:
+
+1.  **No conectarlo al inicio a datos personales ni sistemas críticos.**
+    Empezar con información pública, archivos de prueba o datos
+    anonimizados.
+2.  **Limitar permisos por tarea.** Si solo debe leer una carpeta, no
+    debe tener acceso a todo el computador ni a credenciales generales.
+3.  **Revisar lo que aprende.** Un procedimiento reutilizable puede
+    codificar errores, sesgos o atajos indebidos si nadie lo audita.
+4.  **Separar agente y modelo.** Aunque {{< var ai.tool.hermes_agent >}} sea autoalojado,
+    el modelo que usa puede estar en la nube. Para confidencialidad real,
+    combinarlo con un modelo local o infraestructura institucional.
+5.  **Mantención técnica permanente.** Requiere actualizaciones, revisión
+    de conectores, manejo de llaves API y bitácora de acciones.
 :::
 
-## Casos de uso municipales
+## Cómo empezar sin riesgo
 
-Justamente los que las reglas de privacidad prohíben en la nube:
-
--   **Anonimizar antes de subir**: usar el modelo local como primera
-    pasada que detecta y reemplaza nombres, RUT y direcciones en un
-    corpus, antes de procesarlo con herramientas en la nube. El dato
-    personal nunca sale.
--   **Clasificar texto sensible**: respuestas de consultas con datos
-    identificables, fichas sociales, registros internos.
--   **Resumir documentos confidenciales**: borradores, antecedentes de
-    casos, material pre-judicial.
--   **Operación sin conectividad**: municipios o delegaciones con
-    internet precario mantienen capacidad de IA básica.
--   **Motor local para OpenClaw**: combinados, asistente permanente +
-    confidencialidad total (ver capítulo anterior).
-
-## Expectativas honestas
-
--   Un Hermes local **no compite** con Gemini Pro o Claude Opus en
-    razonamiento complejo. Es excelente en tareas acotadas y bien
-    instruidas: clasificar, extraer, resumir, reformatear.
--   La **auditoría humana** del flujo del curso (sesión 5.2) aplica con
-    más razón: modelos menores se equivocan más.
--   El ecosistema de modelos abiertos cambia rápido (Llama, Qwen,
-    Mistral y otros compiten en la misma categoría); Hermes es el
-    ejemplo de este capítulo, no la única opción. Lo permanente es la
-    categoría: **modelo abierto + ejecución local = soberanía del
-    dato**.
+1.  Elegir una tarea administrativa pública y repetitiva, sin datos
+    personales.
+2.  Ejecutarla primero con archivos de prueba y comparar el resultado
+    con el procedimiento humano actual.
+3.  Documentar entradas, salidas, permisos y responsables.
+4.  Recién después evaluar un piloto acotado con datos reales
+    anonimizados y revisión humana obligatoria.
 
 ## Ficha rápida
 
 | Aspecto | Detalle |
 |----|----|
-| Costo | Cero licencias; solo hardware existente o moderado |
-| Instalación | Sí: Ollama / LM Studio (perfil técnico para instalar, cualquiera para usar) |
-| Fortaleza | Los datos no salen de la institución; sin costo por uso; sin internet |
-| Mejor para | Anonimización, texto sensible, operación sin conectividad |
-| Limitación | Menor capacidad que modelos frontera; auditar siempre |
-| Categoría | Modelos abiertos locales (Hermes, Llama, Qwen, Mistral...) |
+| Costo | Software open source; costo depende del modelo usado y del hardware |
+| Instalación | Sí: requiere perfil técnico |
+| Fortaleza | Automatización de flujos repetitivos con memoria/procedimientos |
+| Mejor para | Procesos internos acotados, revisión, clasificación y preparación de documentos |
+| Riesgo principal | Permisos excesivos, aprendizaje no auditado y conexión inadvertida a modelos en la nube |
+| Categoría | Agente autoalojado, alternativa/complemento a {{< var ai.tool.openclaw >}} |

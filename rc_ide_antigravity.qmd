@@ -1,0 +1,79 @@
+---
+subtitle: "IDE agéntico para proyectos guiados"
+editor:
+  markdown:
+    wrap: 72
+---
+
+# Antigravity
+
+## Resumen ejecutivo {.unnumbered}
+
+{{< var ai.tool.antigravity >}} es el entorno principal del curso para
+vibe coding: combina editor, terminal, navegador y agentes capaces de
+producir artefactos verificables. Su valor pedagógico está en que el
+trabajo no queda escondido en una conversación: se ve el proyecto, se
+ven los archivos y se pueden revisar los resultados.
+
+![](images/logo-antigravity.svg){fig-alt="Logo de Antigravity" width=90px}
+
+**Acceso:** {{< var ai.tool.antigravity >}} ·
+aplicación de escritorio para trabajo con proyectos. Verificar siempre
+la disponibilidad vigente de CLI, modelos y límites antes de preparar
+una sesión institucional.
+
+## Superficies disponibles
+
+| Superficie | Para qué sirve | Cuándo usarla |
+|----|----|----|
+| **Aplicación de escritorio** | Trabajar con editor, terminal, navegador y agentes en una sola interfaz | Sesiones del curso, mapas, notebooks, sitios simples y automatizaciones guiadas |
+| **CLI** | Ejecutar tareas agénticas desde terminal y automatizar flujos | Cuando el equipo técnico necesita reproducibilidad y registro de comandos |
+| **Agentes / manager** | Coordinar varias tareas o revisar artefactos generados por agentes | Proyectos con varios pasos: planificar, escribir, probar, capturar evidencia |
+
+## Características distintivas
+
+-   **Orientación a artefactos**: planes, listas de tareas,
+    capturas, registros de navegador o evidencia de ejecución ayudan a
+    revisar lo que hizo el agente.
+-   **Trabajo sobre proyecto completo**: no solo responde preguntas;
+    opera sobre carpetas, archivos y comandos.
+-   **Buen punto de entrada para aprender**: al estar integrado en una
+    interfaz visual, reduce la fricción inicial frente a un CLI puro.
+-   **Modelo y herramienta no son lo mismo**: Antigravity es el
+    entorno; {{< var ai.tool.gemini >}}, {{< var ai.tool.claude >}} u
+    otros modelos son capacidades que pueden estar disponibles según
+    configuración y plan.
+
+## Uso municipal recomendado
+
+Antigravity conviene cuando el producto final debe ser visible y
+revisable: un mapa de accesibilidad, una limpieza de datos simple, un
+notebook de análisis, un sitio de resultados o una automatización de
+reportes. Para participantes sin perfil técnico fuerte, es la
+superficie más didáctica porque mantiene juntos prompt, archivos y
+resultado.
+
+::: {.callout-tip title="Ejemplo de tarea"}
+> *"Crea un notebook que lea estos puntos de equipamientos, calcule
+> cobertura a 500 metros, genere un mapa y deje una tabla resumen por
+> comuna. Antes de modificar archivos, explícame el plan y después
+> muéstrame cómo verificaste el resultado."*
+:::
+
+## Lectura y documentación relevante
+
+| Recurso | Por qué leerlo |
+|----|----|
+| {{< var ai.tool.antigravity >}} | Descargar, verificar plataformas soportadas y condiciones vigentes |
+| [The Verge: agent-first coding tool](https://www.theverge.com/news/822833/google-antigravity-ide-coding-agent-gemini-3-pro) | Resumen periodístico de editor, manager, agentes y artefactos |
+| [Are AI-assisted Development Tools Immune to Prompt Injection?](https://arxiv.org/abs/2603.21642) | Riesgos de seguridad en herramientas con agentes y MCP |
+
+## Resguardos
+
+-   No abrir carpetas con credenciales, datos personales o contratos
+    sensibles sin revisar permisos.
+-   Usar repositorios o carpetas de práctica para enseñar.
+-   Pedir siempre artefactos verificables: plan, archivos modificados,
+    pruebas, capturas o explicación de validación.
+-   Si se usa CLI, guardar comandos y salida relevante en el cuaderno
+    metodológico del proyecto.

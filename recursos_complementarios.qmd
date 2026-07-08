@@ -7,12 +7,20 @@ editor:
 
 # Recursos Complementarios {.unnumbered}
 
-El curso usa Gemini y Antigravity como herramientas centrales, pero el
-ecosistema de IA crece rápido y conviene conocer el mapa completo. Esta
-parte del libro documenta, capítulo por capítulo, las herramientas más
-útiles para un profesional del sector público que trabaja con datos
-territoriales, textos ciudadanos y documentos institucionales — **sin
-necesidad de programar y con presupuesto reducido o nulo**.
+El curso usa {{< var ai.tool.gemini >}} y
+{{< var ai.tool.antigravity >}} como herramientas centrales, pero el
+ecosistema de IA crece rápido y conviene ordenar el mapa completo. Esta
+parte del libro no está organizada por marcas, sino por **decisiones de
+uso**: qué modelo o asistente elegir, en qué entorno trabajar, qué
+herramienta complementaria usar y qué conceptos conviene entender antes
+de instalar conectores o automatizaciones.
+
+| Familia | Logo guía | Pregunta práctica |
+|----|:----:|----|
+| **Modelos** | ![](images/logo-gemini.svg){width=36px} | ¿Qué modelo, asistente o proveedor conviene usar? |
+| **IDEs** | ![](images/logo-antigravity.svg){width=42px} | ¿Dónde trabajo con archivos, código, notebooks o proyectos completos? |
+| **Otros Recursos** | ![](images/logo-notebooklm.png){width=36px} | ¿Qué herramienta complementaria resuelve una tarea concreta? |
+| **Glosario** | ![](images/logo-cli.svg){width=36px} | ¿Qué conceptos necesito entender para no confundir herramientas, modelos y agentes? |
 
 ## Criterios de selección
 
@@ -33,17 +41,39 @@ para tareas específicas donde brillan de forma particular.
 
 ## Mapa de esta parte
 
+### Modelos
+
 | Capítulo | Herramienta | Tipo | Costo base |
 |----|----|----|----|
-| Ecosistema Google | Gemini, AI Studio, Nano Banana, Gemini CLI, Colab | Asistente, imágenes, CLI | Gratuito (CLI open source) |
-| NotebookLM | NotebookLM | Análisis de documentos con trazabilidad | Gratuito |
-| Claude | App, Claude Code (CLI), API | Asistente, agente de terminal | Gratuito con límites |
-| ChatGPT | App, Codex (CLI) | Asistente, agente de código | Gratuito con límites (CLI open source) |
-| Perplexity | Perplexity | Investigación con fuentes | Gratuito con límites |
-| LatamGPT | LatamGPT (CENIA) | Modelo abierto regional | Open source |
-| OpenClaw | OpenClaw | Asistente personal autoalojado | Open source |
-| Hermes | Hermes (Nous Research) | Modelo abierto para uso local | Open source |
-| Otras herramientas | Julius, Gamma, Napkin, Whisper, Ollama | Datos, presentaciones, diagramas, transcripción | Gratuito / open source |
+| Google | {{< var ai.tool.gemini >}}, {{< var ai.tool.ai_studio >}}, imágenes con IA, {{< var ai.tool.gemini_cli >}}, {{< var ai.tool.colab >}} | Asistente, modelos, laboratorio, imágenes y notebooks del ecosistema {{< var ai.provider.google >}} | Gratuito (CLI open source) |
+| ChatGPT | {{< var ai.tool.chatgpt >}}, modelos {{< var ai.provider.openai >}}, {{< var ai.tool.codex >}} | Asistente generalista, análisis de datos y entrada al ecosistema {{< var ai.provider.openai >}} | Gratuito con límites |
+| Claude | {{< var ai.tool.claude >}}, modelos {{< var ai.model.claude_haiku >}} / {{< var ai.model.claude_sonnet >}} / {{< var ai.model.claude_opus >}}, API | Modelos para documentos largos y redacción formal | Gratuito con límites |
+| LatamGPT | {{< var ai.tool.latamgpt >}} ({{< var ai.provider.cenia >}}) | Modelo abierto regional | Open source |
+
+### IDEs
+
+| Capítulo | Herramienta | Tipo | Costo base |
+|----|----|----|----|
+| Mapa IDEs | Mapa comparativo | Cómo elegir superficie: escritorio, CLI, IDE, web | Gratuito con límites / plan según proveedor |
+| Antigravity | {{< var ai.tool.antigravity >}} Desktop, CLI y agentes | IDE agéntico centrado en proyectos del curso | Gratuito con límites / verificar plan vigente |
+| Codex | {{< var ai.tool.codex >}} App, CLI, IDE extension, Web | Agente de código de {{< var ai.provider.openai >}} para repositorios y automatización | Plan ChatGPT o API |
+| Claude | {{< var ai.tool.claude_desktop >}}, {{< var ai.tool.claude_code >}} CLI, IDEs, Web | Entorno documental y agente de código con MCP | App gratuita; Code requiere plan/API |
+
+### Otros Recursos
+
+| Capítulo | Herramienta | Tipo | Costo base |
+|----|----|----|----|
+| NotebookLM | {{< var ai.tool.notebooklm >}} | Análisis de documentos con trazabilidad | Gratuito |
+| Perplexity | {{< var ai.tool.perplexity >}} | Investigación con fuentes | Gratuito con límites |
+| Productividad | {{< var ai.tool.julius >}}, {{< var ai.tool.gamma >}}, {{< var ai.tool.napkin >}}, {{< var ai.tool.whisper >}}, {{< var ai.tool.ollama >}}, {{< var ai.tool.lm_studio >}} | Datos, presentaciones, diagramas, transcripción y modelos locales | Gratuito / open source |
+| Hermes Agent | {{< var ai.tool.hermes_agent >}} | Agente autoalojado para automatización de flujos internos | Open source |
+| OpenClaw | {{< var ai.tool.openclaw >}} | Asistente personal autoalojado | Open source |
+
+### Glosario
+
+| Capítulo | Contenido | Para qué sirve |
+|----|----|----|
+| Glosario | Modelo, asistente, agente, IDE, CLI, API, skill, MCP, plugin, marketplace, app, modelo local, pesos abiertos, nube, soberanía de datos | Evitar que los conceptos técnicos aparezcan como capítulos sueltos o como nombres de herramientas |
 
 ## Cómo elegir: árbol de decisión rápido
 
@@ -51,9 +81,10 @@ Ante una tarea nueva, usa esta lógica antes de abrir la primera
 herramienta que se te ocurra:
 
 ```
-¿Necesitas producir código o un mapa?
+¿Necesitas producir código, un mapa o modificar archivos de proyecto?
     → Antigravity + Gemini (herramientas del curso)
-    → Gemini CLI / Claude Code / Codex si trabajas desde el terminal
+    → Codex si trabajas con proyectos de código desde terminal o IDE
+    → Claude Desktop si necesitas conversar con documentos y contexto local
 
 ¿Tienes documentos largos que analizar o sistematizar?
     → NotebookLM si son múltiples fuentes y necesitas trazabilidad
@@ -72,10 +103,18 @@ herramienta que se te ocurra:
     → Whisper (open source, local)
 
 ¿La información es sensible y NO puede salir de tu institución?
-    → Modelos abiertos en hardware propio: Hermes vía Ollama, LatamGPT
+    → Modelos abiertos en hardware propio vía Ollama/LM Studio
+    → LatamGPT si además importa el contexto latinoamericano
 
 ¿Quieres un asistente permanente en WhatsApp/Telegram institucional?
     → OpenClaw (autoalojado; requiere perfil técnico y resguardos)
+
+¿Quieres automatizar un procedimiento interno repetitivo con un agente autoalojado?
+    → Hermes Agent (similar a OpenClaw, pero orientado a flujos y memoria de proceso)
+
+¿Quieres conectar un asistente a datos, APIs o herramientas internas?
+    → MCP si necesitas acceso controlado a sistemas externos
+    → Revisa el Glosario: MCP, skill, plugin, marketplace y app
 
 ¿Es una tarea general de texto, ideas o redacción?
     → Claude, ChatGPT o Gemini según preferencia
@@ -85,8 +124,8 @@ herramienta que se te ocurra:
 ::: {.callout-note appearance="simple" icon="false"}
 📷 **IMAGEN PENDIENTE**: Versión gráfica del árbol de decisión como
 diagrama de flujo, con los logos de las herramientas en las hojas y
-colores que distingan tres familias: gratuitas en la nube, open source
-autoalojadas, y herramientas del curso.
+colores que distingan las tres familias prácticas: Modelos, IDEs y
+Otros Recursos.
 :::
 
 ## Principios de uso responsable
@@ -96,8 +135,10 @@ Independientemente de la herramienta:
 1.  **Nunca subas datos personales reales** (RUT, nombres, teléfonos,
     direcciones de personas) a ninguna herramienta de IA en la nube,
     salvo acuerdo de datos institucional y anonimización previa. Si el
-    dato no puede salir, usa modelos locales (capítulos de Hermes y
-    LatamGPT).
+    dato no puede salir, usa modelos locales vía {{< var ai.tool.ollama >}} /
+    {{< var ai.tool.lm_studio >}} o modelos abiertos en infraestructura
+    propia ({{< var ai.tool.latamgpt >}} cuando esté disponible para
+    ese despliegue).
 2.  **Declara el uso de IA** en cualquier producto institucional: si un
     informe fue asistido por IA, se indica en la metodología.
     Transparencia como política por defecto.

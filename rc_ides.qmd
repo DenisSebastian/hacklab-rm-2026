@@ -1,0 +1,59 @@
+---
+subtitle: "Mapa de superficies para construir con IA"
+editor:
+  markdown:
+    wrap: 72
+---
+
+# Mapa IDEs
+
+## Resumen ejecutivo {.unnumbered}
+
+Los IDEs con IA ya no son solo editores con autocompletado. Son
+**superficies de trabajo**: aplicación de escritorio, terminal, plugin
+de IDE, navegador, agentes en segundo plano y conectores con servicios
+externos. La pregunta ya no es solamente "qué modelo uso", sino **en
+qué lugar conviene trabajar** según el riesgo, los archivos, la
+necesidad de trazabilidad y el perfil técnico del equipo.
+
+| Herramienta | Logo | Escritorio | CLI | IDE / editor | Mejor para |
+|----|:----:|:----:|:----:|:----:|----|
+| **{{< var ai.tool.antigravity >}}** | ![](images/logo-antigravity.svg){width=44px} | Sí | Sí, verificar disponibilidad vigente | IDE propio | Proyectos guiados del curso y agentes con artefactos verificables |
+| **{{< var ai.tool.codex >}}** | ![](images/logo-openai.png){width=40px} | Sí | Sí | VS Code, Cursor, Windsurf y otros | Repositorios, scripts, pruebas, revisión y automatización técnica |
+| **{{< var ai.tool.claude >}}** | ![](images/logo-anthropic.svg){width=40px} | Sí | Sí: {{< var ai.tool.claude_code >}} | VS Code, JetBrains | Documentos largos, revisión crítica, código y flujos con MCP |
+
+## Cómo elegir la superficie
+
+| Necesidad | Superficie recomendada | Razón |
+|----|----|----|
+| Aprender vibe coding con acompañamiento visual | Antigravity Desktop | Integra editor, terminal, navegador y agentes en una interfaz pedagógica |
+| Trabajar sobre una carpeta local con comandos reproducibles | CLI | Deja una huella clara: comandos, archivos modificados, pruebas |
+| Programar con revisión visual de cambios | IDE / editor | Mantiene diffs, contexto del archivo abierto y navegación del proyecto |
+| Coordinar varias tareas largas | App de escritorio o Web | Permite sesiones paralelas, seguimiento y revisión posterior |
+| Conectar datos o herramientas externas | MCP / conectores | Evita copiar y pegar información desde sistemas institucionales |
+
+## Lectura mínima
+
+-   **Antigravity**: página oficial
+    {{< var ai.tool.antigravity >}} y cobertura
+    técnica sobre su enfoque "agent-first" en
+    [The Verge](https://www.theverge.com/news/822833/google-antigravity-ide-coding-agent-gemini-3-pro).
+-   **Codex**: documentación en
+    {{< var ai.tool.codex >}} y repositorio
+    {{< var ai.tool.codex_cli >}}.
+-   **Claude**: documentación de
+    {{< var ai.tool.claude_code >}}, descarga de
+    {{< var ai.tool.claude_desktop >}} y guía de
+    [MCP](https://code.claude.com/docs/en/mcp).
+-   **Estudios recientes**:
+    [Adoption and Impact of Command-Line AI Coding Agents](https://arxiv.org/abs/2607.01418),
+    [Dive into Claude Code](https://arxiv.org/abs/2604.14228) y
+    [Are AI-assisted Development Tools Immune to Prompt Injection?](https://arxiv.org/abs/2603.21642).
+
+::: callout-warning
+Estas herramientas pueden leer archivos, ejecutar comandos, abrir
+navegadores y conectarse a servicios externos. En contexto público:
+trabaja sobre copias, separa datos reales de datos de prueba, exige
+confirmación antes de acciones destructivas y registra qué herramienta
+se usó en cada producto institucional.
+:::
