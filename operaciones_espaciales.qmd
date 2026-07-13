@@ -29,6 +29,13 @@ inversión o respaldar una postulación a fondos. Todo mediante vibe
 coding: la IA ejecuta las operaciones; tú aportas la pregunta, el
 criterio y la validación.
 
+El principio territorial de fondo cambia de nivel: en la 3.1 dijimos
+que *todo pasa en alguna parte*; ahora agregamos que **el mapa no es el
+territorio**. La escala y la proyección no son tecnicismos: son
+decisiones que afectan cuánto mide una plaza, qué población queda fuera
+de cobertura y qué tan defendible es la cifra frente a un municipio,
+una comunidad o una postulación a fondos.
+
 Al finalizar la sesión serás capaz de:
 
 1.  **Formular preguntas territoriales como operaciones espaciales**:
@@ -46,17 +53,34 @@ Al finalizar la sesión serás capaz de:
     publicar en mapas web, en geográficas*.
 6.  **Producir un análisis de accesibilidad o cobertura completo** de tu
     comuna, integrando capas de distintas fuentes.
+7.  **Declarar los supuestos y limitaciones** de una cifra sensible,
+    diferenciando un ejercicio pedagógico de una cifra oficial.
 
 ## Contenidos de la sesión {.unnumbered}
 
 -   Las preguntas del territorio como operaciones espaciales: medir,
     buffer, intersección, conteo espacial.
+-   Dinámica inicial: traducir preguntas reales de los proyectos a
+    operaciones.
 -   Coordenadas y proyecciones: lo mínimo que evita desastres.
 -   EPSG:4326 vs. EPSG:32719: cuándo usar cada uno.
 -   Taller: análisis de cobertura de áreas verdes de mi comuna.
+-   Lectura responsable de cifras de descobertura.
 -   Síntesis del Módulo 1 y proyección al Módulo 2.
 
 ## Las preguntas del territorio son operaciones espaciales
+
+### Para despertar: qué quieren saber de su territorio
+
+La sesión parte con una pregunta en el chat:
+
+> *"¿Dónde falta X?", "¿quiénes quedan lejos de Y?", "¿cuánto Z hay
+> dentro de W?"*
+
+Cada equipo escribe una pregunta real de su proyecto con ese formato.
+No buscamos todavía el dato perfecto ni el mapa final: buscamos detectar
+qué operación espacial está escondida detrás de la pregunta. Si se
+puede dibujar, casi siempre se puede calcular.
 
 Casi todas las preguntas reales de gestión territorial —"¿dónde falta
 X?", "¿quiénes están lejos de Y?"— se descomponen en cuatro
@@ -85,20 +109,41 @@ está en la zona de riesgo?" (intersección). El análisis espacial es
 sentido común territorial, formalizado.
 :::
 
+### El buffer ya lo conocen
+
+Un buffer no es una abstracción rara. Cuando una pizzería dice
+"repartimos hasta 2 km a la redonda", está dibujando un buffer. La
+pregunta municipal "¿a cuántos vecinos les llega el punto limpio?" es
+la misma operación: dibujar la zona de cobertura y contar quién queda
+adentro.
+
+También tiene una versión histórica: los barrios antiguos llegaban
+hasta donde se oía la campana de la iglesia. Era un buffer acústico,
+solo que nadie lo llamaba así.
+
 ## Coordenadas y proyecciones: lo mínimo que evita desastres
 
 ### El problema antes que la teoría
 
 La demostración de la sesión: dos capas reales de la misma comuna que
 **no calzan en el mapa**, y un cálculo de superficie que da un número
-ridículo. ¿Qué pasó? Las capas estaban en sistemas de coordenadas
-distintos.
+ridículo: "La superficie de La Florida me dio 0,0000019 unidades y las
+áreas verdes aparecen en el mar". ¿Qué pasó? Las capas estaban en
+sistemas de coordenadas distintos.
 
-::: {.callout-note appearance="simple" icon="false"}
-📷 **IMAGEN PENDIENTE**: Captura del "desastre": dos capas de la misma
-comuna visiblemente desplazadas entre sí en el mapa, junto a una tabla
-con una superficie absurda (ej. "área de la comuna: 0,0021"). Al lado,
-la versión corregida tras reproyectar, con las capas calzando.
+<!-- ::: {.callout-note appearance="simple" icon="false"} -->
+<!-- 📷 **IMAGEN PENDIENTE**: Captura del "desastre": dos capas de la misma -->
+<!-- comuna visiblemente desplazadas entre sí en el mapa, junto a una tabla -->
+<!-- con una superficie absurda (ej. "área de la comuna: 0,0021"). Al lado, -->
+<!-- la versión corregida tras reproyectar, con las capas calzando. -->
+<!-- ::: -->
+
+::: {.callout-warning title="Marte, 1999: el costo de mezclar unidades"}
+La Mars Climate Orbiter de la NASA se perdió porque un equipo trabajó
+con unidades imperiales y otro con unidades métricas. Nadie se equivocó
+"en la física"; se equivocaron en el sistema de referencia. Cuando tu
+mapa dice que una plaza mide `0,000004` unidades, estás viendo la misma
+clase de problema. La diferencia es que aquí se corrige con un prompt.
 :::
 
 ### La Tierra es curva, el mapa es plano
@@ -109,6 +154,17 @@ estira, se deforma. Eso le pasa a la Tierra cada vez que la dibujamos
 plana. Toda representación plana distorsiona algo, y por eso existen
 distintos sistemas de proyección: cada uno elige qué deformar y qué
 preservar [@Tobler_1970].
+:::
+
+En un mapa escolar, Groenlandia puede parecer del tamaño de África,
+aunque África es alrededor de 14 veces más grande. La pregunta
+profesional no es "¿qué mapa es el verdadero?", sino "¿en qué me está
+mintiendo este mapa, y me importa para esta decisión?".
+
+::: {.callout-tip title="Principio territorial Nº 3"}
+**El mapa no es el territorio.** Toda medición depende de cómo
+aplanamos el mundo. La escala y la proyección son decisiones, no
+tecnicismos; quien decide sin saberlo puede medir mal sin enterarse.
 :::
 
 ### Lo único que hay que memorizar
@@ -129,15 +185,30 @@ preservar [@Tobler_1970].
 el síntoma y pedir la corrección.
 :::
 
-La verificación en vivo cierra el ciclo: se le pide a la IA
-diagnosticar y corregir el problema inicial, y el resultado se valida
-contra una medida conocida (la superficie oficial de la comuna).
+### Diagnóstico express
+
+| Síntoma | Prompt de corrección |
+|----|----|
+| Las capas no se superponen o el mapa sale desplazado | *"Reproyecta todas las capas a EPSG:32719 antes de cruzarlas."* |
+| Áreas o distancias absurdas: `0,000004`, `0,0000019` o miles de millones | *"Reproyecta todas las capas a EPSG:32719 antes de calcular áreas, distancias o buffers."* |
+| El resultado parece plausible, pero necesitas defenderlo | *"Compara la superficie calculada con la superficie oficial de la comuna según BCN o SUBDERE."* |
+
+La verificación en vivo cierra el ciclo: se le pide a la IA diagnosticar
+y corregir el problema inicial, y el resultado se valida contra una
+medida conocida, como la superficie oficial de la comuna.
+
+### Chile: el país difícil de aplanar
+
+Chile cruza miles de kilómetros de norte a sur y varios husos UTM. Es
+uno de los países donde elegir mal la proyección puede distorsionar más
+rápido las mediciones. La buena noticia pedagógica es que si aprendes a
+revisar proyecciones aquí, el criterio te sirve en cualquier parte.
 
 ## Actividades
 
 ### Taller: análisis de cobertura de mi comuna (35 min)
 
-Caso modelado con Quilicura y replicado por cada equipo con su comuna y
+Caso modelado con La Florida y replicado por cada equipo con su comuna y
 su equipamiento de interés. Secuencia de prompts:
 
 1.  > *"Carga el límite comunal y las áreas verdes (de la sesión
@@ -154,12 +225,25 @@ su equipamiento de interés. Secuencia de prompts:
 Cada paso incluye una micro-validación: ¿el porcentaje es plausible?,
 ¿el mapa calza con lo que tú sabes de tu comuna?
 
-::: {.callout-note appearance="simple" icon="false"}
-📷 **IMAGEN PENDIENTE**: El mapa final del taller para Quilicura: zonas
-cubiertas por buffers de áreas verdes en verde, zonas descubiertas en
-rojo, título y cifra destacada de población sin cobertura. Es el
-"diploma emocional" del Módulo 1 y debe verse presentable, digno de una
-minuta para el alcalde.
+Prompt compacto para equipos:
+
+> *"Crea un buffer de 500 metros alrededor de cada [equipamiento] de
+> [TU COMUNA], une los buffers y dime qué porcentaje de la superficie y
+> cuánta población queda fuera."*
+
+La capa censal del INE viene pre-procesada por comuna para que el foco
+esté en la operación espacial y no en resolver descargas durante el
+taller. Si el paso censal se traba, se revisa en pantalla y queda como
+tarea guiada.
+
+![](images/mapas-cobveg.png){fig-aling="center}
+
+<!-- ::: {.callout-note appearance="simple" icon="false"} -->
+<!-- 📷 **IMAGEN PENDIENTE**: El mapa final del taller para La Florida: zonas -->
+<!-- cubiertas por buffers de áreas verdes en verde, zonas descubiertas en -->
+<!-- rojo, título y cifra destacada de población sin cobertura. Es el -->
+<!-- "diploma emocional" del Módulo 1 y debe verse presentable, digno de una -->
+<!-- minuta para el alcalde. -->
 :::
 
 ::: callout-warning
@@ -170,17 +254,54 @@ vez de caminable. Declarar estas limitaciones es un hábito profesional,
 no una debilidad.
 :::
 
+### Antes de mostrar esa cifra
+
+Una cifra de población "fuera de cobertura" no es solo un resultado
+metodológico: en municipios, gobiernos regionales y servicios públicos
+también es un punto político. Puede orientar prioridades, abrir una
+discusión presupuestaria o respaldar una postulación. Por eso hay que
+declarar el método antes de usarla fuera del taller:
+
+-   Fuente de equipamientos: OpenStreetMap u otra capa oficial.
+-   Distancia usada: línea recta o red caminable.
+-   Proyección usada para medir: EPSG:32719 en Chile central.
+-   Capa poblacional: manzanas o zonas censales del INE.
+-   Validación: comparación con cifras oficiales o conocimiento local.
+
+Declarar supuestos no debilita la evidencia; la hace defendible.
+
+### Para qué sirve esta cifra
+
+El buffer es geometría, pero la pregunta es de justicia territorial:
+¿quién queda cerca de un servicio y quién queda sistemáticamente lejos?
+La referencia habitual para áreas verdes y equipamientos de proximidad
+se expresa como distancia caminable del hogar, del orden de 300 a 500
+metros según estándar y contexto.
+
+El mismo flujo sirve para áreas verdes, consultorios, puntos limpios,
+paraderos o ferias. Cambia la capa; no cambia el método. En la práctica
+puede fundamentar priorización de paradas, decisiones de transporte con
+enfoque de género, inversión comunal o proyectos de sostenibilidad.
+
 ### Checklist de autodiagnóstico del Módulo 1
 
-Cierre con autoevaluación rápida en 5 preguntas: ¿puedo generar una
-herramienta con un prompt?, ¿puedo traer datos de mi comuna?, ¿puedo
-distinguir punto/línea/polígono?, ¿sé cuándo reproyectar?, ¿puedo
-producir un mapa de cobertura con cifra?
+Cierre con autoevaluación rápida en 5 preguntas:
+
+1.  ¿Puedo escribir un prompt con contexto, datos, resultado esperado y
+    restricciones?
+2.  ¿Puedo traer el límite y los equipamientos de mi comuna con una
+    frase?
+3.  ¿Sé qué operación responde mi pregunta: medir, buffer, intersectar o
+    contar?
+4.  ¿Sé qué hacer cuando las capas no calzan o los números salen
+    absurdos?
+5.  ¿Validé mi cifra contra algo que ya conocía?
 
 ### Tarea puente al Módulo 2
 
 Repite el análisis con el equipamiento central de la problemática de tu
-equipo y lleva el mapa a la sesión 4.1.
+equipo y lleva el mapa a la sesión 4.1. Guarda también los prompts: la
+hoja de ruta final se construye sobre ellos.
 
 ## Resumen
 
@@ -194,12 +315,16 @@ equipo y lleva el mapa a la sesión 4.1.
 -   Síntoma de error de proyección (capas desplazadas, cifras absurdas)
     → prompt de corrección: *"reproyecta todo a EPSG:32719 antes de
     calcular"*.
+-   El mapa no es el territorio: toda cifra espacial depende de escala,
+    proyección, fuente de datos y método de medición. Declarar esos
+    supuestos hace que la evidencia sea defendible.
 -   El arco del Módulo 1 quedó completo: **prompting (2.1) → vibe coding
     (2.2) → datos del territorio (3.1) → análisis espacial (3.2)**. Ya
     tienes el flujo: pregunta → datos → análisis → mapa con evidencia.
 -   Lo que viene en el Módulo 2: hasta ahora usamos datos que ya
-    existían; lo siguiente es **crear datos nuevos con la ciudadanía** y
-    procesar lo que la gente dice y siente.
+    existían; lo siguiente es **crear datos nuevos con la ciudadanía**,
+    completar mapas donde falten datos y procesar lo que la gente dice y
+    siente.
 
 ## Recursos
 

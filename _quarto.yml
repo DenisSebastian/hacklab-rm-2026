@@ -18,8 +18,8 @@ book:
     - part: "Módulo 1: Conceptos & Casos"
       chapters:
         - vibe_coding.qmd
-        # - ecosistema_python.qmd
-        # - operaciones_espaciales.qmd
+        - ecosistema_python.qmd
+        - operaciones_espaciales.qmd
     - part: "Módulo 2: Modelos IA"
       # chapters:
         # - sensores_iot.qmd
@@ -46,6 +46,9 @@ book:
         - rc_otras_herramientas.qmd
         - rc_openclaw.qmd
         - rc_hermes.qmd
+    - part: "Casos"
+      chapters:
+        - john_snow.qmd
     - part: "Glosario"
       chapters:
         - rc_glosario.qmd
