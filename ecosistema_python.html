@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>13&nbsp; Productividad – AcademIA HackLab: Santiago Región Sustentable</title>
+<title>2&nbsp; Ecosistema Python – AcademIA HackLab: Santiago Región Sustentable</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,8 +50,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./rc_openclaw.html" rel="next">
-<link href="./rc_perplexity.html" rel="prev">
+<link href="./operaciones_espaciales.html" rel="next">
+<link href="./vibe_coding.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -83,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rc_notebooklm.html">Otros Recursos</a></li><li class="breadcrumb-item"><a href="./rc_otras_herramientas.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Productividad</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./vibe_coding.html">Módulo 1: Conceptos &amp; Casos</a></li><li class="breadcrumb-item"><a href="./ecosistema_python.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ecosistema Python</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -131,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ecosistema_python.html" class="sidebar-item-text sidebar-link">
+  <a href="./ecosistema_python.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ecosistema Python</span></span></a>
   </div>
 </li>
@@ -240,7 +260,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rc_otras_herramientas.html" class="sidebar-item-text sidebar-link active">
+  <a href="./rc_otras_herramientas.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Productividad</span></span></a>
   </div>
 </li>
@@ -309,22 +329,40 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#resumen-ejecutivo" id="toc-resumen-ejecutivo" class="nav-link active" data-scroll-target="#resumen-ejecutivo">Resumen ejecutivo</a></li>
-  <li><a href="#julius-ai-planillas-sin-código" id="toc-julius-ai-planillas-sin-código" class="nav-link" data-scroll-target="#julius-ai-planillas-sin-código"><span class="header-section-number">13.1</span> Julius AI: planillas sin código</a></li>
-  <li><a href="#gamma-presentaciones-desde-texto" id="toc-gamma-presentaciones-desde-texto" class="nav-link" data-scroll-target="#gamma-presentaciones-desde-texto"><span class="header-section-number">13.2</span> Gamma: presentaciones desde texto</a></li>
-  <li><a href="#napkin-de-texto-a-diagramas" id="toc-napkin-de-texto-a-diagramas" class="nav-link" data-scroll-target="#napkin-de-texto-a-diagramas"><span class="header-section-number">13.3</span> Napkin: de texto a diagramas</a></li>
-  <li><a href="#whisper-transcripción-open-source" id="toc-whisper-transcripción-open-source" class="nav-link" data-scroll-target="#whisper-transcripción-open-source"><span class="header-section-number">13.4</span> Whisper: transcripción open source</a></li>
-  <li><a href="#ollama-y-lm-studio-la-puerta-a-los-modelos-locales" id="toc-ollama-y-lm-studio-la-puerta-a-los-modelos-locales" class="nav-link" data-scroll-target="#ollama-y-lm-studio-la-puerta-a-los-modelos-locales"><span class="header-section-number">13.5</span> Ollama y LM Studio: la puerta a los modelos locales</a></li>
-  <li><a href="#tabla-comparativa-del-capítulo" id="toc-tabla-comparativa-del-capítulo" class="nav-link" data-scroll-target="#tabla-comparativa-del-capítulo"><span class="header-section-number">13.6</span> Tabla comparativa del capítulo</a></li>
+  <li><a href="#contenidos-de-la-sesión" id="toc-contenidos-de-la-sesión" class="nav-link" data-scroll-target="#contenidos-de-la-sesión">Contenidos de la sesión</a></li>
+  <li><a href="#pensar-el-territorio-como-datos" id="toc-pensar-el-territorio-como-datos" class="nav-link" data-scroll-target="#pensar-el-territorio-como-datos"><span class="header-section-number">2.1</span> Pensar el territorio como datos</a>
+  <ul class="collapse">
+  <li><a href="#todo-lo-que-pasa-pasa-en-alguna-parte" id="toc-todo-lo-que-pasa-pasa-en-alguna-parte" class="nav-link" data-scroll-target="#todo-lo-que-pasa-pasa-en-alguna-parte"><span class="header-section-number">2.1.1</span> Todo lo que pasa, pasa en alguna parte</a></li>
+  <li><a href="#los-tres-tipos-de-geometría" id="toc-los-tres-tipos-de-geometría" class="nav-link" data-scroll-target="#los-tres-tipos-de-geometría"><span class="header-section-number">2.1.2</span> Los tres tipos de geometría</a></li>
+  <li><a href="#formatos-que-te-llegarán-en-la-vida-real" id="toc-formatos-que-te-llegarán-en-la-vida-real" class="nav-link" data-scroll-target="#formatos-que-te-llegarán-en-la-vida-real"><span class="header-section-number">2.1.3</span> Formatos que te llegarán en la vida real</a></li>
+  </ul></li>
+  <li><a href="#el-ecosistema-geopandas-shapely-y-osmnx" id="toc-el-ecosistema-geopandas-shapely-y-osmnx" class="nav-link" data-scroll-target="#el-ecosistema-geopandas-shapely-y-osmnx"><span class="header-section-number">2.2</span> El ecosistema: GeoPandas, Shapely y OSMnx</a>
+  <ul class="collapse">
+  <li><a href="#tres-especialistas-de-un-equipo" id="toc-tres-especialistas-de-un-equipo" class="nav-link" data-scroll-target="#tres-especialistas-de-un-equipo"><span class="header-section-number">2.2.1</span> Tres especialistas de un equipo</a></li>
+  <li><a href="#por-qué-los-nombres-mejoran-los-prompts" id="toc-por-qué-los-nombres-mejoran-los-prompts" class="nav-link" data-scroll-target="#por-qué-los-nombres-mejoran-los-prompts"><span class="header-section-number">2.2.2</span> Por qué los nombres mejoran los prompts</a></li>
+  <li><a href="#openstreetmap-con-honestidad" id="toc-openstreetmap-con-honestidad" class="nav-link" data-scroll-target="#openstreetmap-con-honestidad"><span class="header-section-number">2.2.3</span> OpenStreetMap, con honestidad</a></li>
+  <li><a href="#dónde-corre-esto" id="toc-dónde-corre-esto" class="nav-link" data-scroll-target="#dónde-corre-esto"><span class="header-section-number">2.2.4</span> Dónde corre esto</a></li>
+  </ul></li>
+  <li><a href="#actividades" id="toc-actividades" class="nav-link" data-scroll-target="#actividades"><span class="header-section-number">2.3</span> Actividades</a>
+  <ul class="collapse">
+  <li><a href="#taller-mi-comuna-en-datos-35-min" id="toc-taller-mi-comuna-en-datos-35-min" class="nav-link" data-scroll-target="#taller-mi-comuna-en-datos-35-min"><span class="header-section-number">2.3.1</span> Taller: mi comuna en datos (35 min)</a></li>
+  <li><a href="#ejercicios-de-extensión" id="toc-ejercicios-de-extensión" class="nav-link" data-scroll-target="#ejercicios-de-extensión"><span class="header-section-number">2.3.2</span> Ejercicios de extensión</a></li>
+  <li><a href="#tarea-puente-20-min-opcional" id="toc-tarea-puente-20-min-opcional" class="nav-link" data-scroll-target="#tarea-puente-20-min-opcional"><span class="header-section-number">2.3.3</span> Tarea puente (20 min, opcional)</a></li>
+  </ul></li>
+  <li><a href="#pregunta-frecuente-y-satélites-drones-y-rasters" id="toc-pregunta-frecuente-y-satélites-drones-y-rasters" class="nav-link" data-scroll-target="#pregunta-frecuente-y-satélites-drones-y-rasters"><span class="header-section-number">2.4</span> Pregunta frecuente: ¿y satélites, drones y rasters?</a></li>
+  <li><a href="#fuentes-de-datos-para-el-mundo-real" id="toc-fuentes-de-datos-para-el-mundo-real" class="nav-link" data-scroll-target="#fuentes-de-datos-para-el-mundo-real"><span class="header-section-number">2.5</span> Fuentes de datos para el mundo real</a></li>
+  <li><a href="#resumen" id="toc-resumen" class="nav-link" data-scroll-target="#resumen"><span class="header-section-number">2.6</span> Resumen</a></li>
+  <li><a href="#recursos" id="toc-recursos" class="nav-link" data-scroll-target="#recursos"><span class="header-section-number">2.7</span> Recursos</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rc_notebooklm.html">Otros Recursos</a></li><li class="breadcrumb-item"><a href="./rc_otras_herramientas.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Productividad</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./vibe_coding.html">Módulo 1: Conceptos &amp; Casos</a></li><li class="breadcrumb-item"><a href="./ecosistema_python.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ecosistema Python</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Productividad</span></h1>
-<p class="subtitle lead">Datos, presentaciones, diagramas, transcripción y modelos locales</p>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ecosistema Python</span></h1>
+<p class="subtitle lead">Para ciencia de datos espaciales</p>
 </div>
 
 
@@ -341,105 +379,44 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p><strong>Sesión 3.1 · Día 3 · 1,5 horas · Modalidad Meet · Docente: Denis Berroeta (UAI)</strong></p>
 <section id="resumen-ejecutivo" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="resumen-ejecutivo">Resumen ejecutivo</h2>
-<p>Este capítulo reúne herramientas de tarea que resuelven muy bien una necesidad específica del trabajo público: explorar planillas sin código (<a href="https://julius.ai/">Julius AI</a>), producir presentaciones en minutos (<a href="https://gamma.app/">Gamma</a>), convertir texto en diagramas (<a href="https://napkin.ai/">Napkin</a>), transcribir audios de talleres y reuniones (<a href="https://github.com/openai/whisper">Whisper</a>, open source) y ejecutar modelos locales (<a href="https://ollama.com/">Ollama</a> / <a href="https://lmstudio.ai/">LM Studio</a>). Ninguna exige programar; dos de ellas son completamente open source y corren en hardware propio.</p>
-</section>
-<section id="julius-ai-planillas-sin-código" class="level2" data-number="13.1">
-<h2 data-number="13.1" class="anchored" data-anchor-id="julius-ai-planillas-sin-código"><span class="header-section-number">13.1</span> Julius AI: planillas sin código</h2>
-<p><strong>Acceso:</strong> <a href="https://julius.ai/">Julius AI</a> · Plan gratuito con límite mensual de consultas.</p>
-<p>Un analista de datos conversacional: subes una planilla (Excel, CSV, Google Sheets) y le haces preguntas en lenguaje natural. Genera gráficos, calcula estadísticas, filtra y detecta patrones, todo desde texto.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Ejemplos de uso municipal">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Ejemplos de uso municipal
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Explorar datos del Censo INE antes del análisis espacial del Módulo 1: <em>“¿Cuántas personas mayores de 65 años viven en cada zona censal de esta tabla?”</em></li>
-<li>Analizar registros administrativos (reclamos, solicitudes, permisos) para encontrar patrones antes de georreferenciarlos.</li>
-<li>Validar resultados del análisis espacial contra tablas planas: <em>“Compara la cobertura de áreas verdes de estas comunas con sus niveles de ingreso promedio.”</em></li>
-</ul>
-</div>
-</div>
-<p>Alternativa de costo cero si ya usas el ecosistema del curso: el propio <a href="https://gemini.google.com/">Gemini</a> sobre Google Sheets, o <a href="https://chatgpt.com/">ChatGPT</a> gratuito con archivos.</p>
-</section>
-<section id="gamma-presentaciones-desde-texto" class="level2" data-number="13.2">
-<h2 data-number="13.2" class="anchored" data-anchor-id="gamma-presentaciones-desde-texto"><span class="header-section-number">13.2</span> Gamma: presentaciones desde texto</h2>
-<p><strong>Acceso:</strong> <a href="https://gamma.app/">Gamma</a> · Plan gratuito con marca de agua; plan de pago para uso profesional.</p>
-<p>Genera presentaciones completas a partir de una descripción: das el tema, el público y el mensaje central, y obtienes una presentación con estructura, diseño y contenido inicial, afinable iterativamente en lenguaje natural.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Ejemplo de uso municipal">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Ejemplo de uso municipal
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<blockquote class="blockquote">
-<p><em>“Crea una presentación de 10 diapositivas para el Concejo Municipal sobre los resultados del análisis de cobertura de áreas verdes. El mensaje principal es que el 38% de la población vive a más de 500 metros de un área verde. Público: concejales sin formación técnica.”</em></p>
-</blockquote>
-<p>El tiempo de producción pasa de horas a minutos. La revisión sigue siendo del profesional; el diseño inicial ya no.</p>
-</div>
-</div>
-</section>
-<section id="napkin-de-texto-a-diagramas" class="level2" data-number="13.3">
-<h2 data-number="13.3" class="anchored" data-anchor-id="napkin-de-texto-a-diagramas"><span class="header-section-number">13.3</span> Napkin: de texto a diagramas</h2>
-<p><strong>Acceso:</strong> <a href="https://napkin.ai/">Napkin</a> · Plan gratuito disponible.</p>
-<p>Convierte texto en visualizaciones: pegas un párrafo que explica un proceso, una cadena causal o una comparación, y Napkin propone diagramas (flujos, matrices, líneas de tiempo) para elegir y exportar.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Ejemplos de uso municipal">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Ejemplos de uso municipal
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Diagramar el ciclo de una consulta ciudadana o el medir-intervenir-medir del urbanismo táctico para una lámina.</li>
-<li>Convertir la metodología de un proyecto en infografía para postulación a fondos.</li>
-<li>Material visual para comunicación comunitaria sin diseñador.</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="whisper-transcripción-open-source" class="level2" data-number="13.4">
-<h2 data-number="13.4" class="anchored" data-anchor-id="whisper-transcripción-open-source"><span class="header-section-number">13.4</span> Whisper: transcripción open source</h2>
-<p><strong>Acceso:</strong> <a href="https://github.com/openai/whisper">Whisper</a> · <strong>Open source (MIT)</strong> · Gratuito; corre en computador propio.</p>
-<p>Modelo de <strong>transcripción de audio a texto</strong> que funciona muy bien en español chileno. Corre localmente: el audio <strong>no sale de la institución</strong>, lo que lo hace apto incluso para material sensible.</p>
-<p>Para el trabajo participativo es una pieza estratégica: las horas de audio de talleres, cabildos y reuniones —que hoy nadie transcribe— se convierten en texto procesable con el flujo NLP de la sesión 5.2.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="El flujo completo de costo cero">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-El flujo completo de costo cero
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<p>Si la sesión anterior enseñó a “hablar con la máquina”, esta sesión enseña <strong>de qué hablarle cuando el problema es territorial</strong>. El hilo conductor es simple: <em>todo lo que pasa, pasa en alguna parte</em>. Un reclamo, una luminaria mala, un microbasural o una compostera existen como evidencia accionable recién cuando sabemos dónde están.</p>
+<p>La historia de John Snow lo muestra con fuerza. Mientras la explicación dominante del cólera en el Soho apuntaba a los “malos aires”, Snow puso las muertes en un mapa y encontró su concentración alrededor de una bomba de agua. Era la misma epidemia y los mismos datos, pero al ubicarlos en el espacio apareció una causa que antes no se veía.</p>
+<p>Los problemas que enfrentas —dónde falta arbolado, qué barrios están lejos de un consultorio, cómo se distribuyen los microbasurales— son problemas <em>espaciales</em>, y existe un ecosistema maduro de herramientas Python especializado en ellos: <strong>GeoPandas</strong> para trabajar con tablas que tienen geometría <span class="citation" data-cites="jordahl_geopandas_2020">(<a href="references.html#ref-jordahl_geopandas_2020" role="doc-biblioref">Jordahl et al. 2020</a>)</span>, <strong>Shapely</strong> para operar con formas, y <strong>OSMnx</strong> para descargar gratuitamente la cartografía de OpenStreetMap de cualquier lugar del mundo <span class="citation" data-cites="boeing_osmnx_2017">(<a href="references.html#ref-boeing_osmnx_2017" role="doc-biblioref">Boeing 2017</a>)</span>.</p>
+<p>El giro pedagógico es fundamental: <strong>no aprenderás a programar con estas bibliotecas</strong>, sino a <strong>conocerlas lo suficiente para nombrarlas en tus prompts y evaluar lo que producen</strong>. Saber que GeoPandas existe transforma el prompt vago “haz un análisis de mi comuna” en el prompt potente “usa GeoPandas para cargar los límites de mi comuna y OSMnx para descargar sus plazas, y dime cuántas hay por barrio”. <strong>El vocabulario es la palanca.</strong></p>
+<p>Al finalizar la sesión serás capaz de:</p>
 <ol type="1">
-<li>Grabar el taller participativo (con consentimiento informado).</li>
-<li><a href="https://github.com/openai/whisper">Whisper</a> transcribe el audio localmente.</li>
-<li>Modelo local o IA del curso clasifica y sintetiza (flujo 5.2, con auditoría humana).</li>
-<li>Resultado: el acta y el informe temático del taller, en horas en vez de semanas.</li>
+<li><strong>Explicar</strong> qué son los datos espaciales y sus dos componentes: atributos (la tabla) y geometría (la forma en el mapa).</li>
+<li><strong>Identificar los tres tipos de geometría</strong> (punto, línea, polígono) y asociar fenómenos territoriales a cada uno.</li>
+<li><strong>Describir el rol de cada biblioteca</strong> —GeoPandas, Shapely, OSMnx— al nivel necesario para invocarlas en un prompt.</li>
+<li><strong>Obtener datos espaciales reales de tu comuna</strong> mediante vibe coding: límites, calles, equipamientos, áreas verdes.</li>
+<li><strong>Producir un primer mapa y una primera tabla-resumen</strong> sin escribir código manualmente.</li>
+<li><strong>Auditar rápidamente</strong> si un resultado espacial es plausible, leyendo primero la tabla y luego el mapa.</li>
+<li><strong>Distinguir el alcance de esta sesión</strong>: hoy trabajamos con vectores; imágenes satelitales, drones y rasters quedan como etapa siguiente de la hoja de ruta.</li>
+<li><strong>Reconocer fuentes de datos espaciales abiertas</strong> relevantes para Chile.</li>
 </ol>
-</div>
-</div>
-<p>La instalación requiere perfil técnico (o usar las versiones integradas en herramientas como <a href="https://lmstudio.ai/">LM Studio</a> y aplicaciones de notas); el uso, no.</p>
 </section>
-<section id="ollama-y-lm-studio-la-puerta-a-los-modelos-locales" class="level2" data-number="13.5">
-<h2 data-number="13.5" class="anchored" data-anchor-id="ollama-y-lm-studio-la-puerta-a-los-modelos-locales"><span class="header-section-number">13.5</span> Ollama y LM Studio: la puerta a los modelos locales</h2>
-<p><strong>Acceso:</strong> <a href="https://ollama.com/">Ollama</a> · <a href="https://lmstudio.ai/">LM Studio</a> · Gratuitos; Ollama es open source.</p>
-<p>Estos dos programas hacen viable el uso cotidiano de modelos locales: se instalan como cualquier aplicación, descargan modelos abiertos de un catálogo (Llama, Qwen, Mistral, Hermes y otros) y entregan una interfaz de chat local. <a href="https://lmstudio.ai/">LM Studio</a> es más amigable para empezar (interfaz gráfica); <a href="https://ollama.com/">Ollama</a> es más flexible para automatizar (línea de comandos, open source).</p>
+<section id="contenidos-de-la-sesión" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="contenidos-de-la-sesión">Contenidos de la sesión</h2>
+<ul>
+<li>Pensar el territorio como datos: atributos + geometría.</li>
+<li>Caso de apertura: John Snow, el cólera y la bomba de agua.</li>
+<li>Los tres tipos de geometría: punto, línea, polígono.</li>
+<li>Formatos de datos espaciales: CSV con coordenadas, GeoJSON, Shapefile, KML.</li>
+<li>El ecosistema: GeoPandas, Shapely y OSMnx como vocabulario de prompts.</li>
+<li>Taller “Mi comuna en datos”: vibe coding aplicado.</li>
+<li>OpenStreetMap con honestidad: potencia, límites y verificación local.</li>
+<li>Vectores hoy; rasters, satélites y drones como etapa siguiente.</li>
+<li>Fuentes de datos abiertas para Chile.</li>
+</ul>
+</section>
+<section id="pensar-el-territorio-como-datos" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="pensar-el-territorio-como-datos"><span class="header-section-number">2.1</span> Pensar el territorio como datos</h2>
+<section id="todo-lo-que-pasa-pasa-en-alguna-parte" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="todo-lo-que-pasa-pasa-en-alguna-parte"><span class="header-section-number">2.1.1</span> Todo lo que pasa, pasa en alguna parte</h3>
+<p>Un <strong>dato espacial</strong> es información que, además de sus atributos, tiene ubicación y forma en el mapa. La idea se entiende con una planilla municipal real: el registro de luminarias.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -448,96 +425,124 @@ El flujo completo de costo cero
 </colgroup>
 <thead>
 <tr class="header">
-<th></th>
-<th>LM Studio</th>
-<th>Ollama</th>
+<th>Componente</th>
+<th>Qué es</th>
+<th>Ejemplo</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Interfaz</td>
-<td>Gráfica, tipo chat</td>
-<td>Línea de comandos + API local</td>
+<td><strong>Atributos</strong></td>
+<td>La tabla: las columnas que describen cada elemento</td>
+<td>Potencia, estado, fecha de instalación de la luminaria</td>
 </tr>
 <tr class="even">
-<td>Perfil</td>
-<td>Cualquier usuario</td>
-<td>Equipo técnico</td>
-</tr>
-<tr class="odd">
-<td>Open source</td>
-<td>No (gratuito)</td>
-<td><strong>Sí (MIT)</strong></td>
-</tr>
-<tr class="even">
-<td>Mejor para</td>
-<td>Probar modelos locales hoy</td>
-<td>Integrar modelos locales a flujos</td>
+<td><strong>Geometría</strong></td>
+<td>La forma y posición en el mapa</td>
+<td>El punto donde está instalada</td>
 </tr>
 </tbody>
 </table>
+<div class="callout callout-style-default callout-tip callout-titled" title="Principio territorial Nº 2">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Principio territorial Nº 2
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Todo lo que pasa, pasa en alguna parte.</strong> Un dato sin ubicación es una anécdota; con ubicación, es evidencia accionable. El reclamo, la luminaria mala o el microbasural recién se pueden priorizar, agrupar y atacar cuando sabemos dónde están.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Analogía: la ficha y el plano">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Analogía: la ficha y el plano
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Piensa en la ficha clínica de un paciente (atributos) y su dirección (geometría). Por separado sirven poco para planificar un operativo sanitario; juntas permiten preguntar “¿dónde se concentran los pacientes crónicos?”. El dato espacial es exactamente eso: la ficha <strong>y</strong> el plano, unidos.</p>
+</div>
+</div>
 </section>
-<section id="tabla-comparativa-del-capítulo" class="level2" data-number="13.6">
-<h2 data-number="13.6" class="anchored" data-anchor-id="tabla-comparativa-del-capítulo"><span class="header-section-number">13.6</span> Tabla comparativa del capítulo</h2>
+<section id="los-tres-tipos-de-geometría" class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="los-tres-tipos-de-geometría"><span class="header-section-number">2.1.2</span> Los tres tipos de geometría</h3>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
+<col style="width: 50%">
+<col style="width: 50%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Herramienta</th>
-<th>Tarea</th>
-<th>Costo</th>
-<th>Open source</th>
-<th>Datos salen de la institución</th>
+<th>Geometría</th>
+<th>Fenómenos territoriales típicos</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Julius AI</td>
-<td>Análisis de planillas</td>
-<td>Gratuito c/límite</td>
-<td>No</td>
-<td>Sí (nube)</td>
+<td><strong>Punto</strong></td>
+<td>Luminaria, paradero, árbol, punto limpio, compostera, reclamo georreferenciado</td>
 </tr>
 <tr class="even">
-<td>Gamma</td>
-<td>Presentaciones</td>
-<td>Gratuito c/marca</td>
-<td>No</td>
-<td>Sí (nube)</td>
+<td><strong>Línea</strong></td>
+<td>Ciclovía, red peatonal, eje comercial, ruta de recolección, calle</td>
 </tr>
 <tr class="odd">
-<td>Napkin</td>
-<td>Diagramas</td>
-<td>Gratuito c/límite</td>
-<td>No</td>
-<td>Sí (nube)</td>
+<td><strong>Polígono</strong></td>
+<td>Barrio, unidad vecinal, comuna, zona inundable, microbasural, bosquete, área verde</td>
+</tr>
+</tbody>
+</table>
+<!-- ::: {.callout-note appearance="simple" icon="false"} -->
+<!-- 📷 **IMAGEN PENDIENTE**: Ilustración de un mismo sector urbano de la RM -->
+<!-- visto tres veces: una capa de puntos (luminarias/paraderos), una de -->
+<!-- líneas (calles/ciclovías) y una de polígonos (manzanas/plazas), con -->
+<!-- rótulos "Punto", "Línea", "Polígono". Idealmente las tres capas -->
+<!-- superpuestas en una cuarta vista. -->
+<!-- ::: -->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/geometrias.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></p>
+</figure>
+</div>
+<p>El juego de clasificación de la sesión: el docente nombra fenómenos urbanos (compostera comunitaria de Peñalolén, ruta de recolección del GORE, microbasural de La Florida, red peatonal de WOM) y la sala los clasifica como punto, línea o polígono. No hay trampa: casi todo el territorio cabe en estas tres formas.</p>
+<p>La duda también enseña. Un microbasural puede representarse como punto si queremos contarlo, o como polígono si queremos medir su superficie. La forma depende de la pregunta.</p>
+</section>
+<section id="formatos-que-te-llegarán-en-la-vida-real" class="level3" data-number="2.1.3">
+<h3 data-number="2.1.3" class="anchored" data-anchor-id="formatos-que-te-llegarán-en-la-vida-real"><span class="header-section-number">2.1.3</span> Formatos que te llegarán en la vida real</h3>
+<p>Solo para reconocerlos de nombre: planilla con coordenadas (<strong>CSV</strong>), <strong>GeoJSON</strong>, <strong>Shapefile</strong>, <strong>KML</strong>.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Formato</th>
+<th>Cómo reconocerlo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>CSV</strong></td>
+<td>Una planilla con columnas de coordenadas; probablemente ya lo tienes</td>
 </tr>
 <tr class="even">
-<td>Whisper</td>
-<td>Transcripción de audio</td>
-<td>Gratuito</td>
-<td><strong>Sí</strong></td>
-<td><strong>No (local)</strong></td>
+<td><strong>GeoJSON</strong></td>
+<td>Estándar común en la web y en portales de datos abiertos</td>
 </tr>
 <tr class="odd">
-<td>Ollama</td>
-<td>Modelos locales</td>
-<td>Gratuito</td>
-<td><strong>Sí</strong></td>
-<td><strong>No (local)</strong></td>
+<td><strong>Shapefile</strong></td>
+<td>El veterano de los SIG; suele venir como un <code>.zip</code> con varios archivos que funcionan como una sola capa</td>
 </tr>
 <tr class="even">
-<td>LM Studio</td>
-<td>Modelos locales</td>
-<td>Gratuito</td>
-<td>No</td>
-<td><strong>No (local)</strong></td>
+<td><strong>KML</strong></td>
+<td>Formato habitual de Google Earth y My Maps</td>
 </tr>
 </tbody>
 </table>
@@ -551,11 +556,270 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Patrón a notar: las herramientas de nube gratuitas son cómodas pero procesan tus datos afuera; las open source locales exigen algo más de instalación pero devuelven el control. Para material público, comodidad; para material sensible, control.</p>
+<p>Mensaje clave: <strong>no importa el formato; la IA sabe abrirlos todos si le dices cuál es</strong>. Basta con escribir “tengo un Shapefile con las manzanas de mi comuna” y la IA se encarga del resto.</p>
 </div>
 </div>
+</section>
+</section>
+<section id="el-ecosistema-geopandas-shapely-y-osmnx" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="el-ecosistema-geopandas-shapely-y-osmnx"><span class="header-section-number">2.2</span> El ecosistema: GeoPandas, Shapely y OSMnx</h2>
+<section id="tres-especialistas-de-un-equipo" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="tres-especialistas-de-un-equipo"><span class="header-section-number">2.2.1</span> Tres especialistas de un equipo</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Biblioteca</th>
+<th>Rol en el equipo</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>GeoPandas</strong></td>
+<td>El analista</td>
+<td>Maneja la tabla con geometría: filtra, agrupa, cuenta, mapea</td>
+</tr>
+<tr class="even">
+<td><strong>Shapely</strong></td>
+<td>El geómetra</td>
+<td>Crea y opera formas: distancias, áreas, zonas de influencia</td>
+</tr>
+<tr class="odd">
+<td><strong>OSMnx</strong></td>
+<td>El cartógrafo</td>
+<td>Trae gratis desde OpenStreetMap calles, plazas, edificios y límites de cualquier comuna</td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/librerias.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
+</figure>
+</div>
+</section>
+<section id="por-qué-los-nombres-mejoran-los-prompts" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="por-qué-los-nombres-mejoran-los-prompts"><span class="header-section-number">2.2.2</span> Por qué los nombres mejoran los prompts</h3>
+<p>Comparación en vivo de la sesión:</p>
+<blockquote class="blockquote">
+<p><strong>Prompt vago</strong>: <em>“Haz un análisis de mi comuna.”</em></p>
+<p><strong>Prompt potente</strong>: <em>“Usa GeoPandas para cargar los límites de la comuna de La Florida y OSMnx para descargar sus plazas, y dime cuántas hay y qué superficie total suman.”</em></p>
+</blockquote>
+<p>El primero produce algo genérico e impredecible; el segundo, un resultado concreto y verificable. Conocer los nombres de las herramientas no te convierte en programador: te convierte en un director que da instrucciones precisas.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Analogía: la ferretería">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Analogía: la ferretería
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Puedes pedir “algo para colgar un cuadro” y recibir cualquier cosa, o pedir “un tarugo de 6 mm y un tornillo de 4x40” y recibir exactamente lo que necesitas. No necesitas saber fabricar tornillos: solo conocer sus nombres.</p>
+</div>
+</div>
+</section>
+<section id="openstreetmap-con-honestidad" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="openstreetmap-con-honestidad"><span class="header-section-number">2.2.3</span> OpenStreetMap, con honestidad</h3>
+<p>OSMnx trabaja sobre OpenStreetMap, que funciona como una Wikipedia de los mapas: cualquiera puede editar, la comunidad corrige, y la calidad depende de cuánta comunidad hay mapeando cada territorio. Por eso el centro de Santiago puede estar muy completo mientras una zona rural o periurbana aparece a medias.</p>
+<p>Esto no invalida el dato; define cómo usarlo. OpenStreetMap sirve para empezar rápido, explorar y producir una primera versión del diagnóstico. La verificación final la hacen los equipos con conocimiento local: si el mapa dice que tu comuna tiene 3 plazas y tú conoces 15, el dato está incompleto. No falló tu memoria; apareció una tarea de auditoría.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>OSM es tan bueno como su comunidad local.</strong> Si una comuna está poco mapeada, eso también puede convertirse en oportunidad: completar el mapa mediante crowdsourcing, mapeo comunitario o revisión con actores territoriales.</p>
+</div>
+</div>
+<p>El caso de Puerto Príncipe después del terremoto de Haití en 2010 ayuda a entender la potencia del enfoque. Cuando no existía cartografía digital utilizable de los barrios más golpeados, voluntarios trazaron calles, campamentos y hospitales en OpenStreetMap a partir de imágenes satelitales. El mapa que permitió orientar ayuda lo construyó una comunidad distribuida.</p>
+</section>
+<section id="dónde-corre-esto" class="level3" data-number="2.2.4">
+<h3 data-number="2.2.4" class="anchored" data-anchor-id="dónde-corre-esto"><span class="header-section-number">2.2.4</span> Dónde corre esto</h3>
+<ul>
+<li><p><strong>Notebook de Google Colab pre-preparado</strong> del curso: cero instalación, se abre en el navegador y se ejecuta celda por celda, con comentarios en español llano.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/colab.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
+</figure>
+</div></li>
+<li><p><strong>Antigravity</strong>: para quienes ya lo tienen operativo de la sesión 2.2.</p></li>
+</ul>
+</section>
+</section>
+<section id="actividades" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="actividades"><span class="header-section-number">2.3</span> Actividades</h2>
+<section id="taller-mi-comuna-en-datos-35-min" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="taller-mi-comuna-en-datos-35-min"><span class="header-section-number">2.3.1</span> Taller: mi comuna en datos (35 min)</h3>
+<p>El docente modela cada paso con la comuna ancla (La Florida) y tú replicas con la tuya. Secuencia de prompts:</p>
+<ol type="1">
+<li><blockquote class="blockquote">
+<p><em>“Descarga con OSMnx el límite de la comuna de [X] y muéstralo en un mapa.”</em></p>
+</blockquote></li>
+<li><blockquote class="blockquote">
+<p><em>“Descarga las plazas y áreas verdes de la comuna y dibújalas sobre el mapa anterior.”</em></p>
+</blockquote></li>
+<li><blockquote class="blockquote">
+<p><em>“Cuenta cuántas áreas verdes hay y calcula la superficie total en hectáreas.”</em></p>
+</blockquote></li>
+<li><blockquote class="blockquote">
+<p><em>“Haz un mapa interactivo donde al pasar el mouse se vea el nombre de cada área verde.”</em></p>
+</blockquote></li>
+<li><strong>Iteración libre</strong>: adapta la secuencia al equipamiento pertinente a tu problemática (consultorios, colegios, paraderos, ferias, puntos limpios).</li>
+</ol>
+<p>Prompt compacto para equipos:</p>
+<blockquote class="blockquote">
+<p><em>“Descarga con OSMnx el límite de la comuna de [TU COMUNA] y sus [plazas / consultorios / puntos limpios]; muéstralos en un mapa y dame una tabla resumen.”</em></p>
+</blockquote>
+<p>Para proyectos a escala regional, el notebook incluye una variante para trabajar con región completa. Para equipos de residuos, los puntos limpios suelen aparecer en OpenStreetMap como <code>amenity=recycling</code>, lo que permite una primera exploración directa.</p>
+<p>Si OSMnx falla o la red se cae, el curso mantiene un notebook de respaldo con datos ya descargados de las comunas de los equipos. El objetivo pedagógico no es pelearse con la instalación, sino aprender a dirigir, leer y auditar el flujo espacial.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/vegetacion.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
+</figure>
+</div>
+<!-- ::: {.callout-note appearance="simple" icon="false"} -->
+<!-- 📷 **IMAGEN PENDIENTE**: Secuencia de 4 capturas del taller con la -->
+<!-- comuna de La Florida: (1) límite comunal solo, (2) límite + áreas verdes, -->
+<!-- (3) tabla-resumen con conteo y hectáreas, (4) mapa interactivo con -->
+<!-- tooltip mostrando el nombre de un área verde. -->
+<!-- ::: -->
+<p>Durante el taller se instalan dos hábitos permanentes:</p>
+<ul>
+<li><strong>Leer la tabla antes que el mapa</strong>: ¿los números son plausibles?</li>
+<li><strong>Guardar los prompts que funcionaron</strong>: son tu prompt-book personal.</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled" title="Primero la tabla, después el mapa">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Primero la tabla, después el mapa
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Antes de mirar si el mapa “se ve bonito”, revisa si los números tienen sentido. Si la tabla dice que tu comuna tiene 47 plazas y tú sabes que hay cerca de 20, detectaste un problema. Esa es la regla de trabajo: probar siempre con un caso cuyo resultado aproximado ya conoces.</p>
+</div>
+</div>
+</section>
+<section id="ejercicios-de-extensión" class="level3" data-number="2.3.2">
+<h3 data-number="2.3.2" class="anchored" data-anchor-id="ejercicios-de-extensión"><span class="header-section-number">2.3.2</span> Ejercicios de extensión</h3>
+<p>Para quienes terminan rápido: comparar dos comunas con la misma secuencia (¿cuál tiene más áreas verdes por habitante?).</p>
+</section>
+<section id="tarea-puente-20-min-opcional" class="level3" data-number="2.3.3">
+<h3 data-number="2.3.3" class="anchored" data-anchor-id="tarea-puente-20-min-opcional"><span class="header-section-number">2.3.3</span> Tarea puente (20 min, opcional)</h3>
+<p>Replica la secuencia con un segundo tipo de equipamiento relevante para la problemática de tu equipo y guarda el mapa resultante.</p>
+</section>
+</section>
+<section id="pregunta-frecuente-y-satélites-drones-y-rasters" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="pregunta-frecuente-y-satélites-drones-y-rasters"><span class="header-section-number">2.4</span> Pregunta frecuente: ¿y satélites, drones y rasters?</h2>
+<p>Varios proyectos territoriales trabajan con imágenes satelitales, drones, riesgo de aluviones, detección de microbasurales o sensores remotos. Esa es la otra mitad del mundo espacial: los <strong>rasters</strong>. A diferencia de los vectores, que representan puntos, líneas y polígonos, un raster representa el territorio como una grilla de celdas o píxeles.</p>
+<p>La respuesta honesta para esta sesión es: <strong>hoy vectores; la capa satelital queda como etapa siguiente de la hoja de ruta</strong>. Lo que aprendes aquí no se pierde: límites comunales, calles, áreas verdes, equipamientos y buffers son la base sobre la que después se integran imágenes, drones o modelos más especializados.</p>
+</section>
+<section id="fuentes-de-datos-para-el-mundo-real" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="fuentes-de-datos-para-el-mundo-real"><span class="header-section-number">2.5</span> Fuentes de datos para el mundo real</h2>
+<p>Panorama de fuentes abiertas chilenas:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Fuente</th>
+<th>Qué tiene</th>
+<th>Facilidad de uso con IA</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>OpenStreetMap</strong> (vía OSMnx)</td>
+<td>Calles, equipamientos, áreas verdes, límites de todo el mundo</td>
+<td>Muy alta: un prompt basta</td>
+</tr>
+<tr class="even">
+<td><strong>IDE Chile</strong></td>
+<td>Cartografía oficial del Estado</td>
+<td>Media: requiere descargar capas</td>
+</tr>
+<tr class="odd">
+<td><strong>datos.gob.cl</strong></td>
+<td>Datos públicos de todos los servicios</td>
+<td>Media: calidad variable</td>
+</tr>
+<tr class="even">
+<td><strong>INE / Censo</strong></td>
+<td>Población por manzana y zona censal; capa clave para la sesión 3.2</td>
+<td>Media: formatos técnicos, pero la IA los abre</td>
+</tr>
+<tr class="odd">
+<td><strong>SUBDERE / BCN</strong></td>
+<td>Límites oficiales y estadísticas comunales para validar cifras</td>
+<td>Media</td>
+</tr>
+<tr class="even">
+<td><strong>Transparencia municipal</strong></td>
+<td>Información administrativa y territorial comunal</td>
+<td>Variable</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Honestidad sobre OpenStreetMap</strong>: es libre y global, pero su completitud varía por comuna. La verificación rápida es contra tu conocimiento local: <strong>tú eres el experto en tu territorio</strong>. Si el mapa dice que tu comuna tiene 3 plazas y tú conoces 15, el dato está incompleto, no tu memoria.</p>
+</div>
+</div>
+</section>
+<section id="resumen" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="resumen"><span class="header-section-number">2.6</span> Resumen</h2>
+<ul>
+<li>Un dato espacial = <strong>atributos</strong> (la tabla) + <strong>geometría</strong> (la forma en el mapa). Todo fenómeno territorial cabe en tres geometrías: punto, línea o polígono.</li>
+<li>No necesitas dominar GeoPandas, Shapely ni OSMnx: necesitas <strong>nombrarlas en tus prompts</strong>. El vocabulario es la palanca.</li>
+<li>OSMnx te da acceso gratuito a la cartografía de cualquier comuna del mundo; su completitud se valida contra tu conocimiento local.</li>
+<li>Hábitos del oficio: leer la tabla antes que el mapa, y guardar los prompts que funcionaron.</li>
+<li>Hoy trabajamos con vectores; rasters, imágenes satelitales y drones pueden declararse como etapa siguiente de la hoja de ruta.</li>
+<li>La próxima sesión: ya sabes traer capas; aprenderemos a <strong>cruzarlas</strong>, medir buffers y responder preguntas como “¿cuántas personas viven a más de 500 metros de un área verde?”.</li>
+</ul>
+</section>
+<section id="recursos" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="recursos"><span class="header-section-number">2.7</span> Recursos</h2>
+<ul>
+<li><strong>Notebook Colab “Mi comuna en datos”</strong>: pre-cargado con la secuencia del taller, celdas comentadas en español llano.</li>
+<li><strong>Notebook de respaldo con datos pre-descargados</strong> de las comunas de los participantes (ante fallas de red/OSM).</li>
+<li><strong>Prompt-book de la sesión</strong>: los 5 prompts de la secuencia + 5 variantes por tipo de equipamiento.</li>
+<li><strong>Ficha “Ecosistema espacial en una página”</strong>: qué es y qué hace cada biblioteca, con la frase de prompt típica para invocarla.</li>
+<li><strong>Directorio comentado de fuentes de datos abiertas de Chile</strong>: contenido, formato, dificultad y prompt de ejemplo para cada una.</li>
+<li>Galería de 3–4 ejemplos inspiradores de análisis espacial municipal hechos con estas herramientas.</li>
+</ul>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-boeing_osmnx_2017" class="csl-entry" role="listitem">
+Boeing, Geoff. 2017. <span>“OSMnx: New Methods for Acquiring, Constructing, Analyzing, and Visualizing Complex Street Networks.”</span> <em>Computers, Environment and Urban Systems</em> 65: 126–39. <a href="https://doi.org/10.1016/j.compenvurbsys.2017.05.004">https://doi.org/10.1016/j.compenvurbsys.2017.05.004</a>.
+</div>
+<div id="ref-jordahl_geopandas_2020" class="csl-entry" role="listitem">
+Jordahl, Kelsey, Joris Van den Bossche, Martin Fleischmann, et al. 2020. <span>“Geopandas/Geopandas: V0.8.1.”</span> Zenodo. <a href="https://doi.org/10.5281/zenodo.3946761">https://doi.org/10.5281/zenodo.3946761</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -960,13 +1224,13 @@ Tip
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./rc_perplexity.html" class="pagination-link" aria-label="Perplexity">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Perplexity</span></span>
+      <a href="./vibe_coding.html" class="pagination-link" aria-label="Vibe Coding">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Vibe Coding</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./rc_openclaw.html" class="pagination-link" aria-label="OpenClaw">
-        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">OpenClaw</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./operaciones_espaciales.html" class="pagination-link" aria-label="Operaciones Espaciales">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Operaciones Espaciales</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

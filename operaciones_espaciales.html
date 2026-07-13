@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>13&nbsp; Productividad – AcademIA HackLab: Santiago Región Sustentable</title>
+<title>3&nbsp; Operaciones Espaciales – AcademIA HackLab: Santiago Región Sustentable</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,8 +50,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./rc_openclaw.html" rel="next">
-<link href="./rc_perplexity.html" rel="prev">
+<link href="./recursos_complementarios.html" rel="next">
+<link href="./ecosistema_python.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -83,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rc_notebooklm.html">Otros Recursos</a></li><li class="breadcrumb-item"><a href="./rc_otras_herramientas.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Productividad</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./vibe_coding.html">Módulo 1: Conceptos &amp; Casos</a></li><li class="breadcrumb-item"><a href="./operaciones_espaciales.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Operaciones Espaciales</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -137,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./operaciones_espaciales.html" class="sidebar-item-text sidebar-link">
+  <a href="./operaciones_espaciales.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Operaciones Espaciales</span></span></a>
   </div>
 </li>
@@ -240,7 +260,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rc_otras_herramientas.html" class="sidebar-item-text sidebar-link active">
+  <a href="./rc_otras_herramientas.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Productividad</span></span></a>
   </div>
 </li>
@@ -309,22 +329,40 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#resumen-ejecutivo" id="toc-resumen-ejecutivo" class="nav-link active" data-scroll-target="#resumen-ejecutivo">Resumen ejecutivo</a></li>
-  <li><a href="#julius-ai-planillas-sin-código" id="toc-julius-ai-planillas-sin-código" class="nav-link" data-scroll-target="#julius-ai-planillas-sin-código"><span class="header-section-number">13.1</span> Julius AI: planillas sin código</a></li>
-  <li><a href="#gamma-presentaciones-desde-texto" id="toc-gamma-presentaciones-desde-texto" class="nav-link" data-scroll-target="#gamma-presentaciones-desde-texto"><span class="header-section-number">13.2</span> Gamma: presentaciones desde texto</a></li>
-  <li><a href="#napkin-de-texto-a-diagramas" id="toc-napkin-de-texto-a-diagramas" class="nav-link" data-scroll-target="#napkin-de-texto-a-diagramas"><span class="header-section-number">13.3</span> Napkin: de texto a diagramas</a></li>
-  <li><a href="#whisper-transcripción-open-source" id="toc-whisper-transcripción-open-source" class="nav-link" data-scroll-target="#whisper-transcripción-open-source"><span class="header-section-number">13.4</span> Whisper: transcripción open source</a></li>
-  <li><a href="#ollama-y-lm-studio-la-puerta-a-los-modelos-locales" id="toc-ollama-y-lm-studio-la-puerta-a-los-modelos-locales" class="nav-link" data-scroll-target="#ollama-y-lm-studio-la-puerta-a-los-modelos-locales"><span class="header-section-number">13.5</span> Ollama y LM Studio: la puerta a los modelos locales</a></li>
-  <li><a href="#tabla-comparativa-del-capítulo" id="toc-tabla-comparativa-del-capítulo" class="nav-link" data-scroll-target="#tabla-comparativa-del-capítulo"><span class="header-section-number">13.6</span> Tabla comparativa del capítulo</a></li>
+  <li><a href="#contenidos-de-la-sesión" id="toc-contenidos-de-la-sesión" class="nav-link" data-scroll-target="#contenidos-de-la-sesión">Contenidos de la sesión</a></li>
+  <li><a href="#las-preguntas-del-territorio-son-operaciones-espaciales" id="toc-las-preguntas-del-territorio-son-operaciones-espaciales" class="nav-link" data-scroll-target="#las-preguntas-del-territorio-son-operaciones-espaciales"><span class="header-section-number">3.1</span> Las preguntas del territorio son operaciones espaciales</a>
+  <ul class="collapse">
+  <li><a href="#para-despertar-qué-quieren-saber-de-su-territorio" id="toc-para-despertar-qué-quieren-saber-de-su-territorio" class="nav-link" data-scroll-target="#para-despertar-qué-quieren-saber-de-su-territorio"><span class="header-section-number">3.1.1</span> Para despertar: qué quieren saber de su territorio</a></li>
+  <li><a href="#el-buffer-ya-lo-conocen" id="toc-el-buffer-ya-lo-conocen" class="nav-link" data-scroll-target="#el-buffer-ya-lo-conocen"><span class="header-section-number">3.1.2</span> El buffer ya lo conocen</a></li>
+  </ul></li>
+  <li><a href="#coordenadas-y-proyecciones-lo-mínimo-que-evita-desastres" id="toc-coordenadas-y-proyecciones-lo-mínimo-que-evita-desastres" class="nav-link" data-scroll-target="#coordenadas-y-proyecciones-lo-mínimo-que-evita-desastres"><span class="header-section-number">3.2</span> Coordenadas y proyecciones: lo mínimo que evita desastres</a>
+  <ul class="collapse">
+  <li><a href="#el-problema-antes-que-la-teoría" id="toc-el-problema-antes-que-la-teoría" class="nav-link" data-scroll-target="#el-problema-antes-que-la-teoría"><span class="header-section-number">3.2.1</span> El problema antes que la teoría</a></li>
+  <li><a href="#la-tierra-es-curva-el-mapa-es-plano" id="toc-la-tierra-es-curva-el-mapa-es-plano" class="nav-link" data-scroll-target="#la-tierra-es-curva-el-mapa-es-plano"><span class="header-section-number">3.2.2</span> La Tierra es curva, el mapa es plano</a></li>
+  <li><a href="#lo-único-que-hay-que-memorizar" id="toc-lo-único-que-hay-que-memorizar" class="nav-link" data-scroll-target="#lo-único-que-hay-que-memorizar"><span class="header-section-number">3.2.3</span> Lo único que hay que memorizar</a></li>
+  <li><a href="#diagnóstico-express" id="toc-diagnóstico-express" class="nav-link" data-scroll-target="#diagnóstico-express"><span class="header-section-number">3.2.4</span> Diagnóstico express</a></li>
+  <li><a href="#chile-el-país-difícil-de-aplanar" id="toc-chile-el-país-difícil-de-aplanar" class="nav-link" data-scroll-target="#chile-el-país-difícil-de-aplanar"><span class="header-section-number">3.2.5</span> Chile: el país difícil de aplanar</a></li>
+  </ul></li>
+  <li><a href="#actividades" id="toc-actividades" class="nav-link" data-scroll-target="#actividades"><span class="header-section-number">3.3</span> Actividades</a>
+  <ul class="collapse">
+  <li><a href="#taller-análisis-de-cobertura-de-mi-comuna-35-min" id="toc-taller-análisis-de-cobertura-de-mi-comuna-35-min" class="nav-link" data-scroll-target="#taller-análisis-de-cobertura-de-mi-comuna-35-min"><span class="header-section-number">3.3.1</span> Taller: análisis de cobertura de mi comuna (35 min)</a></li>
+  <li><a href="#antes-de-mostrar-esa-cifra" id="toc-antes-de-mostrar-esa-cifra" class="nav-link" data-scroll-target="#antes-de-mostrar-esa-cifra"><span class="header-section-number">3.3.2</span> Antes de mostrar esa cifra</a></li>
+  <li><a href="#para-qué-sirve-esta-cifra" id="toc-para-qué-sirve-esta-cifra" class="nav-link" data-scroll-target="#para-qué-sirve-esta-cifra"><span class="header-section-number">3.3.3</span> Para qué sirve esta cifra</a></li>
+  <li><a href="#checklist-de-autodiagnóstico-del-módulo-1" id="toc-checklist-de-autodiagnóstico-del-módulo-1" class="nav-link" data-scroll-target="#checklist-de-autodiagnóstico-del-módulo-1"><span class="header-section-number">3.3.4</span> Checklist de autodiagnóstico del Módulo 1</a></li>
+  <li><a href="#tarea-puente-al-módulo-2" id="toc-tarea-puente-al-módulo-2" class="nav-link" data-scroll-target="#tarea-puente-al-módulo-2"><span class="header-section-number">3.3.5</span> Tarea puente al Módulo 2</a></li>
+  </ul></li>
+  <li><a href="#resumen" id="toc-resumen" class="nav-link" data-scroll-target="#resumen"><span class="header-section-number">3.4</span> Resumen</a></li>
+  <li><a href="#recursos" id="toc-recursos" class="nav-link" data-scroll-target="#recursos"><span class="header-section-number">3.5</span> Recursos</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rc_notebooklm.html">Otros Recursos</a></li><li class="breadcrumb-item"><a href="./rc_otras_herramientas.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Productividad</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./vibe_coding.html">Módulo 1: Conceptos &amp; Casos</a></li><li class="breadcrumb-item"><a href="./operaciones_espaciales.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Operaciones Espaciales</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Productividad</span></h1>
-<p class="subtitle lead">Datos, presentaciones, diagramas, transcripción y modelos locales</p>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Operaciones Espaciales</span></h1>
+<p class="subtitle lead">Manipulación de geometrías y proyecciones cartográficas</p>
 </div>
 
 
@@ -341,221 +379,368 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p><strong>Sesión 3.2 · Día 3 · 1,5 horas · Modalidad Meet · Docente: Denis Berroeta (UAI)</strong></p>
 <section id="resumen-ejecutivo" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="resumen-ejecutivo">Resumen ejecutivo</h2>
-<p>Este capítulo reúne herramientas de tarea que resuelven muy bien una necesidad específica del trabajo público: explorar planillas sin código (<a href="https://julius.ai/">Julius AI</a>), producir presentaciones en minutos (<a href="https://gamma.app/">Gamma</a>), convertir texto en diagramas (<a href="https://napkin.ai/">Napkin</a>), transcribir audios de talleres y reuniones (<a href="https://github.com/openai/whisper">Whisper</a>, open source) y ejecutar modelos locales (<a href="https://ollama.com/">Ollama</a> / <a href="https://lmstudio.ai/">LM Studio</a>). Ninguna exige programar; dos de ellas son completamente open source y corren en hardware propio.</p>
-</section>
-<section id="julius-ai-planillas-sin-código" class="level2" data-number="13.1">
-<h2 data-number="13.1" class="anchored" data-anchor-id="julius-ai-planillas-sin-código"><span class="header-section-number">13.1</span> Julius AI: planillas sin código</h2>
-<p><strong>Acceso:</strong> <a href="https://julius.ai/">Julius AI</a> · Plan gratuito con límite mensual de consultas.</p>
-<p>Un analista de datos conversacional: subes una planilla (Excel, CSV, Google Sheets) y le haces preguntas en lenguaje natural. Genera gráficos, calcula estadísticas, filtra y detecta patrones, todo desde texto.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Ejemplos de uso municipal">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Ejemplos de uso municipal
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Explorar datos del Censo INE antes del análisis espacial del Módulo 1: <em>“¿Cuántas personas mayores de 65 años viven en cada zona censal de esta tabla?”</em></li>
-<li>Analizar registros administrativos (reclamos, solicitudes, permisos) para encontrar patrones antes de georreferenciarlos.</li>
-<li>Validar resultados del análisis espacial contra tablas planas: <em>“Compara la cobertura de áreas verdes de estas comunas con sus niveles de ingreso promedio.”</em></li>
-</ul>
-</div>
-</div>
-<p>Alternativa de costo cero si ya usas el ecosistema del curso: el propio <a href="https://gemini.google.com/">Gemini</a> sobre Google Sheets, o <a href="https://chatgpt.com/">ChatGPT</a> gratuito con archivos.</p>
-</section>
-<section id="gamma-presentaciones-desde-texto" class="level2" data-number="13.2">
-<h2 data-number="13.2" class="anchored" data-anchor-id="gamma-presentaciones-desde-texto"><span class="header-section-number">13.2</span> Gamma: presentaciones desde texto</h2>
-<p><strong>Acceso:</strong> <a href="https://gamma.app/">Gamma</a> · Plan gratuito con marca de agua; plan de pago para uso profesional.</p>
-<p>Genera presentaciones completas a partir de una descripción: das el tema, el público y el mensaje central, y obtienes una presentación con estructura, diseño y contenido inicial, afinable iterativamente en lenguaje natural.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Ejemplo de uso municipal">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Ejemplo de uso municipal
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<blockquote class="blockquote">
-<p><em>“Crea una presentación de 10 diapositivas para el Concejo Municipal sobre los resultados del análisis de cobertura de áreas verdes. El mensaje principal es que el 38% de la población vive a más de 500 metros de un área verde. Público: concejales sin formación técnica.”</em></p>
-</blockquote>
-<p>El tiempo de producción pasa de horas a minutos. La revisión sigue siendo del profesional; el diseño inicial ya no.</p>
-</div>
-</div>
-</section>
-<section id="napkin-de-texto-a-diagramas" class="level2" data-number="13.3">
-<h2 data-number="13.3" class="anchored" data-anchor-id="napkin-de-texto-a-diagramas"><span class="header-section-number">13.3</span> Napkin: de texto a diagramas</h2>
-<p><strong>Acceso:</strong> <a href="https://napkin.ai/">Napkin</a> · Plan gratuito disponible.</p>
-<p>Convierte texto en visualizaciones: pegas un párrafo que explica un proceso, una cadena causal o una comparación, y Napkin propone diagramas (flujos, matrices, líneas de tiempo) para elegir y exportar.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Ejemplos de uso municipal">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Ejemplos de uso municipal
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Diagramar el ciclo de una consulta ciudadana o el medir-intervenir-medir del urbanismo táctico para una lámina.</li>
-<li>Convertir la metodología de un proyecto en infografía para postulación a fondos.</li>
-<li>Material visual para comunicación comunitaria sin diseñador.</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="whisper-transcripción-open-source" class="level2" data-number="13.4">
-<h2 data-number="13.4" class="anchored" data-anchor-id="whisper-transcripción-open-source"><span class="header-section-number">13.4</span> Whisper: transcripción open source</h2>
-<p><strong>Acceso:</strong> <a href="https://github.com/openai/whisper">Whisper</a> · <strong>Open source (MIT)</strong> · Gratuito; corre en computador propio.</p>
-<p>Modelo de <strong>transcripción de audio a texto</strong> que funciona muy bien en español chileno. Corre localmente: el audio <strong>no sale de la institución</strong>, lo que lo hace apto incluso para material sensible.</p>
-<p>Para el trabajo participativo es una pieza estratégica: las horas de audio de talleres, cabildos y reuniones —que hoy nadie transcribe— se convierten en texto procesable con el flujo NLP de la sesión 5.2.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="El flujo completo de costo cero">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-El flujo completo de costo cero
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<p>La sesión anterior te dejó con capas de datos de tu comuna. Esta sesión te entrega lo que falta para que esas capas <strong>respondan preguntas</strong>: las <strong>operaciones espaciales</strong> —medir distancias y superficies, crear zonas de influencia (buffers), cruzar capas para saber qué cae dentro de qué— y la noción mínima indispensable de <strong>sistemas de coordenadas y proyecciones</strong>, la causa número uno de errores en análisis territorial: capas que no calzan, distancias en unidades absurdas, mapas desplazados.</p>
+<p>La promesa es concreta: al terminar habrás respondido con datos una pregunta del tipo <em>“¿cuántas personas viven a más de 500 metros de un área verde en mi comuna?”</em> — exactamente la clase de evidencia que un profesional público necesita para fundamentar un proyecto, priorizar inversión o respaldar una postulación a fondos. Todo mediante vibe coding: la IA ejecuta las operaciones; tú aportas la pregunta, el criterio y la validación.</p>
+<p>El principio territorial de fondo cambia de nivel: en la 3.1 dijimos que <em>todo pasa en alguna parte</em>; ahora agregamos que <strong>el mapa no es el territorio</strong>. La escala y la proyección no son tecnicismos: son decisiones que afectan cuánto mide una plaza, qué población queda fuera de cobertura y qué tan defendible es la cifra frente a un municipio, una comunidad o una postulación a fondos.</p>
+<p>Al finalizar la sesión serás capaz de:</p>
 <ol type="1">
-<li>Grabar el taller participativo (con consentimiento informado).</li>
-<li><a href="https://github.com/openai/whisper">Whisper</a> transcribe el audio localmente.</li>
-<li>Modelo local o IA del curso clasifica y sintetiza (flujo 5.2, con auditoría humana).</li>
-<li>Resultado: el acta y el informe temático del taller, en horas en vez de semanas.</li>
+<li><strong>Formular preguntas territoriales como operaciones espaciales</strong>: traducir “¿qué tan lejos está X de Y?” a distancia, buffer, intersección y unión.</li>
+<li><strong>Solicitar mediante prompts las operaciones fundamentales</strong>: áreas y distancias, buffers, intersección y cruce de capas, conteo dentro de polígonos.</li>
+<li><strong>Comprender funcionalmente qué es un sistema de coordenadas</strong> y las dos “familias” que importan: geográficas (grados, para ubicar) y proyectadas (metros, para medir).</li>
+<li><strong>Diagnosticar los síntomas clásicos de errores de proyección</strong> y pedir la corrección (para Chile central: EPSG:32719 / UTM 19S).</li>
+<li><strong>Aplicar la regla de oro</strong>: <em>para medir, siempre en metros; para publicar en mapas web, en geográficas</em>.</li>
+<li><strong>Producir un análisis de accesibilidad o cobertura completo</strong> de tu comuna, integrando capas de distintas fuentes.</li>
+<li><strong>Declarar los supuestos y limitaciones</strong> de una cifra sensible, diferenciando un ejercicio pedagógico de una cifra oficial.</li>
 </ol>
-</div>
-</div>
-<p>La instalación requiere perfil técnico (o usar las versiones integradas en herramientas como <a href="https://lmstudio.ai/">LM Studio</a> y aplicaciones de notas); el uso, no.</p>
 </section>
-<section id="ollama-y-lm-studio-la-puerta-a-los-modelos-locales" class="level2" data-number="13.5">
-<h2 data-number="13.5" class="anchored" data-anchor-id="ollama-y-lm-studio-la-puerta-a-los-modelos-locales"><span class="header-section-number">13.5</span> Ollama y LM Studio: la puerta a los modelos locales</h2>
-<p><strong>Acceso:</strong> <a href="https://ollama.com/">Ollama</a> · <a href="https://lmstudio.ai/">LM Studio</a> · Gratuitos; Ollama es open source.</p>
-<p>Estos dos programas hacen viable el uso cotidiano de modelos locales: se instalan como cualquier aplicación, descargan modelos abiertos de un catálogo (Llama, Qwen, Mistral, Hermes y otros) y entregan una interfaz de chat local. <a href="https://lmstudio.ai/">LM Studio</a> es más amigable para empezar (interfaz gráfica); <a href="https://ollama.com/">Ollama</a> es más flexible para automatizar (línea de comandos, open source).</p>
+<section id="contenidos-de-la-sesión" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="contenidos-de-la-sesión">Contenidos de la sesión</h2>
+<ul>
+<li>Las preguntas del territorio como operaciones espaciales: medir, buffer, intersección, conteo espacial.</li>
+<li>Dinámica inicial: traducir preguntas reales de los proyectos a operaciones.</li>
+<li>Coordenadas y proyecciones: lo mínimo que evita desastres.</li>
+<li>EPSG:4326 vs.&nbsp;EPSG:32719: cuándo usar cada uno.</li>
+<li>Taller: análisis de cobertura de áreas verdes de mi comuna.</li>
+<li>Lectura responsable de cifras de descobertura.</li>
+<li>Síntesis del Módulo 1 y proyección al Módulo 2.</li>
+</ul>
+</section>
+<section id="las-preguntas-del-territorio-son-operaciones-espaciales" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="las-preguntas-del-territorio-son-operaciones-espaciales"><span class="header-section-number">3.1</span> Las preguntas del territorio son operaciones espaciales</h2>
+<section id="para-despertar-qué-quieren-saber-de-su-territorio" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="para-despertar-qué-quieren-saber-de-su-territorio"><span class="header-section-number">3.1.1</span> Para despertar: qué quieren saber de su territorio</h3>
+<p>La sesión parte con una pregunta en el chat:</p>
+<blockquote class="blockquote">
+<p><em>“¿Dónde falta X?”, “¿quiénes quedan lejos de Y?”, “¿cuánto Z hay dentro de W?”</em></p>
+</blockquote>
+<p>Cada equipo escribe una pregunta real de su proyecto con ese formato. No buscamos todavía el dato perfecto ni el mapa final: buscamos detectar qué operación espacial está escondida detrás de la pregunta. Si se puede dibujar, casi siempre se puede calcular.</p>
+<p>Casi todas las preguntas reales de gestión territorial —“¿dónde falta X?”, “¿quiénes están lejos de Y?”— se descomponen en cuatro operaciones:</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
 </colgroup>
 <thead>
 <tr class="header">
-<th></th>
-<th>LM Studio</th>
-<th>Ollama</th>
+<th>Operación</th>
+<th>Qué responde</th>
+<th>Ejemplo municipal</th>
+<th>Frase de prompt típica</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Interfaz</td>
-<td>Gráfica, tipo chat</td>
-<td>Línea de comandos + API local</td>
+<td><strong>Medir</strong></td>
+<td>Longitud, superficie, distancia</td>
+<td>¿Cuántas hectáreas de áreas verdes hay?</td>
+<td><em>“Calcula la superficie total en hectáreas”</em></td>
 </tr>
 <tr class="even">
-<td>Perfil</td>
-<td>Cualquier usuario</td>
-<td>Equipo técnico</td>
+<td><strong>Buffer</strong></td>
+<td>Zona de influencia: “a 500 m de…”</td>
+<td>¿Qué sector queda a 500 m de cada consultorio?</td>
+<td><em>“Crea un buffer de 500 metros alrededor de cada punto”</em></td>
 </tr>
 <tr class="odd">
-<td>Open source</td>
-<td>No (gratuito)</td>
-<td><strong>Sí (MIT)</strong></td>
+<td><strong>Intersección / cruce</strong></td>
+<td>Qué parte de A está dentro de B</td>
+<td>¿Qué porcentaje de la zona inundable es residencial?</td>
+<td><em>“Intersecta la capa A con la capa B y calcula el área resultante”</em></td>
 </tr>
 <tr class="even">
-<td>Mejor para</td>
-<td>Probar modelos locales hoy</td>
-<td>Integrar modelos locales a flujos</td>
+<td><strong>Conteo / join espacial</strong></td>
+<td>Cuántos puntos caen en cada polígono</td>
+<td>¿Cuántos reclamos hay por barrio?</td>
+<td><em>“Cuenta cuántos puntos caen dentro de cada polígono y agrega la columna”</em></td>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="tabla-comparativa-del-capítulo" class="level2" data-number="13.6">
-<h2 data-number="13.6" class="anchored" data-anchor-id="tabla-comparativa-del-capítulo"><span class="header-section-number">13.6</span> Tabla comparativa del capítulo</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Herramienta</th>
-<th>Tarea</th>
-<th>Costo</th>
-<th>Open source</th>
-<th>Datos salen de la institución</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Julius AI</td>
-<td>Análisis de planillas</td>
-<td>Gratuito c/límite</td>
-<td>No</td>
-<td>Sí (nube)</td>
-</tr>
-<tr class="even">
-<td>Gamma</td>
-<td>Presentaciones</td>
-<td>Gratuito c/marca</td>
-<td>No</td>
-<td>Sí (nube)</td>
-</tr>
-<tr class="odd">
-<td>Napkin</td>
-<td>Diagramas</td>
-<td>Gratuito c/límite</td>
-<td>No</td>
-<td>Sí (nube)</td>
-</tr>
-<tr class="even">
-<td>Whisper</td>
-<td>Transcripción de audio</td>
-<td>Gratuito</td>
-<td><strong>Sí</strong></td>
-<td><strong>No (local)</strong></td>
-</tr>
-<tr class="odd">
-<td>Ollama</td>
-<td>Modelos locales</td>
-<td>Gratuito</td>
-<td><strong>Sí</strong></td>
-<td><strong>No (local)</strong></td>
-</tr>
-<tr class="even">
-<td>LM Studio</td>
-<td>Modelos locales</td>
-<td>Gratuito</td>
-<td>No</td>
-<td><strong>No (local)</strong></td>
-</tr>
-</tbody>
-</table>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>📷 <strong>IMAGEN PENDIENTE</strong>: Panel de 4 diagramas conceptuales, uno por operación: (1) medir — regla sobre un polígono; (2) buffer — punto con anillo de 500 m; (3) intersección — dos polígonos superpuestos con el área común destacada; (4) conteo espacial — puntos cayendo dentro de polígonos con números. Sin fórmulas ni código.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Analogía: las preguntas del vecino">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Analogía: las preguntas del vecino
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Patrón a notar: las herramientas de nube gratuitas son cómodas pero procesan tus datos afuera; las open source locales exigen algo más de instalación pero devuelven el control. Para material público, comodidad; para material sensible, control.</p>
+<p>Estas operaciones son las preguntas que cualquier vecino hace sin saber que hace geometría: “¿me queda cerca el consultorio?” (distancia), “¿a cuánta gente le sirve esta plaza?” (buffer + conteo), “¿mi casa está en la zona de riesgo?” (intersección). El análisis espacial es sentido común territorial, formalizado.</p>
 </div>
 </div>
+</section>
+<section id="el-buffer-ya-lo-conocen" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="el-buffer-ya-lo-conocen"><span class="header-section-number">3.1.2</span> El buffer ya lo conocen</h3>
+<p>Un buffer no es una abstracción rara. Cuando una pizzería dice “repartimos hasta 2 km a la redonda”, está dibujando un buffer. La pregunta municipal “¿a cuántos vecinos les llega el punto limpio?” es la misma operación: dibujar la zona de cobertura y contar quién queda adentro.</p>
+<p>También tiene una versión histórica: los barrios antiguos llegaban hasta donde se oía la campana de la iglesia. Era un buffer acústico, solo que nadie lo llamaba así.</p>
+</section>
+</section>
+<section id="coordenadas-y-proyecciones-lo-mínimo-que-evita-desastres" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="coordenadas-y-proyecciones-lo-mínimo-que-evita-desastres"><span class="header-section-number">3.2</span> Coordenadas y proyecciones: lo mínimo que evita desastres</h2>
+<section id="el-problema-antes-que-la-teoría" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="el-problema-antes-que-la-teoría"><span class="header-section-number">3.2.1</span> El problema antes que la teoría</h3>
+<p>La demostración de la sesión: dos capas reales de la misma comuna que <strong>no calzan en el mapa</strong>, y un cálculo de superficie que da un número ridículo: “La superficie de La Florida me dio 0,0000019 unidades y las áreas verdes aparecen en el mar”. ¿Qué pasó? Las capas estaban en sistemas de coordenadas distintos.</p>
+<!-- ::: {.callout-note appearance="simple" icon="false"} -->
+<!-- 📷 **IMAGEN PENDIENTE**: Captura del "desastre": dos capas de la misma -->
+<!-- comuna visiblemente desplazadas entre sí en el mapa, junto a una tabla -->
+<!-- con una superficie absurda (ej. "área de la comuna: 0,0021"). Al lado, -->
+<!-- la versión corregida tras reproyectar, con las capas calzando. -->
+<!-- ::: -->
+<div class="callout callout-style-default callout-warning callout-titled" title="Marte, 1999: el costo de mezclar unidades">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Marte, 1999: el costo de mezclar unidades
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La Mars Climate Orbiter de la NASA se perdió porque un equipo trabajó con unidades imperiales y otro con unidades métricas. Nadie se equivocó “en la física”; se equivocaron en el sistema de referencia. Cuando tu mapa dice que una plaza mide <code>0,000004</code> unidades, estás viendo la misma clase de problema. La diferencia es que aquí se corrige con un prompt.</p>
+</div>
+</div>
+</section>
+<section id="la-tierra-es-curva-el-mapa-es-plano" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="la-tierra-es-curva-el-mapa-es-plano"><span class="header-section-number">3.2.2</span> La Tierra es curva, el mapa es plano</h3>
+<div class="callout callout-style-default callout-tip callout-titled" title="Analogía: la naranja aplastada">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Analogía: la naranja aplastada
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Intenta aplanar la cáscara de una naranja sobre la mesa: se rompe, se estira, se deforma. Eso le pasa a la Tierra cada vez que la dibujamos plana. Toda representación plana distorsiona algo, y por eso existen distintos sistemas de proyección: cada uno elige qué deformar y qué preservar <span class="citation" data-cites="Tobler_1970">(<a href="references.html#ref-Tobler_1970" role="doc-biblioref">Tobler 1970</a>)</span>.</p>
+</div>
+</div>
+<p>En un mapa escolar, Groenlandia puede parecer del tamaño de África, aunque África es alrededor de 14 veces más grande. La pregunta profesional no es “¿qué mapa es el verdadero?”, sino “¿en qué me está mintiendo este mapa, y me importa para esta decisión?”.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Principio territorial Nº 3">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Principio territorial Nº 3
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>El mapa no es el territorio.</strong> Toda medición depende de cómo aplanamos el mundo. La escala y la proyección son decisiones, no tecnicismos; quien decide sin saberlo puede medir mal sin enterarse.</p>
+</div>
+</div>
+</section>
+<section id="lo-único-que-hay-que-memorizar" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="lo-único-que-hay-que-memorizar"><span class="header-section-number">3.2.3</span> Lo único que hay que memorizar</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Sistema</th>
+<th>Unidad</th>
+<th>Sirve para</th>
+<th>No sirve para</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Geográficas (EPSG:4326)</strong></td>
+<td>Grados de latitud/longitud</td>
+<td>Ubicar, compartir, mapas web</td>
+<td><strong>Medir</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Proyectadas UTM 19S (EPSG:32719)</strong></td>
+<td>Metros</td>
+<td><strong>Medir cualquier cosa en Chile central</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Síntoma → acción</strong>: capas desplazadas o números absurdos →</p>
+<blockquote class="blockquote">
+<p><em>“Reproyecta todas las capas a EPSG:32719 antes de calcular.”</em></p>
+</blockquote>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Regla de oro del curso</strong>: para <strong>medir</strong>, siempre en metros (EPSG:32719); para <strong>publicar</strong> en mapas web, en geográficas (EPSG:4326). No necesitas entender la matemática: necesitas reconocer el síntoma y pedir la corrección.</p>
+</div>
+</div>
+</section>
+<section id="diagnóstico-express" class="level3" data-number="3.2.4">
+<h3 data-number="3.2.4" class="anchored" data-anchor-id="diagnóstico-express"><span class="header-section-number">3.2.4</span> Diagnóstico express</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Síntoma</th>
+<th>Prompt de corrección</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Las capas no se superponen o el mapa sale desplazado</td>
+<td><em>“Reproyecta todas las capas a EPSG:32719 antes de cruzarlas.”</em></td>
+</tr>
+<tr class="even">
+<td>Áreas o distancias absurdas: <code>0,000004</code>, <code>0,0000019</code> o miles de millones</td>
+<td><em>“Reproyecta todas las capas a EPSG:32719 antes de calcular áreas, distancias o buffers.”</em></td>
+</tr>
+<tr class="odd">
+<td>El resultado parece plausible, pero necesitas defenderlo</td>
+<td><em>“Compara la superficie calculada con la superficie oficial de la comuna según BCN o SUBDERE.”</em></td>
+</tr>
+</tbody>
+</table>
+<p>La verificación en vivo cierra el ciclo: se le pide a la IA diagnosticar y corregir el problema inicial, y el resultado se valida contra una medida conocida, como la superficie oficial de la comuna.</p>
+</section>
+<section id="chile-el-país-difícil-de-aplanar" class="level3" data-number="3.2.5">
+<h3 data-number="3.2.5" class="anchored" data-anchor-id="chile-el-país-difícil-de-aplanar"><span class="header-section-number">3.2.5</span> Chile: el país difícil de aplanar</h3>
+<p>Chile cruza miles de kilómetros de norte a sur y varios husos UTM. Es uno de los países donde elegir mal la proyección puede distorsionar más rápido las mediciones. La buena noticia pedagógica es que si aprendes a revisar proyecciones aquí, el criterio te sirve en cualquier parte.</p>
+</section>
+</section>
+<section id="actividades" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="actividades"><span class="header-section-number">3.3</span> Actividades</h2>
+<section id="taller-análisis-de-cobertura-de-mi-comuna-35-min" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="taller-análisis-de-cobertura-de-mi-comuna-35-min"><span class="header-section-number">3.3.1</span> Taller: análisis de cobertura de mi comuna (35 min)</h3>
+<p>Caso modelado con La Florida y replicado por cada equipo con su comuna y su equipamiento de interés. Secuencia de prompts:</p>
+<ol type="1">
+<li><blockquote class="blockquote">
+<p><em>“Carga el límite comunal y las áreas verdes (de la sesión anterior) y reproyecta todo a EPSG:32719.”</em></p>
+</blockquote></li>
+<li><blockquote class="blockquote">
+<p><em>“Crea un buffer de 500 metros alrededor de cada área verde y muéstralo en el mapa.”</em></p>
+</blockquote></li>
+<li><blockquote class="blockquote">
+<p><em>“Une todos los buffers y calcula qué porcentaje de la superficie comunal queda cubierto.”</em></p>
+</blockquote></li>
+<li><blockquote class="blockquote">
+<p><em>“Carga las manzanas censales con población y calcula cuánta población queda FUERA de la cobertura.”</em></p>
+</blockquote></li>
+<li><blockquote class="blockquote">
+<p><em>“Haz un mapa final: zonas cubiertas en verde, zonas descubiertas en rojo, con un título y la cifra de población sin cobertura.”</em></p>
+</blockquote></li>
+</ol>
+<p>Cada paso incluye una micro-validación: ¿el porcentaje es plausible?, ¿el mapa calza con lo que tú sabes de tu comuna?</p>
+<p>Prompt compacto para equipos:</p>
+<blockquote class="blockquote">
+<p><em>“Crea un buffer de 500 metros alrededor de cada [equipamiento] de [TU COMUNA], une los buffers y dime qué porcentaje de la superficie y cuánta población queda fuera.”</em></p>
+</blockquote>
+<p>La capa censal del INE viene pre-procesada por comuna para que el foco esté en la operación espacial y no en resolver descargas durante el taller. Si el paso censal se traba, se revisa en pantalla y queda como tarea guiada.</p>
+<p><img src="images/mapas-cobveg.png" class="img-fluid" data-fig-aling="&quot;center"></p>
+<!-- ::: {.callout-note appearance="simple" icon="false"} -->
+<!-- 📷 **IMAGEN PENDIENTE**: El mapa final del taller para La Florida: zonas -->
+<!-- cubiertas por buffers de áreas verdes en verde, zonas descubiertas en -->
+<!-- rojo, título y cifra destacada de población sin cobertura. Es el -->
+<!-- "diploma emocional" del Módulo 1 y debe verse presentable, digno de una -->
+<!-- minuta para el alcalde. -->
+<p>:::</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Resultado sensible</strong>: la cifra de población “fuera de cobertura” es un ejercicio pedagógico, no una cifra oficial. Depende de la calidad del dato OSM y del supuesto de distancia euclidiana (línea recta) en vez de caminable. Declarar estas limitaciones es un hábito profesional, no una debilidad.</p>
+</div>
+</div>
+</section>
+<section id="antes-de-mostrar-esa-cifra" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="antes-de-mostrar-esa-cifra"><span class="header-section-number">3.3.2</span> Antes de mostrar esa cifra</h3>
+<p>Una cifra de población “fuera de cobertura” no es solo un resultado metodológico: en municipios, gobiernos regionales y servicios públicos también es un punto político. Puede orientar prioridades, abrir una discusión presupuestaria o respaldar una postulación. Por eso hay que declarar el método antes de usarla fuera del taller:</p>
+<ul>
+<li>Fuente de equipamientos: OpenStreetMap u otra capa oficial.</li>
+<li>Distancia usada: línea recta o red caminable.</li>
+<li>Proyección usada para medir: EPSG:32719 en Chile central.</li>
+<li>Capa poblacional: manzanas o zonas censales del INE.</li>
+<li>Validación: comparación con cifras oficiales o conocimiento local.</li>
+</ul>
+<p>Declarar supuestos no debilita la evidencia; la hace defendible.</p>
+</section>
+<section id="para-qué-sirve-esta-cifra" class="level3" data-number="3.3.3">
+<h3 data-number="3.3.3" class="anchored" data-anchor-id="para-qué-sirve-esta-cifra"><span class="header-section-number">3.3.3</span> Para qué sirve esta cifra</h3>
+<p>El buffer es geometría, pero la pregunta es de justicia territorial: ¿quién queda cerca de un servicio y quién queda sistemáticamente lejos? La referencia habitual para áreas verdes y equipamientos de proximidad se expresa como distancia caminable del hogar, del orden de 300 a 500 metros según estándar y contexto.</p>
+<p>El mismo flujo sirve para áreas verdes, consultorios, puntos limpios, paraderos o ferias. Cambia la capa; no cambia el método. En la práctica puede fundamentar priorización de paradas, decisiones de transporte con enfoque de género, inversión comunal o proyectos de sostenibilidad.</p>
+</section>
+<section id="checklist-de-autodiagnóstico-del-módulo-1" class="level3" data-number="3.3.4">
+<h3 data-number="3.3.4" class="anchored" data-anchor-id="checklist-de-autodiagnóstico-del-módulo-1"><span class="header-section-number">3.3.4</span> Checklist de autodiagnóstico del Módulo 1</h3>
+<p>Cierre con autoevaluación rápida en 5 preguntas:</p>
+<ol type="1">
+<li>¿Puedo escribir un prompt con contexto, datos, resultado esperado y restricciones?</li>
+<li>¿Puedo traer el límite y los equipamientos de mi comuna con una frase?</li>
+<li>¿Sé qué operación responde mi pregunta: medir, buffer, intersectar o contar?</li>
+<li>¿Sé qué hacer cuando las capas no calzan o los números salen absurdos?</li>
+<li>¿Validé mi cifra contra algo que ya conocía?</li>
+</ol>
+</section>
+<section id="tarea-puente-al-módulo-2" class="level3" data-number="3.3.5">
+<h3 data-number="3.3.5" class="anchored" data-anchor-id="tarea-puente-al-módulo-2"><span class="header-section-number">3.3.5</span> Tarea puente al Módulo 2</h3>
+<p>Repite el análisis con el equipamiento central de la problemática de tu equipo y lleva el mapa a la sesión 4.1. Guarda también los prompts: la hoja de ruta final se construye sobre ellos.</p>
+</section>
+</section>
+<section id="resumen" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="resumen"><span class="header-section-number">3.4</span> Resumen</h2>
+<ul>
+<li>Casi toda pregunta territorial se descompone en cuatro operaciones: <strong>medir, buffer, intersección y conteo espacial</strong>. Formular bien la pregunta es traducirla a estas operaciones.</li>
+<li>La Tierra es curva y el mapa es plano: por eso existen los sistemas de coordenadas. Dos familias bastan: <strong>EPSG:4326</strong> (grados, para ubicar y publicar) y <strong>EPSG:32719</strong> (metros, para medir en Chile central).</li>
+<li>Síntoma de error de proyección (capas desplazadas, cifras absurdas) → prompt de corrección: <em>“reproyecta todo a EPSG:32719 antes de calcular”</em>.</li>
+<li>El mapa no es el territorio: toda cifra espacial depende de escala, proyección, fuente de datos y método de medición. Declarar esos supuestos hace que la evidencia sea defendible.</li>
+<li>El arco del Módulo 1 quedó completo: <strong>prompting (2.1) → vibe coding (2.2) → datos del territorio (3.1) → análisis espacial (3.2)</strong>. Ya tienes el flujo: pregunta → datos → análisis → mapa con evidencia.</li>
+<li>Lo que viene en el Módulo 2: hasta ahora usamos datos que ya existían; lo siguiente es <strong>crear datos nuevos con la ciudadanía</strong>, completar mapas donde falten datos y procesar lo que la gente dice y siente.</li>
+</ul>
+</section>
+<section id="recursos" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="recursos"><span class="header-section-number">3.5</span> Recursos</h2>
+<ul>
+<li><strong>Notebook Colab “Cobertura comunal”</strong>: continúa el de la sesión 3.1, con la secuencia completa del taller y celdas de validación.</li>
+<li><strong>Capa censal pre-procesada</strong> (manzanas/zonas censales con población, Censo INE) para las comunas de los participantes.</li>
+<li><strong>Ficha “Coordenadas sin lágrimas” (1 página)</strong>: geográficas vs. proyectadas, EPSG:4326 vs.&nbsp;EPSG:32719, tabla síntoma → prompt de corrección.</li>
+<li><strong>Prompt-book de la sesión</strong>: la secuencia de 5 prompts del taller + variantes (otras distancias de buffer, otros equipamientos, comparación entre comunas).</li>
+<li><strong>Checklist de cierre del Módulo 1</strong> (autoevaluación de 5 puntos).</li>
+<li>Referencia breve sobre estándares de accesibilidad a áreas verdes (recomendación OMS y estándares MINVU) para dar contexto normativo a la cifra producida.</li>
+</ul>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Tobler_1970" class="csl-entry" role="listitem">
+Tobler, W. R. 1970. <span>“A Computer Movie Simulating Urban Growth in the Detroit Region.”</span> <em>Economic Geography</em> 46 (June): 234. <a href="https://doi.org/10.2307/143141">https://doi.org/10.2307/143141</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -960,13 +1145,13 @@ Tip
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./rc_perplexity.html" class="pagination-link" aria-label="Perplexity">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Perplexity</span></span>
+      <a href="./ecosistema_python.html" class="pagination-link" aria-label="Ecosistema Python">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ecosistema Python</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./rc_openclaw.html" class="pagination-link" aria-label="OpenClaw">
-        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">OpenClaw</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./recursos_complementarios.html" class="pagination-link" aria-label="Recursos Complementarios">
+        <span class="nav-page-text">Recursos Complementarios</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
