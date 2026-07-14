@@ -242,7 +242,7 @@ tarea guiada.
 <!-- rojo, título y cifra destacada de población sin cobertura. Es el -->
 <!-- "diploma emocional" del Módulo 1 y debe verse presentable, digno de una -->
 <!-- minuta para el alcalde. -->
-:::
+<!-- ::: -->
 
 ::: callout-warning
 **Resultado sensible**: la cifra de población "fuera de cobertura" es
