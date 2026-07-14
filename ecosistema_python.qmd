@@ -119,7 +119,7 @@ el plano, unidos.
 <!-- ::: -->
 
 
-![](images/geometrias.png){fig-align="center" width="300"}
+![](images/geometrias.png){fig-align="center" width="600"}
 
 El juego de clasificación de la sesión: el docente nombra fenómenos
 urbanos (compostera comunitaria de Peñalolén, ruta de recolección del

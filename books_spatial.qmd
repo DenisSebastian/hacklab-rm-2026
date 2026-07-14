@@ -1,0 +1,67 @@
+---
+title: "Libros y guías de SIG y GeoIA"
+subtitle: "Documentación de apoyo para continuar aprendiendo"
+editor:
+  markdown:
+    wrap: 72
+---
+
+Esta página reúne libros, manuales y tutoriales abiertos para seguir
+practicando fuera de clase. No es necesario leerlos todos: elige el
+recurso que mejor responda a la tarea que estás realizando y avanza con
+sus ejemplos. La mayoría está en inglés, pero el código, las imágenes y
+los ejercicios permiten seguirlos incluso con un nivel inicial de
+lectura técnica.
+
+## Ruta sugerida
+
+1.  **Empieza por mapas y datos vectoriales.** Si estás comenzando a
+    trabajar con SIG, usa el Manual de capacitación de QGIS. Si también
+    quieres aprender Python, continúa con *Introduction to GIS
+    Programming*.
+2.  **Pasa a imágenes satelitales.** *Geospatial Data Science with
+    Earth Engine and Geemap* sirve para explorar, procesar y exportar
+    datos de Earth Engine desde notebooks.
+3.  **Incorpora IA sólo después de dominar los datos.** *GeoAI with
+    Python* lleva el flujo desde la preparación de imágenes hasta la
+    evaluación de modelos de visión geoespacial.
+4.  **Escala tu análisis cuando el volumen crezca.** DuckDB y PostGIS
+    permiten consultar y relacionar datos espaciales mediante SQL.
+
+::: {.callout-tip title="Cómo aprovechar un recurso técnico"}
+No copies un ejemplo sin entenderlo. Abre primero los datos de ejemplo,
+ejecuta cada bloque por separado y anota qué entra, qué transformación
+ocurre y qué resultado espacial esperas obtener. Cambia después el área
+de estudio por una comuna o capa de Chile y conserva la URL y fecha de
+consulta en tu proyecto.
+:::
+
+## Libros y documentación base
+
+| Recurso | Resumen | Recomendado para | Acceso |
+|---|---|---|---|
+| **Introduction to GIS Programming** — Qiusheng Wu | Guía práctica de Python geoespacial: instalación, Git, datos vectoriales con GeoPandas, raster con Rasterio y Xarray, visualización, Earth Engine, GDAL y análisis de alto rendimiento. Sus ejemplos se pueden ejecutar en Binder, Colab o Docker. | Quien ya conoce lo básico de Python o quiere aprenderlo mientras trabaja con mapas. | [Leer el libro y descargar los ejemplos](https://gispro.gishub.org/) |
+| **GeoAI with Python** — Qiusheng Wu | Introduce GeoIA con imágenes satelitales y datos espaciales. Explica cómo preparar datos de entrenamiento y aplicar reconocimiento, detección de objetos, segmentación, detección de cambios y modelos fundacionales; incorpora flujos con Python, PyTorch y complementos de QGIS. | Estudiantes que ya manejan datos raster y quieren evaluar IA aplicada al territorio. | [Abrir GeoAI with Python](https://book.opengeoai.org/) |
+| **Geospatial Data Science with Earth Engine and Geemap** — Qiusheng Wu | Tutorial paso a paso para usar Google Earth Engine desde Python y Jupyter mediante `geemap`. Incluye mapas interactivos, catálogo de Earth Engine, datos locales, análisis, exportaciones, animaciones y aplicaciones web. | Proyectos con imágenes satelitales, series temporales, índices como NDVI o análisis reproducible en notebooks. | [Abrir el libro de Earth Engine y Geemap](https://book.geemap.org/chapters/01_introduction.html) |
+| **GeoLibre** | Documentación y tutoriales de una plataforma SIG libre para navegador, escritorio y notebooks. Enseña a cargar y estilizar capas, consultar atributos, usar herramientas vectoriales y raster, SQL espacial y flujos con Python/Jupyter. | Quien prefiera aprender explorando un SIG moderno sin instalar una cadena compleja de herramientas. | [Ir a la guía y tutoriales de GeoLibre](https://geolibre.app/) |
+| **Spatial Data Management with DuckDB** — Qiusheng Wu | Libro práctico para pasar de SQL básico a análisis geoespacial: carga y conversión de formatos, funciones geométricas, relaciones y uniones espaciales, teselas y casos con datos reales. Los ejemplos tienen opciones para Binder, Colab y Docker. | Cuando el proyecto tiene muchas tablas, GeoParquet u otros archivos que conviene consultar sin abrirlos uno a uno. | [Abrir Spatial Data Management with DuckDB](https://duckdb.gishub.org/) |
+
+## Recursos adicionales recomendados
+
+| Recurso | Resumen | Cuándo usarlo | Acceso |
+|---|---|---|---|
+| **QGIS Training Manual** | Manual oficial, organizado como curso y con datos de práctica. Parte con la interfaz y capas básicas, y progresa hacia análisis, bases de datos, PostgreSQL y PostGIS. | Si es tu primer SIG de escritorio o necesitas una práctica guiada y visual antes de programar. | [Abrir el Manual de capacitación de QGIS](https://docs.qgis.org/latest/en/docs/training_manual/index.html) |
+| **Introduction to PostGIS** | Taller abierto con datos, ejercicios y una hoja de referencia de SQL. Cubre creación de bases espaciales, carga de datos, geometrías, relaciones y uniones espaciales, índices, proyecciones y respaldo. | Cuando necesites almacenar y consultar capas de forma colaborativa o repetible en PostgreSQL. | [Abrir el taller de PostGIS](https://postgis.net/workshops/postgis-intro/) |
+| **Geocomputation with R** — Robin Lovelace, Jakub Nowosad y Jannes Muenchow | Libro abierto sobre lectura, transformación, visualización, análisis y modelamiento de datos geográficos con énfasis en reproducibilidad. Aunque usa R, explica conceptos espaciales transferibles a QGIS y Python. | Como segunda mirada para entender proyecciones, geometrías, raster/vector y flujos reproducibles. | [Leer Geocomputation with R](https://r.geocompx.org/) |
+
+## Antes de usar resultados en un informe
+
+- Revisa el sistema de referencia de coordenadas, la fecha, escala,
+  resolución y licencia de cada capa.
+- Distingue una visualización exploratoria de un resultado validado: un
+  mapa atractivo no demuestra por sí solo una relación territorial.
+- Conserva el notebook, script o proyecto QGIS junto con los datos y
+  metadatos usados. Así otra persona puede revisar y repetir el análisis.
+- Si empleas IA, documenta el modelo, los datos de entrenamiento o
+  entrada, los parámetros y una forma de validar los resultados con
+  observación, datos oficiales o revisión experta.

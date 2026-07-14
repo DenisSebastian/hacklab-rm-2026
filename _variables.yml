@@ -69,6 +69,72 @@ retc:
   name: "[Registros de Emisiones y Transferencias Contaminantes](https://retc.mma.gob.cl/)"
   sigla: "[RETC](https://retc.mma.gob.cl/)"
 
+# Fuentes de datos territoriales ------------------------------------------
+fuentes:
+  ide_chile:
+    name: "IDE Chile"
+    link: "[Catálogo](https://www.geoportal.cl/)"
+  ine_geodatos:
+    name: "INE Geodatos Abiertos"
+    link: "[Descargas](https://www.ine.gob.cl/herramientas/portal-de-mapas/geodatos-abiertos)"
+  censo_2024:
+    name: "Censo 2024"
+    link: "[Resultados y descargas](https://censo2024.ine.gob.cl/resultados/)"
+  datos_gob:
+    name: "Datos.gob.cl"
+    link: "[Buscar conjuntos](https://datos.gob.cl/)"
+  ide_mma:
+    name: "IDE MMA"
+    link: "[Centro de descargas](https://ide.mma.gob.cl/centro-de-descargas)"
+  sinca:
+    name: "SINCA"
+    link: "[Datos de calidad del aire](https://sinca.mma.gob.cl/index.php/pagina/index/id/calidad)"
+  retc:
+    name: "RETC Open Data"
+    link: "[Conjuntos de datos](https://datosretc.mma.gob.cl/group)"
+  dga:
+    name: "DGA"
+    link: "[Servicios de información](https://dga.mop.gob.cl/servicios-de-informacion/)"
+  conaf:
+    name: "Catastro CONAF"
+    link: "[Capas SHP](https://ide.minagri.gob.cl/descarga-de-capas-shp/planificacion-catastral/)"
+  geomin:
+    name: "Portal GeoMin"
+    link: "[Visor y descargas](https://portalgeomin.sernageomin.cl/)"
+  gore_santiago:
+    name: "Geoportal Gobierno de Santiago"
+    link: "[Capas de la RM](https://geo.gobiernosantiago.cl/portal/home/)"
+  dtpm:
+    name: "DTPM"
+    link: "[GTFS vigente](https://www.dtpm.cl/descargas/gtfs/GTFS_20260704.zip)"
+  sii:
+    name: "Cartografía Digital SII"
+    link: "[Visor predial](https://www4.sii.cl/mapasui/internet/#/contenido/index.html)"
+  catastral:
+    name: "Catastral.cl"
+    link: "[Visor predial](https://catastral.cl/)"
+  geohub:
+    name: "GeoHub Chile"
+    link: "[Directorio](https://danield-s.github.io/geohub-chile/)"
+
+# Fuentes de datos satelitales --------------------------------------------
+datos_satelitales:
+  earth_engine:
+    name: "Google Earth Engine"
+    link: "[Code Editor](https://code.earthengine.google.com/) · [Catálogo](https://developers.google.com/earth-engine/datasets)"
+  datacube_chile:
+    name: "Data Cube Chile"
+    link: "[Plataforma](https://datacubechile.cl/) · [Mapa](https://map.datacubechile.cl/) · [Servicio OGC](https://ows.datacubechile.cl/)"
+  copernicus:
+    name: "Copernicus Browser"
+    link: "[Explorar y descargar](https://browser.dataspace.copernicus.eu/)"
+  landsat:
+    name: "USGS EarthExplorer"
+    link: "[Explorar y descargar](https://earthexplorer.usgs.gov/)"
+  nasa_worldview:
+    name: "NASA Worldview"
+    link: "[Explorar y descargar](https://worldview.earthdata.nasa.gov/)"
+
 # Ecosistema IA -----------------------------------------------------------
 ai:
   provider:

@@ -93,13 +93,7 @@ operaciones:
 | **Intersección / cruce** | Qué parte de A está dentro de B | ¿Qué porcentaje de la zona inundable es residencial? | *"Intersecta la capa A con la capa B y calcula el área resultante"* |
 | **Conteo / join espacial** | Cuántos puntos caen en cada polígono | ¿Cuántos reclamos hay por barrio? | *"Cuenta cuántos puntos caen dentro de cada polígono y agrega la columna"* |
 
-::: {.callout-note appearance="simple" icon="false"}
-📷 **IMAGEN PENDIENTE**: Panel de 4 diagramas conceptuales, uno por
-operación: (1) medir — regla sobre un polígono; (2) buffer — punto con
-anillo de 500 m; (3) intersección — dos polígonos superpuestos con el
-área común destacada; (4) conteo espacial — puntos cayendo dentro de
-polígonos con números. Sin fórmulas ni código.
-:::
+![](images/operaciones.png){fig-align="center"}
 
 ::: {.callout-tip title="Analogía: las preguntas del vecino"}
 Estas operaciones son las preguntas que cualquier vecino hace sin saber
@@ -156,6 +150,8 @@ distintos sistemas de proyección: cada uno elige qué deformar y qué
 preservar [@Tobler_1970].
 :::
 
+![](images/crs.png){fig-align="center"}
+
 En un mapa escolar, Groenlandia puede parecer del tamaño de África,
 aunque África es alrededor de 14 veces más grande. La pregunta
 profesional no es "¿qué mapa es el verdadero?", sino "¿en qué me está
@@ -168,6 +164,8 @@ tecnicismos; quien decide sin saberlo puede medir mal sin enterarse.
 :::
 
 ### Lo único que hay que memorizar
+
+![](images/crs2.png){fig-align="center" width="600"}
 
 | Sistema | Unidad | Sirve para | No sirve para |
 |----|----|----|----|

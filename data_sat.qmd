@@ -1,0 +1,154 @@
+---
+subtitle: "Fuentes abiertas de datos satelitales"
+editor:
+  markdown:
+    wrap: 72
+---
+
+# Datos satelitales
+
+Las imágenes satelitales son datos **raster**: una grilla de píxeles en
+la que cada píxel almacena valores de una o más bandas espectrales. No
+son una fotografía lista para interpretar. La resolución espacial
+(tamaño del píxel), la fecha, las nubes, el nivel de procesamiento y las
+bandas elegidas cambian lo que se puede concluir.
+
+## Acceso rápido
+
+| Fuente | Datos principales | Cobertura y resolución típica | Link |
+|---|---|---|---|
+| {{< var datos_satelitales.earth_engine.name >}} | Catálogo procesable de Landsat, Sentinel, MODIS, clima, precipitación, elevación y otras colecciones. | Global; depende de la colección. | {{< var datos_satelitales.earth_engine.link >}} |
+| {{< var datos_satelitales.datacube_chile.name >}} | Cubo nacional con Landsat, Sentinel, modelos de elevación y productos de observación de Tierra y Mar. | Chile; 10 m a 300 m según fuente. | {{< var datos_satelitales.datacube_chile.link >}} |
+| {{< var datos_satelitales.copernicus.name >}} | Sentinel-1, Sentinel-2, Sentinel-3, Sentinel-5P y productos Copernicus. | Global; Sentinel-2 llega a 10 m. | {{< var datos_satelitales.copernicus.link >}} |
+| {{< var datos_satelitales.landsat.name >}} | Archivo Landsat Collection 2: imágenes, reflectancia de superficie, temperatura y productos derivados. | Global; 30 m para bandas multiespectrales. | {{< var datos_satelitales.landsat.link >}} |
+| {{< var datos_satelitales.nasa_worldview.name >}} | Capas de observación NASA, incluidas MODIS y VIIRS, para exploración y descarga. | Global; resolución y frecuencia según producto. | {{< var datos_satelitales.nasa_worldview.link >}} |
+
+## Conceptos mínimos
+
+- **Banda:** medición de una parte del espectro, por ejemplo visible,
+  infrarrojo cercano o infrarrojo de onda corta.
+- **Resolución espacial:** tamaño de terreno representado por un píxel.
+  Un píxel de 10 m no permite afirmar qué ocurre dentro de una vivienda.
+- **Resolución temporal:** intervalo entre observaciones. Más escenas no
+  significa necesariamente más escenas útiles: las nubes pueden cubrir
+  el área de interés.
+- **Reflectancia de superficie:** producto corregido para aproximarse a
+  la señal de la superficie; suele ser preferible para comparar fechas.
+- **SAR o radar:** mide la respuesta del terreno a microondas y puede
+  observar con nubes o de noche, pero requiere una interpretación
+  distinta a una imagen óptica.
+
+## Google Earth Engine
+
+Google Earth Engine es una plataforma de análisis geoespacial en la
+nube, no sólo un sitio de descarga. Su [catálogo público](https://developers.google.com/earth-engine/datasets/catalog?hl=es-419) integra
+colecciones de imágenes como Landsat, Sentinel-2 y MODIS, además de
+datos geofísicos, meteorológicos, climáticos y demográficos. Permite
+filtrar colecciones por zona, fecha y propiedades, procesar píxeles y
+exportar resultados.
+
+El acceso se realiza mediante el Code Editor con JavaScript o las
+bibliotecas de Python y JavaScript. Para uso no comercial se debe usar
+una cuenta de Google y un proyecto de Google Cloud registrado y
+verificado; la plataforma aplica cuotas. Una exportación puede producir
+un `GeoTIFF`, una tabla `CSV` o un activo, pero el formato depende
+del análisis realizado.
+
+Es apropiado para construir mosaicos sin nubes, índices como NDVI,
+series de tiempo y resúmenes por comuna. Antes de usar una colección,
+abre su ficha: cada conjunto tiene licencia, fecha de actualización,
+bandas y requisitos de atribución propios.
+
+## Data Cube Chile
+
+Data Cube Chile es una iniciativa de la UAI, Data Observatory y CSIRO
+para organizar observaciones de Tierra y Mar como cubos
+espacio-temporales nacionales. Su propuesta es acercar décadas de datos
+preparados para análisis a investigación, industria y gobierno.
+
+La plataforma declara fuentes Landsat 5, 7, 8 y 9; Sentinel-2 y
+Sentinel-3; y modelos de elevación SRTM, NASADEM y Copernicus DEM. Para
+las colecciones con cobertura nacional, las resoluciones publicadas
+incluyen 30 m para Landsat, 10 m para Sentinel-2, 300 m para Sentinel-3
+y 30 m o 90 m para los modelos de elevación. La disponibilidad concreta
+de fechas, bandas y productos debe confirmarse en el catálogo.
+
+El mapa interactivo sirve para explorar, y el servicio OGC puede ser
+consumido desde software SIG compatible. El proyecto también mantiene
+herramientas de exploración de metadatos y notebooks. No toda colección
+ofrece el mismo mecanismo de descarga: verifica el recurso antes de
+diseñar un flujo de trabajo.
+
+## Copernicus Browser
+
+Copernicus Browser es el acceso visual al ecosistema de datos espaciales
+de Copernicus. Permite buscar por zona, fecha, misión y nubosidad,
+comparar escenas y descargar productos de referencia. Los datos
+Copernicus se entregan en una política abierta y gratuita, con registro
+para las funciones de descarga y procesamiento.
+
+Las misiones más útiles para análisis territorial son:
+
+- **Sentinel-1:** radar SAR, útil cuando las nubes impiden una imagen
+  óptica y para observar superficie, humedad o inundaciones.
+- **Sentinel-2:** imágenes multiespectrales ópticas, con bandas de hasta
+  10 m; útil para vegetación, cobertura de suelo, agua y cambios.
+- **Sentinel-3:** productos de menor detalle espacial orientados, entre
+  otros, a tierra, océanos y temperatura.
+- **Sentinel-5P:** observaciones atmosféricas, como trazas de gases y
+  aerosoles, a una escala mucho más gruesa que Sentinel-2.
+
+Descarga el producto original y su metadato, no una captura de pantalla
+del navegador. Para comparar varias fechas, aplica una máscara de nubes
+y usa productos del mismo nivel de procesamiento.
+
+## USGS EarthExplorer
+
+USGS EarthExplorer permite buscar y descargar imágenes Landsat y otras
+colecciones de teledetección por área, fecha y criterios de calidad.
+Landsat constituye una de las series históricas más valiosas para
+analizar transformaciones territoriales: el archivo contiene datos
+desde 1972 y la colección actual incluye Landsat 1 a 9.
+
+EarthExplorer ofrece productos Collection 2 de nivel 1 y, para Landsat
+4 a 9, productos de nivel 2 como reflectancia de superficie y
+temperatura de superficie. Las bandas multiespectrales tienen
+típicamente 30 m de resolución. Las descargas requieren una cuenta
+gratuita de USGS.
+
+Es una fuente recomendada cuando importa una comparación histórica de
+décadas. Selecciona escenas de la misma época del año y revisa la
+cobertura nubosa antes de calcular cambios entre períodos.
+
+## NASA Worldview
+
+NASA Worldview permite explorar más de mil capas globales de observación
+de la Tierra y descargar los datos subyacentes mediante Earthdata. Es
+particularmente útil para revisar eventos recientes y grandes patrones
+ambientales antes de descargar un producto para análisis.
+
+Incluye colecciones como MODIS y VIIRS, imágenes y productos sobre
+incendios, aerosoles, nubes, temperatura, vegetación, océanos y
+criósfera. Muchas capas se actualizan con alta frecuencia, pero su
+resolución suele ser menor que la de Sentinel-2 o Landsat; no debe
+usarse para decisiones a escala de predio o cuadra.
+
+La visualización sirve para descubrir fechas y capas. Para análisis,
+descarga el dato original y registra misión, producto, fecha, bandas y
+resolución. Algunas descargas o servicios requieren una cuenta
+Earthdata.
+
+## Recomendaciones de uso
+
+1. Define primero el fenómeno y la escala: una imagen de 300 m no
+   responde una pregunta sobre una plaza; una de 10 m tampoco identifica
+   objetos pequeños con certeza.
+2. Trabaja con la banda o producto original, no con una captura RGB.
+   Conserva la escena, metadatos, fecha y nivel de procesamiento.
+3. Revisa nubes, sombras y banderas de calidad antes de calcular índices
+   o comparar fechas.
+4. Para unir el raster con datos vectoriales de la RM, verifica la
+   proyección y usa `EPSG:32719` cuando midas distancias o superficies.
+5. Un índice satelital es una estimación. Valídalo con observación en
+   terreno, cartografía oficial o una fuente temática antes de
+   comunicarlo como hallazgo.

@@ -1,0 +1,77 @@
+---
+subtitle: "Fuentes abiertas de datos espaciales vectoriales"
+editor:
+  markdown:
+    wrap: 72
+---
+
+# Datos vectoriales
+
+Esta guía reúne fuentes abiertas útiles para buscar información nacional
+y de la Región Metropolitana. La tabla indica qué datos ofrece cada
+plataforma y dirige al catálogo, visor o descarga correspondiente.
+
+## Acceso rápido
+
+| Fuente | Datos disponibles | Link |
+|---|---|---|
+| {{< var fuentes.ide_chile.name >}} | Cartografía oficial: límites, red vial, hidrografía, equipamientos, riesgos y servicios geográficos. | {{< var fuentes.ide_chile.link >}} |
+| {{< var fuentes.ine_geodatos.name >}} | División político-administrativa y censal, manzanas, calles, población, vivienda, permisos de edificación e indicadores. | {{< var fuentes.ine_geodatos.link >}} |
+| {{< var fuentes.censo_2024.name >}} | Personas, hogares y viviendas a nivel de manzana-entidad; cartografía censal actualizada. | {{< var fuentes.censo_2024.link >}} |
+| {{< var fuentes.datos_gob.name >}} | Conjuntos de ministerios, municipios y empresas públicas; la cobertura y formato dependen del publicador. | {{< var fuentes.datos_gob.link >}} |
+| {{< var fuentes.ide_mma.name >}} | Biodiversidad, agua, residuos, ruido, áreas protegidas, emisiones y variables ambientales. | {{< var fuentes.ide_mma.link >}} |
+| {{< var fuentes.sinca.name >}} | Estaciones, contaminantes atmosféricos y variables meteorológicas; series históricas y datos en línea. | {{< var fuentes.sinca.link >}} |
+| {{< var fuentes.retc.name >}} | Emisiones al aire, agua y suelo; residuos, transferencias y establecimientos reportantes. | {{< var fuentes.retc.link >}} |
+| {{< var fuentes.dga.name >}} | Estaciones y series de caudal, lluvia, nieve, pozos, embalses y calidad de agua. | {{< var fuentes.dga.link >}} |
+| {{< var fuentes.conaf.name >}} | Uso y cobertura de suelo, recursos vegetacionales, tipos forestales y especies predominantes. | {{< var fuentes.conaf.link >}} |
+| {{< var fuentes.geomin.name >}} | Geología, geoquímica, geofísica, peligros geológicos, relaves y recursos minerales. | {{< var fuentes.geomin.link >}} |
+| {{< var fuentes.gore_santiago.name >}} | Capas territoriales y temáticas de la Región Metropolitana. | {{< var fuentes.gore_santiago.link >}} |
+| {{< var fuentes.dtpm.name >}} | Paradas, recorridos, trazados, horarios y calendarios de Red Movilidad. | {{< var fuentes.dtpm.link >}} |
+| {{< var fuentes.sii.name >}} | Consulta predial: rol, destino, avalúo, contribuciones y planos de precios. | {{< var fuentes.sii.link >}} |
+| {{< var fuentes.catastral.name >}} | Visor complementario de información predial basada en datos del SII. | {{< var fuentes.catastral.link >}} |
+| {{< var fuentes.geohub.name >}} | Directorio de fuentes, visores y servicios geoespaciales chilenos. | {{< var fuentes.geohub.link >}} |
+
+## Formatos y alcance
+
+- **Capas vectoriales:** puntos, líneas o polígonos con atributos. Los
+  formatos más comunes son `SHP`, `GeoJSON`, `KML` y `GDB`.
+- **Servicios geográficos:** un `WFS` entrega entidades vectoriales
+  para análisis; un `WMS` entrega una imagen de mapa para consulta
+  visual.
+- **Tablas:** `CSV`, `XLSX` o `TXT` pueden contener coordenadas,
+  códigos de comuna, rol o identificadores para unirlas a una capa.
+- **GTFS:** archivo `ZIP` con tablas `CSV` de transporte. Incluye
+  puntos de parada y geometrías de recorridos que pueden abrirse como
+  capas vectoriales.
+- **Visores:** permiten consultar información, pero no siempre ofrecen
+  una descarga masiva o una capa reutilizable. Es el caso de parte de la
+  información predial del SII y de Catastral.cl.
+
+## Fuentes ambientales
+
+La {{< var fuentes.ide_mma.name >}} concentra capas descargables en
+`SHP`, planillas `Excel` y metadatos. Para la RM incluye, entre
+otras, mapas de ruido, emisiones puntuales, residuos, vertederos,
+acuíferos, áreas protegidas y red vial.
+
+{{< var fuentes.sinca.name >}} publica datos de calidad del aire y
+meteorología por estación. La condición del registro importa: los datos
+pueden ser no validados, preliminares u oficiales. Las series son tablas
+con ubicación de estaciones, no una medición continua de toda la comuna.
+
+{{< var fuentes.retc.name >}} entrega archivos `CSV` descargables.
+Antes de agregar registros, diferencia emisiones, residuos y
+transferencias; cada categoría tiene unidades, fuentes y alcances
+distintos.
+
+## Recomendaciones de uso
+
+1. Revisa el metadato: institución productora, fecha, escala, cobertura
+   territorial y definición de cada campo.
+2. Para medir en la RM, reproyecta las capas a `EPSG:32719`. No midas
+   áreas o distancias directamente en coordenadas geográficas.
+3. Conserva la URL, la fecha de descarga y la versión del recurso.
+4. Trata los visores y cartografía catastral como información
+   referencial. No publiques datos personales ni atribuyas límites
+   legales a una capa que no los certifica.
+

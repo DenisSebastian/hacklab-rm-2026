@@ -46,6 +46,11 @@ book:
         - rc_otras_herramientas.qmd
         - rc_openclaw.qmd
         - rc_hermes.qmd
+    - part: "Información Espacial"
+      chapters:
+        - data_vec.qmd
+        - data_sat.qmd
+        - books_spatial.qmd
     - part: "Casos"
       chapters:
         - john_snow.qmd
