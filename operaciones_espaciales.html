@@ -281,12 +281,41 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
- <span class="menu-text">Casos</span></a>
+ <span class="menu-text">Información Espacial</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_vec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Datos vectoriales</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_sat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Datos satelitales</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./books_spatial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Libros y guías de SIG y GeoIA</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Casos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./john_snow.html" class="sidebar-item-text sidebar-link">
@@ -297,17 +326,17 @@ div.csl-indent {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
  <span class="menu-text">Glosario</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./rc_glosario.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Glosario</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Glosario</span></span></a>
   </div>
 </li>
       </ul>
@@ -460,15 +489,10 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-<div class="callout callout-style-simple callout-note no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>📷 <strong>IMAGEN PENDIENTE</strong>: Panel de 4 diagramas conceptuales, uno por operación: (1) medir — regla sobre un polígono; (2) buffer — punto con anillo de 500 m; (3) intersección — dos polígonos superpuestos con el área común destacada; (4) conteo espacial — puntos cayendo dentro de polígonos con números. Sin fórmulas ni código.</p>
-</div>
-</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/operaciones.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled" title="Analogía: las preguntas del vecino">
 <div class="callout-header d-flex align-content-center">
@@ -530,6 +554,11 @@ Analogía: la naranja aplastada
 <p>Intenta aplanar la cáscara de una naranja sobre la mesa: se rompe, se estira, se deforma. Eso le pasa a la Tierra cada vez que la dibujamos plana. Toda representación plana distorsiona algo, y por eso existen distintos sistemas de proyección: cada uno elige qué deformar y qué preservar <span class="citation" data-cites="Tobler_1970">(<a href="references.html#ref-Tobler_1970" role="doc-biblioref">Tobler 1970</a>)</span>.</p>
 </div>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/crs.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
 <p>En un mapa escolar, Groenlandia puede parecer del tamaño de África, aunque África es alrededor de 14 veces más grande. La pregunta profesional no es “¿qué mapa es el verdadero?”, sino “¿en qué me está mintiendo este mapa, y me importa para esta decisión?”.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Principio territorial Nº 3">
 <div class="callout-header d-flex align-content-center">
@@ -547,6 +576,11 @@ Principio territorial Nº 3
 </section>
 <section id="lo-único-que-hay-que-memorizar" class="level3" data-number="3.2.3">
 <h3 data-number="3.2.3" class="anchored" data-anchor-id="lo-único-que-hay-que-memorizar"><span class="header-section-number">3.2.3</span> Lo único que hay que memorizar</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/crs2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
+</figure>
+</div>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 25%">

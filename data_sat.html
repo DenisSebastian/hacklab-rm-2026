@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>7&nbsp; LatamGPT – AcademIA HackLab: Santiago Región Sustentable</title>
+<title>17&nbsp; Datos satelitales – AcademIA HackLab: Santiago Región Sustentable</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./rc_ide_antigravity.html" rel="next">
-<link href="./rc_claude.html" rel="prev">
+<link href="./books_spatial.html" rel="next">
+<link href="./data_vec.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body class="nav-sidebar floating slimcontent quarto-light">
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rc_google.html">Modelos</a></li><li class="breadcrumb-item"><a href="./rc_latamgpt.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">LatamGPT</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data_vec.html">Información Espacial</a></li><li class="breadcrumb-item"><a href="./data_sat.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Datos satelitales</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -182,7 +182,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rc_latamgpt.html" class="sidebar-item-text sidebar-link active">
+  <a href="./rc_latamgpt.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">LatamGPT</span></span></a>
   </div>
 </li>
@@ -275,7 +275,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./data_sat.html" class="sidebar-item-text sidebar-link">
+  <a href="./data_sat.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Datos satelitales</span></span></a>
   </div>
 </li>
@@ -337,20 +337,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Contenidos</h2>
    
   <ul>
-  <li><a href="#resumen-ejecutivo" id="toc-resumen-ejecutivo" class="nav-link active" data-scroll-target="#resumen-ejecutivo">Resumen ejecutivo</a></li>
-  <li><a href="#por-qué-importa-un-modelo-regional" id="toc-por-qué-importa-un-modelo-regional" class="nav-link" data-scroll-target="#por-qué-importa-un-modelo-regional"><span class="header-section-number">7.1</span> Por qué importa un modelo regional</a></li>
-  <li><a href="#la-dimensión-de-soberanía" id="toc-la-dimensión-de-soberanía" class="nav-link" data-scroll-target="#la-dimensión-de-soberanía"><span class="header-section-number">7.2</span> La dimensión de soberanía</a></li>
-  <li><a href="#ficha-rápida" id="toc-ficha-rápida" class="nav-link" data-scroll-target="#ficha-rápida"><span class="header-section-number">7.3</span> Ficha rápida</a></li>
+  <li><a href="#acceso-rápido" id="toc-acceso-rápido" class="nav-link active" data-scroll-target="#acceso-rápido"><span class="header-section-number">17.1</span> Acceso rápido</a></li>
+  <li><a href="#conceptos-mínimos" id="toc-conceptos-mínimos" class="nav-link" data-scroll-target="#conceptos-mínimos"><span class="header-section-number">17.2</span> Conceptos mínimos</a></li>
+  <li><a href="#google-earth-engine" id="toc-google-earth-engine" class="nav-link" data-scroll-target="#google-earth-engine"><span class="header-section-number">17.3</span> Google Earth Engine</a></li>
+  <li><a href="#data-cube-chile" id="toc-data-cube-chile" class="nav-link" data-scroll-target="#data-cube-chile"><span class="header-section-number">17.4</span> Data Cube Chile</a></li>
+  <li><a href="#copernicus-browser" id="toc-copernicus-browser" class="nav-link" data-scroll-target="#copernicus-browser"><span class="header-section-number">17.5</span> Copernicus Browser</a></li>
+  <li><a href="#usgs-earthexplorer" id="toc-usgs-earthexplorer" class="nav-link" data-scroll-target="#usgs-earthexplorer"><span class="header-section-number">17.6</span> USGS EarthExplorer</a></li>
+  <li><a href="#nasa-worldview" id="toc-nasa-worldview" class="nav-link" data-scroll-target="#nasa-worldview"><span class="header-section-number">17.7</span> NASA Worldview</a></li>
+  <li><a href="#recomendaciones-de-uso" id="toc-recomendaciones-de-uso" class="nav-link" data-scroll-target="#recomendaciones-de-uso"><span class="header-section-number">17.8</span> Recomendaciones de uso</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rc_google.html">Modelos</a></li><li class="breadcrumb-item"><a href="./rc_latamgpt.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">LatamGPT</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data_vec.html">Información Espacial</a></li><li class="breadcrumb-item"><a href="./data_sat.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Datos satelitales</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">LatamGPT</span></h1>
-<p class="subtitle lead">El modelo abierto de América Latina</p>
+<h1 class="title"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Datos satelitales</span></h1>
+<p class="subtitle lead">Fuentes abiertas de datos satelitales</p>
 </div>
 
 
@@ -367,109 +371,107 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="resumen-ejecutivo" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="resumen-ejecutivo">Resumen ejecutivo</h2>
-<p><a href="https://www.latamgpt.org/">LatamGPT</a> es el proyecto de modelo de lenguaje <strong>abierto y latinoamericano</strong> liderado desde Chile por el <a href="https://www.cenia.cl/">CENIA</a> (Centro Nacional de Inteligencia Artificial), con colaboración de instituciones de toda la región. Su apuesta es doble: un modelo <strong>entrenado con datos de América Latina</strong> —su español, sus instituciones, sus contextos— y un modelo <strong>abierto</strong>, que universidades, estados y municipios pueden usar y desplegar sin depender de la voluntad comercial de una empresa extranjera. Para el sector público chileno no es solo una herramienta: es la pieza de <strong>soberanía tecnológica</strong> del mapa de esta parte.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/latam_gpt.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
-</figure>
-</div>
-<p><strong>Acceso:</strong> <a href="https://www.latamgpt.org/">LatamGPT</a> · Modelo abierto; verificar canales de acceso vigentes (demo web, descarga de pesos, despliegue institucional).</p>
-</section>
-<section id="por-qué-importa-un-modelo-regional" class="level2 page-columns page-full" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="por-qué-importa-un-modelo-regional"><span class="header-section-number">7.1</span> Por qué importa un modelo regional</h2>
-<p>Los modelos globales se entrenan predominantemente con contenido en inglés y de contexto anglosajón. Las consecuencias prácticas para un funcionario chileno:</p>
-<ul>
-<li>Conocen menos la <strong>institucionalidad local</strong>: SUBDERE, SEREMI, SECPLA, DIDECO, el sistema municipal chileno.</li>
-<li>Su español tiende al neutro o peninsular; matices chilenos y regionales se pierden.</li>
-<li>Los ejemplos y referencias que proponen vienen de otros contextos normativos y urbanos.</li>
-</ul>
-<p>Un modelo entrenado con corpus latinoamericano invierte esa relación: el contexto regional no es la excepción que hay que explicar en el prompt, sino el terreno nativo del modelo.</p>
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p><img src="images/inst_cenia.jpg" class="img-fluid figure-img" width="400"></p>
-<figcaption class="margin-caption">Instuticiones participantes en el proyecto de Latam-GPT por país. Fuente: <a href="https://cenia.cl/2025/02/13/cenia-impulsa-el-primer-modelo-de-lenguaje-colaborativo-de-latinoamerica/">https://cenia.cl/2025/02/13/cenia-impulsa-el-primer-modelo-de-lenguaje-colaborativo-de-latinoamerica/</a></figcaption>
-</figure>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Ejemplos de uso municipal">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Ejemplos de uso municipal
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li><em>“Explica qué instrumentos de planificación territorial chilenos (PLADECO, PRC, PROT) corresponden a cada escala de decisión y cómo se relacionan.”</em></li>
-<li><em>“Redacta la fundamentación de un proyecto de recuperación de espacio público usando terminología del sistema público chileno.”</em></li>
-<li><em>“¿Qué experiencias latinoamericanas de presupuesto participativo son comparables con una comuna de 100.000 habitantes?”</em></li>
-</ul>
-</div>
-</div>
-</section>
-<section id="la-dimensión-de-soberanía" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="la-dimensión-de-soberanía"><span class="header-section-number">7.2</span> La dimensión de soberanía</h2>
-<p>Por ser un modelo abierto, <a href="https://www.latamgpt.org/">LatamGPT</a> habilita lo que los servicios comerciales en la nube no pueden ofrecer:</p>
-<ol type="1">
-<li><strong>Despliegue en infraestructura propia</strong>: un servicio público puede ejecutarlo en sus servidores; los datos no salen de la institución (mismo argumento de los modelos locales, con la ventaja del contexto regional).</li>
-<li><strong>Auditabilidad</strong>: saber con qué datos y criterios fue construido, condición cada vez más relevante para el uso estatal de IA.</li>
-<li><strong>Continuidad</strong>: no desaparece ni cambia de precio por decisión comercial de un tercero.</li>
-<li><strong>Ecosistema regional</strong>: usarlo y reportar errores fortalece una capacidad pública latinoamericana en IA.</li>
-</ol>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Expectativas honestas</strong>: un modelo regional abierto no compite hoy en capacidad bruta con los modelos frontera (<a href="https://ai.google.dev/gemini-api/docs/models">Gemini Pro</a>, <a href="https://docs.anthropic.com/en/docs/about-claude/models">Claude Opus</a>, <a href="https://platform.openai.com/docs/models">modelos GPT</a>). La elección es de criterio: para razonamiento complejo, modelos frontera; para contexto regional, datos sensibles o independencia tecnológica, el modelo abierto regional. No es uno u otro: es saber cuándo cada cual.</p>
-</div>
-</div>
-<!-- ![](images/Latam-gpt-map.png){fig-align="center" width="500"} -->
-</section>
-<section id="ficha-rápida" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="ficha-rápida"><span class="header-section-number">7.3</span> Ficha rápida</h2>
+<p>Las imágenes satelitales son datos <strong>raster</strong>: una grilla de píxeles en la que cada píxel almacena valores de una o más bandas espectrales. No son una fotografía lista para interpretar. La resolución espacial (tamaño del píxel), la fecha, las nubes, el nivel de procesamiento y las bandas elegidas cambian lo que se puede concluir.</p>
+<section id="acceso-rápido" class="level2" data-number="17.1">
+<h2 data-number="17.1" class="anchored" data-anchor-id="acceso-rápido"><span class="header-section-number">17.1</span> Acceso rápido</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Aspecto</th>
-<th>Detalle</th>
+<th>Fuente</th>
+<th>Datos principales</th>
+<th>Cobertura y resolución típica</th>
+<th>Link</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Costo</td>
-<td>Abierto / gratuito</td>
+<td><p>Google Earth Engine</p></td>
+<td>Catálogo procesable de Landsat, Sentinel, MODIS, clima, precipitación, elevación y otras colecciones.</td>
+<td>Global; depende de la colección.</td>
+<td><p><a href="https://code.earthengine.google.com/">Code Editor</a> · <a href="https://developers.google.com/earth-engine/datasets">Catálogo</a></p></td>
 </tr>
 <tr class="even">
-<td>Quién está detrás</td>
-<td><a href="https://www.cenia.cl/">CENIA</a> (Chile) + red de instituciones latinoamericanas</td>
+<td><p>Data Cube Chile</p></td>
+<td>Cubo nacional con Landsat, Sentinel, modelos de elevación y productos de observación de Tierra y Mar.</td>
+<td>Chile; 10 m a 300 m según fuente.</td>
+<td><p><a href="https://datacubechile.cl/">Plataforma</a> · <a href="https://map.datacubechile.cl/">Mapa</a> · <a href="https://ows.datacubechile.cl/">Servicio OGC</a></p></td>
 </tr>
 <tr class="odd">
-<td>Fortaleza</td>
-<td>Contexto latinoamericano nativo; apertura y soberanía</td>
+<td><p>Copernicus Browser</p></td>
+<td>Sentinel-1, Sentinel-2, Sentinel-3, Sentinel-5P y productos Copernicus.</td>
+<td>Global; Sentinel-2 llega a 10 m.</td>
+<td><p><a href="https://browser.dataspace.copernicus.eu/">Explorar y descargar</a></p></td>
 </tr>
 <tr class="even">
-<td>Mejor para</td>
-<td>Texto con contexto chileno/regional; despliegues institucionales</td>
+<td><p>USGS EarthExplorer</p></td>
+<td>Archivo Landsat Collection 2: imágenes, reflectancia de superficie, temperatura y productos derivados.</td>
+<td>Global; 30 m para bandas multiespectrales.</td>
+<td><p><a href="https://earthexplorer.usgs.gov/">Explorar y descargar</a></p></td>
 </tr>
 <tr class="odd">
-<td>Limitación</td>
-<td>Menor capacidad bruta que modelos frontera; canales de acceso en evolución</td>
-</tr>
-<tr class="even">
-<td>Verificar</td>
-<td>Estado actual del proyecto y formas de acceso en latamgpt.org</td>
+<td><p>NASA Worldview</p></td>
+<td>Capas de observación NASA, incluidas MODIS y VIIRS, para exploración y descarga.</td>
+<td>Global; resolución y frecuencia según producto.</td>
+<td><p><a href="https://worldview.earthdata.nasa.gov/">Explorar y descargar</a></p></td>
 </tr>
 </tbody>
 </table>
+</section>
+<section id="conceptos-mínimos" class="level2" data-number="17.2">
+<h2 data-number="17.2" class="anchored" data-anchor-id="conceptos-mínimos"><span class="header-section-number">17.2</span> Conceptos mínimos</h2>
+<ul>
+<li><strong>Banda:</strong> medición de una parte del espectro, por ejemplo visible, infrarrojo cercano o infrarrojo de onda corta.</li>
+<li><strong>Resolución espacial:</strong> tamaño de terreno representado por un píxel. Un píxel de 10 m no permite afirmar qué ocurre dentro de una vivienda.</li>
+<li><strong>Resolución temporal:</strong> intervalo entre observaciones. Más escenas no significa necesariamente más escenas útiles: las nubes pueden cubrir el área de interés.</li>
+<li><strong>Reflectancia de superficie:</strong> producto corregido para aproximarse a la señal de la superficie; suele ser preferible para comparar fechas.</li>
+<li><strong>SAR o radar:</strong> mide la respuesta del terreno a microondas y puede observar con nubes o de noche, pero requiere una interpretación distinta a una imagen óptica.</li>
+</ul>
+</section>
+<section id="google-earth-engine" class="level2" data-number="17.3">
+<h2 data-number="17.3" class="anchored" data-anchor-id="google-earth-engine"><span class="header-section-number">17.3</span> Google Earth Engine</h2>
+<p>Google Earth Engine es una plataforma de análisis geoespacial en la nube, no sólo un sitio de descarga. Su <a href="https://developers.google.com/earth-engine/datasets/catalog?hl=es-419">catálogo público</a> integra colecciones de imágenes como Landsat, Sentinel-2 y MODIS, además de datos geofísicos, meteorológicos, climáticos y demográficos. Permite filtrar colecciones por zona, fecha y propiedades, procesar píxeles y exportar resultados.</p>
+<p>El acceso se realiza mediante el Code Editor con JavaScript o las bibliotecas de Python y JavaScript. Para uso no comercial se debe usar una cuenta de Google y un proyecto de Google Cloud registrado y verificado; la plataforma aplica cuotas. Una exportación puede producir un <code>GeoTIFF</code>, una tabla <code>CSV</code> o un activo, pero el formato depende del análisis realizado.</p>
+<p>Es apropiado para construir mosaicos sin nubes, índices como NDVI, series de tiempo y resúmenes por comuna. Antes de usar una colección, abre su ficha: cada conjunto tiene licencia, fecha de actualización, bandas y requisitos de atribución propios.</p>
+</section>
+<section id="data-cube-chile" class="level2" data-number="17.4">
+<h2 data-number="17.4" class="anchored" data-anchor-id="data-cube-chile"><span class="header-section-number">17.4</span> Data Cube Chile</h2>
+<p>Data Cube Chile es una iniciativa de la UAI, Data Observatory y CSIRO para organizar observaciones de Tierra y Mar como cubos espacio-temporales nacionales. Su propuesta es acercar décadas de datos preparados para análisis a investigación, industria y gobierno.</p>
+<p>La plataforma declara fuentes Landsat 5, 7, 8 y 9; Sentinel-2 y Sentinel-3; y modelos de elevación SRTM, NASADEM y Copernicus DEM. Para las colecciones con cobertura nacional, las resoluciones publicadas incluyen 30 m para Landsat, 10 m para Sentinel-2, 300 m para Sentinel-3 y 30 m o 90 m para los modelos de elevación. La disponibilidad concreta de fechas, bandas y productos debe confirmarse en el catálogo.</p>
+<p>El mapa interactivo sirve para explorar, y el servicio OGC puede ser consumido desde software SIG compatible. El proyecto también mantiene herramientas de exploración de metadatos y notebooks. No toda colección ofrece el mismo mecanismo de descarga: verifica el recurso antes de diseñar un flujo de trabajo.</p>
+</section>
+<section id="copernicus-browser" class="level2" data-number="17.5">
+<h2 data-number="17.5" class="anchored" data-anchor-id="copernicus-browser"><span class="header-section-number">17.5</span> Copernicus Browser</h2>
+<p>Copernicus Browser es el acceso visual al ecosistema de datos espaciales de Copernicus. Permite buscar por zona, fecha, misión y nubosidad, comparar escenas y descargar productos de referencia. Los datos Copernicus se entregan en una política abierta y gratuita, con registro para las funciones de descarga y procesamiento.</p>
+<p>Las misiones más útiles para análisis territorial son:</p>
+<ul>
+<li><strong>Sentinel-1:</strong> radar SAR, útil cuando las nubes impiden una imagen óptica y para observar superficie, humedad o inundaciones.</li>
+<li><strong>Sentinel-2:</strong> imágenes multiespectrales ópticas, con bandas de hasta 10 m; útil para vegetación, cobertura de suelo, agua y cambios.</li>
+<li><strong>Sentinel-3:</strong> productos de menor detalle espacial orientados, entre otros, a tierra, océanos y temperatura.</li>
+<li><strong>Sentinel-5P:</strong> observaciones atmosféricas, como trazas de gases y aerosoles, a una escala mucho más gruesa que Sentinel-2.</li>
+</ul>
+<p>Descarga el producto original y su metadato, no una captura de pantalla del navegador. Para comparar varias fechas, aplica una máscara de nubes y usa productos del mismo nivel de procesamiento.</p>
+</section>
+<section id="usgs-earthexplorer" class="level2" data-number="17.6">
+<h2 data-number="17.6" class="anchored" data-anchor-id="usgs-earthexplorer"><span class="header-section-number">17.6</span> USGS EarthExplorer</h2>
+<p>USGS EarthExplorer permite buscar y descargar imágenes Landsat y otras colecciones de teledetección por área, fecha y criterios de calidad. Landsat constituye una de las series históricas más valiosas para analizar transformaciones territoriales: el archivo contiene datos desde 1972 y la colección actual incluye Landsat 1 a 9.</p>
+<p>EarthExplorer ofrece productos Collection 2 de nivel 1 y, para Landsat 4 a 9, productos de nivel 2 como reflectancia de superficie y temperatura de superficie. Las bandas multiespectrales tienen típicamente 30 m de resolución. Las descargas requieren una cuenta gratuita de USGS.</p>
+<p>Es una fuente recomendada cuando importa una comparación histórica de décadas. Selecciona escenas de la misma época del año y revisa la cobertura nubosa antes de calcular cambios entre períodos.</p>
+</section>
+<section id="nasa-worldview" class="level2" data-number="17.7">
+<h2 data-number="17.7" class="anchored" data-anchor-id="nasa-worldview"><span class="header-section-number">17.7</span> NASA Worldview</h2>
+<p>NASA Worldview permite explorar más de mil capas globales de observación de la Tierra y descargar los datos subyacentes mediante Earthdata. Es particularmente útil para revisar eventos recientes y grandes patrones ambientales antes de descargar un producto para análisis.</p>
+<p>Incluye colecciones como MODIS y VIIRS, imágenes y productos sobre incendios, aerosoles, nubes, temperatura, vegetación, océanos y criósfera. Muchas capas se actualizan con alta frecuencia, pero su resolución suele ser menor que la de Sentinel-2 o Landsat; no debe usarse para decisiones a escala de predio o cuadra.</p>
+<p>La visualización sirve para descubrir fechas y capas. Para análisis, descarga el dato original y registra misión, producto, fecha, bandas y resolución. Algunas descargas o servicios requieren una cuenta Earthdata.</p>
+</section>
+<section id="recomendaciones-de-uso" class="level2" data-number="17.8">
+<h2 data-number="17.8" class="anchored" data-anchor-id="recomendaciones-de-uso"><span class="header-section-number">17.8</span> Recomendaciones de uso</h2>
+<ol type="1">
+<li>Define primero el fenómeno y la escala: una imagen de 300 m no responde una pregunta sobre una plaza; una de 10 m tampoco identifica objetos pequeños con certeza.</li>
+<li>Trabaja con la banda o producto original, no con una captura RGB. Conserva la escena, metadatos, fecha y nivel de procesamiento.</li>
+<li>Revisa nubes, sombras y banderas de calidad antes de calcular índices o comparar fechas.</li>
+<li>Para unir el raster con datos vectoriales de la RM, verifica la proyección y usa <code>EPSG:32719</code> cuando midas distancias o superficies.</li>
+<li>Un índice satelital es una estimación. Valídalo con observación en terreno, cartografía oficial o una fuente temática antes de comunicarlo como hallazgo.</li>
+</ol>
 
 
 </section>
@@ -876,13 +878,13 @@ Warning
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./rc_claude.html" class="pagination-link" aria-label="Claude">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Claude</span></span>
+      <a href="./data_vec.html" class="pagination-link" aria-label="Datos vectoriales">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Datos vectoriales</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./rc_ide_antigravity.html" class="pagination-link" aria-label="Antigravity">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Antigravity</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./books_spatial.html" class="pagination-link" aria-label="Libros y guías de SIG y GeoIA">
+        <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Libros y guías de SIG y GeoIA</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

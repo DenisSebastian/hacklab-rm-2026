@@ -402,7 +402,7 @@
     "href": "operaciones_espaciales.html#las-preguntas-del-territorio-son-operaciones-espaciales",
     "title": "3  Operaciones Espaciales",
     "section": "3.1 Las preguntas del territorio son operaciones espaciales",
-    "text": "3.1 Las preguntas del territorio son operaciones espaciales\n\n3.1.1 Para despertar: qué quieren saber de su territorio\nLa sesión parte con una pregunta en el chat:\n\n“¿Dónde falta X?”, “¿quiénes quedan lejos de Y?”, “¿cuánto Z hay dentro de W?”\n\nCada equipo escribe una pregunta real de su proyecto con ese formato. No buscamos todavía el dato perfecto ni el mapa final: buscamos detectar qué operación espacial está escondida detrás de la pregunta. Si se puede dibujar, casi siempre se puede calcular.\nCasi todas las preguntas reales de gestión territorial —“¿dónde falta X?”, “¿quiénes están lejos de Y?”— se descomponen en cuatro operaciones:\n\n\n\n\n\n\n\n\n\nOperación\nQué responde\nEjemplo municipal\nFrase de prompt típica\n\n\n\n\nMedir\nLongitud, superficie, distancia\n¿Cuántas hectáreas de áreas verdes hay?\n“Calcula la superficie total en hectáreas”\n\n\nBuffer\nZona de influencia: “a 500 m de…”\n¿Qué sector queda a 500 m de cada consultorio?\n“Crea un buffer de 500 metros alrededor de cada punto”\n\n\nIntersección / cruce\nQué parte de A está dentro de B\n¿Qué porcentaje de la zona inundable es residencial?\n“Intersecta la capa A con la capa B y calcula el área resultante”\n\n\nConteo / join espacial\nCuántos puntos caen en cada polígono\n¿Cuántos reclamos hay por barrio?\n“Cuenta cuántos puntos caen dentro de cada polígono y agrega la columna”\n\n\n\n\n\n\n\n\n\n📷 IMAGEN PENDIENTE: Panel de 4 diagramas conceptuales, uno por operación: (1) medir — regla sobre un polígono; (2) buffer — punto con anillo de 500 m; (3) intersección — dos polígonos superpuestos con el área común destacada; (4) conteo espacial — puntos cayendo dentro de polígonos con números. Sin fórmulas ni código.\n\n\n\n\n\n\n\n\n\nAnalogía: las preguntas del vecino\n\n\n\nEstas operaciones son las preguntas que cualquier vecino hace sin saber que hace geometría: “¿me queda cerca el consultorio?” (distancia), “¿a cuánta gente le sirve esta plaza?” (buffer + conteo), “¿mi casa está en la zona de riesgo?” (intersección). El análisis espacial es sentido común territorial, formalizado.\n\n\n\n\n3.1.2 El buffer ya lo conocen\nUn buffer no es una abstracción rara. Cuando una pizzería dice “repartimos hasta 2 km a la redonda”, está dibujando un buffer. La pregunta municipal “¿a cuántos vecinos les llega el punto limpio?” es la misma operación: dibujar la zona de cobertura y contar quién queda adentro.\nTambién tiene una versión histórica: los barrios antiguos llegaban hasta donde se oía la campana de la iglesia. Era un buffer acústico, solo que nadie lo llamaba así.",
+    "text": "3.1 Las preguntas del territorio son operaciones espaciales\n\n3.1.1 Para despertar: qué quieren saber de su territorio\nLa sesión parte con una pregunta en el chat:\n\n“¿Dónde falta X?”, “¿quiénes quedan lejos de Y?”, “¿cuánto Z hay dentro de W?”\n\nCada equipo escribe una pregunta real de su proyecto con ese formato. No buscamos todavía el dato perfecto ni el mapa final: buscamos detectar qué operación espacial está escondida detrás de la pregunta. Si se puede dibujar, casi siempre se puede calcular.\nCasi todas las preguntas reales de gestión territorial —“¿dónde falta X?”, “¿quiénes están lejos de Y?”— se descomponen en cuatro operaciones:\n\n\n\n\n\n\n\n\n\nOperación\nQué responde\nEjemplo municipal\nFrase de prompt típica\n\n\n\n\nMedir\nLongitud, superficie, distancia\n¿Cuántas hectáreas de áreas verdes hay?\n“Calcula la superficie total en hectáreas”\n\n\nBuffer\nZona de influencia: “a 500 m de…”\n¿Qué sector queda a 500 m de cada consultorio?\n“Crea un buffer de 500 metros alrededor de cada punto”\n\n\nIntersección / cruce\nQué parte de A está dentro de B\n¿Qué porcentaje de la zona inundable es residencial?\n“Intersecta la capa A con la capa B y calcula el área resultante”\n\n\nConteo / join espacial\nCuántos puntos caen en cada polígono\n¿Cuántos reclamos hay por barrio?\n“Cuenta cuántos puntos caen dentro de cada polígono y agrega la columna”\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalogía: las preguntas del vecino\n\n\n\nEstas operaciones son las preguntas que cualquier vecino hace sin saber que hace geometría: “¿me queda cerca el consultorio?” (distancia), “¿a cuánta gente le sirve esta plaza?” (buffer + conteo), “¿mi casa está en la zona de riesgo?” (intersección). El análisis espacial es sentido común territorial, formalizado.\n\n\n\n\n3.1.2 El buffer ya lo conocen\nUn buffer no es una abstracción rara. Cuando una pizzería dice “repartimos hasta 2 km a la redonda”, está dibujando un buffer. La pregunta municipal “¿a cuántos vecinos les llega el punto limpio?” es la misma operación: dibujar la zona de cobertura y contar quién queda adentro.\nTambién tiene una versión histórica: los barrios antiguos llegaban hasta donde se oía la campana de la iglesia. Era un buffer acústico, solo que nadie lo llamaba así.",
     "crumbs": [
       "Módulo 1: Conceptos & Casos",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Operaciones Espaciales</span>"
@@ -413,7 +413,7 @@
     "href": "operaciones_espaciales.html#coordenadas-y-proyecciones-lo-mínimo-que-evita-desastres",
     "title": "3  Operaciones Espaciales",
     "section": "3.2 Coordenadas y proyecciones: lo mínimo que evita desastres",
-    "text": "3.2 Coordenadas y proyecciones: lo mínimo que evita desastres\n\n3.2.1 El problema antes que la teoría\nLa demostración de la sesión: dos capas reales de la misma comuna que no calzan en el mapa, y un cálculo de superficie que da un número ridículo: “La superficie de La Florida me dio 0,0000019 unidades y las áreas verdes aparecen en el mar”. ¿Qué pasó? Las capas estaban en sistemas de coordenadas distintos.\n\n\n\n\n\n\n\n\n\n\n\n\nMarte, 1999: el costo de mezclar unidades\n\n\n\nLa Mars Climate Orbiter de la NASA se perdió porque un equipo trabajó con unidades imperiales y otro con unidades métricas. Nadie se equivocó “en la física”; se equivocaron en el sistema de referencia. Cuando tu mapa dice que una plaza mide 0,000004 unidades, estás viendo la misma clase de problema. La diferencia es que aquí se corrige con un prompt.\n\n\n\n\n3.2.2 La Tierra es curva, el mapa es plano\n\n\n\n\n\n\nAnalogía: la naranja aplastada\n\n\n\nIntenta aplanar la cáscara de una naranja sobre la mesa: se rompe, se estira, se deforma. Eso le pasa a la Tierra cada vez que la dibujamos plana. Toda representación plana distorsiona algo, y por eso existen distintos sistemas de proyección: cada uno elige qué deformar y qué preservar (Tobler 1970).\n\n\nEn un mapa escolar, Groenlandia puede parecer del tamaño de África, aunque África es alrededor de 14 veces más grande. La pregunta profesional no es “¿qué mapa es el verdadero?”, sino “¿en qué me está mintiendo este mapa, y me importa para esta decisión?”.\n\n\n\n\n\n\nPrincipio territorial Nº 3\n\n\n\nEl mapa no es el territorio. Toda medición depende de cómo aplanamos el mundo. La escala y la proyección son decisiones, no tecnicismos; quien decide sin saberlo puede medir mal sin enterarse.\n\n\n\n\n3.2.3 Lo único que hay que memorizar\n\n\n\n\n\n\n\n\n\nSistema\nUnidad\nSirve para\nNo sirve para\n\n\n\n\nGeográficas (EPSG:4326)\nGrados de latitud/longitud\nUbicar, compartir, mapas web\nMedir\n\n\nProyectadas UTM 19S (EPSG:32719)\nMetros\nMedir cualquier cosa en Chile central\n—\n\n\n\nSíntoma → acción: capas desplazadas o números absurdos →\n\n“Reproyecta todas las capas a EPSG:32719 antes de calcular.”\n\n\n\n\n\n\n\nImportant\n\n\n\nRegla de oro del curso: para medir, siempre en metros (EPSG:32719); para publicar en mapas web, en geográficas (EPSG:4326). No necesitas entender la matemática: necesitas reconocer el síntoma y pedir la corrección.\n\n\n\n\n3.2.4 Diagnóstico express\n\n\n\n\n\n\n\nSíntoma\nPrompt de corrección\n\n\n\n\nLas capas no se superponen o el mapa sale desplazado\n“Reproyecta todas las capas a EPSG:32719 antes de cruzarlas.”\n\n\nÁreas o distancias absurdas: 0,000004, 0,0000019 o miles de millones\n“Reproyecta todas las capas a EPSG:32719 antes de calcular áreas, distancias o buffers.”\n\n\nEl resultado parece plausible, pero necesitas defenderlo\n“Compara la superficie calculada con la superficie oficial de la comuna según BCN o SUBDERE.”\n\n\n\nLa verificación en vivo cierra el ciclo: se le pide a la IA diagnosticar y corregir el problema inicial, y el resultado se valida contra una medida conocida, como la superficie oficial de la comuna.\n\n\n3.2.5 Chile: el país difícil de aplanar\nChile cruza miles de kilómetros de norte a sur y varios husos UTM. Es uno de los países donde elegir mal la proyección puede distorsionar más rápido las mediciones. La buena noticia pedagógica es que si aprendes a revisar proyecciones aquí, el criterio te sirve en cualquier parte.",
+    "text": "3.2 Coordenadas y proyecciones: lo mínimo que evita desastres\n\n3.2.1 El problema antes que la teoría\nLa demostración de la sesión: dos capas reales de la misma comuna que no calzan en el mapa, y un cálculo de superficie que da un número ridículo: “La superficie de La Florida me dio 0,0000019 unidades y las áreas verdes aparecen en el mar”. ¿Qué pasó? Las capas estaban en sistemas de coordenadas distintos.\n\n\n\n\n\n\n\n\n\n\n\n\nMarte, 1999: el costo de mezclar unidades\n\n\n\nLa Mars Climate Orbiter de la NASA se perdió porque un equipo trabajó con unidades imperiales y otro con unidades métricas. Nadie se equivocó “en la física”; se equivocaron en el sistema de referencia. Cuando tu mapa dice que una plaza mide 0,000004 unidades, estás viendo la misma clase de problema. La diferencia es que aquí se corrige con un prompt.\n\n\n\n\n3.2.2 La Tierra es curva, el mapa es plano\n\n\n\n\n\n\nAnalogía: la naranja aplastada\n\n\n\nIntenta aplanar la cáscara de una naranja sobre la mesa: se rompe, se estira, se deforma. Eso le pasa a la Tierra cada vez que la dibujamos plana. Toda representación plana distorsiona algo, y por eso existen distintos sistemas de proyección: cada uno elige qué deformar y qué preservar (Tobler 1970).\n\n\n\n\n\n\n\nEn un mapa escolar, Groenlandia puede parecer del tamaño de África, aunque África es alrededor de 14 veces más grande. La pregunta profesional no es “¿qué mapa es el verdadero?”, sino “¿en qué me está mintiendo este mapa, y me importa para esta decisión?”.\n\n\n\n\n\n\nPrincipio territorial Nº 3\n\n\n\nEl mapa no es el territorio. Toda medición depende de cómo aplanamos el mundo. La escala y la proyección son decisiones, no tecnicismos; quien decide sin saberlo puede medir mal sin enterarse.\n\n\n\n\n3.2.3 Lo único que hay que memorizar\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSistema\nUnidad\nSirve para\nNo sirve para\n\n\n\n\nGeográficas (EPSG:4326)\nGrados de latitud/longitud\nUbicar, compartir, mapas web\nMedir\n\n\nProyectadas UTM 19S (EPSG:32719)\nMetros\nMedir cualquier cosa en Chile central\n—\n\n\n\nSíntoma → acción: capas desplazadas o números absurdos →\n\n“Reproyecta todas las capas a EPSG:32719 antes de calcular.”\n\n\n\n\n\n\n\nImportant\n\n\n\nRegla de oro del curso: para medir, siempre en metros (EPSG:32719); para publicar en mapas web, en geográficas (EPSG:4326). No necesitas entender la matemática: necesitas reconocer el síntoma y pedir la corrección.\n\n\n\n\n3.2.4 Diagnóstico express\n\n\n\n\n\n\n\nSíntoma\nPrompt de corrección\n\n\n\n\nLas capas no se superponen o el mapa sale desplazado\n“Reproyecta todas las capas a EPSG:32719 antes de cruzarlas.”\n\n\nÁreas o distancias absurdas: 0,000004, 0,0000019 o miles de millones\n“Reproyecta todas las capas a EPSG:32719 antes de calcular áreas, distancias o buffers.”\n\n\nEl resultado parece plausible, pero necesitas defenderlo\n“Compara la superficie calculada con la superficie oficial de la comuna según BCN o SUBDERE.”\n\n\n\nLa verificación en vivo cierra el ciclo: se le pide a la IA diagnosticar y corregir el problema inicial, y el resultado se valida contra una medida conocida, como la superficie oficial de la comuna.\n\n\n3.2.5 Chile: el país difícil de aplanar\nChile cruza miles de kilómetros de norte a sur y varios husos UTM. Es uno de los países donde elegir mal la proyección puede distorsionar más rápido las mediciones. La buena noticia pedagógica es que si aprendes a revisar proyecciones aquí, el criterio te sirve en cualquier parte.",
     "crumbs": [
       "Módulo 1: Conceptos & Casos",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Operaciones Espaciales</span>"
@@ -1295,6 +1295,215 @@
     ]
   },
   {
+    "objectID": "data_vec.html",
+    "href": "data_vec.html",
+    "title": "16  Datos vectoriales",
+    "section": "",
+    "text": "16.1 Acceso rápido\nEsta guía reúne fuentes abiertas útiles para buscar información nacional y de la Región Metropolitana. La tabla indica qué datos ofrece cada plataforma y dirige al catálogo, visor o descarga correspondiente.",
+    "crumbs": [
+      "Información Espacial",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Datos vectoriales</span>"
+    ]
+  },
+  {
+    "objectID": "data_vec.html#acceso-rápido",
+    "href": "data_vec.html#acceso-rápido",
+    "title": "16  Datos vectoriales",
+    "section": "",
+    "text": "Fuente\nDatos disponibles\nLink\n\n\n\n\nIDE Chile\nCartografía oficial: límites, red vial, hidrografía, equipamientos, riesgos y servicios geográficos.\nCatálogo\n\n\nINE Geodatos Abiertos\nDivisión político-administrativa y censal, manzanas, calles, población, vivienda, permisos de edificación e indicadores.\nDescargas\n\n\nCenso 2024\nPersonas, hogares y viviendas a nivel de manzana-entidad; cartografía censal actualizada.\nResultados y descargas\n\n\nDatos.gob.cl\nConjuntos de ministerios, municipios y empresas públicas; la cobertura y formato dependen del publicador.\nBuscar conjuntos\n\n\nIDE MMA\nBiodiversidad, agua, residuos, ruido, áreas protegidas, emisiones y variables ambientales.\nCentro de descargas\n\n\nSINCA\nEstaciones, contaminantes atmosféricos y variables meteorológicas; series históricas y datos en línea.\nDatos de calidad del aire\n\n\nRETC Open Data\nEmisiones al aire, agua y suelo; residuos, transferencias y establecimientos reportantes.\nConjuntos de datos\n\n\nDGA\nEstaciones y series de caudal, lluvia, nieve, pozos, embalses y calidad de agua.\nServicios de información\n\n\nCatastro CONAF\nUso y cobertura de suelo, recursos vegetacionales, tipos forestales y especies predominantes.\nCapas SHP\n\n\nPortal GeoMin\nGeología, geoquímica, geofísica, peligros geológicos, relaves y recursos minerales.\nVisor y descargas\n\n\nGeoportal Gobierno de Santiago\nCapas territoriales y temáticas de la Región Metropolitana.\nCapas de la RM\n\n\nDTPM\nParadas, recorridos, trazados, horarios y calendarios de Red Movilidad.\nGTFS vigente\n\n\nCartografía Digital SII\nConsulta predial: rol, destino, avalúo, contribuciones y planos de precios.\nVisor predial\n\n\nCatastral.cl\nVisor complementario de información predial basada en datos del SII.\nVisor predial\n\n\nGeoHub Chile\nDirectorio de fuentes, visores y servicios geoespaciales chilenos.\nDirectorio",
+    "crumbs": [
+      "Información Espacial",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Datos vectoriales</span>"
+    ]
+  },
+  {
+    "objectID": "data_vec.html#formatos-y-alcance",
+    "href": "data_vec.html#formatos-y-alcance",
+    "title": "16  Datos vectoriales",
+    "section": "16.2 Formatos y alcance",
+    "text": "16.2 Formatos y alcance\n\nCapas vectoriales: puntos, líneas o polígonos con atributos. Los formatos más comunes son SHP, GeoJSON, KML y GDB.\nServicios geográficos: un WFS entrega entidades vectoriales para análisis; un WMS entrega una imagen de mapa para consulta visual.\nTablas: CSV, XLSX o TXT pueden contener coordenadas, códigos de comuna, rol o identificadores para unirlas a una capa.\nGTFS: archivo ZIP con tablas CSV de transporte. Incluye puntos de parada y geometrías de recorridos que pueden abrirse como capas vectoriales.\nVisores: permiten consultar información, pero no siempre ofrecen una descarga masiva o una capa reutilizable. Es el caso de parte de la información predial del SII y de Catastral.cl.",
+    "crumbs": [
+      "Información Espacial",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Datos vectoriales</span>"
+    ]
+  },
+  {
+    "objectID": "data_vec.html#fuentes-ambientales",
+    "href": "data_vec.html#fuentes-ambientales",
+    "title": "16  Datos vectoriales",
+    "section": "16.3 Fuentes ambientales",
+    "text": "16.3 Fuentes ambientales\nLa IDE MMA concentra capas descargables en SHP, planillas Excel y metadatos. Para la RM incluye, entre otras, mapas de ruido, emisiones puntuales, residuos, vertederos, acuíferos, áreas protegidas y red vial.\nSINCA publica datos de calidad del aire y meteorología por estación. La condición del registro importa: los datos pueden ser no validados, preliminares u oficiales. Las series son tablas con ubicación de estaciones, no una medición continua de toda la comuna.\nRETC Open Data entrega archivos CSV descargables. Antes de agregar registros, diferencia emisiones, residuos y transferencias; cada categoría tiene unidades, fuentes y alcances distintos.",
+    "crumbs": [
+      "Información Espacial",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Datos vectoriales</span>"
+    ]
+  },
+  {
+    "objectID": "data_vec.html#recomendaciones-de-uso",
+    "href": "data_vec.html#recomendaciones-de-uso",
+    "title": "16  Datos vectoriales",
+    "section": "16.4 Recomendaciones de uso",
+    "text": "16.4 Recomendaciones de uso\n\nRevisa el metadato: institución productora, fecha, escala, cobertura territorial y definición de cada campo.\nPara medir en la RM, reproyecta las capas a EPSG:32719. No midas áreas o distancias directamente en coordenadas geográficas.\nConserva la URL, la fecha de descarga y la versión del recurso.\nTrata los visores y cartografía catastral como información referencial. No publiques datos personales ni atribuyas límites legales a una capa que no los certifica.",
+    "crumbs": [
+      "Información Espacial",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Datos vectoriales</span>"
+    ]
+  },
+  {
+    "objectID": "data_sat.html",
+    "href": "data_sat.html",
+    "title": "17  Datos satelitales",
+    "section": "",
+    "text": "17.1 Acceso rápido\nLas imágenes satelitales son datos raster: una grilla de píxeles en la que cada píxel almacena valores de una o más bandas espectrales. No son una fotografía lista para interpretar. La resolución espacial (tamaño del píxel), la fecha, las nubes, el nivel de procesamiento y las bandas elegidas cambian lo que se puede concluir.",
+    "crumbs": [
+      "Información Espacial",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Datos satelitales</span>"
+    ]
+  },
+  {
+    "objectID": "data_sat.html#acceso-rápido",
+    "href": "data_sat.html#acceso-rápido",
+    "title": "17  Datos satelitales",
+    "section": "",
+    "text": "Fuente\nDatos principales\nCobertura y resolución típica\nLink\n\n\n\n\nGoogle Earth Engine\nCatálogo procesable de Landsat, Sentinel, MODIS, clima, precipitación, elevación y otras colecciones.\nGlobal; depende de la colección.\nCode Editor · Catálogo\n\n\nData Cube Chile\nCubo nacional con Landsat, Sentinel, modelos de elevación y productos de observación de Tierra y Mar.\nChile; 10 m a 300 m según fuente.\nPlataforma · Mapa · Servicio OGC\n\n\nCopernicus Browser\nSentinel-1, Sentinel-2, Sentinel-3, Sentinel-5P y productos Copernicus.\nGlobal; Sentinel-2 llega a 10 m.\nExplorar y descargar\n\n\nUSGS EarthExplorer\nArchivo Landsat Collection 2: imágenes, reflectancia de superficie, temperatura y productos derivados.\nGlobal; 30 m para bandas multiespectrales.\nExplorar y descargar\n\n\nNASA Worldview\nCapas de observación NASA, incluidas MODIS y VIIRS, para exploración y descarga.\nGlobal; resolución y frecuencia según producto.\nExplorar y descargar",
+    "crumbs": [
+      "Información Espacial",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Datos satelitales</span>"
+    ]
+  },
+  {
+    "objectID": "data_sat.html#conceptos-mínimos",
+    "href": "data_sat.html#conceptos-mínimos",
+    "title": "17  Datos satelitales",
+    "section": "17.2 Conceptos mínimos",
+    "text": "17.2 Conceptos mínimos\n\nBanda: medición de una parte del espectro, por ejemplo visible, infrarrojo cercano o infrarrojo de onda corta.\nResolución espacial: tamaño de terreno representado por un píxel. Un píxel de 10 m no permite afirmar qué ocurre dentro de una vivienda.\nResolución temporal: intervalo entre observaciones. Más escenas no significa necesariamente más escenas útiles: las nubes pueden cubrir el área de interés.\nReflectancia de superficie: producto corregido para aproximarse a la señal de la superficie; suele ser preferible para comparar fechas.\nSAR o radar: mide la respuesta del terreno a microondas y puede observar con nubes o de noche, pero requiere una interpretación distinta a una imagen óptica.",
+    "crumbs": [
+      "Información Espacial",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Datos satelitales</span>"
+    ]
+  },
+  {
+    "objectID": "data_sat.html#google-earth-engine",
+    "href": "data_sat.html#google-earth-engine",
+    "title": "17  Datos satelitales",
+    "section": "17.3 Google Earth Engine",
+    "text": "17.3 Google Earth Engine\nGoogle Earth Engine es una plataforma de análisis geoespacial en la nube, no sólo un sitio de descarga. Su catálogo público integra colecciones de imágenes como Landsat, Sentinel-2 y MODIS, además de datos geofísicos, meteorológicos, climáticos y demográficos. Permite filtrar colecciones por zona, fecha y propiedades, procesar píxeles y exportar resultados.\nEl acceso se realiza mediante el Code Editor con JavaScript o las bibliotecas de Python y JavaScript. Para uso no comercial se debe usar una cuenta de Google y un proyecto de Google Cloud registrado y verificado; la plataforma aplica cuotas. Una exportación puede producir un GeoTIFF, una tabla CSV o un activo, pero el formato depende del análisis realizado.\nEs apropiado para construir mosaicos sin nubes, índices como NDVI, series de tiempo y resúmenes por comuna. Antes de usar una colección, abre su ficha: cada conjunto tiene licencia, fecha de actualización, bandas y requisitos de atribución propios.",
+    "crumbs": [
+      "Información Espacial",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Datos satelitales</span>"
+    ]
+  },
+  {
+    "objectID": "data_sat.html#data-cube-chile",
+    "href": "data_sat.html#data-cube-chile",
+    "title": "17  Datos satelitales",
+    "section": "17.4 Data Cube Chile",
+    "text": "17.4 Data Cube Chile\nData Cube Chile es una iniciativa de la UAI, Data Observatory y CSIRO para organizar observaciones de Tierra y Mar como cubos espacio-temporales nacionales. Su propuesta es acercar décadas de datos preparados para análisis a investigación, industria y gobierno.\nLa plataforma declara fuentes Landsat 5, 7, 8 y 9; Sentinel-2 y Sentinel-3; y modelos de elevación SRTM, NASADEM y Copernicus DEM. Para las colecciones con cobertura nacional, las resoluciones publicadas incluyen 30 m para Landsat, 10 m para Sentinel-2, 300 m para Sentinel-3 y 30 m o 90 m para los modelos de elevación. La disponibilidad concreta de fechas, bandas y productos debe confirmarse en el catálogo.\nEl mapa interactivo sirve para explorar, y el servicio OGC puede ser consumido desde software SIG compatible. El proyecto también mantiene herramientas de exploración de metadatos y notebooks. No toda colección ofrece el mismo mecanismo de descarga: verifica el recurso antes de diseñar un flujo de trabajo.",
+    "crumbs": [
+      "Información Espacial",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Datos satelitales</span>"
+    ]
+  },
+  {
+    "objectID": "data_sat.html#copernicus-browser",
+    "href": "data_sat.html#copernicus-browser",
+    "title": "17  Datos satelitales",
+    "section": "17.5 Copernicus Browser",
+    "text": "17.5 Copernicus Browser\nCopernicus Browser es el acceso visual al ecosistema de datos espaciales de Copernicus. Permite buscar por zona, fecha, misión y nubosidad, comparar escenas y descargar productos de referencia. Los datos Copernicus se entregan en una política abierta y gratuita, con registro para las funciones de descarga y procesamiento.\nLas misiones más útiles para análisis territorial son:\n\nSentinel-1: radar SAR, útil cuando las nubes impiden una imagen óptica y para observar superficie, humedad o inundaciones.\nSentinel-2: imágenes multiespectrales ópticas, con bandas de hasta 10 m; útil para vegetación, cobertura de suelo, agua y cambios.\nSentinel-3: productos de menor detalle espacial orientados, entre otros, a tierra, océanos y temperatura.\nSentinel-5P: observaciones atmosféricas, como trazas de gases y aerosoles, a una escala mucho más gruesa que Sentinel-2.\n\nDescarga el producto original y su metadato, no una captura de pantalla del navegador. Para comparar varias fechas, aplica una máscara de nubes y usa productos del mismo nivel de procesamiento.",
+    "crumbs": [
+      "Información Espacial",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Datos satelitales</span>"
+    ]
+  },
+  {
+    "objectID": "data_sat.html#usgs-earthexplorer",
+    "href": "data_sat.html#usgs-earthexplorer",
+    "title": "17  Datos satelitales",
+    "section": "17.6 USGS EarthExplorer",
+    "text": "17.6 USGS EarthExplorer\nUSGS EarthExplorer permite buscar y descargar imágenes Landsat y otras colecciones de teledetección por área, fecha y criterios de calidad. Landsat constituye una de las series históricas más valiosas para analizar transformaciones territoriales: el archivo contiene datos desde 1972 y la colección actual incluye Landsat 1 a 9.\nEarthExplorer ofrece productos Collection 2 de nivel 1 y, para Landsat 4 a 9, productos de nivel 2 como reflectancia de superficie y temperatura de superficie. Las bandas multiespectrales tienen típicamente 30 m de resolución. Las descargas requieren una cuenta gratuita de USGS.\nEs una fuente recomendada cuando importa una comparación histórica de décadas. Selecciona escenas de la misma época del año y revisa la cobertura nubosa antes de calcular cambios entre períodos.",
+    "crumbs": [
+      "Información Espacial",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Datos satelitales</span>"
+    ]
+  },
+  {
+    "objectID": "data_sat.html#nasa-worldview",
+    "href": "data_sat.html#nasa-worldview",
+    "title": "17  Datos satelitales",
+    "section": "17.7 NASA Worldview",
+    "text": "17.7 NASA Worldview\nNASA Worldview permite explorar más de mil capas globales de observación de la Tierra y descargar los datos subyacentes mediante Earthdata. Es particularmente útil para revisar eventos recientes y grandes patrones ambientales antes de descargar un producto para análisis.\nIncluye colecciones como MODIS y VIIRS, imágenes y productos sobre incendios, aerosoles, nubes, temperatura, vegetación, océanos y criósfera. Muchas capas se actualizan con alta frecuencia, pero su resolución suele ser menor que la de Sentinel-2 o Landsat; no debe usarse para decisiones a escala de predio o cuadra.\nLa visualización sirve para descubrir fechas y capas. Para análisis, descarga el dato original y registra misión, producto, fecha, bandas y resolución. Algunas descargas o servicios requieren una cuenta Earthdata.",
+    "crumbs": [
+      "Información Espacial",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Datos satelitales</span>"
+    ]
+  },
+  {
+    "objectID": "data_sat.html#recomendaciones-de-uso",
+    "href": "data_sat.html#recomendaciones-de-uso",
+    "title": "17  Datos satelitales",
+    "section": "17.8 Recomendaciones de uso",
+    "text": "17.8 Recomendaciones de uso\n\nDefine primero el fenómeno y la escala: una imagen de 300 m no responde una pregunta sobre una plaza; una de 10 m tampoco identifica objetos pequeños con certeza.\nTrabaja con la banda o producto original, no con una captura RGB. Conserva la escena, metadatos, fecha y nivel de procesamiento.\nRevisa nubes, sombras y banderas de calidad antes de calcular índices o comparar fechas.\nPara unir el raster con datos vectoriales de la RM, verifica la proyección y usa EPSG:32719 cuando midas distancias o superficies.\nUn índice satelital es una estimación. Valídalo con observación en terreno, cartografía oficial o una fuente temática antes de comunicarlo como hallazgo.",
+    "crumbs": [
+      "Información Espacial",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Datos satelitales</span>"
+    ]
+  },
+  {
+    "objectID": "books_spatial.html",
+    "href": "books_spatial.html",
+    "title": "18  Libros y guías de SIG y GeoIA",
+    "section": "",
+    "text": "18.1 Ruta sugerida\nEsta página reúne libros, manuales y tutoriales abiertos para seguir practicando fuera de clase. No es necesario leerlos todos: elige el recurso que mejor responda a la tarea que estás realizando y avanza con sus ejemplos. La mayoría está en inglés, pero el código, las imágenes y los ejercicios permiten seguirlos incluso con un nivel inicial de lectura técnica.",
+    "crumbs": [
+      "Información Espacial",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Libros y guías de SIG y GeoIA</span>"
+    ]
+  },
+  {
+    "objectID": "books_spatial.html#ruta-sugerida",
+    "href": "books_spatial.html#ruta-sugerida",
+    "title": "18  Libros y guías de SIG y GeoIA",
+    "section": "",
+    "text": "Empieza por mapas y datos vectoriales. Si estás comenzando a trabajar con SIG, usa el Manual de capacitación de QGIS. Si también quieres aprender Python, continúa con Introduction to GIS Programming.\nPasa a imágenes satelitales. Geospatial Data Science with Earth Engine and Geemap sirve para explorar, procesar y exportar datos de Earth Engine desde notebooks.\nIncorpora IA sólo después de dominar los datos. GeoAI with Python lleva el flujo desde la preparación de imágenes hasta la evaluación de modelos de visión geoespacial.\nEscala tu análisis cuando el volumen crezca. DuckDB y PostGIS permiten consultar y relacionar datos espaciales mediante SQL.\n\n\n\n\n\n\n\nCómo aprovechar un recurso técnico\n\n\n\nNo copies un ejemplo sin entenderlo. Abre primero los datos de ejemplo, ejecuta cada bloque por separado y anota qué entra, qué transformación ocurre y qué resultado espacial esperas obtener. Cambia después el área de estudio por una comuna o capa de Chile y conserva la URL y fecha de consulta en tu proyecto.",
+    "crumbs": [
+      "Información Espacial",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Libros y guías de SIG y GeoIA</span>"
+    ]
+  },
+  {
+    "objectID": "books_spatial.html#libros-y-documentación-base",
+    "href": "books_spatial.html#libros-y-documentación-base",
+    "title": "18  Libros y guías de SIG y GeoIA",
+    "section": "18.2 Libros y documentación base",
+    "text": "18.2 Libros y documentación base\n\n\n\nRecurso\nResumen\nRecomendado para\nAcceso\n\n\n\n\nIntroduction to GIS Programming — Qiusheng Wu\nGuía práctica de Python geoespacial: instalación, Git, datos vectoriales con GeoPandas, raster con Rasterio y Xarray, visualización, Earth Engine, GDAL y análisis de alto rendimiento. Sus ejemplos se pueden ejecutar en Binder, Colab o Docker.\nQuien ya conoce lo básico de Python o quiere aprenderlo mientras trabaja con mapas.\nLeer el libro y descargar los ejemplos\n\n\nGeoAI with Python — Qiusheng Wu\nIntroduce GeoIA con imágenes satelitales y datos espaciales. Explica cómo preparar datos de entrenamiento y aplicar reconocimiento, detección de objetos, segmentación, detección de cambios y modelos fundacionales; incorpora flujos con Python, PyTorch y complementos de QGIS.\nEstudiantes que ya manejan datos raster y quieren evaluar IA aplicada al territorio.\nAbrir GeoAI with Python\n\n\nGeospatial Data Science with Earth Engine and Geemap — Qiusheng Wu\nTutorial paso a paso para usar Google Earth Engine desde Python y Jupyter mediante geemap. Incluye mapas interactivos, catálogo de Earth Engine, datos locales, análisis, exportaciones, animaciones y aplicaciones web.\nProyectos con imágenes satelitales, series temporales, índices como NDVI o análisis reproducible en notebooks.\nAbrir el libro de Earth Engine y Geemap\n\n\nGeoLibre\nDocumentación y tutoriales de una plataforma SIG libre para navegador, escritorio y notebooks. Enseña a cargar y estilizar capas, consultar atributos, usar herramientas vectoriales y raster, SQL espacial y flujos con Python/Jupyter.\nQuien prefiera aprender explorando un SIG moderno sin instalar una cadena compleja de herramientas.\nIr a la guía y tutoriales de GeoLibre\n\n\nSpatial Data Management with DuckDB — Qiusheng Wu\nLibro práctico para pasar de SQL básico a análisis geoespacial: carga y conversión de formatos, funciones geométricas, relaciones y uniones espaciales, teselas y casos con datos reales. Los ejemplos tienen opciones para Binder, Colab y Docker.\nCuando el proyecto tiene muchas tablas, GeoParquet u otros archivos que conviene consultar sin abrirlos uno a uno.\nAbrir Spatial Data Management with DuckDB",
+    "crumbs": [
+      "Información Espacial",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Libros y guías de SIG y GeoIA</span>"
+    ]
+  },
+  {
+    "objectID": "books_spatial.html#recursos-adicionales-recomendados",
+    "href": "books_spatial.html#recursos-adicionales-recomendados",
+    "title": "18  Libros y guías de SIG y GeoIA",
+    "section": "18.3 Recursos adicionales recomendados",
+    "text": "18.3 Recursos adicionales recomendados\n\n\n\nRecurso\nResumen\nCuándo usarlo\nAcceso\n\n\n\n\nQGIS Training Manual\nManual oficial, organizado como curso y con datos de práctica. Parte con la interfaz y capas básicas, y progresa hacia análisis, bases de datos, PostgreSQL y PostGIS.\nSi es tu primer SIG de escritorio o necesitas una práctica guiada y visual antes de programar.\nAbrir el Manual de capacitación de QGIS\n\n\nIntroduction to PostGIS\nTaller abierto con datos, ejercicios y una hoja de referencia de SQL. Cubre creación de bases espaciales, carga de datos, geometrías, relaciones y uniones espaciales, índices, proyecciones y respaldo.\nCuando necesites almacenar y consultar capas de forma colaborativa o repetible en PostgreSQL.\nAbrir el taller de PostGIS\n\n\nGeocomputation with R — Robin Lovelace, Jakub Nowosad y Jannes Muenchow\nLibro abierto sobre lectura, transformación, visualización, análisis y modelamiento de datos geográficos con énfasis en reproducibilidad. Aunque usa R, explica conceptos espaciales transferibles a QGIS y Python.\nComo segunda mirada para entender proyecciones, geometrías, raster/vector y flujos reproducibles.\nLeer Geocomputation with R",
+    "crumbs": [
+      "Información Espacial",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Libros y guías de SIG y GeoIA</span>"
+    ]
+  },
+  {
+    "objectID": "books_spatial.html#antes-de-usar-resultados-en-un-informe",
+    "href": "books_spatial.html#antes-de-usar-resultados-en-un-informe",
+    "title": "18  Libros y guías de SIG y GeoIA",
+    "section": "18.4 Antes de usar resultados en un informe",
+    "text": "18.4 Antes de usar resultados en un informe\n\nRevisa el sistema de referencia de coordenadas, la fecha, escala, resolución y licencia de cada capa.\nDistingue una visualización exploratoria de un resultado validado: un mapa atractivo no demuestra por sí solo una relación territorial.\nConserva el notebook, script o proyecto QGIS junto con los datos y metadatos usados. Así otra persona puede revisar y repetir el análisis.\nSi empleas IA, documenta el modelo, los datos de entrenamiento o entrada, los parámetros y una forma de validar los resultados con observación, datos oficiales o revisión experta.",
+    "crumbs": [
+      "Información Espacial",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Libros y guías de SIG y GeoIA</span>"
+    ]
+  },
+  {
     "objectID": "john_snow.html",
     "href": "john_snow.html",
     "title": "Mapa de Cólera",
@@ -1352,34 +1561,34 @@
   {
     "objectID": "rc_glosario.html",
     "href": "rc_glosario.html",
-    "title": "16  Glosario",
+    "title": "19  Glosario",
     "section": "",
     "text": "Resumen ejecutivo\nEste glosario ordena los conceptos que pueden confundir a estudiantes sin formación previa en IA o programación. Cada entrada tiene el nombre, un resumen ejecutivo, una recomendación de uso y un enlace de referencia cuando existe una fuente oficial o una herramienta concreta.",
     "crumbs": [
       "Glosario",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Glosario</span>"
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Glosario</span>"
     ]
   },
   {
     "objectID": "rc_glosario.html#resumen-ejecutivo",
     "href": "rc_glosario.html#resumen-ejecutivo",
-    "title": "16  Glosario",
+    "title": "19  Glosario",
     "section": "",
     "text": "Nombre\nResumen ejecutivo\nRecomendación: cuándo usarlo\nLink\n\n\n\n\nAgente\nSistema que puede planificar y ejecutar pasos con cierto grado de autonomía sobre archivos, herramientas o tareas.\nÚsalo cuando la tarea requiere varios pasos, revisión de archivos o acciones repetidas, no solo una respuesta breve.\nOpenClaw\n\n\nAlucinación\nRespuesta plausible pero falsa, incompleta o sin respaldo suficiente.\nAsume que puede ocurrir en cualquier asistente; verifica cifras, citas, leyes y decisiones formales.\n\n\n\nAPI\nInterfaz para que un sistema use un modelo o servicio desde código.\nÚsala solo si hay perfil técnico y una necesidad de integración estable.\nOpenAI API\n\n\nApp integrada\nInterfaz visual que permite usar capacidades dentro o junto a un asistente.\nÚsala cuando el usuario final necesita botones, filtros o paneles, no comandos.\nApps SDK\n\n\nAsistente\nAplicación conversacional que usa modelos y agrega interfaz, archivos, memoria o búsqueda.\nÚsalo para redactar, resumir, revisar documentos, explorar ideas o resolver tareas generales.\nChatGPT\n\n\nCLI\nInterfaz de línea de comandos usada desde el terminal. Deja acciones reproducibles.\nÚsala con perfil técnico cuando importa trabajar sobre carpetas, scripts o proyectos completos.\nGemini CLI\n\n\nContexto\nInformación que el sistema tiene disponible para responder: documentos, mensajes, archivos o reglas.\nAumenta el contexto cuando la respuesta depende de documentos propios; reduce contexto si la tarea es simple.\n\n\n\nEcosistema\nConjunto de herramientas conectadas de un proveedor o comunidad. No es una sola herramienta.\nÚsalo como categoría cuando una marca ofrece app, modelos, laboratorio, CLI y notebooks.\nGoogle\n\n\nIA generativa\nSistemas que producen texto, código, imágenes, audio o estructuras nuevas a partir de instrucciones.\nÚsala para crear borradores, clasificar, resumir, transformar formatos o idear alternativas.\n\n\n\nIDE\nEntorno integrado para trabajar con archivos, código, terminal, vista previa y control de cambios.\nÚsalo cuando hay proyecto, código, notebooks, sitio web o mapa que mantener.\nAntigravity\n\n\nMarketplace / directorio\nLugar para descubrir e instalar plugins, apps o conectores.\nÚsalo con cautela: revisa mantenedor, permisos, lectura/escritura y datos de prueba antes de instalar.\nMCP Servers\n\n\nMCP\nProtocolo abierto para conectar asistentes o agentes con datos, archivos, APIs y herramientas externas.\nÚsalo cuando necesitas acceso controlado a sistemas externos sin copiar y pegar información manualmente.\nModel Context Protocol\n\n\nModelo\nMotor estadístico entrenado para generar respuestas. No es la aplicación completa.\nElige modelo según tarea: rápido para tareas simples, avanzado para análisis complejo.\nGoogle AI Studio\n\n\nModelo local\nModelo que corre en computador o servidor propio, sin enviar datos a la nube.\nÚsalo para información sensible, operación sin internet o control institucional del dato.\nOllama\n\n\nMultimodal\nCapacidad de trabajar con texto, imagen, audio, video o tablas.\nÚsalo cuando la tarea incluye fotos de terreno, PDFs, planillas, mapas o audios.\nGemini\n\n\nNotebook\nDocumento ejecutable que combina texto, código y resultados.\nÚsalo para análisis reproducibles del curso, especialmente Python y datos territoriales.\nGoogle Colab\n\n\nNube\nInfraestructura de servidores externos donde se procesa información.\nÚsala para información pública o anonimizada; evita subir datos personales o confidenciales.\n\n\n\nOpen source\nSoftware cuyo código fuente puede revisarse, modificarse y redistribuirse según su licencia.\nPrefiérelo para flujos institucionales permanentes, auditables o autoalojados.\nWhisper\n\n\nPesos abiertos\nArchivos del modelo disponibles para descargar y ejecutar bajo una licencia definida.\nÚsalos cuando necesitas independencia del proveedor o ejecución local.\nNous Research\n\n\nPlugin / extensión\nPaquete instalable que agrega capacidades a un cliente. Puede incluir skills, MCP o configuración.\nÚsalo para distribuir una configuración completa al equipo; audita permisos antes de instalar.\nClaude Plugins\n\n\nPrompt\nInstrucción que se entrega al sistema de IA.\nÚsalo como encargo claro: tarea, contexto, formato esperado, criterios y restricciones.\n\n\n\nProveedor\nOrganización que ofrece modelos, apps, APIs o infraestructura.\nEvalúalo por costo, privacidad, continuidad, integración institucional y soporte.\n\n\n\nSkill\nPaquete de instrucciones, criterios y pasos para repetir una metodología.\nÚsala cuando el problema es repetir bien un procedimiento, no conectar una herramienta.\nClaude Skills\n\n\nSoberanía de datos\nCapacidad de controlar dónde se almacenan, procesan y auditan los datos institucionales.\nPriorízala cuando hay datos personales, información sensible o dependencia crítica.\n\n\n\nTrazabilidad\nPosibilidad de saber de dónde salió una respuesta o qué pasos se ejecutaron.\nExígela para informes, oficios, cifras públicas y decisiones que deben justificarse.\nNotebookLM\n\n\nVentana de contexto\nCantidad máxima de información que el modelo puede considerar en una interacción.\nImporta cuando trabajas con documentos largos, muchos archivos o instrucciones extensas.\nClaude",
     "crumbs": [
       "Glosario",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Glosario</span>"
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Glosario</span>"
     ]
   },
   {
     "objectID": "rc_glosario.html#regla-práctica-de-lectura",
     "href": "rc_glosario.html#regla-práctica-de-lectura",
-    "title": "16  Glosario",
-    "section": "16.1 Regla práctica de lectura",
-    "text": "16.1 Regla práctica de lectura\nSi el nombre responde a “qué motor razona”, probablemente hablamos de un modelo. Si responde a “dónde trabajo”, hablamos de una aplicación, IDE o CLI. Si responde a “qué tarea delego”, hablamos de una herramienta o agente. Si responde a “cómo conecto o extiendo”, hablamos de skills, MCP, plugins, marketplaces o apps.",
+    "title": "19  Glosario",
+    "section": "19.1 Regla práctica de lectura",
+    "text": "19.1 Regla práctica de lectura\nSi el nombre responde a “qué motor razona”, probablemente hablamos de un modelo. Si responde a “dónde trabajo”, hablamos de una aplicación, IDE o CLI. Si responde a “qué tarea delego”, hablamos de una herramienta o agente. Si responde a “cómo conecto o extiendo”, hablamos de skills, MCP, plugins, marketplaces o apps.",
     "crumbs": [
       "Glosario",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Glosario</span>"
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Glosario</span>"
     ]
   },
   {
