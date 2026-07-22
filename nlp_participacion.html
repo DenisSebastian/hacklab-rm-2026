@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.31">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>4&nbsp; NLP Comunitario – AcademIA HackLab: Santiago Región Sustentable</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./recursos_complementarios.html" rel="next">
+<link href="./operaciones_espaciales.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-485d01fc63b59abcd3ee1bf1e8e2748d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./nlp_participacion.html">Módulo 2: Modelos IA</a></li><li class="breadcrumb-item"><a href="./nlp_participacion.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">NLP Comunitario</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">AcademIA HackLab: Santiago Región Sustentable</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introducción</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Módulo 1: Conceptos &amp; Casos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vibe_coding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Vibe Coding</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ecosistema_python.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ecosistema Python</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./operaciones_espaciales.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Operaciones Espaciales</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Módulo 2: Modelos IA</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./nlp_participacion.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">NLP Comunitario</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./recursos_complementarios.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Recursos Complementarios</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Modelos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_google.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_chatgpt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">ChatGPT</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_claude.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Claude</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_latamgpt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">LatamGPT</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">IDEs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_ide_antigravity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Antigravity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_ide_codex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Codex</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_ide_claude.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Claude Code</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Otros Recursos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_notebooklm.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">NotebookLM</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_perplexity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Perplexity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_otras_herramientas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Productividad</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_openclaw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">OpenClaw</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_hermes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Hermes Agent</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Información Espacial</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_vec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Datos vectoriales</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_sat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Datos satelitales</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./books_spatial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Libros y guías de SIG y GeoIA</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Casos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./john_snow.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mapa de Cólera</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
+ <span class="menu-text">Glosario</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_glosario.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Glosario</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Referencias Bibliográficas</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contenidos</h2>
+   
+  <ul>
+  <li><a href="#resumen-ejecutivo" id="toc-resumen-ejecutivo" class="nav-link active" data-scroll-target="#resumen-ejecutivo">Resumen ejecutivo</a></li>
+  <li><a href="#contenidos-de-la-sesión" id="toc-contenidos-de-la-sesión" class="nav-link" data-scroll-target="#contenidos-de-la-sesión">Contenidos de la sesión</a></li>
+  <li><a href="#el-problema-de-las-mil-voces" id="toc-el-problema-de-las-mil-voces" class="nav-link" data-scroll-target="#el-problema-de-las-mil-voces"><span class="header-section-number">4.1</span> El problema de las mil voces</a>
+  <ul class="collapse">
+  <li><a href="#el-cuello-de-botella-de-la-participación" id="toc-el-cuello-de-botella-de-la-participación" class="nav-link" data-scroll-target="#el-cuello-de-botella-de-la-participación"><span class="header-section-number">4.1.1</span> El cuello de botella de la participación</a></li>
+  <li><a href="#qué-es-el-nlp" id="toc-qué-es-el-nlp" class="nav-link" data-scroll-target="#qué-es-el-nlp"><span class="header-section-number">4.1.2</span> Qué es el NLP</a></li>
+  <li><a href="#de-la-frase-del-vecino-al-dato-procesable" id="toc-de-la-frase-del-vecino-al-dato-procesable" class="nav-link" data-scroll-target="#de-la-frase-del-vecino-al-dato-procesable"><span class="header-section-number">4.1.3</span> De la frase del vecino al dato procesable</a></li>
+  </ul></li>
+  <li><a href="#el-corpus-del-taller-y-antigravity" id="toc-el-corpus-del-taller-y-antigravity" class="nav-link" data-scroll-target="#el-corpus-del-taller-y-antigravity"><span class="header-section-number">4.2</span> El corpus del taller y Antigravity</a>
+  <ul class="collapse">
+  <li><a href="#archivos-disponibles" id="toc-archivos-disponibles" class="nav-link" data-scroll-target="#archivos-disponibles"><span class="header-section-number">4.2.1</span> Archivos disponibles</a></li>
+  <li><a href="#primeros-pasos-en-antigravity" id="toc-primeros-pasos-en-antigravity" class="nav-link" data-scroll-target="#primeros-pasos-en-antigravity"><span class="header-section-number">4.2.2</span> Primeros pasos en Antigravity</a></li>
+  </ul></li>
+  <li><a href="#preparar-el-corpus-del-archivo-caótico-a-la-tabla-procesable" id="toc-preparar-el-corpus-del-archivo-caótico-a-la-tabla-procesable" class="nav-link" data-scroll-target="#preparar-el-corpus-del-archivo-caótico-a-la-tabla-procesable"><span class="header-section-number">4.3</span> Preparar el corpus: del archivo caótico a la tabla procesable</a>
+  <ul class="collapse">
+  <li><a href="#el-corpus-mínimo-viable" id="toc-el-corpus-mínimo-viable" class="nav-link" data-scroll-target="#el-corpus-mínimo-viable"><span class="header-section-number">4.3.1</span> El corpus mínimo viable</a></li>
+  <li><a href="#anonimización-antes-de-procesar" id="toc-anonimización-antes-de-procesar" class="nav-link" data-scroll-target="#anonimización-antes-de-procesar"><span class="header-section-number">4.3.2</span> Anonimización antes de procesar</a></li>
+  </ul></li>
+  <li><a href="#actividades" id="toc-actividades" class="nav-link" data-scroll-target="#actividades"><span class="header-section-number">4.4</span> Actividades</a>
+  <ul class="collapse">
+  <li><a href="#taller-en-antigravity-de-400-opiniones-a-un-informe-temático" id="toc-taller-en-antigravity-de-400-opiniones-a-un-informe-temático" class="nav-link" data-scroll-target="#taller-en-antigravity-de-400-opiniones-a-un-informe-temático"><span class="header-section-number">4.4.1</span> Taller en Antigravity: de ~400 opiniones a un informe temático</a></li>
+  <li><a href="#tarea-puente-opcional" id="toc-tarea-puente-opcional" class="nav-link" data-scroll-target="#tarea-puente-opcional"><span class="header-section-number">4.4.2</span> Tarea puente (opcional)</a></li>
+  </ul></li>
+  <li><a href="#ética-y-límites" id="toc-ética-y-límites" class="nav-link" data-scroll-target="#ética-y-límites"><span class="header-section-number">4.5</span> Ética y límites</a></li>
+  <li><a href="#resumen" id="toc-resumen" class="nav-link" data-scroll-target="#resumen"><span class="header-section-number">4.6</span> Resumen</a></li>
+  <li><a href="#recursos" id="toc-recursos" class="nav-link" data-scroll-target="#recursos"><span class="header-section-number">4.7</span> Recursos</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./nlp_participacion.html">Módulo 2: Modelos IA</a></li><li class="breadcrumb-item"><a href="./nlp_participacion.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">NLP Comunitario</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">NLP Comunitario</span></h1>
+<p class="subtitle lead">Procesamiento de lenguaje natural para la participación ciudadana</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>Sesión 5.2 · Día 5 · Modalidad Presencial · Docente: Denis Berroeta (UAI)</strong></p>
+<section id="resumen-ejecutivo" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="resumen-ejecutivo">Resumen ejecutivo</h2>
+<p>Cada proceso participativo serio produce un problema hermoso: <strong>demasiadas palabras</strong>. Una consulta ciudadana puede generar 3.000 respuestas abiertas; un PLADECO, cientos de páginas de actas; una cuenta pública, miles de comentarios. Tradicionalmente ese material termina sub-analizado —se leen 200 respuestas, se citan 10— o tarda meses en sistematizarse, cuando la decisión ya se tomó. El resultado es doblemente grave: se pierde información y se traiciona la confianza del vecino que se dio el tiempo de opinar.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/actas-manual.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
+</figure>
+</div>
+<p>El <strong>Procesamiento de Lenguaje Natural (NLP)</strong> —la rama de la IA que trabaja con texto humano <span class="citation" data-cites="jurafsky_speech_2025">(<a href="references.html#ref-jurafsky_speech_2025" role="doc-biblioref">Jurafsky and Martin 2025</a>)</span>— cambia esa ecuación: hoy es posible clasificar, agrupar por temas y sintetizar miles de opiniones en horas, manteniendo trazabilidad hacia las voces originales. Esta sesión enseña el flujo completo en un proyecto de <strong><a href="https://antigravity.google/">Antigravity</a></strong>: del archivo caótico de respuestas a un informe temático defendible, con la IA como sistematizadora incansable y tú como <strong>supervisor del sentido</strong>. El proyecto conserva scripts, resultados y decisiones del equipo para que el análisis pueda revisarse y reproducirse.</p>
+<p>Al finalizar la sesión serás capaz de:</p>
+<ol type="1">
+<li><strong>Explicar</strong> qué es el NLP y sus operaciones útiles para la gestión pública: clasificar, extraer, agrupar, resumir.</li>
+<li><strong>Cargar y explorar un corpus de participación en un proyecto de <a href="https://antigravity.google/">Antigravity</a></strong>: reconocer su estructura, vacíos y duplicados antes de analizarlo.</li>
+<li><strong>Ejecutar una clasificación temática asistida por IA</strong> sobre respuestas abiertas: definir categorías, clasificar masivamente, auditar una muestra.</li>
+<li><strong>Extraer estructura desde texto libre</strong>: de la frase del vecino al dato procesable.</li>
+<li><strong>Producir una síntesis fiel y trazable</strong>: resúmenes por tema con citas textuales de respaldo.</li>
+<li><strong>Aplicar salvaguardas éticas</strong>: anonimización, sesgos del modelo, y el principio de supervisión humana.</li>
+</ol>
+</section>
+<section id="contenidos-de-la-sesión" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="contenidos-de-la-sesión">Contenidos de la sesión</h2>
+<ul>
+<li>El problema de las mil voces: el cuello de botella de la participación.</li>
+<li>Qué es el NLP y su menú de operaciones para un municipio.</li>
+<li>El corpus de seguridad del taller: estructura de archivos y trabajo en un proyecto de <a href="https://antigravity.google/">Antigravity</a>.</li>
+<li>Anonimización y protección de datos personales.</li>
+<li>Taller de seguridad: de ~400 opiniones a un informe temático en cinco pasos.</li>
+<li>Ética y límites: sesgos, voces minoritarias, transparencia.</li>
+</ul>
+</section>
+<section id="el-problema-de-las-mil-voces" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="el-problema-de-las-mil-voces"><span class="header-section-number">4.1</span> El problema de las mil voces</h2>
+<section id="el-cuello-de-botella-de-la-participación" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="el-cuello-de-botella-de-la-participación"><span class="header-section-number">4.1.1</span> El cuello de botella de la participación</h3>
+<p>Ejemplos reales del material participativo sub-analizado: consultas ciudadanas, PLADECO, presupuestos participativos. El costo es doble:</p>
+<ul>
+<li><strong>Costo institucional</strong>: decisiones tomadas sin la información que ya se había recolectado.</li>
+<li><strong>Costo de confianza</strong>: el vecino que opinó y nunca vio reflejada su voz no vuelve a participar.</li>
+</ul>
+</section>
+<section id="qué-es-el-nlp" class="level3" data-number="4.1.2">
+<h3 data-number="4.1.2" class="anchored" data-anchor-id="qué-es-el-nlp"><span class="header-section-number">4.1.2</span> Qué es el NLP</h3>
+<p>En una frase: <strong>enseñar a la máquina a trabajar con texto humano</strong>. Breve genealogía honesta: antes requería equipos especializados; los modelos de lenguaje actuales lo pusieron al alcance de un prompt bien hecho.</p>
+<p>El menú de operaciones útiles para un municipio:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Operación</th>
+<th>Ejemplo municipal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Clasificar</strong></td>
+<td>Asignar cada respuesta a un tema (seguridad, áreas verdes, basura…)</td>
+</tr>
+<tr class="even">
+<td><strong>Extraer</strong></td>
+<td>Sacar lugares, problemas y demandas mencionados en el texto</td>
+</tr>
+<tr class="odd">
+<td><strong>Agrupar</strong></td>
+<td>Juntar opiniones que dicen lo mismo con palabras distintas</td>
+</tr>
+<tr class="even">
+<td><strong>Resumir</strong></td>
+<td>Condensar 500 respuestas sobre un tema en un párrafo fiel</td>
+</tr>
+<tr class="odd">
+<td><strong>Traducir registro</strong></td>
+<td>Pasar del lenguaje técnico al ciudadano y viceversa</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="de-la-frase-del-vecino-al-dato-procesable" class="level3" data-number="4.1.3">
+<h3 data-number="4.1.3" class="anchored" data-anchor-id="de-la-frase-del-vecino-al-dato-procesable"><span class="header-section-number">4.1.3</span> De la frase del vecino al dato procesable</h3>
+<p>El ejemplo canónico de la sesión:</p>
+<blockquote class="blockquote">
+<p><em>“La plaza de la esquina de mi casa está oscura y da miedo de noche.”</em></p>
+</blockquote>
+<p>se convierte en:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Campo</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tema</td>
+<td>Seguridad</td>
+</tr>
+<tr class="even">
+<td>Subtema</td>
+<td>Iluminación</td>
+</tr>
+<tr class="odd">
+<td>Lugar</td>
+<td>Plaza</td>
+</tr>
+<tr class="even">
+<td>Tono</td>
+<td>Negativo</td>
+</tr>
+</tbody>
+</table>
+<!-- ::: {.callout-note appearance="simple" icon="false"} -->
+<!-- 📷 **IMAGEN PENDIENTE**: Diagrama de transformación: a la izquierda, la -->
+<!-- frase manuscrita/en globo de diálogo del vecino; una flecha con el -->
+<!-- rótulo "NLP"; a la derecha, la tabla estructurada {tema, subtema, -->
+<!-- lugar, tono}. Debe mostrar que la voz no se pierde: se ordena. -->
+<!-- ::: -->
+<div class="callout callout-style-default callout-tip callout-titled" title="Analogía: la secretaria incansable">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Analogía: la secretaria incansable
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Imagina una secretaria de actas que lee las 3.000 respuestas sin cansarse, las clasifica en carpetas, anota de qué lugar habla cada una y te deja una cita textual como respaldo de cada decisión de archivo. Eso es el NLP con modelos de lenguaje. Pero como toda secretaria nueva, <strong>hay que revisarle el trabajo al principio</strong>: de eso trata la auditoría humana.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="el-corpus-del-taller-y-antigravity" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="el-corpus-del-taller-y-antigravity"><span class="header-section-number">4.2</span> El corpus del taller y Antigravity</h2>
+<section id="archivos-disponibles" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="archivos-disponibles"><span class="header-section-number">4.2.1</span> Archivos disponibles</h3>
+<p>El taller utiliza únicamente <code>corpus_5_2_local/corpus_seguridad.csv</code>: un corpus sintético de participación ciudadana sobre seguridad en comunas de la Región Metropolitana. Los datos son sintéticos, pero incluyen dificultades habituales de un proceso real para que el equipo pueda detectarlas y discutirlas.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Archivo</th>
+<th>Uso</th>
+<th>Contenido</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>corpus_seguridad.csv</code></td>
+<td>Archivo de trabajo del taller.</td>
+<td>412 respuestas abiertas sobre seguridad.</td>
+</tr>
+<tr class="even">
+<td><code>clave_seguridad.csv</code></td>
+<td>Referencia docente posterior.</td>
+<td>Etiquetas esperadas y rasgos plantados.</td>
+</tr>
+<tr class="odd">
+<td><code>gen_corpus_5_2_local.py</code></td>
+<td>Reproducibilidad del material.</td>
+<td>Generador Python sin dependencias externas.</td>
+</tr>
+<tr class="even">
+<td><code>README.md</code></td>
+<td>Guía del material.</td>
+<td>Descripción, tamaños e instrucciones de reproducción.</td>
+</tr>
+</tbody>
+</table>
+<p>El archivo <code>corpus_seguridad.csv</code> tiene esta estructura:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Columna</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>id</code></td>
+<td>Identificador de la respuesta, por ejemplo <code>SEG-0001</code>.</td>
+</tr>
+<tr class="even">
+<td><code>respuesta</code></td>
+<td>Texto abierto de la participación; es la columna principal del análisis.</td>
+</tr>
+<tr class="odd">
+<td><code>comuna</code></td>
+<td>Comuna declarada, cuando existe.</td>
+</tr>
+<tr class="even">
+<td><code>canal</code></td>
+<td>Origen: consulta web, cabildo, formulario en papel, WhatsApp municipal o buzón vecinal.</td>
+</tr>
+<tr class="odd">
+<td><code>grupo_edad</code></td>
+<td>Tramo etario declarado, cuando existe.</td>
+</tr>
+</tbody>
+</table>
+<p>El corpus tiene <strong>412 filas</strong>: 400 respuestas base y 12 duplicados exactos (3%) incorporados intencionalmente. Además, contiene casos ambiguos (~4%), datos personales ficticios (~8%), disensos (~6%), respuestas vacías o casi vacías (~2%), respuestas fuera de tema (~5%) y filas sin comuna o grupo de edad (~30%). No son defectos que haya que ocultar: son parte del ejercicio de control de calidad.</p>
+<p>La <code>clave_seguridad.csv</code> incluye las columnas docentes <code>tema</code>, <code>subtema</code>, <code>lugar</code>, <code>tono</code>, <code>es_ambiguo</code>, <code>contiene_pii</code>, <code>es_disenso</code> y <code>es_duplicado</code>. Se consulta al final para revisar el proceso; no debe usarse como respuesta antes de la auditoría del equipo.</p>
+</section>
+<section id="primeros-pasos-en-antigravity" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="primeros-pasos-en-antigravity"><span class="header-section-number">4.2.2</span> Primeros pasos en Antigravity</h3>
+<ol type="1">
+<li>Abre en <a href="https://antigravity.google/">Antigravity</a> la carpeta del proyecto de la sesión y verifica que contiene <code>corpus_5_2_local/corpus_seguridad.csv</code>.</li>
+<li>Pide al agente que genere los scripts de carga y exploración; revísalos antes de ejecutarlos.</li>
+<li>Conserva en el proyecto los scripts, CSV derivados, tablas de resultados y decisiones que respalden el análisis.</li>
+</ol>
+<p><strong>Prompt — cargar y conocer el corpus</strong></p>
+<pre class="text"><code>En este proyecto, crea y ejecuta el script
+`scripts/01_explorar_corpus.py`. Debe leer el archivo
+`corpus_5_2_local/corpus_seguridad.csv` mediante una ruta relativa.
+
+Genera y ejecuta código Python con pandas para cargarlo como una tabla
+llamada `corpus`. La columna de texto a analizar es exactamente `respuesta`;
+no uses ni renombres otra columna como texto principal.
+
+Muestra las primeras cinco filas, el total de filas, los nombres y tipos de
+columnas, los valores faltantes por columna, y el largo promedio, mínimo y
+máximo —en palabras— de `corpus["respuesta"]`. Muestra también cinco filas
+aleatorias con `random_state=52`.
+
+No elimines ni modifiques datos todavía. Conserva `corpus` como la tabla
+original durante toda esta etapa y guarda un resumen reproducible en
+`resultados/01_exploracion.md`.</code></pre>
+<p><strong>Prompt — control de calidad inicial</strong></p>
+<pre class="text"><code>En este proyecto, crea y ejecuta el script
+`scripts/02_control_calidad.py`. Debe leer `corpus_seguridad.csv` con una
+ruta relativa, cargarlo como `corpus` y trabajar explícitamente sobre
+`corpus["respuesta"]`.
+
+Detecta respuestas vacías o casi vacías —incluyendo "no sé", "-" y "s/i"—,
+duplicados exactos en la columna `respuesta`, y el porcentaje de valores
+faltantes en `comuna`, `canal` y `grupo_edad`. Entrega números concretos, los
+`id` de las filas duplicadas y una tabla-resumen.
+
+No elimines, edites ni sobrescribas `corpus`; si necesitas columnas o tablas
+auxiliares, créalas con nombres nuevos. Guarda el resumen y los duplicados
+detectados dentro de `resultados/`.</code></pre>
+<p>Antes de analizar con IA, explora lo que realmente cargaste: cuántas respuestas hay, cuáles están vacías, cuáles se repiten y qué contexto territorial está disponible. Cada decisión debe quedar registrada en un archivo de notas o resultados del proyecto.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Regla de trabajo:</strong> una celda, una pregunta. Deja visible el resultado que respalda cada decisión: filas excluidas, categorías definidas y cambios a las instrucciones de clasificación.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="preparar-el-corpus-del-archivo-caótico-a-la-tabla-procesable" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="preparar-el-corpus-del-archivo-caótico-a-la-tabla-procesable"><span class="header-section-number">4.3</span> Preparar el corpus: del archivo caótico a la tabla procesable</h2>
+<section id="el-corpus-mínimo-viable" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="el-corpus-mínimo-viable"><span class="header-section-number">4.3.1</span> El corpus mínimo viable</h3>
+<ul>
+<li><strong>Una opinión por fila.</strong></li>
+<li>Columnas de contexto si existen: comuna, edad, canal de recolección.</li>
+<li>¿PDFs y actas escaneadas? La IA también extrae texto de documentos: pídeselo.</li>
+</ul>
+</section>
+<section id="anonimización-antes-de-procesar" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="anonimización-antes-de-procesar"><span class="header-section-number">4.3.2</span> Anonimización antes de procesar</h3>
+<p>Antes de procesar, <strong>detecta y remueve</strong> nombres, RUT, teléfonos y direcciones exactas. La IA puede asistir esta limpieza, pero el resultado se revisa antes de continuar. El objetivo es anonimizar a la persona, no borrar el territorio: una plaza, paradero o calle sin numeración sigue siendo información necesaria para el análisis.</p>
+<p><strong>Prompt A — anonimizar antes de analizar</strong></p>
+<pre class="text"><code>En este proyecto, crea y ejecuta el script `scripts/03_anonimizar.py`.
+Debe leer `corpus_5_2_local/corpus_seguridad.csv` con una ruta relativa y
+cargarlo como una tabla pandas llamada `corpus`. Genera una función que cree
+una copia llamada `corpus_anonimizado`; debe modificar solamente la columna
+`respuesta`, conservar sin cambios `id`, `comuna`, `canal` y `grupo_edad`, y
+agregar `pii_detectada` a la copia.
+
+En `corpus_anonimizado["respuesta"]`, limpia datos personales antes de
+analizarlos.
+
+Reemplaza en cada respuesta:
+- Nombres y apellidos de personas -&gt; [NOMBRE]
+- RUT (12.345.678-9, 12345678-9, 123456789) -&gt; [RUT]
+- Telefonos (+569 XXXX XXXX, 9 XXXX XXXX, fijos) -&gt; [TEL]
+- Direcciones de domicilio, o sea calle o pasaje CON numeracion
+  ("Los Aromos 1234", "pasaje Las Lilas 45, depto 3B") -&gt; [DOMICILIO]
+- Correos, patentes, cuentas de redes sociales -&gt; [CONTACTO]
+
+NO REEMPLACES las referencias a lugares publicos. Se conservan tal cual:
+plazas, paraderos, ferias, canchas, sedes vecinales, colegios, sitios
+eriazos, villas y poblaciones, y calles SIN numeracion.
+Esa informacion es del territorio, no de la persona, y la necesitamos despues.
+
+REGLAS
+1. No cambies ninguna otra palabra: ni ortografia, ni garabatos, ni
+   mayusculas, ni abreviaciones. Debe seguir sonando a quien lo escribio.
+2. Manten el mismo id y el mismo orden de las filas.
+3. En `pii_detectada`, registra los tipos encontrados separados por `;`
+   (por ejemplo, `nombre;domicilio`) o `ninguna`.
+4. Si dudas si algo identifica a una persona, reemplazalo y anotalo.
+
+Al terminar, muestra `id`, `respuesta` y `pii_detectada` de diez filas donde
+`pii_detectada` no sea `ninguna`. No sobrescribas la tabla original `corpus`;
+guarda la copia en `resultados/corpus_seguridad_anonimizado.csv`.</code></pre>
+<p>Revisa al menos diez filas a ojo. En el corpus, el teléfono de <code>SEG-0002</code> se reemplaza, mientras que una plaza mencionada en una respuesta se conserva. Esta distinción permite identificar problemas territoriales sin exponer a quien escribió.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Privacidad no es nota al pie.</strong> En tu organización manejarás datos reales de vecinos. La referencia normativa es la <strong>Ley 21.719 de Protección de Datos Personales</strong>. Regla del curso: nunca subir datos personales reales a herramientas de IA, ni durante el curso ni después sin resguardo institucional.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="actividades" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="actividades"><span class="header-section-number">4.4</span> Actividades</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pasos-captura.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="900"></p>
+</figure>
+</div>
+<section id="taller-en-antigravity-de-400-opiniones-a-un-informe-temático" class="level3" data-number="4.4.1">
+<h3 data-number="4.4.1" class="anchored" data-anchor-id="taller-en-antigravity-de-400-opiniones-a-un-informe-temático"><span class="header-section-number">4.4.1</span> Taller en Antigravity: de ~400 opiniones a un informe temático</h3>
+<p>El flujo se realiza en el proyecto de <a href="https://antigravity.google/">Antigravity</a> sobre la copia anonimizada de <code>corpus_seguridad.csv</code> (~412 respuestas). Organiza el trabajo en carpetas como <code>scripts/</code>, <code>resultados/</code> y <code>documentacion/</code>. Procesa en tandas de hasta 50 filas cuando pidas análisis a un modelo: así puedes comprobar que las filas de salida coinciden con las de entrada, que los <code>id</code> son únicos y que no queda información personal residual.</p>
+<p><strong>Paso 1 — Definir categorías (humano).</strong> El equipo propone primero entre 5 y 8 categorías que tengan sentido para la seguridad de su territorio. Sólo después las contrasta con una propuesta de IA: el conocimiento territorial no se delega.</p>
+<p><strong>Prompt 1 — contraste de categorías</strong></p>
+<pre class="text"><code>Te entregaré una muestra de 60 filas aleatorias de `corpus_anonimizado`.
+Cada fila contiene `id` y `respuesta`; analiza sólo el contenido de
+`respuesta`.
+
+Las respuestas son de una consulta comunal sobre seguridad. Propón 7
+categorías temáticas para clasificarlas todas. Para cada una indica:
+- nombre corto de la categoría;
+- una línea de qué incluye y qué NO incluye;
+- dos ejemplos de respuestas del corpus que caerían ahí.
+
+Las categorías deben ser, en lo posible, mutuamente excluyentes, no ser
+cajones de sastre y salir de lo que dice el corpus, no de lo que normalmente
+se pregunta sobre seguridad.
+
+CORPUS:
+[PEGAR MUESTRA ALEATORIA DE 60 FILAS CON id Y respuesta]
+
+Estas son las categorías que definió nuestro equipo:
+[PEGAR CATEGORÍAS DEL EQUIPO]
+
+Compáralas con las 7 que propusiste:
+- ¿Qué tema separa tu propuesta que la nuestra junta?
+- ¿Qué tema nuestro no aparece en la tuya?
+- ¿Cuál de las dos dejaría más respuestas en "otra" y por qué?
+
+No concluyas cuál es mejor. Muestra sólo las diferencias.
+Guarda la comparación en `documentacion/01_contraste_categorias.md`.</code></pre>
+<p>El contraste es el resultado: revela tanto distinciones que el equipo puede haber unido como matices territoriales que el modelo no conoce.</p>
+<p><strong>Paso 2 — Clasificar masivamente (IA).</strong> Clasifica sin forzar: <code>otra</code> es una salida honesta y, si supera aproximadamente 20%, una señal de que hay que volver a definir las categorías.</p>
+<p><strong>Prompt 2 — clasificar</strong></p>
+<pre class="text"><code>Clasifica cada fila usando sólo el texto de la columna `respuesta`.
+
+CATEGORÍAS ACORDADAS:
+[PEGAR CATEGORÍAS ACORDADAS CON UNA LÍNEA DE DEFINICIÓN]
+
+REGLAS
+1. Clasifica cada respuesta ciudadana en UNA categoría.
+2. Si no calza en ninguna, marca `otra`. No fuerces: es preferible un `otra`
+   honesto que una clasificación inventada.
+3. Si toca dos categorías, elige la dominante y anota la segunda en
+   `categoria_secundaria`.
+4. Una fila de entrada = una fila de salida. Mantén el mismo `id` y orden.
+5. Devuelve sólo CSV con estas columnas:
+   id | categoria | categoria_secundaria | cita | confianza
+6. `cita` debe ser un fragmento LITERAL de `respuesta`, de máximo 15
+   palabras. Si no puedes citar, la clasificación no está fundada.
+7. `confianza` es alta | media | baja. Usa baja cuando el texto sea ambiguo,
+   irónico o mezcle temas.
+
+FILAS (id y respuesta; máximo 50):
+[PEGAR HASTA 50 FILAS]
+
+Guarda el CSV resultante en `resultados/clasificado_tanda_[N].csv`.</code></pre>
+<p>La cita hace trazable la etiqueta y la confianza permite dirigir la auditoría hacia las decisiones más inciertas.</p>
+<p><strong>Paso 3 — Auditar (humano, obligatorio e innegociable).</strong> El equipo revisa 10–15 clasificaciones al azar —y todas las de confianza baja, si son pocas— contra la respuesta original, no sólo contra su cita. Si hay más de dos o tres discrepancias en 15 filas, ajusta las reglas y vuelve a clasificar.</p>
+<p><strong>Prompt — muestra reproducible de auditoría</strong></p>
+<pre class="text"><code>La tabla `clasificado` contiene las columnas `id`, `respuesta`, `categoria`,
+`categoria_secundaria`, `cita` y `confianza`.
+
+En este proyecto, crea y ejecuta el script `scripts/04_muestra_auditoria.py`.
+Debe generar con pandas 12 filas aleatorias reproducibles con
+`random_state=52`, sin alterar ni sobrescribir `clasificado`. Crea una tabla
+llamada `muestra_auditoria`, agrega una columna vacía `revision_humana` para
+que el equipo marque conforme, corregir o discutir, y guárdala en
+`resultados/muestra_auditoria.csv`.</code></pre>
+<p>La IA no audita su propio trabajo. Las discrepancias se convierten en casos límite que se agregan al Prompt 2, por ejemplo: <em>“[CITA] va en [CATEGORÍA CORRECTA], no en [CATEGORÍA ASIGNADA], porque [RAZÓN DEL EQUIPO]”</em>.</p>
+<p><strong>Paso 4 — Extraer estructura (IA).</strong> Separa lo que el texto declara de lo que el analista podría inferir. Un problema no es necesariamente una demanda: si una vecina dice que una plaza está oscura, la iluminación deficiente es un problema; no se debe inventar que pidió instalar luminarias.</p>
+<p><strong>Prompt 4A — extraer fila a fila</strong></p>
+<pre class="text"><code>Eres analista de participación ciudadana en una municipalidad chilena.
+Te entrego filas ya anonimizadas sobre seguridad; extrae estructura usando
+solamente el texto de la columna `respuesta`.
+
+REGLAS INNEGOCIABLES
+1. Extrae estructura de CADA fila. Una fila de entrada = una fila de salida;
+   conserva `id` y el orden. No agrupes, no resumas, no cuentes.
+2. Extrae sólo lo escrito. Si un campo no aparece, escribe `no_declarado`.
+   Nunca infieras el lugar a partir del tema ni completes lo que alguien
+   seguramente quiso decir.
+3. `cita` debe ser un fragmento LITERAL de `respuesta`, de máximo 15 palabras.
+4. Si `respuesta` quedó vacía tras la limpieza, usa `sin_contenido`.
+5. Devuelve SÓLO CSV, sin comentarios.
+
+COLUMNAS DE SALIDA
+`id`, `tema` (una categoría acordada), `subtema` (frase libre de 2 a 4 palabras),
+`lugar_texto` (tal como aparece en `respuesta`), `lugar_tipo` (plaza | paradero |
+calle_o_pasaje | villa_o_poblacion | sitio_eriazo | equipamiento | comuna_general |
+sin_lugar), `problema` (máximo 10 palabras), `demanda` (máximo 10 palabras o
+`no_declarada`), `tipo_demanda` (infraestructura | servicio_recurrente |
+fiscalizacion | educacion_informacion | n/d), `responsable_mencionado`
+(municipio | policia | empresa | vecinos | -), `escala` (domicilio | cuadra |
+barrio | comuna), `tono` (positivo | negativo | mixto | neutro) y `cita`.
+
+FILAS (id y respuesta; máximo 50):
+[PEGAR HASTA 50 FILAS]
+
+Guarda el CSV resultante en `resultados/extraido_tanda_[N].csv`.</code></pre>
+<p><strong>Prompt 4B — normalizar lugares</strong></p>
+<pre class="text"><code>Esta es la lista única de valores de `lugar_texto` extraídos desde la columna
+`respuesta`, junto con su conteo. Agrupa sólo las variantes que se refieren al
+MISMO lugar físico y devuelve:
+
+lugar_canonico     | nombre normalizado y buscable en un mapa
+variantes          | formas originales agrupadas, separadas por ;
+n_menciones        | suma de menciones de las variantes
+geocodificable     | si | no | dudoso
+motivo_si_dudoso   | por qué no basta para ubicarlo
+
+REGLAS
+1. "El paradero de la esquina", "la plaza de mi casa" y "acá en el barrio"
+   no son geocodificables: marca `no`.
+2. No agrupes dos lugares sólo porque suenan parecido. Ante duda, marca
+   `dudoso` y déjalos separados.
+3. No entregues coordenadas, latitud, longitud ni direcciones completas.
+
+LISTA:
+[PEGAR LUGARES ÚNICOS CON SU CONTEO]
+
+Guarda el CSV resultante en `resultados/lugares_normalizados.csv`.</code></pre>
+<p>Normalizar nombres habilita un mapa posterior; no equivale a geocodificar ni autoriza a inventar ubicaciones.</p>
+<p><strong>Prompt 4C — frecuencias</strong></p>
+<pre class="text"><code>En este proyecto, crea y ejecuta `scripts/05_frecuencias.py`. Debe leer la
+tabla pandas `extraido` desde su CSV de resultados y calcular con código —no
+estimes ni inventes números—:
+
+A) Frecuencia por tema: tema | n | % del total
+B) Frecuencia por tema x lugar_canonico: incluye SÓLO celdas con n &gt;= 5
+C) Frecuencia por tipo_demanda dentro de cada tema
+D) Concentración: los 10 lugares con más menciones y su tema dominante
+E) % de filas con `demanda` distinta de `no_declarada`, por tema
+F) % de tono negativo por tema
+
+VERIFICACIÓN OBLIGATORIA: al final, la suma de n en (A) debe ser igual al
+total de filas de `extraido`. Declara ambos números explícitamente. Si no
+cuadran, dilo: no ajustes los números para que calcen.
+
+No modifiques ni sobrescribas `extraido`; guarda cada resultado como una tabla
+nueva con nombre descriptivo dentro de `resultados/`.</code></pre>
+<p>Cuenta en pandas o en una tabla dinámica cuando sea posible. El umbral <code>n &gt;= 5</code> protege frente a reidentificación: bajo ese umbral se agrega a un sector o barrio y no se publica ni se mapea.</p>
+<p><strong>Paso 5 — Sintetizar con trazabilidad (IA + humano).</strong> El modelo redacta un borrador; el equipo verifica sus números, citas y tratamiento de los disensos.</p>
+<p><strong>Prompt 5 — sintetizar</strong></p>
+<pre class="text"><code>Con la tabla `extraido` y las tablas de frecuencias verificadas, redacta un
+informe de hallazgos sobre seguridad para una audiencia municipal no técnica.
+Usa las citas solamente desde `respuesta` o desde la columna `cita` que las
+reproduce literalmente.
+
+ESTRUCTURA POR CADA TEMA
+1. Un párrafo de 3 a 5 frases en lenguaje claro, sin tecnicismos.
+2. Cada afirmación lleva entre paréntesis el número de respuestas que la
+   respalda: `(n=47)`.
+3. Después del párrafo, incluye 2 citas textuales literales con su `id`.
+4. Indica los lugares más mencionados del tema, con su n de menciones.
+5. Indica las demandas concretas más frecuentes, en orden.
+
+OBLIGATORIO: agrega por tema una sección titulada "Disensos y voces
+minoritarias" con posturas contrarias a la tendencia mayoritaria, aunque sean
+pocas. Cítalas literalmente con su `id` e indica cuántas son. No las suavices,
+no las promedies con el resto y no las omitas por ser pocas.
+
+REGLAS
+- No agregues recomendaciones ni conclusiones de política.
+- Si un tema tiene menos de 10 respuestas, decláralo explícitamente.
+- Si algo no está en los datos, no lo escribas.
+- Revisa que ninguna cita conserve datos personales.
+
+Extensión total: 1 a 2 páginas.
+Guarda el borrador en `resultados/informe_hallazgos_seguridad.md`.</code></pre>
+<p>El informe no reemplaza el juicio profesional: es un borrador para revisar, no un producto firmable.</p>
+<p><strong>Producto final</strong>: mini-informe temático (1–2 páginas) que cada equipo lleva consigo.</p>
+<!-- ::: {.callout-note appearance="simple" icon="false"} -->
+<!-- 📷 **IMAGEN PENDIENTE**: Diagrama del flujo de 5 pasos del taller como -->
+<!-- cadena con íconos, alternando los rótulos "HUMANO" e "IA": definir -->
+<!-- categorías (humano) → clasificar (IA) → auditar (humano, destacado en -->
+<!-- color como paso crítico) → extraer (IA) → sintetizar (IA+humano). El -->
+<!-- paso de auditoría debe sobresalir visualmente. -->
+<!-- ::: -->
+</section>
+<section id="tarea-puente-opcional" class="level3" data-number="4.4.2">
+<h3 data-number="4.4.2" class="anchored" data-anchor-id="tarea-puente-opcional"><span class="header-section-number">4.4.2</span> Tarea puente (opcional)</h3>
+<p>Aplica el flujo a un corpus propio (anonimizado) de tu organización y lleva los hallazgos a la sesión 6.1. Todos tienen un archivo de respuestas sin procesar esperando.</p>
+</section>
+</section>
+<section id="ética-y-límites" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="ética-y-límites"><span class="header-section-number">4.5</span> Ética y límites</h2>
+<p>Los tres riesgos y su control:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Riesgo</th>
+<th>Control</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>El modelo clasifica con sesgos</td>
+<td>Auditoría humana de muestras, siempre</td>
+</tr>
+<tr class="even">
+<td>El resumen “alisa” las voces minoritarias</td>
+<td>Pedir explícitamente disensos y opiniones minoritarias</td>
+</tr>
+<tr class="odd">
+<td>Sobre-confianza institucional</td>
+<td>El informe IA es borrador para el analista, no producto final firmable</td>
+</tr>
+</tbody>
+</table>
+<p>Regla de comunicación pública: <strong>si un análisis fue asistido por IA, se declara</strong>. Transparencia como política por defecto.</p>
+</section>
+<section id="resumen" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="resumen"><span class="header-section-number">4.6</span> Resumen</h2>
+<ul>
+<li>El material participativo sub-analizado es información perdida y confianza traicionada; el NLP permite procesarlo completo, en horas y en español.</li>
+<li>El corpus mínimo viable: una opinión por fila, contexto en columnas, <strong>anonimización antes de procesar</strong> (Ley 21.719).</li>
+<li>El flujo del curso sobre seguridad tiene 5 pasos: categorías (humano) → clasificación (IA) → <strong>auditoría (humano, innegociable)</strong> → extracción (IA) → síntesis trazable (IA + humano).</li>
+<li>La trazabilidad es el sello de calidad: cada afirmación del informe lleva su frecuencia y sus citas textuales de respaldo.</li>
+<li>La IA propone, el profesional dispone: el informe asistido por IA es borrador del analista y se declara como tal.</li>
+<li>Hasta aquí clasificamos <strong>qué</strong> dice la gente; la próxima sesión mide <strong>cómo se siente</strong> respecto del entorno urbano.</li>
+</ul>
+</section>
+<section id="recursos" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="recursos"><span class="header-section-number">4.7</span> Recursos</h2>
+<ul>
+<li><strong>Corpus del curso</strong>: <code>corpus_5_2_local/corpus_seguridad.csv</code>, con 412 respuestas sintéticas sobre seguridad. Incluye <code>clave_seguridad.csv</code> para revisión docente, README y generador reproducible.</li>
+<li><strong>Proyecto de <a href="https://antigravity.google/">Antigravity</a></strong>: espacio para cargar el CSV, crear scripts reproducibles, documentar el análisis y auditar resultados.</li>
+<li><strong>Prompt-book NLP</strong>: los prompts de las 5 etapas del flujo + prompt de anonimización.</li>
+<li><strong>Plantilla “Informe temático de participación”</strong> (2 páginas): metodología declarada, categorías, frecuencias, síntesis por tema con citas, disensos, limitaciones.</li>
+<li><strong>Ficha “Datos personales y participación” (1 página)</strong>: qué es dato personal, qué limpiar antes de procesar, referencia a la Ley 21.719 y su pertinencia municipal.</li>
+<li><strong>Checklist de auditoría de clasificaciones IA</strong>: tamaño de muestra, qué mirar, cuándo re-clasificar.</li>
+<li>Caso documentado breve de sistematización masiva de participación con IA, como referencia inspiradora.</li>
+</ul>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-jurafsky_speech_2025" class="csl-entry" role="listitem">
+Jurafsky, Daniel, and James H. Martin. 2025. <em>Speech and Language Processing</em>. 3rd ed. Borrador en línea. <a href="https://web.stanford.edu/~jurafsky/slp3/">https://web.stanford.edu/~jurafsky/slp3/</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./operaciones_espaciales.html" class="pagination-link" aria-label="Operaciones Espaciales">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Operaciones Espaciales</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./recursos_complementarios.html" class="pagination-link" aria-label="Recursos Complementarios">
+        <span class="nav-page-text">Recursos Complementarios</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2026, Denis Berroeta</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
