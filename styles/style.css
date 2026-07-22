@@ -16,10 +16,19 @@ p code {
   white-space: inherit;
 }
 pre {
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 1rem;
   word-break: normal;
   word-wrap: normal;
 }
+div.sourceCode {
+  background-color: #f3f4f6;
+  border-radius: 4px;
+}
 pre code {
+  background-color: transparent;
   white-space: inherit;
   font-size: 14px
 }

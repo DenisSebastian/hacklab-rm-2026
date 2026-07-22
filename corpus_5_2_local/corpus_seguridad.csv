@@ -1,0 +1,413 @@
+﻿id,respuesta,comuna,canal,grupo_edad
+SEG-0001,En paradero 14 venden droga como si nada y en la noche se escuchan balazos.,San José de Maipo,formulario_papel,30-44
+SEG-0002,"Se metieron a dos casas esta semana, necesitamos alguna medida concreta. Me pueden llamar al +569 8569 8473.",San Joaquín,whatsapp_municipal,18-29
+SEG-0003,"Más patrullas no siempre significa más seguridad, a varios jóvenes los controlan solo por cómo se ven.",,formulario_papel,
+SEG-0004,"Hay una familia con problemas graves y el barrio solo comenta, falta apoyo profesional!!! Dejé el reclamo a nombre de Patricia Muñoz, RUT 12.806.215-4.",Estación Central,consulta_web,30-44
+SEG-0005,"Necesitamos más patrullaje de verdad, no una vuelta rápida para la foto.",,cabildo,
+SEG-0006,"La convivencia está pésima, cualquier discusión termina en insultos.",Huechuraba,formulario_papel,30-44
+SEG-0007,"Carabineros pasa más seguido y se nota, aunque todavía falta coordinación con seguridad municipal.",Pudahuel,whatsapp_municipal,45-59
+SEG-0008,"No me ha pasado nada, pero igual no salgo después de las nueve por miedo.",San José de Maipo,whatsapp_municipal,45-59
+SEG-0009,"Hay cabros ofreciendo pasta cerca del colegio, esto ya se salió de control.",,buzón_vecinal,
+SEG-0010,"La convivencia está pésima, cualquier discusión termina en insultos.",San Joaquín,formulario_papel,18-29
+SEG-0011,"Antes caminaba tranquila, ahora pido que me vayan a buscar al paradero.",El Bosque,buzón_vecinal,45-59
+SEG-0012,"Los carretes duran hasta las 5 am y nadie fiscaliza, imposible dormir.",San José de Maipo,whatsapp_municipal,30-44
+SEG-0013,no sé,,buzón_vecinal,
+SEG-0014,"Hay cabros ofreciendo pasta cerca del colegio, esto ya se salió de control.",Santiago,consulta_web,60+
+SEG-0015,"Desde que pusieron cámaras ya no se juntan en la plaza; quedó más tranquila, pero ahora parece cárcel.",,cabildo,
+SEG-0016,"Los portonazos tan brigidos, uno ya entra mirando para todos lados.",San Joaquín,cabildo,60+
+SEG-0017,"Mi vecino amenaza a todos por el estacionamiento, ya no se puede conversar. Dejé el reclamo a nombre de Juan Pérez, RUT 16.779.318-2.",Santiago,consulta_web,18-29
+SEG-0018,"En la casa de al lado se escuchan gritos y golpes, alguien debería intervenir con cuidado.",Peñalolén,formulario_papel,18-29
+SEG-0019,"El comercio ambulante dejó la vereda intransitable, pero tampoco es llegar y echarlos.",,cabildo,
+SEG-0020,"No me ha pasado nada, pero igual no salgo después de las nueve por miedo.",San José de Maipo,consulta_web,45-59
+SEG-0021,"Los portonazos están brigidos, uno ya entra mirando para todos lados.",,whatsapp_municipal,
+SEG-0022,Me robaron el celu saliendo del metro y no había nadie patrullando!!!,Renca,cabildo,60+
+SEG-0023,Las cámaras sirven si alguien las mira si no son puro adorno.,Recoleta,buzón_vecinal,60+
+SEG-0024,"El comercio ambulante dejó la vereda intransitable, pero tampoco es llegar y echarlos.",Puente Alto,formulario_papel,18-29
+SEG-0025,"Antes caminaba tranquila, ahora pido que me vayan a buscar al paradero.",Quilicura,buzón_vecinal,60+
+SEG-0026,"Desde que pusieron cámaras ya no se juntan en la plaza; quedó más tranquila, pero ahora parece cárcel.",La Florida,cabildo,45-59
+SEG-0027,"Se metieron a dos casas esta semana, necesitamos alguna medida concreta.",Quilicura,buzón_vecinal,18-29
+SEG-0028,ponen música a todo chancho y cuando uno reclama se ponen violentos.,Huechuraba,formulario_papel,18-29
+SEG-0029,En cancha del barrio venden droga como si nada y en la noche se escuchan balazos.,Estación Central,whatsapp_municipal,30-44
+SEG-0030,"Otra vez se llevaron cables en pasaje Las Lilas, quedamos sin luz toda la cuadra.",Renca,buzón_vecinal,45-59
+SEG-0031,Necesitamos más patrullaje de verdad no una vuelta rápida para la foto.,Renca,cabildo,30-44
+SEG-0032,"Carabineros pasa más seguido y se nota, aunque todavía falta coordinación con seguridad municipal.",,buzón_vecinal,
+SEG-0033,"Hay una familia con problemas graves y el barrio solo comenta, falta apoyo profesional.",Lo Espejo,buzón_vecinal,30-44
+SEG-0034,"El comercio ambulante dejó la vereda intransitable, pero tampoco es llegar y echarlos.",El Bosque,buzón_vecinal,60+
+SEG-0035,"El comercio ambulante dejó la vereda intransitable, pero tampoco es llegar y echarlos.",Maipú,cabildo,30-44
+SEG-0036,La esquina ta llena de basura y peleas todos los fines de semana.,,buzón_vecinal,
+SEG-0037,La esquina está llena de basura y peleas todos los fines de semana.,,whatsapp_municipal,
+SEG-0038,Quiero saber por los talleres deportivos.,,consulta_web,
+SEG-0039,"Ponen música a todo chancho y cuando uno reclama se ponen violentos. Dejé el reclamo a nombre de Luis Araya, RUT 15.244.747-5.",Estación Central,whatsapp_municipal,18-29
+SEG-0040,Gracias por escuchar a los vecinos.,Lo Espejo,whatsapp_municipal,45-59
+SEG-0041,El sitio eriazo de plaza Los Copihues está lleno de matorrales y da miedo pasar.,Huechuraba,whatsapp_municipal,60+
+SEG-0042,El sitio eriazo de cancha del barrio está lleno de matorrales y da miedo pasar.,,formulario_papel,
+SEG-0043,"Mi vecino amenaza a todos por el estacionamiento, ya no se puede conversar.",Puente Alto,whatsapp_municipal,45-59
+SEG-0044,"Faltan luces en el pasaje, ahí se esconden para asaltar.",,formulario_papel,
+SEG-0045,La esquina está llena de basura y peleas todos los fines de semana.,Quilicura,formulario_papel,60+
+SEG-0046,"La plaza está oscurísima, cambien las luminarias antes de poner más cámaras.",Maipú,buzón_vecinal,18-29
+SEG-0047,"Los portonazos están brigidos, uno ya entra mirando para todos lados.",,formulario_papel,
+SEG-0048,El barrio no está peor; las redes sociales exageran y terminamos desconfiando de todos.,,buzón_vecinal,
+SEG-0049,Ponen música a todo chancho y cuando uno reclama se ponen violentos.,,whatsapp_municipal,
+SEG-0050,"Otra vez se llevaron cables en pasaje Las Lilas, quedamos sin luz toda la cuadra.",,whatsapp_municipal,
+SEG-0051,Me robaron el celu saliendo del metro y no había nadie patrullando.,La Florida,whatsapp_municipal,30-44
+SEG-0052,"El comercio ambulante dejó la vereda intransitable, pero tampoco es llegar y echarlos.",Huechuraba,consulta_web,18-29
+SEG-0053,"el comercio ambulante dejó la vereda intransitable, pero tampoco es llegar y echarlos.",El Bosque,formulario_papel,18-29
+SEG-0054,"el barrio no es tan peligroso como dicen, pero la sensación de inseguridad es real.",Peñalolén,cabildo,60+
+SEG-0055,"El barrio no es tan peligroso como dicen, pero la sensación de inseguridad es real.",Santiago,formulario_papel,30-44
+SEG-0056,"La plaza ta oscurísima, cambien las luminarias antes de poner más cámaras. Me pueden llamar al +569 7401 4396.",Recoleta,cabildo,18-29
+SEG-0057,"Hay una familia con problemas graves y el barrio solo comenta, falta apoyo profesional.",,cabildo,
+SEG-0058,Desde que pusieron cámaras ya no se juntan en la plaza; quedó más tranquila pero ahora parece cárcel.,Paine,cabildo,18-29
+SEG-0059,"En la casa de al lado se escuchan gritos y golpes, alguien debería intervenir con cuidado.",Pudahuel,formulario_papel,60+
+SEG-0060,"no me ha pasado nada, pero igual no salgo después de las nueve por miedo.",,buzón_vecinal,
+SEG-0061,"No me ha pasado nada, pero igual no salgo después de las nueve por miedo.",La Pintana,cabildo,18-29
+SEG-0062,"Arreglaron la plaza y mejoró harto, ahora sí se ve gente usando el espacio.",Puente Alto,cabildo,60+
+SEG-0063,"Otra vez se llevaron cables en villa El Sol, quedamos sin luz toda la cuadra.",Paine,formulario_papel,18-29
+SEG-0064,"Arreglaron la plaza y mejoró harto, ahora sí se ve gente usando el espacio.",,cabildo,
+SEG-0065,"La plaza está oscurísima, cambien las luminarias antes de poner más cámaras. Me pueden llamar al +569 4073 5351.",,consulta_web,
+SEG-0066,"NECESITAMOS MÁS PATRULLAJE DE VERDAD, NO UNA VUELTA RÁPIDA PARA LA FOTO.",Puente Alto,consulta_web,18-29
+SEG-0067,"HAY UNA FAMILIA CON PROBLEMAS GRAVES Y EL BARRIO SOLO COMENTA, FALTA APOYO PROFESIONAL.",,cabildo,
+SEG-0068,"Mi vecino amenaza a todos por el estacionamiento, ya no se puede conversar.",El Bosque,buzón_vecinal,30-44
+SEG-0069,"Otra vez se llevaron cables en feria de los sábados, quedamos sin luz toda la cuadra.",San José de Maipo,cabildo,30-44
+SEG-0070,"Otra vez se llevaron cables en feria de los sábados, quedamos sin luz toda la cuadra.",Lo Espejo,formulario_papel,30-44
+SEG-0071,LA ESQUINA ESTÁ LLENA DE BASURA Y PELEAS TODOS LOS FINES DE SEMANA.,Pudahuel,buzón_vecinal,45-59
+SEG-0072,"No me ha pasado nada, pero igual no salgo después de las nueve por miedo.",San José de Maipo,whatsapp_municipal,30-44
+SEG-0073,La esquina está llena de basura y peleas todos los fines de semana. Esto pasa frente a Santa Rosa 1361.,Santiago,buzón_vecinal,30-44
+SEG-0074,"La plaza está oscurísima, cambien las luminarias antes de poner más cámaras.",Huechuraba,cabildo,45-59
+SEG-0075,Siento que todo está peor aunque quizás también influyen las noticias.,El Bosque,buzón_vecinal,45-59
+SEG-0076,"Faltan luces en el pasaje, ahí se esconden para asaltar.",Santiago,consulta_web,30-44
+SEG-0077,"No me ha pasado nada, pero igual no salgo después de las nueve por miedo.",La Florida,buzón_vecinal,18-29
+SEG-0078,"No quiero más cámaras ni controles, el problema se arregla con oportunidades y trabajo comunitario.",Pudahuel,buzón_vecinal,45-59
+SEG-0079,"Más patrullas no siempre significa más seguridad, a varios jóvenes los controlan solo por cómo se ven.",San Joaquín,consulta_web,45-59
+SEG-0080,"Desde que llegaron esos narcos el barrio cambió, nadie deja jugar a los niños afuera.",San Joaquín,cabildo,60+
+SEG-0081,"Hay una familia con problemas graves y el barrio solo comenta, falta apoyo profesional.",El Bosque,formulario_papel,30-44
+SEG-0082,"El barrio no es tan peligroso como dicen, pero la sensación de inseguridad es real.",Recoleta,formulario_papel,60+
+SEG-0083,"No me ha pasado nada, pero igual no salgo después de las nueve por miedo. Mi vecino Juan Pérez puede confirmar esto.",Pudahuel,consulta_web,45-59
+SEG-0084,"Arreglaron la plaza y mejoró harto, ahora sí se ve gente usando el espacio!!!",,formulario_papel,
+SEG-0085,"En la casa de al lado se escuchan gritos y golpes, alguien debería intervenir con cuidado.",Lo Espejo,buzón_vecinal,18-29
+SEG-0086,"No quiero más vigilancia, prefiero iluminación y trabajo con los jóvenes.",Santiago,buzón_vecinal,30-44
+SEG-0087,"El comercio ambulante dejó la vereda intransitable, pero tampoco es llegar y echarlos.",Pudahuel,cabildo,18-29
+SEG-0088,Me robaron el celu saliendo del metro y no había nadie patrullando.,Lo Espejo,whatsapp_municipal,60+
+SEG-0089,"La plaza está oscura y por eso se presta pa carretes, basura y asaltos; no sé si faltan luces o patrullas.",Huechuraba,whatsapp_municipal,18-29
+SEG-0090,"Se metieron a dos casas esta semana, necesitamos alguna medida concreta.",Recoleta,consulta_web,30-44
+SEG-0091,"La casa de la esquina funciona como punto de venta, todos sabemos menos la muni parece.",Huechuraba,formulario_papel,18-29
+SEG-0092,La plaza está oscurísima cambien las luminarias antes de poner más cámaras.,,whatsapp_municipal,
+SEG-0093,"No quiero más vigilancia, prefiero iluminación y trabajo con los jóvenes.",,formulario_papel,
+SEG-0094,La esquina está llena de basura y peleas todos los fines de semana.,San José de Maipo,cabildo,45-59
+SEG-0095,"La convivencia está pésima, cualquier discusión termina en insultos.",,whatsapp_municipal,
+SEG-0096,"Los portonazos están brigidos, uno ya entra mirando para todos lados.",Peñalolén,buzón_vecinal,18-29
+SEG-0097,Ponen música a todo chancho y cuando uno reclama se ponen violentos.,,formulario_papel,
+SEG-0098,Los carretes duran hasta las 5 am y nadie fiscaliza imposible dormir.,El Bosque,cabildo,18-29
+SEG-0099,"Necesitamos más patrullaje de verdad, no una vuelta rápida para la foto. Esto pasa frente a La Estrella 3271.",San José de Maipo,buzón_vecinal,60+
+SEG-0100,Hay cabros ofreciendo pasta cerca del colegio esto ya se salió de control.,Quilicura,whatsapp_municipal,60+
+SEG-0101,"Arreglaron la plaza y mejoró harto, ahora sí se ve gente usando el espacio.",,cabildo,
+SEG-0102,"carabineros pasa más seguido y se nota, aunque todavía falta coordinación con seguridad municipal.",Quilicura,consulta_web,30-44
+SEG-0103,En villa El Sol venden droga como si nada y en la noche se escuchan balazos.,Maipú,cabildo,18-29
+SEG-0104,En feria de los sábados venden droga como si nada y en la noche se escuchan balazos.,San José de Maipo,consulta_web,18-29
+SEG-0105,"Necesitamos más patrullaje de verdad, no una vuelta rápida para la foto.",Quilicura,consulta_web,30-44
+SEG-0106,,,cabildo,
+SEG-0107,"Los carretes duran hasta las 5 am y nadie fiscaliza, imposible dormir.",Huechuraba,buzón_vecinal,30-44
+SEG-0108,"MI VECINO AMENAZA A TODOS POR EL ESTACIONAMIENTO, YA NO SE PUEDE CONVERSAR. Esto pasa frente a La Estrella 500.",Maipú,whatsapp_municipal,30-44
+SEG-0109,"Desde que llegaron esos narcos el barrio cambió, nadie deja jugar a los niños afuera.",Recoleta,buzón_vecinal,30-44
+SEG-0110,"Otra vez se llevaron cables en plaza Los Copihues, quedamos sin luz toda la cuadra.",,consulta_web,
+SEG-0111,"La casa de la esquina funciona como punto de venta, todos sabemos menos la muni parece.",,formulario_papel,
+SEG-0112,Siento que todo está peor aunque quizás también influyen las noticias.,Pudahuel,consulta_web,45-59
+SEG-0113,"OTRA VEZ SE LLEVARON CABLES EN PARADERO 14, QUEDAMOS SIN LUZ TODA LA CUADRA.",Santiago,whatsapp_municipal,18-29
+SEG-0114,"LA PLAZA ESTÁ OSCURÍSIMA, CAMBIEN LAS LUMINARIAS ANTES DE PONER MÁS CÁMARAS.",El Bosque,whatsapp_municipal,18-29
+SEG-0115,"El comercio ambulante dejó la vereda intransitable, pero tampoco es llegar y echarlos.",Puente Alto,consulta_web,60+
+SEG-0116,El barrio no está peor; las redes sociales exageran y terminamos desconfiando de todos.,,formulario_papel,
+SEG-0117,"Qué bueno que nunca pasa nada por acá, salvo los portonazos de todas las semanas!!!",Puente Alto,cabildo,60+
+SEG-0118,"Mi vecino amenaza a todos por el estacionamiento, ya no se puede conversar. Dejé el reclamo a nombre de Felipe Soto, RUT 23.470.579-4.",,cabildo,
+SEG-0119,"Mi vecino amenaza a todos por el estacionamiento, ya no se puede conversar. Me pueden llamar al +569 5161 7421.",Peñalolén,whatsapp_municipal,60+
+SEG-0120,"Más patrullas no siempre significa más seguridad, a varios jóvenes los controlan solo por cómo se ven.",El Bosque,whatsapp_municipal,30-44
+SEG-0121,"Desde que pusieron cámaras ya no se juntan en la plaza; quedó más tranquila, pero ahora parece cárcel.",,cabildo,
+SEG-0122,"Faltan luces en el pasaje, ahí se esconden pa asaltar.",Paine,buzón_vecinal,45-59
+SEG-0123,.,,consulta_web,
+SEG-0124,"Arreglaron la plaza y mejoró harto, ahora sí se ve gente usando el espacio.",Estación Central,buzón_vecinal,45-59
+SEG-0125,La esquina está llena de basura y peleas todos los fines de semana.,El Bosque,buzón_vecinal,30-44
+SEG-0126,"Los carretes duran hasta las 5 am y nadie fiscaliza, imposible dormir.",,formulario_papel,
+SEG-0127,"Los portonazos están brigidos, uno ya entra mirando pa todos lados.",,consulta_web,
+SEG-0128,"Hay cabros ofreciendo pasta cerca del colegio, esto ya se salió de control.",San José de Maipo,whatsapp_municipal,45-59
+SEG-0129,"EL COMERCIO AMBULANTE DEJÓ LA VEREDA INTRANSITABLE, PERO TAMPOCO ES LLEGAR Y ECHARLOS.",Recoleta,buzón_vecinal,18-29
+SEG-0130,"Los carretes duran hasta las 5 am y nadie fiscaliza, imposible dormir.",,formulario_papel,
+SEG-0131,"Los carretes duran hasta las 5 am y nadie fiscaliza, imposible dormir.",El Bosque,buzón_vecinal,60+
+SEG-0132,Me robaron el celu saliendo del metro y no había nadie patrullando.,,formulario_papel,
+SEG-0133,"La convivencia está pésima, cualquier discusión termina en insultos.",La Pintana,buzón_vecinal,18-29
+SEG-0134,"NO QUIERO MÁS CÁMARAS NI CONTROLES, EL PROBLEMA SE ARREGLA CON OPORTUNIDADES Y TRABAJO COMUNITARIO.",,cabildo,
+SEG-0135,"El comercio ambulante dejó la vereda intransitable, pero tampoco es llegar y echarlos!!!",San Joaquín,cabildo,30-44
+SEG-0136,"EN LA CASA DE AL LADO SE ESCUCHAN GRITOS Y GOLPES, ALGUIEN DEBERÍA INTERVENIR CON CUIDADO.",La Pintana,consulta_web,45-59
+SEG-0137,"Faltan luces en el pasaje, ahí se esconden para asaltar.",Maipú,buzón_vecinal,45-59
+SEG-0138,Me robaron el celu saliendo del metro y no había nadie patrullando.,,formulario_papel,
+SEG-0139,El sitio eriazo de cancha del barrio está lleno de matorrales y da miedo pasar.,,buzón_vecinal,
+SEG-0140,PONEN MÚSICA A TODO CHANCHO Y CUANDO UNO RECLAMA SE PONEN VIOLENTOS. Esto pasa frente a Santa Rosa 318.,,formulario_papel,
+SEG-0141,En cancha del barrio venden droga como si nada y en la noche se escuchan balazos.,San Joaquín,formulario_papel,18-29
+SEG-0142,"Qué bueno que nunca pasa nada por acá, salvo los portonazos de todas las semanas.",Puente Alto,cabildo,18-29
+SEG-0143,En paradero 14 venden droga como si nada y en la noche se escuchan balazos.,Peñalolén,consulta_web,18-29
+SEG-0144,"DESDE QUE LLEGARON ESOS NARCOS EL BARRIO CAMBIÓ, NADIE DEJA JUGAR A LOS NIÑOS AFUERA.",El Bosque,whatsapp_municipal,30-44
+SEG-0145,"Arreglaron la plaza y mejoró harto, ahora sí se ve gente usando el espacio.",Renca,formulario_papel,60+
+SEG-0146,"La convivencia está pésima, cualquier discusión termina en insultos.",,cabildo,
+SEG-0147,Necesitamos más áreas verdes.,,buzón_vecinal,
+SEG-0148,¿Cuándo arreglan la vereda de mi calle?,San Joaquín,whatsapp_municipal,18-29
+SEG-0149,siento que todo está peor aunque quizás también influyen las noticias.,El Bosque,whatsapp_municipal,30-44
+SEG-0150,"Arreglaron la plaza y mejoró harto, ahora sí se ve gente usando el espacio. Dejé el reclamo a nombre de Juan Pérez, RUT 21.781.491-4.",Peñalolén,buzón_vecinal,60+
+SEG-0151,"La plaza está oscurísima, cambien las luminarias antes de poner más cámaras.",El Bosque,consulta_web,45-59
+SEG-0152,"Desde que llegaron esos narcos el barrio cambió, nadie deja jugar a los niños afuera.",Puente Alto,cabildo,30-44
+SEG-0153,,Cerro Navia,cabildo,30-44
+SEG-0154,"Desde que llegaron esos narcos el barrio cambió, nadie deja jugar a los niños afuera.",El Bosque,cabildo,30-44
+SEG-0155,"Desde que llegaron esos narcos el barrio cambió, nadie deja jugar a los niños afuera.",San Joaquín,buzón_vecinal,18-29
+SEG-0156,SIENTO QUE TODO ESTÁ PEOR AUNQUE QUIZÁS TAMBIÉN INFLUYEN LAS NOTICIAS.,Lo Espejo,cabildo,45-59
+SEG-0157,"Qué bueno que nunca pasa nada por acá, salvo los portonazos de todas las semanas.",,formulario_papel,
+SEG-0158,"Hay cabros ofreciendo pasta cerca del colegio, esto ya se salió de control.",San Joaquín,whatsapp_municipal,30-44
+SEG-0159,"Desde que llegaron esos narcos el barrio cambió, nadie deja jugar a los niños afuera.",San José de Maipo,consulta_web,30-44
+SEG-0160,Gracias por escuchar a los vecinos.,,formulario_papel,
+SEG-0161,En feria de los sábados venden droga como si nada y en la noche se escuchan balazos.,San Joaquín,formulario_papel,18-29
+SEG-0162,"En la casa de al lado se escuchan gritos y golpes, alguien debería intervenir con cuidado.",Pudahuel,cabildo,30-44
+SEG-0163,"No quiero más cámaras ni controles, el problema se arregla con oportunidades y trabajo comunitario.",,consulta_web,
+SEG-0164,"La plaza está oscura y por eso se presta pa carretes, basura y asaltos; no sé si faltan luces o patrullas!!!",Estación Central,consulta_web,30-44
+SEG-0165,"La plaza está oscura y por eso se presta pa carretes, basura y asaltos; no sé si faltan luces o patrullas.",Recoleta,buzón_vecinal,45-59
+SEG-0166,El sitio eriazo de feria de los sábados está lleno de matorrales y da miedo pasar.,Lo Espejo,consulta_web,18-29
+SEG-0167,En plaza Los Copihues venden droga como si nada y en la noche se escuchan balazos.,San José de Maipo,formulario_papel,18-29
+SEG-0168,"Antes caminaba tranquila, ahora pido que me vayan a buscar al paradero.",Recoleta,formulario_papel,60+
+SEG-0169,El sitio eriazo de pasaje Las Lilas está lleno de matorrales y da miedo pasar.,,consulta_web,
+SEG-0170,"No quiero más vigilancia, prefiero iluminación y trabajo con los jóvenes.",Peñalolén,consulta_web,60+
+SEG-0171,"Faltan luces en el pasaje, ahí se esconden para asaltar.",Pudahuel,formulario_papel,18-29
+SEG-0172,La atención del consultorio está muy lenta.,Maipú,cabildo,30-44
+SEG-0173,"Otra vez se llevaron cables en padero 14, quedamos sin luz toda la cuadra.",Santiago,buzón_vecinal,30-44
+SEG-0174,"El comercio ambulante dejó la vereda intransitable, pero tampoco es llegar y echarlos.",La Pintana,buzón_vecinal,60+
+SEG-0175,"Los carretes duran hasta las 5 am y nadie fiscaliza, imposible dormir.",San José de Maipo,formulario_papel,60+
+SEG-0176,Necesitamos más áreas verdes.,,cabildo,
+SEG-0177,"La plaza está oscura y por eso se presta pa carretes, basura y asaltos; no sé si faltan luces o patrullas.",Pudahuel,buzón_vecinal,45-59
+SEG-0178,"No quiero más vigilancia, prefiero iluminación y trabajo con los jóvenes.",Cerro Navia,buzón_vecinal,18-29
+SEG-0179,"Los carretes duran hasta las 5 am y nadie fiscaliza, imposible dormir.",Quilicura,whatsapp_municipal,30-44
+SEG-0180,La esquina está llena de basura y peleas todos los fines de semana.,La Pintana,whatsapp_municipal,60+
+SEG-0181,"Otra vez se llevaron cables en feria de los sábados, quedamos sin luz toda la cuadra.",Paine,buzón_vecinal,60+
+SEG-0182,Ponen música a todo chancho y cuando uno reclama se ponen violentos.,Lo Espejo,whatsapp_municipal,30-44
+SEG-0183,"Hay una familia con problemas graves y el barrio solo comenta, falta apoyo profesional.",Pudahuel,formulario_papel,45-59
+SEG-0184,"Más patrullas no siempre significa más seguridad, a varios jóvenes los controlan solo por cómo se ven.",Lo Espejo,consulta_web,60+
+SEG-0185,"La plaza está oscurísima, cambien las luminarias antes de poner más cámaras!!!",Quilicura,buzón_vecinal,30-44
+SEG-0186,"Mi vecino amenaza a todos por el estacionamiento, ya no se puede conversar.",Renca,consulta_web,45-59
+SEG-0187,"El barrio no es tan peligroso como dicen, pero la sensación de inseguridad es real.",Cerro Navia,cabildo,18-29
+SEG-0188,"No me ha pasado nada, pero igual no salgo después de las nueve por miedo. Esto pasa frente a Santa Rosa 1514.",Recoleta,buzón_vecinal,45-59
+SEG-0189,"Los carretes duran hasta las 5 am y nadie fiscaliza, imposible dormir.",Maipú,buzón_vecinal,45-59
+SEG-0190,El sitio eriazo de feria de los sábados está lleno de matorrales y da miedo pasar.,,whatsapp_municipal,
+SEG-0191,Ponen música a todo chancho y cuando uno reclama se ponen violentos.,,whatsapp_municipal,
+SEG-0192,"Los carretes duran hasta las 5 am y nadie fiscaliza, imposible dormir.",Huechuraba,whatsapp_municipal,30-44
+SEG-0193,El sitio eriazo de paradero 14 está lleno de matorrales y da miedo pasar.,,cabildo,
+SEG-0194,"Desde que llegaron esos narcos el barrio cambió, nadie deja jugar a los niños afuera.",,formulario_papel,
+SEG-0195,"Necesitamos más patrullaje de verdad, no una vuelta rápida para la foto.",Cerro Navia,consulta_web,45-59
+SEG-0196,"Mi vecino amenaza a todos por el estacionamiento, ya no se puede conversar.",Santiago,cabildo,30-44
+SEG-0197,En villa El Sol venden droga como si nada y en la noche se escuchan balazos.,Lo Espejo,formulario_papel,45-59
+SEG-0198,"Carabineros pasa más seguido y se nota, aunque todavía falta coordinación con seguridad municipal.",Paine,cabildo,60+
+SEG-0199,"No quiero más cámaras ni controles, el problema se arregla con oportunidades y trabajo comunitario.",,consulta_web,
+SEG-0200,"Necesitamos más patrullaje de verdad, no una vuelta rápida pa la foto.",,formulario_papel,
+SEG-0201,"LOS CARRETES DURAN HASTA LAS 5 AM Y NADIE FISCALIZA, IMPOSIBLE DORMIR.",Puente Alto,buzón_vecinal,45-59
+SEG-0202,"Otra vez se llevaron cables en cancha del barrio, quedamos sin luz toda la cuadra.",Peñalolén,formulario_papel,30-44
+SEG-0203,"La plaza está oscurísima, cambien las luminarias antes de poner más cámaras!!!",,consulta_web,
+SEG-0204,"Desde que pusieron cámaras ya no se juntan en la plaza; quedó más tranquila, pero ahora parece cárcel.",Santiago,cabildo,30-44
+SEG-0205,"En la casa de al lado se escuchan gritos y golpes, alguien debería intervenir con cuidado.",Renca,cabildo,60+
+SEG-0206,No quiero más cámaras ni controles el problema se arregla con oportunidades y trabajo comunitario.,,formulario_papel,
+SEG-0207,"Necesitamos más patrullaje de verdad, no una vuelta rápida para la foto.",Lo Espejo,formulario_papel,60+
+SEG-0208,"la convivencia está pésima, cualquier discusión termina en insultos.",Estación Central,formulario_papel,45-59
+SEG-0209,"LA CONVIVENCIA ESTÁ PÉSIMA, CUALQUIER DISCUSIÓN TERMINA EN INSULTOS.",,formulario_papel,
+SEG-0210,"Mi vecino amenaza a todos por el estacionamiento, ya no se puede conversar. Mi vecino Patricia Muñoz puede confirmar esto.",San José de Maipo,buzón_vecinal,30-44
+SEG-0211,"Los carretes duran hasta las 5 am y nadie fiscaliza, imposible dormir.",,consulta_web,
+SEG-0212,ME ROBARON EL CELU SALIENDO DEL METRO Y NO HABÍA NADIE PATRULLANDO.,El Bosque,whatsapp_municipal,18-29
+SEG-0213,"En la casa de al lado se escuchan gritos y golpes, alguien debería intervenir con cuidado.",,consulta_web,
+SEG-0214,"La plaza está oscurísima, cambien las luminarias antes de poner más cámaras.",La Pintana,whatsapp_municipal,18-29
+SEG-0215,"Antes caminaba tranquila, ahora pido que me vayan a buscar al paradero.",Santiago,formulario_papel,30-44
+SEG-0216,En feria de los sábados venden droga como si nada y en la noche se escuchan balazos.,Recoleta,consulta_web,60+
+SEG-0217,Quiero saber por los talleres deportivos.,Estación Central,whatsapp_municipal,60+
+SEG-0218,En feria de los sábados venden droga como si nada y en la noche se escuchan balazos.,La Pintana,buzón_vecinal,30-44
+SEG-0219,Necesitamos más áreas verdes.,,buzón_vecinal,
+SEG-0220,El sitio eriazo de paradero 14 está lleno de matorrales y da miedo pasar.,,cabildo,
+SEG-0221,No me ha pasado nada pero igual no salgo después de las nueve por miedo.,Recoleta,cabildo,30-44
+SEG-0222,"La casa de la esquina funciona como punto de venta, todos sabemos menos la muni parece.",Recoleta,formulario_papel,45-59
+SEG-0223,"Las cámaras sirven si alguien las mira, si no son puro adorno.",,cabildo,
+SEG-0224,"Las cámaras sirven si alguien las mira, si no son puro adorno. Esto pasa frente a Los Aromos 2567.",Renca,cabildo,18-29
+SEG-0225,La esquina está llena de basura y peleas todos los fines de semana. Esto pasa frente a El Molino 4458.,La Pintana,buzón_vecinal,18-29
+SEG-0226,Necesitamos más áreas verdes.,Huechuraba,buzón_vecinal,30-44
+SEG-0227,"Más patrullas no siempre significa más seguridad, a varios jóvenes los controlan solo por cómo se ven.",Quilicura,consulta_web,30-44
+SEG-0228,"En la casa de al lado se escuchan gritos y golpes, alguien debería intervenir con cuidado.",Paine,formulario_papel,60+
+SEG-0229,"El barrio no es tan peligroso como dicen, pero la sensación de inseguridad es real.",Peñalolén,whatsapp_municipal,30-44
+SEG-0230,"LA CONVIVENCIA ESTÁ PÉSIMA, CUALQUIER DISCUSIÓN TERMINA EN INSULTOS.",,whatsapp_municipal,
+SEG-0231,"Mi vecino amenaza a todos por el estacionamiento, ya no se puede conversar.",Lo Espejo,whatsapp_municipal,60+
+SEG-0232,no sé,,consulta_web,
+SEG-0233,Las cámaras sirven si alguien las mira si no son puro adorno.,Cerro Navia,whatsapp_municipal,30-44
+SEG-0234,"El comercio ambulante dejó la vereda intransitable, pero tampoco es llegar y echarlos.",Pudahuel,consulta_web,45-59
+SEG-0235,Los portonazos están brigidos uno ya entra mirando para todos lados.,Peñalolén,consulta_web,60+
+SEG-0236,"Los portonazos están brigidos, uno ya entra mirando para todos lados.",La Florida,formulario_papel,45-59
+SEG-0237,"En la casa de al lado se escuchan gritos y golpes, alguien debería intervenir con cuidado.",Cerro Navia,buzón_vecinal,60+
+SEG-0238,Mi vecino amenaza a todos por el estacionamiento ya no se puede conversar.,Lo Espejo,whatsapp_municipal,45-59
+SEG-0239,"Otra vez se llevaron cables en paradero 14, quedamos sin luz toda la cuadra.",Paine,cabildo,60+
+SEG-0240,"La plaza está oscura y por eso se presta pa carretes, basura y asaltos; no sé si faltan luces o patrullas.",,buzón_vecinal,
+SEG-0241,El sitio eriazo de cancha del barrio está lleno de matorrales y da miedo pasar.,Paine,cabildo,60+
+SEG-0242,"Más patrullas no siempre significa más seguridad, a varios jóvenes los controlan solo por cómo se ven.",Cerro Navia,whatsapp_municipal,60+
+SEG-0243,"No quiero más cámaras ni controles, el problema se arregla con oportunidades y trabajo comunitario.",Huechuraba,consulta_web,18-29
+SEG-0244,nada,,consulta_web,
+SEG-0245,"La plaza está oscurísima, cambien las luminarias antes de poner más cámaras.",Lo Espejo,consulta_web,18-29
+SEG-0246,Se metieron a dos casas esta semana necesitamos alguna medida concreta.,La Pintana,consulta_web,60+
+SEG-0247,Arreglaron la plaza y mejoró harto ahora sí se ve gente usando el espacio.,El Bosque,buzón_vecinal,30-44
+SEG-0248,Hay cabros ofreciendo pasta cerca del colegio esto ya se salió de control.,,formulario_papel,
+SEG-0249,Se metieron a dos casas esta semana necesitamos alguna medida concreta. Esto pasa frente a Santa Rosa 3702.,,consulta_web,
+SEG-0250,"No quiero más cámaras ni controles, el problema se arregla con oportunidades y trabajo comunitario.",Renca,formulario_papel,18-29
+SEG-0251,"No quiero más vigilancia, prefiero iluminación y trabajo con los jóvenes.",Recoleta,whatsapp_municipal,60+
+SEG-0252,"HAY CABROS OFRECIENDO PASTA CERCA DEL COLEGIO, ESTO YA SE SALIÓ DE CONTROL. Dejé el reclamo a nombre de Camila Rojas, RUT 11.640.237-8.",Santiago,cabildo,60+
+SEG-0253,"Mi vecino amenaza a todos por el estacionamiento, ya no se puede conversar.",,buzón_vecinal,
+SEG-0254,Siento que todo está peor aunque quizás también influyen las noticias.,Lo Espejo,cabildo,60+
+SEG-0255,Ponen música a todo chancho y cuando uno reclama se ponen violentos.,Pudahuel,buzón_vecinal,30-44
+SEG-0256,"Arreglaron la plaza y mejoró harto, ahora sí se ve gente usando el espacio.",San José de Maipo,whatsapp_municipal,45-59
+SEG-0257,"la plaza está oscurísima, cambien las luminarias antes de poner más cámaras.",Recoleta,formulario_papel,60+
+SEG-0258,"No me ha pasado nada, pero igual no salgo después de las nueve por miedo!!!",Renca,buzón_vecinal,60+
+SEG-0259,"No me ha pasado nada, pero igual no salgo después de las nueve por miedo.",,cabildo,
+SEG-0260,"El comercio ambulante dejó la vereda intransitable, pero tampoco es llegar y echarlos.",Maipú,cabildo,45-59
+SEG-0261,"El comercio ambulante dejó la vereda intransitable, pero tampoco es llegar y echarlos.",Maipú,buzón_vecinal,45-59
+SEG-0262,"Mi vecino amenaza a todos por el estacionamiento, ya no se puede conversar.",Pudahuel,consulta_web,18-29
+SEG-0263,"Faltan luces en el pasaje, ahí se esconden para asaltar.",Paine,consulta_web,60+
+SEG-0264,Necesitamos más áreas verdes.,Maipú,whatsapp_municipal,18-29
+SEG-0265,"Hay cabros ofreciendo pasta cerca del colegio, esto ya se salió de control.",Santiago,formulario_papel,45-59
+SEG-0266,"En la casa de al lado se escuchan gritos y golpes, alguien debería intervenir con cuidado!!!",San Joaquín,formulario_papel,45-59
+SEG-0267,"Los portonazos tan brigidos, uno ya entra mirando para todos lados.",,cabildo,
+SEG-0268,"antes caminaba tranquila, ahora pido que me vayan a buscar al paradero.",,buzón_vecinal,
+SEG-0269,"La plaza está oscurísima, cambien las luminarias antes de poner más cámaras.",Cerro Navia,whatsapp_municipal,60+
+SEG-0270,"Los portonazos están brigidos, uno ya entra mirando para todos lados.",Pudahuel,cabildo,60+
+SEG-0271,"No quiero más cámaras ni controles, el problema se arregla con oportunidades y trabajo comunitario.",Estación Central,consulta_web,45-59
+SEG-0272,"No me ha pasado nada, pero igual no salgo después de las nueve por miedo.",,consulta_web,
+SEG-0273,"Buen día, no tengo comentarios.",,buzón_vecinal,
+SEG-0274,ponen música a todo chancho y cuando uno reclama se ponen violentos.,Peñalolén,cabildo,30-44
+SEG-0275,"No quiero más cámaras ni controles, el problema se arregla con oportunidades y trabajo comunitario.",,cabildo,
+SEG-0276,"No quiero más vigilancia, prefiero iluminación y trabajo con los jóvenes.",Lo Espejo,cabildo,18-29
+SEG-0277,"La plaza está oscurísima, cambien las luminarias antes de poner más cámaras.",Puente Alto,whatsapp_municipal,45-59
+SEG-0278,"ANTES CAMINABA TRANQUILA, AHORA PIDO QUE ME VAYAN A BUSCAR AL PARADERO.",Santiago,buzón_vecinal,45-59
+SEG-0279,"Faltan luces en el pasaje, ahí se esconden para asaltar.",,cabildo,
+SEG-0280,"En la casa de al lado se escuchan gritos y golpes, alguien debería intervenir con cuidado. Dejé el reclamo a nombre de Patricia Muñoz, RUT 19.797.293-1.",La Pintana,buzón_vecinal,30-44
+SEG-0281,El sitio eriazo de feria de los sábados está lleno de matorrales y da miedo pasar.,Maipú,formulario_papel,60+
+SEG-0282,"Faltan luces en el pasaje, ahí se esconden para asaltar.",San Joaquín,consulta_web,18-29
+SEG-0283,"Arreglaron la plaza y mejoró harto, ahora sí se ve gente usando el espacio.",,whatsapp_municipal,
+SEG-0284,Necesitamos más áreas verdes.,,formulario_papel,
+SEG-0285,"El comercio ambulante dejó la vereda intransitable, pero tampoco es llegar y echarlos.",La Pintana,cabildo,60+
+SEG-0286,"En la casa de al lado se escuchan gritos y golpes, alguien debería intervenir con cuidado.",Santiago,formulario_papel,30-44
+SEG-0287,"La convivencia está pésima, cualquier discusión termina en insultos.",Santiago,whatsapp_municipal,30-44
+SEG-0288,La esquina está llena de basura y peleas todos los fines de semana.,,consulta_web,
+SEG-0289,"EL BARRIO NO ES TAN PELIGROSO COMO DICEN, PERO LA SENSACIÓN DE INSEGURIDAD ES REAL.",Peñalolén,formulario_papel,30-44
+SEG-0290,"No quiero más vigilancia, prefiero iluminación y trabajo con los jóvenes.",El Bosque,consulta_web,45-59
+SEG-0291,"No quiero más cámaras ni controles, el problema se arregla con oportunidades y trabajo comunitario.",El Bosque,formulario_papel,60+
+SEG-0292,Ponen música a todo chancho y cuando uno reclama se ponen violentos.,,cabildo,
+SEG-0293,"Las cámaras sirven si alguien las mira, si no son puro adorno. Me pueden llamar al +569 9525 5419.",El Bosque,whatsapp_municipal,18-29
+SEG-0294,"La plaza está oscurísima, cambien las luminarias antes de poner más cámaras.",Recoleta,cabildo,45-59
+SEG-0295,"Hay cabros ofreciendo pasta cerca del colegio, esto ya se salió de control. Dejé el reclamo a nombre de Camila Rojas, RUT 15.621.349-3.",San José de Maipo,buzón_vecinal,60+
+SEG-0296,"Faltan luces en el pasaje, ahí se esconden para asaltar.",,whatsapp_municipal,
+SEG-0297,"El comercio ambulante dejó la vereda intransitable, pero tampoco es llegar y echarlos.",Lo Espejo,whatsapp_municipal,45-59
+SEG-0298,"No quiero más cámaras ni controles, el problema se arregla con oportunidades y trabajo comunitario.",Santiago,formulario_papel,45-59
+SEG-0299,La plaza está oscurísima cambien las luminarias antes de poner más cámaras.,,buzón_vecinal,
+SEG-0300,"Carabineros pasa más seguido y se nota, aunque todavía falta coordinación con seguridad municipal.",Pudahuel,formulario_papel,60+
+SEG-0301,"Carabineros pasa más seguido y se nota, aunque todavía falta coordinación con seguridad municipal.",Quilicura,whatsapp_municipal,60+
+SEG-0302,"MI VECINO AMENAZA A TODOS POR EL ESTACIONAMIENTO, YA NO SE PUEDE CONVERSAR. Esto pasa frente a La Estrella 500.",Maipú,whatsapp_municipal,30-44
+SEG-0303,"La convivencia está pésima, cualquier discusión termina en insultos.",,consulta_web,
+SEG-0304,"Hay cabros ofreciendo pasta cerca del colegio, esto ya se salió de control.",,cabildo,
+SEG-0305,Necesitamos más áreas verdes.,Renca,formulario_papel,18-29
+SEG-0306,"Arreglaron la plaza y mejoró harto, ahora sí se ve gente usando el espacio.",Santiago,buzón_vecinal,30-44
+SEG-0307,"Carabineros pasa más seguido y se nota, aunque todavía falta coordinación con seguridad municipal.",Quilicura,consulta_web,18-29
+SEG-0308,s/i,Recoleta,consulta_web,30-44
+SEG-0309,En paradero 14 venden droga como si nada y en la noche se escuchan balazos.,,consulta_web,
+SEG-0310,"No me ha pasado nada, pero igual no salgo después de las nueve por miedo.",Pudahuel,whatsapp_municipal,30-44
+SEG-0311,"El barrio no es tan peligroso como dicen, pero la sensación de inseguridad es real.",,cabildo,
+SEG-0312,Carabineros pasa más seguido y se nota aunque todavía falta coordinación con seguridad municipal.,San Joaquín,cabildo,30-44
+SEG-0313,"Faltan luces en el pasaje, ahí se esconden para asaltar.",Maipú,buzón_vecinal,18-29
+SEG-0314,"En la casa de al lado se escuchan gritos y golpes, alguien debería intervenir con cuidado. Dejé el reclamo a nombre de María González, RUT 10.502.576-4.",San José de Maipo,consulta_web,18-29
+SEG-0315,"no me ha pasado nada, pero igual no salgo después de las nueve por miedo.",,consulta_web,
+SEG-0316,"No me ha pasado nada, pero igual no salgo después de las nueve por miedo.",Lo Espejo,buzón_vecinal,30-44
+SEG-0317,La atención del consultorio está muy lenta.,,cabildo,
+SEG-0318,Me robaron el celu saliendo del metro y no había nadie patrullando.,Lo Espejo,formulario_papel,60+
+SEG-0319,Me robaron el celu saliendo del metro y no había nadie patrullando.,Renca,whatsapp_municipal,18-29
+SEG-0320,"Hay cabros ofreciendo pasta cerca del colegio, esto ya se salió de control.",,cabildo,
+SEG-0321,"desde que llegaron esos narcos el barrio cambió, nadie deja jugar a los niños afuera.",Santiago,whatsapp_municipal,30-44
+SEG-0322,"Otra vez se llevaron cables en plaza Los Copihues, quedamos sin luz toda la cuadra.",Santiago,consulta_web,18-29
+SEG-0323,En villa El Sol venden droga como si nada y en la noche se escuchan balazos.,El Bosque,formulario_papel,60+
+SEG-0324,"no me ha pasado nada, pero igual no salgo después de las nueve por miedo.",,consulta_web,
+SEG-0325,"Faltan luces en el pasaje, ahí se esconden para asaltar.",Lo Espejo,formulario_papel,60+
+SEG-0326,"Desde que llegaron esos narcos el barrio cambió, nadie deja jugar a los niños afuera!!! Dejé el reclamo a nombre de Camila Rojas, RUT 21.351.791-7.",,consulta_web,
+SEG-0327,"los carretes duran hasta las 5 am y nadie fiscaliza, imposible dormir.",Paine,consulta_web,60+
+SEG-0328,El barrio no está peor; las redes sociales exageran y terminamos desconfiando de todos.,La Pintana,formulario_papel,45-59
+SEG-0329,"Faltan luces en el pasaje, ahí se esconden para asaltar.",Huechuraba,whatsapp_municipal,30-44
+SEG-0330,"Hay una familia con problemas graves y el barrio solo comenta, falta apoyo profesional. Mi vecino Camila Rojas puede confirmar esto.",Cerro Navia,buzón_vecinal,60+
+SEG-0331,"La convivencia está pésima, cualquier discusión termina en insultos.",San José de Maipo,cabildo,60+
+SEG-0332,"Arreglaron la plaza y mejoró harto, ahora sí se ve gente usando el espacio.",Puente Alto,cabildo,30-44
+SEG-0333,"Los portonazos están brigidos, uno ya entra mirando para todos lados.",Recoleta,buzón_vecinal,45-59
+SEG-0334,"Otra vez se llevaron cables en pasaje Las Lilas, quedamos sin luz toda la cuadra.",,consulta_web,
+SEG-0335,"Necesitamos más patrullaje de verdad, no una vuelta rápida pa la foto.",,consulta_web,
+SEG-0336,El sitio eriazo de villa El Sol está lleno de matorrales y da miedo pasar.,Santiago,consulta_web,30-44
+SEG-0337,"Los portonazos están brigidos, uno ya entra mirando para todos lados.",,consulta_web,
+SEG-0338,Siento que todo está peor aunque quizás también influyen las noticias.,,whatsapp_municipal,
+SEG-0339,"Hay una familia con problemas graves y el barrio solo comenta, falta apoyo profesional.",Santiago,consulta_web,45-59
+SEG-0340,En feria de los sábados venden droga como si nada y en la noche se escuchan balazos. Mi vecino Juan Pérez puede confirmar esto.,Recoleta,formulario_papel,60+
+SEG-0341,"Ponen música a todo chancho y cuando uno reclama se ponen violentos. Dejé el reclamo a nombre de Luis Araya, RUT 18.612.876-4.",Lo Espejo,buzón_vecinal,60+
+SEG-0342,Ponen música a todo chancho y cuando uno reclama se ponen violentos.,Recoleta,formulario_papel,45-59
+SEG-0343,"Desde que llegaron esos narcos el barrio cambió, nadie deja jugar a los niños afuera. Mi vecino Patricia Muñoz puede confirmar esto.",,whatsapp_municipal,
+SEG-0344,"Los portonazos están brigidos, uno ya entra mirando pa todos lados.",Peñalolén,consulta_web,60+
+SEG-0345,"Otra vez se llevaron cables en pasaje Las Lilas, quedamos sin luz toda la cuadra.",El Bosque,cabildo,45-59
+SEG-0346,"No quiero más cámaras ni controles, el problema se arregla con oportunidades y trabajo comunitario.",,buzón_vecinal,
+SEG-0347,"Carabineros pasa más seguido y se nota, aunque todavía falta coordinación con seguridad municipal.",Recoleta,consulta_web,18-29
+SEG-0348,"En feria de los sábados venden droga como si nada y en la noche se escuchan balazos!!! Dejé el reclamo a nombre de Camila Rojas, RUT 21.844.365-9.",,whatsapp_municipal,
+SEG-0349,"Necesitamos más patrullaje de verdad, no una vuelta rápida para la foto.",,buzón_vecinal,
+SEG-0350,"Necesitamos más patrullaje de verdad, no una vuelta rápida para la foto.",,formulario_papel,
+SEG-0351,"Necesitamos más patrullaje de verdad, no una vuelta rápida para la foto.",Huechuraba,consulta_web,60+
+SEG-0352,"No me ha pasado nada, pero igual no salgo después de las nueve por miedo.",Peñalolén,buzón_vecinal,60+
+SEG-0353,En feria de los sábados venden droga como si nada y en la noche se escuchan balazos.,,buzón_vecinal,
+SEG-0354,"Las cámaras sirven si alguien las mira, si no son puro adorno. Esto pasa frente a Los Aromos 2567.",,formulario_papel,
+SEG-0355,"La convivencia está pésima, cualquier discusión termina en insultos.",San José de Maipo,whatsapp_municipal,45-59
+SEG-0356,"Desde que pusieron cámaras ya no se juntan en la plaza; quedó más tranquila, pero ahora parece cárcel.",,formulario_papel,
+SEG-0357,Me robaron el celu saliendo del metro y no había nadie patrullando.,,buzón_vecinal,
+SEG-0358,Gracias por escuchar a los vecinos.,Huechuraba,whatsapp_municipal,45-59
+SEG-0359,"Necesitamos más patrullaje de verdad, no una vuelta rápida para la foto!!!",Maipú,consulta_web,60+
+SEG-0360,"La plaza está oscura y por eso se presta pa carretes, basura y asaltos; no sé si faltan luces o patrullas.",El Bosque,whatsapp_municipal,60+
+SEG-0361,"La convivencia está pésima, cualquier discusión termina en insultos.",Pudahuel,formulario_papel,30-44
+SEG-0362,"El barrio no es tan peligroso como dicen, pero la sensación de inseguridad es real!!!",Recoleta,whatsapp_municipal,30-44
+SEG-0363,"Carabineros pasa más seguido y se nota, aunque todavía falta coordinación con seguridad municipal.",Maipú,consulta_web,45-59
+SEG-0364,"NECESITAMOS MÁS PATRULLAJE DE VERDAD, NO UNA VUELTA RÁPIDA PARA LA FOTO.",Estación Central,cabildo,30-44
+SEG-0365,"Carabineros pasa más seguido y se nota, aunque todavía falta coordinación con seguridad municipal.",Peñalolén,formulario_papel,18-29
+SEG-0366,"Faltan luces en el pasaje, ahí se esconden para asaltar.",La Florida,buzón_vecinal,18-29
+SEG-0367,"El comercio ambulante dejó la vereda intransitable, pero tampoco es llegar y echarlos.",Renca,whatsapp_municipal,45-59
+SEG-0368,"Las cámaras sirven si alguien las mira, si no son puro adorno.",San Joaquín,buzón_vecinal,30-44
+SEG-0369,"Qué bueno que nunca pasa nada por acá, salvo los portonazos de todas las semanas.",,formulario_papel,
+SEG-0370,"Las cámaras sirven si alguien las mira, si no son puro adorno.",,formulario_papel,
+SEG-0371,"No quiero más vigilancia, prefiero iluminación y trabajo con los jóvenes.",Paine,consulta_web,60+
+SEG-0372,La atención del consultorio está muy lenta.,Peñalolén,cabildo,60+
+SEG-0373,"Carabineros pasa más seguido y se nota, aunque todavía falta coordinación con seguridad municipal.",,formulario_papel,
+SEG-0374,"Hay una familia con problemas graves y el barrio solo comenta, falta apoyo profesional.",Huechuraba,consulta_web,30-44
+SEG-0375,"En la casa de al lado se escuchan gritos y golpes, alguien debería intervenir con cuidado.",,cabildo,
+SEG-0376,"La plaza está oscurísima, cambien las luminarias antes de poner más cámaras.",San José de Maipo,cabildo,60+
+SEG-0377,Ponen música a todo chancho y cuando uno reclama se ponen violentos.,,formulario_papel,
+SEG-0378,"La plaza está oscurísima, cambien las luminarias antes de poner más cámaras.",San Joaquín,buzón_vecinal,45-59
+SEG-0379,"Antes caminaba tranquila, ahora pido que me vayan a buscar al paradero.",,cabildo,
+SEG-0380,"Los carretes duran hasta las 5 am y nadie fiscaliza, imposible dormir. Me pueden llamar al +569 3765 6373.",El Bosque,buzón_vecinal,18-29
+SEG-0381,"Carabineros pasa más seguido y se nota, aunque todavía falta coordinación con seguridad municipal.",Estación Central,buzón_vecinal,60+
+SEG-0382,"No quiero más cámaras ni controles, el problema se arregla con oportunidades y trabajo comunitario.",Estación Central,formulario_papel,45-59
+SEG-0383,Ponen música a todo chancho y cuando uno reclama se ponen violentos.,Puente Alto,consulta_web,60+
+SEG-0384,"La casa de la esquina funciona como punto de venta, todos sabemos menos la muni parece.",La Florida,consulta_web,60+
+SEG-0385,"Antes caminaba tranquila, ahora pido que me vayan a buscar al paradero.",La Pintana,cabildo,18-29
+SEG-0386,Quiero saber por los talleres deportivos.,Estación Central,consulta_web,30-44
+SEG-0387,"El barrio no es tan peligroso como dicen, pero la sensación de inseguridad es real.",,formulario_papel,
+SEG-0388,Hay una familia con problemas graves y el barrio solo comenta falta apoyo profesional.,Puente Alto,consulta_web,18-29
+SEG-0389,"Más patrullas no siempre significa más seguridad, a varios jóvenes los controlan solo por cómo se ven.",Peñalolén,formulario_papel,30-44
+SEG-0390,La plaza está oscurísima cambien las luminarias antes de poner más cámaras. Esto pasa frente a La Estrella 3295.,,cabildo,
+SEG-0391,"no me ha pasado nada, pero igual no salgo después de las nueve por miedo.",,formulario_papel,
+SEG-0392,"Arreglaron la plaza y mejoró harto, ahora sí se ve gente usando el espacio.",Santiago,cabildo,60+
+SEG-0393,La esquina está llena de basura y peleas todos los fines de semana.,Paine,formulario_papel,45-59
+SEG-0394,"Antes caminaba tranquila, ahora pido que me vayan a buscar al paradero.",,cabildo,
+SEG-0395,"No quiero más cámaras ni controles, el problema se arregla con oportunidades y trabajo comunitario.",Cerro Navia,buzón_vecinal,18-29
+SEG-0396,"Necesitamos más patrullaje de verdad, no una vuelta rápida para la foto.",Lo Espejo,whatsapp_municipal,45-59
+SEG-0397,La atención del consultorio está muy lenta.,,consulta_web,
+SEG-0398,"desde que llegaron esos narcos el barrio cambió, nadie deja jugar a los niños afuera.",Quilicura,buzón_vecinal,45-59
+SEG-0399,¿CUÁNDO ARREGLAN LA VEREDA DE MI CALLE?,El Bosque,buzón_vecinal,18-29
+SEG-0400,"Hay una familia con problemas graves y el barrio solo comenta, falta apoyo profesional.",Maipú,buzón_vecinal,18-29
+SEG-0401,"El barrio no es tan peligroso como dicen, pero la sensación de inseguridad es real.",El Bosque,formulario_papel,30-44
+SEG-0402,Ponen música a todo chancho y cuando uno reclama se ponen violentos.,,formulario_papel,
+SEG-0403,El sitio eriazo de feria de los sábados está lleno de matorrales y da miedo pasar.,,whatsapp_municipal,
+SEG-0404,"Faltan luces en el pasaje, ahí se esconden para asaltar.",Peñalolén,cabildo,60+
+SEG-0405,"La casa de la esquina funciona como punto de venta, todos sabemos menos la muni parece.",,cabildo,
+SEG-0406,"No me ha pasado nada, pero igual no salgo después de las nueve por miedo.",,formulario_papel,
+SEG-0407,"Los carretes duran hasta las 5 am y nadie fiscaliza, imposible dormir.",,buzón_vecinal,
+SEG-0408,"Se metieron a dos casas esta semana, necesitamos alguna medida concreta.",,whatsapp_municipal,
+SEG-0409,"El barrio no es tan peligroso como dicen, pero la sensación de inseguridad es real.",Puente Alto,formulario_papel,60+
+SEG-0410,"Necesitamos más patrullaje de verdad, no una vuelta rápida para la foto.",,consulta_web,
+SEG-0411,-,Paine,formulario_papel,18-29
+SEG-0412,En cancha del barrio venden droga como si nada y en la noche se escuchan balazos.,Maipú,formulario_papel,45-59

@@ -21,9 +21,9 @@ book:
         - ecosistema_python.qmd
         - operaciones_espaciales.qmd
     - part: "Módulo 2: Modelos IA"
-      # chapters:
+      chapters:
         # - sensores_iot.qmd
-        # - nlp_participacion.qmd
+        - nlp_participacion.qmd
         # - analisis_sentimientos.qmd
         # - integracion_datos.qmd
     - recursos_complementarios.qmd
