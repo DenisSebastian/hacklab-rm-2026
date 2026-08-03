@@ -12,223 +12,415 @@ Berroeta (UAI)**
 
 ## Resumen ejecutivo {.unnumbered}
 
-La sesión anterior enseñó a ordenar **qué** dice la gente. Esta sesión
-agrega la dimensión que más se pierde en los informes técnicos: **cómo
-se siente** la gente con su entorno. Una plaza puede tener excelente
-evaluación técnica y, sin embargo, ser percibida como insegura; una
-obra puede ser objetivamente beneficiosa y generar un rechazo creciente
-que, detectado a tiempo, se podría haber gestionado. El **análisis de
-sentimientos** —técnica de NLP que estima la carga emocional de un
-texto [@liu_sentiment_2012]— permite medir esa capa perceptual de forma
-sistemática, tanto en **consultas públicas** como en **redes
-sociales**, donde la conversación urbana ocurre sin que nadie la
-convoque.
+En la sesión 5.2 aprendimos a ordenar **qué** dice la gente. Ahora
+agregamos la dimensión que con frecuencia se pierde en un informe técnico:
+**cómo se siente** la gente respecto de su entorno. Una plaza puede cumplir
+todos sus estándares de iluminación y, aun así, ser percibida como insegura;
+una obra objetivamente beneficiosa puede acumular un rechazo que, detectado
+a tiempo, permite conversar y gestionar mejor.
 
-Para la gestión territorial esto tiene un valor doble: como
-**fotografía** (mapa de percepción por barrio o por tema: dónde se
-concentra el malestar) y como **película** (evolución del ánimo ante un
-proyecto: detectar tempranamente un conflicto en gestación). La sesión
-enseña ambos usos, y dedica especial cuidado a los límites: las redes
-sociales **no son la ciudadanía completa**, y un mapa de sentimientos
-mal leído puede inducir peores decisiones que ningún mapa.
+El **análisis de sentimientos** es una técnica de procesamiento de lenguaje
+natural (NLP) que estima la carga emocional de un texto [@liu_sentiment_2012].
+No lee la mente de una comuna ni reemplaza una encuesta: permite reconocer
+patrones agregados en comentarios ciudadanos. Su aporte para la gestión es
+doble: una **fotografía** de la percepción por tema y barrio, y una
+**película** de cómo cambia el ánimo frente a un proyecto.
+
+Trabajaremos con el caso sintético y declarado *Plan Barrio Seguro y Luminoso
+de La Florida*: 1.632 comentarios sobre luminarias LED, plazas y cámaras de
+televigilancia. El taller sigue un trenzado deliberado: **humano → IA →
+humano**. La IA clasifica y agrega; el equipo anonimiza, audita, interpreta y
+decide qué evidencia es suficientemente sólida para comunicar.
 
 Al finalizar la sesión serás capaz de:
 
-1.  **Explicar** qué es el análisis de sentimientos, qué mide (polaridad
-    y emociones) y qué no mide (representatividad, causas).
-2.  **Aplicarlo mediante IA** a textos ciudadanos usando prompts
-    estructurados, sin programar.
-3.  **Cruzar sentimiento con tema y territorio**: "el malestar sobre
-    seguridad se concentra en torno al sector X".
-4.  **Analizar evolución temporal**: detectar cambios de tendencia del
-    ánimo ante un proyecto.
-5.  **Evaluar críticamente la fuente**: sesgos de las redes sociales y
-    resguardos de interpretación.
-6.  **Decidir cuándo el análisis de sentimientos aporta** a una decisión
-    y cuándo es ruido con apariencia de ciencia.
+1. **Explicar** qué mide el análisis de sentimientos —polaridad y emociones—
+   y qué no mide —representatividad ni causas.
+2. **Diseñar y aplicar prompts estructurados** para clasificar comentarios
+   por sentimiento, emoción, tema, evidencia literal y confianza.
+3. **Auditar** el resultado de la IA y convertir los errores en instrucciones
+   de clasificación más precisas.
+4. **Cruzar** sentimiento con tema, territorio y tiempo para construir un
+   tablero de percepción.
+5. **Redactar** una lectura ejecutiva que separe hecho, interpretación y
+   acción de verificación.
+6. **Usar responsablemente** conversación pública agregada, sin convertirla
+   en vigilancia ni confundirla con la opinión de toda una comuna.
 
 ## Contenidos de la sesión {.unnumbered}
 
--   La capa emocional del territorio: por qué la percepción es un dato
-    de gestión.
--   Polaridad y emociones: qué entrega y qué no entrega la técnica.
--   Dos fuentes opuestas: consultas públicas vs. redes sociales.
--   Cómo se hace: sentimiento con los modelos del curso; ironía y casos
-    difíciles.
--   Taller: el pulso emocional de un proyecto urbano.
--   Leer sin sobre-leer: sesgos, ética de la escucha pública.
+- La capa emocional del territorio: percepción y realidad técnica.
+- Qué mide el análisis de sentimientos; polaridad, emoción y confianza.
+- Consultas públicas y redes sociales: fuentes complementarias, no
+  intercambiables.
+- El flujo de seis pasos: anonimizar, explorar, clasificar, auditar, agregar
+  y leer.
+- Cuadernillo de prompts para una aplicación práctica, trazable y segura.
+- Sesgos, ética y reglas para no sobre-interpretar el resultado.
 
 ## La capa emocional del territorio
 
 ### La percepción es un dato de gestión
 
-Casos donde la realidad técnica y la percibida divergen —seguridad,
-limpieza, obras— y donde la decisión correcta exigía conocer **ambas**:
-la plaza bien iluminada que igual se percibe insegura; la obra
-beneficiosa que acumula rechazo. Gestionar solo con el dato técnico es
-gestionar a ciegas de la mitad del problema.
+La realidad técnica y la realidad percibida pueden divergir. En seguridad,
+por ejemplo, puede bajar la victimización medida mientras aumenta el temor a
+salir de noche. No son dos versiones rivales de la verdad: son dos capas del
+territorio. Si una vecina deja de usar una plaza porque la siente insegura, la
+plaza se vacía aunque la estadística mejore.
 
-### Qué mide (y qué no)
+Gestionar sólo con indicadores técnicos es gestionar a ciegas de una parte
+del problema. La percepción no es ruido subjetivo: es información sobre la
+experiencia cotidiana que conviene escuchar, contrastar y situar.
 
--   **Polaridad**: positivo / negativo / neutro.
--   **Emociones específicas**: miedo, enojo, orgullo barrial.
--   Entrega **tendencias agregadas**, no diagnósticos individuales.
--   No mide **representatividad** (quién habla) ni **causas** (por qué).
+### Qué mide y qué no mide
 
-### Dos fuentes de naturalezas opuestas
+| Dimensión | Qué permite observar | Ejemplo |
+|---|---|---|
+| **Polaridad** | Carga positiva, negativa, neutra o mixta. | “La iluminación quedó espectacular” → positivo. |
+| **Emoción** | Matiz de la reacción: miedo, enojo, frustración, orgullo. | No se gestiona igual un barrio asustado que uno enojado. |
+| **Tendencias agregadas** | Patrones por tema, barrio, fuente o semana. | El malestar por iluminación aumenta desde cierta fecha. |
+| **No mide** | Representatividad, intención ni causa. | El modelo lee textos; no puede hablar por toda la comuna. |
+
+El resultado siempre se comunica en agregado: tendencias, cambios y
+concentraciones; nunca diagnósticos sobre personas.
+
+### Dos fuentes de naturaleza opuesta
 
 | | Consultas públicas | Redes sociales |
-|----|----|----|
+|---|---|---|
 | Origen | Convocadas | Espontáneas |
-| Alcance | Acotadas, volumen menor | Continuas, masivas |
-| Representatividad | Mayor | Sesgada |
-| Costo de captura | Alto (organizar el proceso) | Bajo (la conversación ya existe) |
+| Alcance | Acotado, con menor volumen | Continuo, potencialmente masivo |
+| Representatividad | Mayor respecto del universo consultado | Sesgada por plataforma y participación |
+| Valor principal | Profundidad y contexto declarado | Continuidad y conversación no convocada |
 
-Mensaje: **se complementan, no se reemplazan**.
+En el caso del taller hay 480 respuestas de consulta y 1.152 comentarios de
+redes. La comparación es parte del hallazgo: si ambas fuentes divergen, no se
+elige la que “gana”; se investiga qué voces están presentes y cuáles faltan.
 
-::: {.callout-tip title="Analogía: el fonendoscopio y la conversación de pasillo"}
-La consulta pública es el chequeo médico programado: el paciente
-responde lo que se le pregunta. Las redes sociales son la conversación
-de pasillo: nadie la convocó, fluye sola, y a veces dice cosas que en
-la consulta no se dirían — pero también exagera, repite rumores y solo
-habla quien tiene voz fuerte. Un buen diagnóstico escucha ambas.
+::: {.callout-tip title="Analogía: el termómetro y el diagnóstico"}
+El análisis de sentimientos es un termómetro: indica que hay fiebre y dónde
+buscarla, pero no identifica por sí solo la enfermedad ni prescribe el
+tratamiento. Decidir sólo con redes sociales sería como recetar mirando un
+termómetro. Primero se va a terreno, se revisan datos duros y se conversa.
 :::
 
-## Cómo se hace: sentimiento con los modelos del curso
+## El caso y el flujo de trabajo
 
-### Demostración sobre 20 textos
+### Plan Barrio Seguro y Luminoso de La Florida
 
-El modelo asigna a cada texto **polaridad + emoción + justificación**,
-y la discusión se concentra en los casos donde duda o se equivoca:
+El proyecto del taller contempla recambio de luminarias LED, recuperación de
+plazas y cámaras de televigilancia en diez barrios. El corpus sintético cubre
+del 2 de marzo al 19 de julio de 2026 e incluye las columnas `id`, `fecha`,
+`fuente`, `autor`, `barrio_declarado` y `texto`.
 
--   **Ironía y sarcasmo chileno**: *"qué linda la nueva plaza, duró una
-    semana sin rayados"* — literal positivo, real negativo.
--   **Quejas corteses y elogios con reclamo adentro**: "agradezco la
-    pavimentación, ojalá algún día llegue también a nuestra calle".
--   **Textos mixtos**: positivo en un tema, negativo en otro → la unidad
-    de análisis importa.
+Los datos fueron construidos para la clase: contienen información personal
+ficticia, ironías, cortesía con reclamo, textos mixtos, disenso técnico,
+duplicados y una campaña coordinada. No son defectos a esconder: son los
+problemas que un análisis responsable debe reconocer antes de producir una
+conclusión.
 
-::: {.callout-note appearance="simple" icon="false"}
-📷 **IMAGEN PENDIENTE**: Tabla ilustrada con 4–5 comentarios ciudadanos
-de ejemplo (incluyendo uno irónico), con las columnas que el modelo
-agrega: polaridad (con color verde/rojo/gris), emoción y justificación.
-El caso irónico debe aparecer marcado con el error del modelo y su
-corrección en auditoría.
-:::
+### Seis pasos: humano, IA, humano
 
-### Escalamiento
+| Paso | Pregunta de trabajo | Responsable principal |
+|---|---|---|
+| 1. Anonimizar | ¿El texto conserva datos personales? | Humano decide; IA puede asistir. |
+| 2. Explorar | ¿Qué hay realmente en el archivo? | IA con revisión humana. |
+| 3. Clasificar | ¿Qué polaridad, emoción, tema y evidencia presenta cada fila? | IA. |
+| 4. Auditar | ¿La etiqueta resiste leer el comentario original? | **Humano, obligatorio.** |
+| 5. Agregar | ¿Cómo cambia el patrón por tema, tiempo, fuente y barrio? | IA con controles. |
+| 6. Leer | ¿Qué es hecho, qué es hipótesis y qué conviene verificar? | Humano + IA. |
 
-El mismo prompt aplicado a miles de filas reutiliza el flujo de la
-sesión 5.2. Los créditos de Google Cloud del curso permiten usar las
-APIs de lenguaje para volúmenes mayores (sin entrar en implementación).
+Los prompts no sustituyen el criterio profesional. Hacen explícita una tarea,
+reducen omisiones y dejan un resultado revisable. La auditoría no tiene un
+prompt: pedir a la IA que revise su propia clasificación es pedir al redactor
+que corrija su propia acta.
 
-### De dónde salen los datos de redes
+## Cuadernillo de prompts
 
-En la práctica: exportes de las propias cuentas institucionales,
-herramientas de escucha, solicitudes formales. Qué es legal y apropiado
-recolectar se aborda en el Bloque 4; **el curso trabaja con un dataset
-ya preparado**, no con scraping en vivo.
+### Paso 1 — Anonimizar antes de analizar
 
-## Actividades
+Antes de copiar un comentario a una herramienta de IA, se deben reemplazar
+nombres, RUT, teléfonos, correos, cuentas y domicilios con numeración. En
+cambio, se conservan plazas, paraderos, ferias, canchas, villas y calles sin
+número: son información territorial, no identidad de la persona.
 
-### Taller: el pulso emocional de un proyecto urbano (35 min)
+```text
+Vas a limpiar datos personales de comentarios ciudadanos sobre un proyecto
+urbano antes de analizarlos. Para cada texto reemplaza nombres y apellidos
+por [NOMBRE], RUT por [RUT], teléfonos por [TEL], domicilios con numeración
+por [DOMICILIO], y correos, patentes o @cuentas por [CONTACTO].
 
-Caso del curso: dataset de comentarios ciudadanos (redes + consulta
-pública) sobre un proyecto de intervención urbana en la RM, con fechas
-y referencias territoriales. Secuencia:
+NO reemplaces lugares públicos ni calles sin numeración. No cambies ninguna
+otra palabra, ortografía, emoji, hashtag o abreviación. Mantén el mismo `id`
+y orden. Agrega `pii_detectada` con los tipos hallados, o `ninguna`; reemplaza
+la columna `autor` por un identificador anónimo estable.
 
-1.  > *"Clasifica cada comentario por sentimiento (positivo / negativo /
-    > neutro) y tema (usando las categorías de la sesión 5.2); agrega
-    > justificación breve."*
-2.  **Auditoría de muestra** (hábito ya instalado): ¿concuerdo con el
-    modelo?, atención especial a las ironías.
-3.  > *"Resume la distribución: ¿qué % es negativo?, ¿qué temas
-    > concentran el malestar?, ¿qué emociones predominan en cada
-    > tema?"*
-4.  > *"Muestra la evolución del sentimiento por semana; ¿hay algún
-    > quiebre? ¿coincide con algún hito del proyecto?"*
-5.  > *"Si los comentarios tienen referencia territorial, mapea dónde se
-    > concentran los negativos."* (síntesis con el Módulo 1: el mapa de
-    > percepción).
-6.  **Lectura ejecutiva final**: cada equipo escribe 3 frases de
-    hallazgo para una autoridad, distinguiendo **hecho** ("el 60% de
-    los comentarios sobre iluminación es negativo") de
-    **interpretación** ("posiblemente por el retraso de la fase 2").
+Devuelve sólo CSV. Filas a limpiar:
+[PEGAR HASTA 50 FILAS]
+```
 
-::: {.callout-note appearance="simple" icon="false"}
-📷 **IMAGEN PENDIENTE**: "Tablero de percepción" de ejemplo con los
-productos del taller: gráfico de torta/barras de polaridad por tema,
-línea de evolución temporal del sentimiento con el quiebre marcado y su
-hito anotado, y mini-mapa con la concentración territorial de
-comentarios negativos.
-:::
+La regla del curso es clara: ningún dato personal real de vecinos ingresa a
+una herramienta de IA. Revisa además una muestra de la limpieza, porque una
+anonimización incompleta sigue siendo una exposición de datos.
 
-::: callout-tip
-La distinción **hecho / interpretación** del paso 6 es el hábito
-profesional más transferible de la sesión: es lo que separa un informe
-defendible de una opinión con gráficos.
+### Paso 2 — Explorar antes de pedir conclusiones
+
+La primera pregunta no es “¿qué piensa la gente?”, sino “¿qué contiene el
+archivo?”. Esta exploración permite detectar vacíos, duplicados y sesgos que
+después condicionan toda lectura.
+
+```text
+Carga este archivo de comentarios ciudadanos. Sin analizar todavía el
+contenido, responde con números concretos:
+1. Total de filas y rango de fechas.
+2. Comentarios por fuente.
+3. Largo promedio, mínimo y máximo en palabras.
+4. Filas vacías o con sólo "-", "no sé" o "s/i".
+5. Textos exactamente duplicados, con sus ids.
+6. Porcentaje sin barrio declarado, también separado por fuente.
+7. Conteo por barrio declarado, de mayor a menor.
+8. Conteo por semana, en orden cronológico.
+9. Cinco comentarios al azar, tal cual están escritos.
+
+No interpretes: describe sólo lo que hay.
+```
+
+En el caso de la clase se esperan 1.632 filas, 32 vacías, 32 duplicados y
+21% sin barrio declarado. Estos números no son una conclusión: son el marco
+que evita tratar una muestra desigual como una fotografía del territorio.
+
+### Paso 3 — Clasificar con evidencia y declarar incertidumbre
+
+La clasificación debe producir una fila de salida por cada fila de entrada.
+La **cita literal** es la trazabilidad: permite volver al texto y discutir la
+decisión. La **confianza** no es un adorno; selecciona qué debe llegar a la
+auditoría humana.
+
+```text
+Clasifica cada comentario ciudadano ya anonimizado sobre el proyecto urbano.
+
+COLUMNAS DE SALIDA
+id | tema | tema_secundario | polaridad | emocion | cita | confianza
+
+TEMA: usa una de las categorías acordadas o `otra`:
+[PEGAR LAS 7 CATEGORÍAS Y UNA DEFINICIÓN BREVE DE CADA UNA]
+
+POLARIDAD: positivo | negativo | neutro | mixto
+EMOCIÓN: miedo | enojo | frustración | tristeza | alegría | orgullo |
+esperanza | agradecimiento | ninguna
+CITA: fragmento LITERAL de máximo 12 palabras que fundamente la polaridad.
+CONFIANZA: alta | media | baja.
+
+REGLAS
+1. Una fila de entrada = una fila de salida; conserva id y orden.
+2. No fuerces una categoría: usa `otra` cuando corresponda.
+3. Usa `mixto` si hay polaridades opuestas en temas distintos; registra el
+   segundo tema y no promedies ambos sentidos.
+4. Usa confianza `baja` ante ironía, sarcasmo, ambigüedad o cortesía cuyo
+   contenido contradice la forma.
+5. Si el texto no conserva contenido tras la limpieza, marca `sin_contenido`.
+6. No atribuyas intenciones ni completes lo que la persona “quiso decir”.
+
+Devuelve sólo CSV. Filas (máximo 50):
+[PEGAR FILAS]
+```
+
+Procesa como máximo 50 filas por tanda. Antes de continuar, verifica que el
+número de filas de salida coincide con el de entrada y que no se perdió ni se
+inventó ningún `id`.
+
+### Casos difíciles: donde el modelo enseña sus límites
+
+| Caso | Texto | Riesgo del modelo | Lectura defendible |
+|---|---|---|---|
+| Ironía | “Qué linda la nueva plaza, duró una semana sin rayados.” | Leer “linda” como positivo. | Negativo; enojo; confianza baja. |
+| Cortesía con reclamo | “Muchas gracias por el trabajo, pero en mi pasaje no ha llegado una luz.” | Detenerse en el agradecimiento. | Negativo; frustración; confianza baja. |
+| Texto mixto | “Las luminarias quedaron excelentes, pero la obra dejó la vereda destrozada.” | Forzar una sola polaridad. | Mixto; dos temas; separar si el análisis lo requiere. |
+| Disenso técnico | “Iluminar más no baja el delito por sí solo.” | Confundir desacuerdo con negatividad. | Neutro; argumento que debe preservarse. |
+
+Un modelo que falla con sarcasmo local no invalida todo el ejercicio: muestra
+dónde aplicar el control humano y cómo mejorar el prompt con casos límite.
+
+### Paso 4 — Auditar: el trabajo que no se delega
+
+Selecciona 10–15 filas al azar y todas las de confianza baja si son pocas.
+Lee el comentario original, no sólo la cita, y anota si la etiqueta es
+conforme, debe corregirse o requiere discusión. Si hay más de dos o tres
+discrepancias en 15 filas, ajusta el prompt y reclasifica la tanda.
+
+Cada error se transforma en un caso límite para el siguiente prompt:
+
+```text
+CASOS LÍMITE PARA ESTA TANDA
+- “[CITA]” es [POLARIDAD CORRECTA], no [POLARIDAD ASIGNADA], porque [RAZÓN].
+```
+
+Ese registro es un activo profesional: documenta qué aprendió el equipo sobre
+su propio corpus y mejora los análisis futuros de la organización.
+
+### Paso 5A — La fotografía: distribución y contraste de fuentes
+
+```text
+Sobre la tabla clasificada, calcula y devuelve:
+A) polaridad | n | % del total
+B) tema | n | % | % negativo del tema
+C) emoción predominante dentro de cada tema, con su n
+D) % negativo por fuente y tema
+E) los tres temas con mayor % de comentarios negativos
+F) % de confianza baja por tema
+
+Al final declara la suma de n en (A) y el total de filas procesadas. Deben
+ser iguales; si no cuadran, dilo y no ajustes los números.
+
+No interpretes todavía. No redondees cifras. Si un tema, barrio o fuente tiene
+menos de 40 comentarios, no reportes porcentaje: informa n y marca “muestra
+insuficiente”.
+```
+
+El umbral de 40 no es una ceremonia estadística: evita presentar una anécdota
+con decimales como si fuera una tendencia y reduce el riesgo de identificar
+personas en cruces territoriales pequeños.
+
+### Paso 5B — La película: detectar el quiebre, no inventar su causa
+
+```text
+Con la tabla clasificada, analiza la evolución por semana calendario:
+1. semana | fecha_inicio | n_comentarios | % negativo.
+2. Repite para [TEMA DE MAYOR VOLUMEN].
+3. Identifica semanas donde el volumen o % negativo cambia bruscamente frente
+   a las dos semanas anteriores; cuantifica el salto en puntos porcentuales.
+4. Para cada quiebre, muestra tres comentarios literales de esa semana con id.
+
+No expliques la causa del quiebre. Muestra CUÁNDO cambió, no POR QUÉ. No uses
+promedios móviles. Con menos de 20 comentarios, marca “volumen bajo” y no
+calcules porcentaje.
+```
+
+En el caso del taller aparece un cambio entre las semanas del 11–17 y del
+18–24 de mayo: suben el volumen y la negatividad; luego hay comentarios casi
+idénticos en la semana siguiente. La explicación se verifica después contra
+`hitos_proyecto.csv`: el modelo puede detectar el cuándo, pero el porqué
+requiere la cronología y el conocimiento del proyecto.
+
+### Paso 5C — El mapa: también importa quién no aparece
+
+```text
+Con la tabla clasificada, entrega:
+1. barrio | n | % del total con barrio | % negativo | emoción dominante.
+2. La misma tabla para redes sociales y para consulta pública, por separado.
+3. Barrios sobrerrepresentados en redes respecto de la consulta, con números.
+4. Cruce tema x barrio sólo para celdas con n >= 40.
+5. Barrios que no aparecen o tienen menos de 40 comentarios; nómbralos todos.
+
+No entregues coordenadas ni inventes ubicaciones. No completes barrios sin
+datos con promedios de barrios vecinos. El punto 5 es un resultado importante,
+no una omisión.
+```
+
+La IA entrega nombres de barrio; la georreferenciación se realiza aparte, con
+la capa censal pertinente. Así el tablero de percepción queda listo para el
+cruce de la sesión 6.2 con datos institucionales.
+
+### Paso 6 — Lectura ejecutiva: hecho, interpretación y acción
+
+```text
+Redacta exactamente tres bloques para una autoridad municipal no técnica:
+
+HECHO: dato verificable, con n y período. No agregues nada que no esté en la
+tabla.
+INTERPRETACIÓN: hipótesis que comienza con “posiblemente” o “una explicación
+sería”.
+ACCIÓN: una acción de verificación o gestión; nunca una decisión de inversión.
+
+Después agrega “LO QUE ESTE ANÁLISIS NO PUEDE DECIR”, con al menos tres
+límites concretos: quién no participa, qué territorios faltan y qué no mide
+el sentimiento. Máximo 120 palabras por bloque.
+```
+
+Por ejemplo: **Hecho:** “El 81% de los comentarios sobre iluminación desde el
+18 de mayo es negativo (n=384)”. **Interpretación:** “Posiblemente se relaciona
+con la postergación anunciada de la Fase 2”. **Acción:** “Conviene verificar en
+terreno la experiencia de los barrios afectados antes de la próxima mesa”.
+
+La primera frase se sostiene en datos; la segunda declara una hipótesis; la
+tercera propone aprender más. No son intercambiables.
+
+## Actividad: el pulso emocional de un proyecto urbano (35 min)
+
+En equipos, construyan un tablero de percepción del Plan Barrio Seguro y
+Luminoso. El producto no es un porcentaje aislado: es una evidencia
+documentada que otra persona pueda revisar.
+
+1. Anonimicen y exploren el corpus usando los prompts A y B.
+2. Clasifiquen en tandas y auditen una muestra contra el texto original.
+3. Generen la fotografía por polaridad, tema y fuente; verifiquen las sumas.
+4. Identifiquen un quiebre semanal y contrástenlo con los hitos del proyecto.
+5. Reconozcan los barrios visibles y los barrios ausentes antes de mapear.
+6. Redacten tres bloques de hecho, interpretación y acción, con límites
+   explícitos.
+
+::: {.callout-tip title="Chequeos de 30 segundos por tanda"}
+Filas de salida = filas de entrada; `id` únicos; cinco citas verificadas
+contra el original; sin PII residual; sumas que cuadran; ningún porcentaje
+con `n < 40`. Un informe puede fallar por cualquiera de estos seis detalles.
 :::
 
 ## Leer sin sobre-leer: sesgos y uso responsable
 
-### El espejo deformante de las redes
+### El espejo deformante de la conversación digital
 
--   **Quién no está** en la conversación digital: brecha etaria,
-    socioeconómica y territorial.
--   **El enojo se expresa más** que la conformidad.
--   **Bots y campañas coordinadas** existen.
+- **Quién no está:** brechas etarias, socioeconómicas y territoriales dejan
+  sectores completos sin voz digital.
+- **El enojo publica más:** la normalidad rara vez se comenta; las redes
+  sobre-representan el malestar.
+- **Bots y campañas:** textos casi idénticos o coordinados pueden amplificar
+  una posición sin representar una mayoría.
+- **Concentración:** algunos barrios o cuentas pueden dominar la conversación.
+- **Plataforma:** X, Instagram, Facebook y una consulta pública no convocan al
+  mismo público ni producen el mismo lenguaje.
 
 ### Reglas de interpretación del curso
 
-1.  Leer **tendencias y cambios**, nunca cifras absolutas como "la
-    opinión de la comuna".
-2.  **Triangular siempre** con participación formal y datos duros.
-3.  El sentimiento negativo **señala dónde mirar, no qué decidir**.
+1. Lee **tendencias y cambios**, nunca cifras absolutas como “la opinión de
+   la comuna”.
+2. **Triangula** con participación formal, trabajo de terreno y datos duros.
+3. El sentimiento negativo **señala dónde mirar, no qué decidir**.
 
 ### Ética de la escucha pública
 
-Analizar conversación pública **agregada** ≠ perfilar vecinos
-individuales. Línea roja explícita: no perfiles individuales, no
-monitoreo de dirigentes, agregación siempre.
+Analizar conversación pública agregada no equivale a perfilar vecinos. La
+línea roja del curso es explícita: no perfiles individuales, no monitoreo de
+dirigentes, no publicación de citas que reintroduzcan datos personales y
+agregación siempre. La escucha pública debe declarar qué se observa, para qué
+y con qué resguardos.
 
 ## Resumen
 
--   La percepción es un dato de gestión: cuando lo técnico y lo
-    percibido divergen, decidir con uno solo es decidir a ciegas.
--   El análisis de sentimientos entrega **polaridad y emociones
-    agregadas**; no entrega representatividad ni causas.
--   Consultas públicas y redes sociales son fuentes complementarias de
-    naturaleza opuesta: convocada y acotada la primera, espontánea y
-    sesgada la segunda.
--   El método reutiliza el flujo de la sesión 5.2 (clasificar → auditar
-    → sintetizar) agregando tres dimensiones: **emoción, tiempo y
-    territorio**.
--   La ironía chilena es la prueba de fuego del modelo: la auditoría
-    humana sigue siendo innegociable.
--   Reglas de oro: tendencias y no cifras absolutas; triangular siempre;
-    el malestar indica dónde mirar, no qué decidir; agregación siempre,
-    perfilamiento jamás.
--   Ya tenemos la percepción ciudadana; la próxima sesión la cruza con
-    los datos institucionales para producir evidencia territorial
-    completa.
+- El territorio también se siente: percepción e infraestructura son capas
+  distintas que una buena gestión debe considerar juntas.
+- El análisis de sentimientos estima polaridad y emociones agregadas; no
+  representa automáticamente a una comuna ni explica causalidades.
+- El flujo profesional es anonimizar → explorar → clasificar → **auditar** →
+  agregar → leer; la auditoría humana es innegociable.
+- Un prompt útil exige salida estructurada, cita literal, confianza, reglas
+  para casos límite y controles verificables.
+- Tiempo, tema, fuente y territorio permiten construir un tablero; los
+  silencios y las muestras pequeñas también son resultados.
+- Hecho, interpretación y acción son tres frases distintas: mezclarlas
+  convierte una hipótesis en una afirmación sin respaldo.
+- En la sesión siguiente, el tablero de percepción se cruza con información
+  institucional para construir evidencia territorial más completa.
 
 ## Recursos
 
--   **Dataset del taller**: 1.500–3.000 comentarios (consulta pública +
-    redes sociales) sobre un proyecto urbano de la RM, con fecha, fuente
-    y referencia territorial; incluye ironías reales, textos mixtos, un
-    quiebre temporal asociado a un hito y un sesgo territorial
-    deliberadamente visible.
--   **Prompt-book de sentimientos**: clasificación con polaridad +
-    emoción + justificación; agregaciones; evolución temporal; mapeo de
-    concentraciones; síntesis ejecutiva hecho/interpretación.
--   **Ficha "Leer redes sin quemarse" (1 página)**: los 5 sesgos
-    principales de los datos de redes sociales y las 3 reglas de
-    interpretación del curso.
--   **Plantilla "Tablero de percepción de proyecto"**: distribución,
-    temas críticos, evolución, mapa, hallazgos ejecutivos, limitaciones
-    declaradas.
--   Referencia breve a las APIs de lenguaje de Google Cloud (mapa de
-    escalamiento futuro con los créditos del curso).
--   Lectura opcional: caso documentado de uso (y de mal uso) de escucha
-    social en gestión pública.
+- **Corpus del taller**: 1.632 comentarios sintéticos y declarados del Plan
+  Barrio Seguro y Luminoso de La Florida, junto con `demo_20_textos.csv` e
+  `hitos_proyecto.csv` como materiales de la sesión.
+- **Prompt-book de sentimientos**: anonimización, exploración, clasificación,
+  distribución, evolución, territorio y lectura ejecutiva.
+- **Plantilla “Tablero de percepción de proyecto”**: polaridad por tema,
+  contraste de fuentes, evolución semanal, lectura territorial, hallazgos y
+  límites declarados.
+- **Checklist de auditoría**: filas, ids, citas, PII, sumas y umbrales antes
+  de comunicar resultados.
+- Referencia normativa: **Ley 21.719 de Protección de Datos Personales**.

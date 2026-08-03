@@ -24,8 +24,8 @@ book:
       chapters:
         # - sensores_iot.qmd
         - nlp_participacion.qmd
-        # - analisis_sentimientos.qmd
-        # - integracion_datos.qmd
+        - analisis_sentimientos.qmd
+        - integracion_datos.qmd
     - recursos_complementarios.qmd
     - part: "Modelos"
       chapters:
