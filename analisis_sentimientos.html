@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.31">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>5&nbsp; Análisis de Sentimientos – AcademIA HackLab: Santiago Región Sustentable</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./integracion_datos.html" rel="next">
+<link href="./nlp_participacion.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-485d01fc63b59abcd3ee1bf1e8e2748d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./nlp_participacion.html">Módulo 2: Modelos IA</a></li><li class="breadcrumb-item"><a href="./analisis_sentimientos.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Análisis de Sentimientos</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">AcademIA HackLab: Santiago Región Sustentable</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introducción</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Módulo 1: Conceptos &amp; Casos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vibe_coding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Vibe Coding</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ecosistema_python.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ecosistema Python</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./operaciones_espaciales.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Operaciones Espaciales</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Módulo 2: Modelos IA</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./nlp_participacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">NLP Comunitario</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./analisis_sentimientos.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Análisis de Sentimientos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./integracion_datos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Integración de Datos</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./recursos_complementarios.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Recursos Complementarios</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Modelos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_google.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Google</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_chatgpt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">ChatGPT</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_claude.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Claude</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_latamgpt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">LatamGPT</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">IDEs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_ide_antigravity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Antigravity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_ide_codex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Codex</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_ide_claude.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Claude Code</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Otros Recursos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_notebooklm.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">NotebookLM</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_perplexity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Perplexity</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_otras_herramientas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Productividad</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_openclaw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">OpenClaw</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_hermes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Hermes Agent</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Información Espacial</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_vec.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Datos vectoriales</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_sat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Datos satelitales</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./books_spatial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Libros y guías de SIG y GeoIA</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Casos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./john_snow.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mapa de Cólera</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
+ <span class="menu-text">Glosario</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rc_glosario.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Glosario</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Referencias Bibliográficas</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contenidos</h2>
+   
+  <ul>
+  <li><a href="#resumen-ejecutivo" id="toc-resumen-ejecutivo" class="nav-link active" data-scroll-target="#resumen-ejecutivo">Resumen ejecutivo</a></li>
+  <li><a href="#contenidos-de-la-sesión" id="toc-contenidos-de-la-sesión" class="nav-link" data-scroll-target="#contenidos-de-la-sesión">Contenidos de la sesión</a></li>
+  <li><a href="#la-capa-emocional-del-territorio" id="toc-la-capa-emocional-del-territorio" class="nav-link" data-scroll-target="#la-capa-emocional-del-territorio"><span class="header-section-number">5.1</span> La capa emocional del territorio</a>
+  <ul class="collapse">
+  <li><a href="#la-percepción-es-un-dato-de-gestión" id="toc-la-percepción-es-un-dato-de-gestión" class="nav-link" data-scroll-target="#la-percepción-es-un-dato-de-gestión"><span class="header-section-number">5.1.1</span> La percepción es un dato de gestión</a></li>
+  <li><a href="#qué-mide-y-qué-no-mide" id="toc-qué-mide-y-qué-no-mide" class="nav-link" data-scroll-target="#qué-mide-y-qué-no-mide"><span class="header-section-number">5.1.2</span> Qué mide y qué no mide</a></li>
+  <li><a href="#dos-fuentes-de-naturaleza-opuesta" id="toc-dos-fuentes-de-naturaleza-opuesta" class="nav-link" data-scroll-target="#dos-fuentes-de-naturaleza-opuesta"><span class="header-section-number">5.1.3</span> Dos fuentes de naturaleza opuesta</a></li>
+  </ul></li>
+  <li><a href="#el-caso-y-el-flujo-de-trabajo" id="toc-el-caso-y-el-flujo-de-trabajo" class="nav-link" data-scroll-target="#el-caso-y-el-flujo-de-trabajo"><span class="header-section-number">5.2</span> El caso y el flujo de trabajo</a>
+  <ul class="collapse">
+  <li><a href="#plan-barrio-seguro-y-luminoso-de-la-florida" id="toc-plan-barrio-seguro-y-luminoso-de-la-florida" class="nav-link" data-scroll-target="#plan-barrio-seguro-y-luminoso-de-la-florida"><span class="header-section-number">5.2.1</span> Plan Barrio Seguro y Luminoso de La Florida</a></li>
+  <li><a href="#seis-pasos-humano-ia-humano" id="toc-seis-pasos-humano-ia-humano" class="nav-link" data-scroll-target="#seis-pasos-humano-ia-humano"><span class="header-section-number">5.2.2</span> Seis pasos: humano, IA, humano</a></li>
+  </ul></li>
+  <li><a href="#cuadernillo-de-prompts" id="toc-cuadernillo-de-prompts" class="nav-link" data-scroll-target="#cuadernillo-de-prompts"><span class="header-section-number">5.3</span> Cuadernillo de prompts</a>
+  <ul class="collapse">
+  <li><a href="#paso-1-anonimizar-antes-de-analizar" id="toc-paso-1-anonimizar-antes-de-analizar" class="nav-link" data-scroll-target="#paso-1-anonimizar-antes-de-analizar"><span class="header-section-number">5.3.1</span> Paso 1 — Anonimizar antes de analizar</a></li>
+  <li><a href="#paso-2-explorar-antes-de-pedir-conclusiones" id="toc-paso-2-explorar-antes-de-pedir-conclusiones" class="nav-link" data-scroll-target="#paso-2-explorar-antes-de-pedir-conclusiones"><span class="header-section-number">5.3.2</span> Paso 2 — Explorar antes de pedir conclusiones</a></li>
+  <li><a href="#paso-3-clasificar-con-evidencia-y-declarar-incertidumbre" id="toc-paso-3-clasificar-con-evidencia-y-declarar-incertidumbre" class="nav-link" data-scroll-target="#paso-3-clasificar-con-evidencia-y-declarar-incertidumbre"><span class="header-section-number">5.3.3</span> Paso 3 — Clasificar con evidencia y declarar incertidumbre</a></li>
+  <li><a href="#casos-difíciles-donde-el-modelo-enseña-sus-límites" id="toc-casos-difíciles-donde-el-modelo-enseña-sus-límites" class="nav-link" data-scroll-target="#casos-difíciles-donde-el-modelo-enseña-sus-límites"><span class="header-section-number">5.3.4</span> Casos difíciles: donde el modelo enseña sus límites</a></li>
+  <li><a href="#paso-4-auditar-el-trabajo-que-no-se-delega" id="toc-paso-4-auditar-el-trabajo-que-no-se-delega" class="nav-link" data-scroll-target="#paso-4-auditar-el-trabajo-que-no-se-delega"><span class="header-section-number">5.3.5</span> Paso 4 — Auditar: el trabajo que no se delega</a></li>
+  <li><a href="#paso-5a-la-fotografía-distribución-y-contraste-de-fuentes" id="toc-paso-5a-la-fotografía-distribución-y-contraste-de-fuentes" class="nav-link" data-scroll-target="#paso-5a-la-fotografía-distribución-y-contraste-de-fuentes"><span class="header-section-number">5.3.6</span> Paso 5A — La fotografía: distribución y contraste de fuentes</a></li>
+  <li><a href="#paso-5b-la-película-detectar-el-quiebre-no-inventar-su-causa" id="toc-paso-5b-la-película-detectar-el-quiebre-no-inventar-su-causa" class="nav-link" data-scroll-target="#paso-5b-la-película-detectar-el-quiebre-no-inventar-su-causa"><span class="header-section-number">5.3.7</span> Paso 5B — La película: detectar el quiebre, no inventar su causa</a></li>
+  <li><a href="#paso-5c-el-mapa-también-importa-quién-no-aparece" id="toc-paso-5c-el-mapa-también-importa-quién-no-aparece" class="nav-link" data-scroll-target="#paso-5c-el-mapa-también-importa-quién-no-aparece"><span class="header-section-number">5.3.8</span> Paso 5C — El mapa: también importa quién no aparece</a></li>
+  <li><a href="#paso-6-lectura-ejecutiva-hecho-interpretación-y-acción" id="toc-paso-6-lectura-ejecutiva-hecho-interpretación-y-acción" class="nav-link" data-scroll-target="#paso-6-lectura-ejecutiva-hecho-interpretación-y-acción"><span class="header-section-number">5.3.9</span> Paso 6 — Lectura ejecutiva: hecho, interpretación y acción</a></li>
+  </ul></li>
+  <li><a href="#actividad-el-pulso-emocional-de-un-proyecto-urbano-35-min" id="toc-actividad-el-pulso-emocional-de-un-proyecto-urbano-35-min" class="nav-link" data-scroll-target="#actividad-el-pulso-emocional-de-un-proyecto-urbano-35-min"><span class="header-section-number">5.4</span> Actividad: el pulso emocional de un proyecto urbano (35 min)</a></li>
+  <li><a href="#leer-sin-sobre-leer-sesgos-y-uso-responsable" id="toc-leer-sin-sobre-leer-sesgos-y-uso-responsable" class="nav-link" data-scroll-target="#leer-sin-sobre-leer-sesgos-y-uso-responsable"><span class="header-section-number">5.5</span> Leer sin sobre-leer: sesgos y uso responsable</a>
+  <ul class="collapse">
+  <li><a href="#el-espejo-deformante-de-la-conversación-digital" id="toc-el-espejo-deformante-de-la-conversación-digital" class="nav-link" data-scroll-target="#el-espejo-deformante-de-la-conversación-digital"><span class="header-section-number">5.5.1</span> El espejo deformante de la conversación digital</a></li>
+  <li><a href="#reglas-de-interpretación-del-curso" id="toc-reglas-de-interpretación-del-curso" class="nav-link" data-scroll-target="#reglas-de-interpretación-del-curso"><span class="header-section-number">5.5.2</span> Reglas de interpretación del curso</a></li>
+  <li><a href="#ética-de-la-escucha-pública" id="toc-ética-de-la-escucha-pública" class="nav-link" data-scroll-target="#ética-de-la-escucha-pública"><span class="header-section-number">5.5.3</span> Ética de la escucha pública</a></li>
+  </ul></li>
+  <li><a href="#resumen" id="toc-resumen" class="nav-link" data-scroll-target="#resumen"><span class="header-section-number">5.6</span> Resumen</a></li>
+  <li><a href="#recursos" id="toc-recursos" class="nav-link" data-scroll-target="#recursos"><span class="header-section-number">5.7</span> Recursos</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./nlp_participacion.html">Módulo 2: Modelos IA</a></li><li class="breadcrumb-item"><a href="./analisis_sentimientos.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Análisis de Sentimientos</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Análisis de Sentimientos</span></h1>
+<p class="subtitle lead">Percepción emocional en el entorno urbano</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>Sesión 6.1 · Día 6 · 1,5 horas · Modalidad Meet · Docente: Denis Berroeta (UAI)</strong></p>
+<section id="resumen-ejecutivo" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="resumen-ejecutivo">Resumen ejecutivo</h2>
+<p>En la sesión 5.2 aprendimos a ordenar <strong>qué</strong> dice la gente. Ahora agregamos la dimensión que con frecuencia se pierde en un informe técnico: <strong>cómo se siente</strong> la gente respecto de su entorno. Una plaza puede cumplir todos sus estándares de iluminación y, aun así, ser percibida como insegura; una obra objetivamente beneficiosa puede acumular un rechazo que, detectado a tiempo, permite conversar y gestionar mejor.</p>
+<p>El <strong>análisis de sentimientos</strong> es una técnica de procesamiento de lenguaje natural (NLP) que estima la carga emocional de un texto <span class="citation" data-cites="liu_sentiment_2012">(<a href="references.html#ref-liu_sentiment_2012" role="doc-biblioref">Liu 2012</a>)</span>. No lee la mente de una comuna ni reemplaza una encuesta: permite reconocer patrones agregados en comentarios ciudadanos. Su aporte para la gestión es doble: una <strong>fotografía</strong> de la percepción por tema y barrio, y una <strong>película</strong> de cómo cambia el ánimo frente a un proyecto.</p>
+<p>Trabajaremos con el caso sintético y declarado <em>Plan Barrio Seguro y Luminoso de La Florida</em>: 1.632 comentarios sobre luminarias LED, plazas y cámaras de televigilancia. El taller sigue un trenzado deliberado: <strong>humano → IA → humano</strong>. La IA clasifica y agrega; el equipo anonimiza, audita, interpreta y decide qué evidencia es suficientemente sólida para comunicar.</p>
+<p>Al finalizar la sesión serás capaz de:</p>
+<ol type="1">
+<li><strong>Explicar</strong> qué mide el análisis de sentimientos —polaridad y emociones— y qué no mide —representatividad ni causas.</li>
+<li><strong>Diseñar y aplicar prompts estructurados</strong> para clasificar comentarios por sentimiento, emoción, tema, evidencia literal y confianza.</li>
+<li><strong>Auditar</strong> el resultado de la IA y convertir los errores en instrucciones de clasificación más precisas.</li>
+<li><strong>Cruzar</strong> sentimiento con tema, territorio y tiempo para construir un tablero de percepción.</li>
+<li><strong>Redactar</strong> una lectura ejecutiva que separe hecho, interpretación y acción de verificación.</li>
+<li><strong>Usar responsablemente</strong> conversación pública agregada, sin convertirla en vigilancia ni confundirla con la opinión de toda una comuna.</li>
+</ol>
+</section>
+<section id="contenidos-de-la-sesión" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="contenidos-de-la-sesión">Contenidos de la sesión</h2>
+<ul>
+<li>La capa emocional del territorio: percepción y realidad técnica.</li>
+<li>Qué mide el análisis de sentimientos; polaridad, emoción y confianza.</li>
+<li>Consultas públicas y redes sociales: fuentes complementarias, no intercambiables.</li>
+<li>El flujo de seis pasos: anonimizar, explorar, clasificar, auditar, agregar y leer.</li>
+<li>Cuadernillo de prompts para una aplicación práctica, trazable y segura.</li>
+<li>Sesgos, ética y reglas para no sobre-interpretar el resultado.</li>
+</ul>
+</section>
+<section id="la-capa-emocional-del-territorio" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="la-capa-emocional-del-territorio"><span class="header-section-number">5.1</span> La capa emocional del territorio</h2>
+<section id="la-percepción-es-un-dato-de-gestión" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="la-percepción-es-un-dato-de-gestión"><span class="header-section-number">5.1.1</span> La percepción es un dato de gestión</h3>
+<p>La realidad técnica y la realidad percibida pueden divergir. En seguridad, por ejemplo, puede bajar la victimización medida mientras aumenta el temor a salir de noche. No son dos versiones rivales de la verdad: son dos capas del territorio. Si una vecina deja de usar una plaza porque la siente insegura, la plaza se vacía aunque la estadística mejore.</p>
+<p>Gestionar sólo con indicadores técnicos es gestionar a ciegas de una parte del problema. La percepción no es ruido subjetivo: es información sobre la experiencia cotidiana que conviene escuchar, contrastar y situar.</p>
+</section>
+<section id="qué-mide-y-qué-no-mide" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="qué-mide-y-qué-no-mide"><span class="header-section-number">5.1.2</span> Qué mide y qué no mide</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dimensión</th>
+<th>Qué permite observar</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Polaridad</strong></td>
+<td>Carga positiva, negativa, neutra o mixta.</td>
+<td>“La iluminación quedó espectacular” → positivo.</td>
+</tr>
+<tr class="even">
+<td><strong>Emoción</strong></td>
+<td>Matiz de la reacción: miedo, enojo, frustración, orgullo.</td>
+<td>No se gestiona igual un barrio asustado que uno enojado.</td>
+</tr>
+<tr class="odd">
+<td><strong>Tendencias agregadas</strong></td>
+<td>Patrones por tema, barrio, fuente o semana.</td>
+<td>El malestar por iluminación aumenta desde cierta fecha.</td>
+</tr>
+<tr class="even">
+<td><strong>No mide</strong></td>
+<td>Representatividad, intención ni causa.</td>
+<td>El modelo lee textos; no puede hablar por toda la comuna.</td>
+</tr>
+</tbody>
+</table>
+<p>El resultado siempre se comunica en agregado: tendencias, cambios y concentraciones; nunca diagnósticos sobre personas.</p>
+</section>
+<section id="dos-fuentes-de-naturaleza-opuesta" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="dos-fuentes-de-naturaleza-opuesta"><span class="header-section-number">5.1.3</span> Dos fuentes de naturaleza opuesta</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Consultas públicas</th>
+<th>Redes sociales</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Origen</td>
+<td>Convocadas</td>
+<td>Espontáneas</td>
+</tr>
+<tr class="even">
+<td>Alcance</td>
+<td>Acotado, con menor volumen</td>
+<td>Continuo, potencialmente masivo</td>
+</tr>
+<tr class="odd">
+<td>Representatividad</td>
+<td>Mayor respecto del universo consultado</td>
+<td>Sesgada por plataforma y participación</td>
+</tr>
+<tr class="even">
+<td>Valor principal</td>
+<td>Profundidad y contexto declarado</td>
+<td>Continuidad y conversación no convocada</td>
+</tr>
+</tbody>
+</table>
+<p>En el caso del taller hay 480 respuestas de consulta y 1.152 comentarios de redes. La comparación es parte del hallazgo: si ambas fuentes divergen, no se elige la que “gana”; se investiga qué voces están presentes y cuáles faltan.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Analogía: el termómetro y el diagnóstico">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Analogía: el termómetro y el diagnóstico
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>El análisis de sentimientos es un termómetro: indica que hay fiebre y dónde buscarla, pero no identifica por sí solo la enfermedad ni prescribe el tratamiento. Decidir sólo con redes sociales sería como recetar mirando un termómetro. Primero se va a terreno, se revisan datos duros y se conversa.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="el-caso-y-el-flujo-de-trabajo" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="el-caso-y-el-flujo-de-trabajo"><span class="header-section-number">5.2</span> El caso y el flujo de trabajo</h2>
+<section id="plan-barrio-seguro-y-luminoso-de-la-florida" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="plan-barrio-seguro-y-luminoso-de-la-florida"><span class="header-section-number">5.2.1</span> Plan Barrio Seguro y Luminoso de La Florida</h3>
+<p>El proyecto del taller contempla recambio de luminarias LED, recuperación de plazas y cámaras de televigilancia en diez barrios. El corpus sintético cubre del 2 de marzo al 19 de julio de 2026 e incluye las columnas <code>id</code>, <code>fecha</code>, <code>fuente</code>, <code>autor</code>, <code>barrio_declarado</code> y <code>texto</code>.</p>
+<p>Los datos fueron construidos para la clase: contienen información personal ficticia, ironías, cortesía con reclamo, textos mixtos, disenso técnico, duplicados y una campaña coordinada. No son defectos a esconder: son los problemas que un análisis responsable debe reconocer antes de producir una conclusión.</p>
+</section>
+<section id="seis-pasos-humano-ia-humano" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="seis-pasos-humano-ia-humano"><span class="header-section-number">5.2.2</span> Seis pasos: humano, IA, humano</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Paso</th>
+<th>Pregunta de trabajo</th>
+<th>Responsable principal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Anonimizar</td>
+<td>¿El texto conserva datos personales?</td>
+<td>Humano decide; IA puede asistir.</td>
+</tr>
+<tr class="even">
+<td>2. Explorar</td>
+<td>¿Qué hay realmente en el archivo?</td>
+<td>IA con revisión humana.</td>
+</tr>
+<tr class="odd">
+<td>3. Clasificar</td>
+<td>¿Qué polaridad, emoción, tema y evidencia presenta cada fila?</td>
+<td>IA.</td>
+</tr>
+<tr class="even">
+<td>4. Auditar</td>
+<td>¿La etiqueta resiste leer el comentario original?</td>
+<td><strong>Humano, obligatorio.</strong></td>
+</tr>
+<tr class="odd">
+<td>5. Agregar</td>
+<td>¿Cómo cambia el patrón por tema, tiempo, fuente y barrio?</td>
+<td>IA con controles.</td>
+</tr>
+<tr class="even">
+<td>6. Leer</td>
+<td>¿Qué es hecho, qué es hipótesis y qué conviene verificar?</td>
+<td>Humano + IA.</td>
+</tr>
+</tbody>
+</table>
+<p>Los prompts no sustituyen el criterio profesional. Hacen explícita una tarea, reducen omisiones y dejan un resultado revisable. La auditoría no tiene un prompt: pedir a la IA que revise su propia clasificación es pedir al redactor que corrija su propia acta.</p>
+</section>
+</section>
+<section id="cuadernillo-de-prompts" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="cuadernillo-de-prompts"><span class="header-section-number">5.3</span> Cuadernillo de prompts</h2>
+<section id="paso-1-anonimizar-antes-de-analizar" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="paso-1-anonimizar-antes-de-analizar"><span class="header-section-number">5.3.1</span> Paso 1 — Anonimizar antes de analizar</h3>
+<p>Antes de copiar un comentario a una herramienta de IA, se deben reemplazar nombres, RUT, teléfonos, correos, cuentas y domicilios con numeración. En cambio, se conservan plazas, paraderos, ferias, canchas, villas y calles sin número: son información territorial, no identidad de la persona.</p>
+<pre class="text"><code>Vas a limpiar datos personales de comentarios ciudadanos sobre un proyecto
+urbano antes de analizarlos. Para cada texto reemplaza nombres y apellidos
+por [NOMBRE], RUT por [RUT], teléfonos por [TEL], domicilios con numeración
+por [DOMICILIO], y correos, patentes o @cuentas por [CONTACTO].
+
+NO reemplaces lugares públicos ni calles sin numeración. No cambies ninguna
+otra palabra, ortografía, emoji, hashtag o abreviación. Mantén el mismo `id`
+y orden. Agrega `pii_detectada` con los tipos hallados, o `ninguna`; reemplaza
+la columna `autor` por un identificador anónimo estable.
+
+Devuelve sólo CSV. Filas a limpiar:
+[PEGAR HASTA 50 FILAS]</code></pre>
+<p>La regla del curso es clara: ningún dato personal real de vecinos ingresa a una herramienta de IA. Revisa además una muestra de la limpieza, porque una anonimización incompleta sigue siendo una exposición de datos.</p>
+</section>
+<section id="paso-2-explorar-antes-de-pedir-conclusiones" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="paso-2-explorar-antes-de-pedir-conclusiones"><span class="header-section-number">5.3.2</span> Paso 2 — Explorar antes de pedir conclusiones</h3>
+<p>La primera pregunta no es “¿qué piensa la gente?”, sino “¿qué contiene el archivo?”. Esta exploración permite detectar vacíos, duplicados y sesgos que después condicionan toda lectura.</p>
+<pre class="text"><code>Carga este archivo de comentarios ciudadanos. Sin analizar todavía el
+contenido, responde con números concretos:
+1. Total de filas y rango de fechas.
+2. Comentarios por fuente.
+3. Largo promedio, mínimo y máximo en palabras.
+4. Filas vacías o con sólo "-", "no sé" o "s/i".
+5. Textos exactamente duplicados, con sus ids.
+6. Porcentaje sin barrio declarado, también separado por fuente.
+7. Conteo por barrio declarado, de mayor a menor.
+8. Conteo por semana, en orden cronológico.
+9. Cinco comentarios al azar, tal cual están escritos.
+
+No interpretes: describe sólo lo que hay.</code></pre>
+<p>En el caso de la clase se esperan 1.632 filas, 32 vacías, 32 duplicados y 21% sin barrio declarado. Estos números no son una conclusión: son el marco que evita tratar una muestra desigual como una fotografía del territorio.</p>
+</section>
+<section id="paso-3-clasificar-con-evidencia-y-declarar-incertidumbre" class="level3" data-number="5.3.3">
+<h3 data-number="5.3.3" class="anchored" data-anchor-id="paso-3-clasificar-con-evidencia-y-declarar-incertidumbre"><span class="header-section-number">5.3.3</span> Paso 3 — Clasificar con evidencia y declarar incertidumbre</h3>
+<p>La clasificación debe producir una fila de salida por cada fila de entrada. La <strong>cita literal</strong> es la trazabilidad: permite volver al texto y discutir la decisión. La <strong>confianza</strong> no es un adorno; selecciona qué debe llegar a la auditoría humana.</p>
+<pre class="text"><code>Clasifica cada comentario ciudadano ya anonimizado sobre el proyecto urbano.
+
+COLUMNAS DE SALIDA
+id | tema | tema_secundario | polaridad | emocion | cita | confianza
+
+TEMA: usa una de las categorías acordadas o `otra`:
+[PEGAR LAS 7 CATEGORÍAS Y UNA DEFINICIÓN BREVE DE CADA UNA]
+
+POLARIDAD: positivo | negativo | neutro | mixto
+EMOCIÓN: miedo | enojo | frustración | tristeza | alegría | orgullo |
+esperanza | agradecimiento | ninguna
+CITA: fragmento LITERAL de máximo 12 palabras que fundamente la polaridad.
+CONFIANZA: alta | media | baja.
+
+REGLAS
+1. Una fila de entrada = una fila de salida; conserva id y orden.
+2. No fuerces una categoría: usa `otra` cuando corresponda.
+3. Usa `mixto` si hay polaridades opuestas en temas distintos; registra el
+   segundo tema y no promedies ambos sentidos.
+4. Usa confianza `baja` ante ironía, sarcasmo, ambigüedad o cortesía cuyo
+   contenido contradice la forma.
+5. Si el texto no conserva contenido tras la limpieza, marca `sin_contenido`.
+6. No atribuyas intenciones ni completes lo que la persona “quiso decir”.
+
+Devuelve sólo CSV. Filas (máximo 50):
+[PEGAR FILAS]</code></pre>
+<p>Procesa como máximo 50 filas por tanda. Antes de continuar, verifica que el número de filas de salida coincide con el de entrada y que no se perdió ni se inventó ningún <code>id</code>.</p>
+</section>
+<section id="casos-difíciles-donde-el-modelo-enseña-sus-límites" class="level3" data-number="5.3.4">
+<h3 data-number="5.3.4" class="anchored" data-anchor-id="casos-difíciles-donde-el-modelo-enseña-sus-límites"><span class="header-section-number">5.3.4</span> Casos difíciles: donde el modelo enseña sus límites</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Caso</th>
+<th>Texto</th>
+<th>Riesgo del modelo</th>
+<th>Lectura defendible</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ironía</td>
+<td>“Qué linda la nueva plaza, duró una semana sin rayados.”</td>
+<td>Leer “linda” como positivo.</td>
+<td>Negativo; enojo; confianza baja.</td>
+</tr>
+<tr class="even">
+<td>Cortesía con reclamo</td>
+<td>“Muchas gracias por el trabajo, pero en mi pasaje no ha llegado una luz.”</td>
+<td>Detenerse en el agradecimiento.</td>
+<td>Negativo; frustración; confianza baja.</td>
+</tr>
+<tr class="odd">
+<td>Texto mixto</td>
+<td>“Las luminarias quedaron excelentes, pero la obra dejó la vereda destrozada.”</td>
+<td>Forzar una sola polaridad.</td>
+<td>Mixto; dos temas; separar si el análisis lo requiere.</td>
+</tr>
+<tr class="even">
+<td>Disenso técnico</td>
+<td>“Iluminar más no baja el delito por sí solo.”</td>
+<td>Confundir desacuerdo con negatividad.</td>
+<td>Neutro; argumento que debe preservarse.</td>
+</tr>
+</tbody>
+</table>
+<p>Un modelo que falla con sarcasmo local no invalida todo el ejercicio: muestra dónde aplicar el control humano y cómo mejorar el prompt con casos límite.</p>
+</section>
+<section id="paso-4-auditar-el-trabajo-que-no-se-delega" class="level3" data-number="5.3.5">
+<h3 data-number="5.3.5" class="anchored" data-anchor-id="paso-4-auditar-el-trabajo-que-no-se-delega"><span class="header-section-number">5.3.5</span> Paso 4 — Auditar: el trabajo que no se delega</h3>
+<p>Selecciona 10–15 filas al azar y todas las de confianza baja si son pocas. Lee el comentario original, no sólo la cita, y anota si la etiqueta es conforme, debe corregirse o requiere discusión. Si hay más de dos o tres discrepancias en 15 filas, ajusta el prompt y reclasifica la tanda.</p>
+<p>Cada error se transforma en un caso límite para el siguiente prompt:</p>
+<pre class="text"><code>CASOS LÍMITE PARA ESTA TANDA
+- “[CITA]” es [POLARIDAD CORRECTA], no [POLARIDAD ASIGNADA], porque [RAZÓN].</code></pre>
+<p>Ese registro es un activo profesional: documenta qué aprendió el equipo sobre su propio corpus y mejora los análisis futuros de la organización.</p>
+</section>
+<section id="paso-5a-la-fotografía-distribución-y-contraste-de-fuentes" class="level3" data-number="5.3.6">
+<h3 data-number="5.3.6" class="anchored" data-anchor-id="paso-5a-la-fotografía-distribución-y-contraste-de-fuentes"><span class="header-section-number">5.3.6</span> Paso 5A — La fotografía: distribución y contraste de fuentes</h3>
+<pre class="text"><code>Sobre la tabla clasificada, calcula y devuelve:
+A) polaridad | n | % del total
+B) tema | n | % | % negativo del tema
+C) emoción predominante dentro de cada tema, con su n
+D) % negativo por fuente y tema
+E) los tres temas con mayor % de comentarios negativos
+F) % de confianza baja por tema
+
+Al final declara la suma de n en (A) y el total de filas procesadas. Deben
+ser iguales; si no cuadran, dilo y no ajustes los números.
+
+No interpretes todavía. No redondees cifras. Si un tema, barrio o fuente tiene
+menos de 40 comentarios, no reportes porcentaje: informa n y marca “muestra
+insuficiente”.</code></pre>
+<p>El umbral de 40 no es una ceremonia estadística: evita presentar una anécdota con decimales como si fuera una tendencia y reduce el riesgo de identificar personas en cruces territoriales pequeños.</p>
+</section>
+<section id="paso-5b-la-película-detectar-el-quiebre-no-inventar-su-causa" class="level3" data-number="5.3.7">
+<h3 data-number="5.3.7" class="anchored" data-anchor-id="paso-5b-la-película-detectar-el-quiebre-no-inventar-su-causa"><span class="header-section-number">5.3.7</span> Paso 5B — La película: detectar el quiebre, no inventar su causa</h3>
+<pre class="text"><code>Con la tabla clasificada, analiza la evolución por semana calendario:
+1. semana | fecha_inicio | n_comentarios | % negativo.
+2. Repite para [TEMA DE MAYOR VOLUMEN].
+3. Identifica semanas donde el volumen o % negativo cambia bruscamente frente
+   a las dos semanas anteriores; cuantifica el salto en puntos porcentuales.
+4. Para cada quiebre, muestra tres comentarios literales de esa semana con id.
+
+No expliques la causa del quiebre. Muestra CUÁNDO cambió, no POR QUÉ. No uses
+promedios móviles. Con menos de 20 comentarios, marca “volumen bajo” y no
+calcules porcentaje.</code></pre>
+<p>En el caso del taller aparece un cambio entre las semanas del 11–17 y del 18–24 de mayo: suben el volumen y la negatividad; luego hay comentarios casi idénticos en la semana siguiente. La explicación se verifica después contra <code>hitos_proyecto.csv</code>: el modelo puede detectar el cuándo, pero el porqué requiere la cronología y el conocimiento del proyecto.</p>
+</section>
+<section id="paso-5c-el-mapa-también-importa-quién-no-aparece" class="level3" data-number="5.3.8">
+<h3 data-number="5.3.8" class="anchored" data-anchor-id="paso-5c-el-mapa-también-importa-quién-no-aparece"><span class="header-section-number">5.3.8</span> Paso 5C — El mapa: también importa quién no aparece</h3>
+<pre class="text"><code>Con la tabla clasificada, entrega:
+1. barrio | n | % del total con barrio | % negativo | emoción dominante.
+2. La misma tabla para redes sociales y para consulta pública, por separado.
+3. Barrios sobrerrepresentados en redes respecto de la consulta, con números.
+4. Cruce tema x barrio sólo para celdas con n &gt;= 40.
+5. Barrios que no aparecen o tienen menos de 40 comentarios; nómbralos todos.
+
+No entregues coordenadas ni inventes ubicaciones. No completes barrios sin
+datos con promedios de barrios vecinos. El punto 5 es un resultado importante,
+no una omisión.</code></pre>
+<p>La IA entrega nombres de barrio; la georreferenciación se realiza aparte, con la capa censal pertinente. Así el tablero de percepción queda listo para el cruce de la sesión 6.2 con datos institucionales.</p>
+</section>
+<section id="paso-6-lectura-ejecutiva-hecho-interpretación-y-acción" class="level3" data-number="5.3.9">
+<h3 data-number="5.3.9" class="anchored" data-anchor-id="paso-6-lectura-ejecutiva-hecho-interpretación-y-acción"><span class="header-section-number">5.3.9</span> Paso 6 — Lectura ejecutiva: hecho, interpretación y acción</h3>
+<pre class="text"><code>Redacta exactamente tres bloques para una autoridad municipal no técnica:
+
+HECHO: dato verificable, con n y período. No agregues nada que no esté en la
+tabla.
+INTERPRETACIÓN: hipótesis que comienza con “posiblemente” o “una explicación
+sería”.
+ACCIÓN: una acción de verificación o gestión; nunca una decisión de inversión.
+
+Después agrega “LO QUE ESTE ANÁLISIS NO PUEDE DECIR”, con al menos tres
+límites concretos: quién no participa, qué territorios faltan y qué no mide
+el sentimiento. Máximo 120 palabras por bloque.</code></pre>
+<p>Por ejemplo: <strong>Hecho:</strong> “El 81% de los comentarios sobre iluminación desde el 18 de mayo es negativo (n=384)”. <strong>Interpretación:</strong> “Posiblemente se relaciona con la postergación anunciada de la Fase 2”. <strong>Acción:</strong> “Conviene verificar en terreno la experiencia de los barrios afectados antes de la próxima mesa”.</p>
+<p>La primera frase se sostiene en datos; la segunda declara una hipótesis; la tercera propone aprender más. No son intercambiables.</p>
+</section>
+</section>
+<section id="actividad-el-pulso-emocional-de-un-proyecto-urbano-35-min" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="actividad-el-pulso-emocional-de-un-proyecto-urbano-35-min"><span class="header-section-number">5.4</span> Actividad: el pulso emocional de un proyecto urbano (35 min)</h2>
+<p>En equipos, construyan un tablero de percepción del Plan Barrio Seguro y Luminoso. El producto no es un porcentaje aislado: es una evidencia documentada que otra persona pueda revisar.</p>
+<ol type="1">
+<li>Anonimicen y exploren el corpus usando los prompts A y B.</li>
+<li>Clasifiquen en tandas y auditen una muestra contra el texto original.</li>
+<li>Generen la fotografía por polaridad, tema y fuente; verifiquen las sumas.</li>
+<li>Identifiquen un quiebre semanal y contrástenlo con los hitos del proyecto.</li>
+<li>Reconozcan los barrios visibles y los barrios ausentes antes de mapear.</li>
+<li>Redacten tres bloques de hecho, interpretación y acción, con límites explícitos.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="Chequeos de 30 segundos por tanda">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Chequeos de 30 segundos por tanda
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Filas de salida = filas de entrada; <code>id</code> únicos; cinco citas verificadas contra el original; sin PII residual; sumas que cuadran; ningún porcentaje con <code>n &lt; 40</code>. Un informe puede fallar por cualquiera de estos seis detalles.</p>
+</div>
+</div>
+</section>
+<section id="leer-sin-sobre-leer-sesgos-y-uso-responsable" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="leer-sin-sobre-leer-sesgos-y-uso-responsable"><span class="header-section-number">5.5</span> Leer sin sobre-leer: sesgos y uso responsable</h2>
+<section id="el-espejo-deformante-de-la-conversación-digital" class="level3" data-number="5.5.1">
+<h3 data-number="5.5.1" class="anchored" data-anchor-id="el-espejo-deformante-de-la-conversación-digital"><span class="header-section-number">5.5.1</span> El espejo deformante de la conversación digital</h3>
+<ul>
+<li><strong>Quién no está:</strong> brechas etarias, socioeconómicas y territoriales dejan sectores completos sin voz digital.</li>
+<li><strong>El enojo publica más:</strong> la normalidad rara vez se comenta; las redes sobre-representan el malestar.</li>
+<li><strong>Bots y campañas:</strong> textos casi idénticos o coordinados pueden amplificar una posición sin representar una mayoría.</li>
+<li><strong>Concentración:</strong> algunos barrios o cuentas pueden dominar la conversación.</li>
+<li><strong>Plataforma:</strong> X, Instagram, Facebook y una consulta pública no convocan al mismo público ni producen el mismo lenguaje.</li>
+</ul>
+</section>
+<section id="reglas-de-interpretación-del-curso" class="level3" data-number="5.5.2">
+<h3 data-number="5.5.2" class="anchored" data-anchor-id="reglas-de-interpretación-del-curso"><span class="header-section-number">5.5.2</span> Reglas de interpretación del curso</h3>
+<ol type="1">
+<li>Lee <strong>tendencias y cambios</strong>, nunca cifras absolutas como “la opinión de la comuna”.</li>
+<li><strong>Triangula</strong> con participación formal, trabajo de terreno y datos duros.</li>
+<li>El sentimiento negativo <strong>señala dónde mirar, no qué decidir</strong>.</li>
+</ol>
+</section>
+<section id="ética-de-la-escucha-pública" class="level3" data-number="5.5.3">
+<h3 data-number="5.5.3" class="anchored" data-anchor-id="ética-de-la-escucha-pública"><span class="header-section-number">5.5.3</span> Ética de la escucha pública</h3>
+<p>Analizar conversación pública agregada no equivale a perfilar vecinos. La línea roja del curso es explícita: no perfiles individuales, no monitoreo de dirigentes, no publicación de citas que reintroduzcan datos personales y agregación siempre. La escucha pública debe declarar qué se observa, para qué y con qué resguardos.</p>
+</section>
+</section>
+<section id="resumen" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="resumen"><span class="header-section-number">5.6</span> Resumen</h2>
+<ul>
+<li>El territorio también se siente: percepción e infraestructura son capas distintas que una buena gestión debe considerar juntas.</li>
+<li>El análisis de sentimientos estima polaridad y emociones agregadas; no representa automáticamente a una comuna ni explica causalidades.</li>
+<li>El flujo profesional es anonimizar → explorar → clasificar → <strong>auditar</strong> → agregar → leer; la auditoría humana es innegociable.</li>
+<li>Un prompt útil exige salida estructurada, cita literal, confianza, reglas para casos límite y controles verificables.</li>
+<li>Tiempo, tema, fuente y territorio permiten construir un tablero; los silencios y las muestras pequeñas también son resultados.</li>
+<li>Hecho, interpretación y acción son tres frases distintas: mezclarlas convierte una hipótesis en una afirmación sin respaldo.</li>
+<li>En la sesión siguiente, el tablero de percepción se cruza con información institucional para construir evidencia territorial más completa.</li>
+</ul>
+</section>
+<section id="recursos" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="recursos"><span class="header-section-number">5.7</span> Recursos</h2>
+<ul>
+<li><strong>Corpus del taller</strong>: 1.632 comentarios sintéticos y declarados del Plan Barrio Seguro y Luminoso de La Florida, junto con <code>demo_20_textos.csv</code> e <code>hitos_proyecto.csv</code> como materiales de la sesión.</li>
+<li><strong>Prompt-book de sentimientos</strong>: anonimización, exploración, clasificación, distribución, evolución, territorio y lectura ejecutiva.</li>
+<li><strong>Plantilla “Tablero de percepción de proyecto”</strong>: polaridad por tema, contraste de fuentes, evolución semanal, lectura territorial, hallazgos y límites declarados.</li>
+<li><strong>Checklist de auditoría</strong>: filas, ids, citas, PII, sumas y umbrales antes de comunicar resultados.</li>
+<li>Referencia normativa: <strong>Ley 21.719 de Protección de Datos Personales</strong>.</li>
+</ul>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-liu_sentiment_2012" class="csl-entry" role="listitem">
+Liu, Bing. 2012. <em>Sentiment Analysis and Opinion Mining</em>. Synthesis Lectures on Human Language Technologies. Morgan &amp; Claypool Publishers. <a href="https://doi.org/10.2200/S00416ED1V01Y201204HLT016">https://doi.org/10.2200/S00416ED1V01Y201204HLT016</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./nlp_participacion.html" class="pagination-link" aria-label="NLP Comunitario">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">NLP Comunitario</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./integracion_datos.html" class="pagination-link" aria-label="Integración de Datos">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Integración de Datos</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2026, Denis Berroeta</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

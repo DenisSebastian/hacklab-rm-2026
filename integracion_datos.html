@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Operaciones Espaciales – AcademIA HackLab: Santiago Región Sustentable</title>
+<title>6&nbsp; Integración de Datos – AcademIA HackLab: Santiago Región Sustentable</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,8 +50,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./nlp_participacion.html" rel="next">
-<link href="./ecosistema_python.html" rel="prev">
+<link href="./recursos_complementarios.html" rel="next">
+<link href="./analisis_sentimientos.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -103,7 +103,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./vibe_coding.html">Módulo 1: Conceptos &amp; Casos</a></li><li class="breadcrumb-item"><a href="./operaciones_espaciales.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Operaciones Espaciales</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./nlp_participacion.html">Módulo 2: Modelos IA</a></li><li class="breadcrumb-item"><a href="./integracion_datos.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Integración de Datos</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -157,7 +157,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./operaciones_espaciales.html" class="sidebar-item-text sidebar-link active">
+  <a href="./operaciones_espaciales.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Operaciones Espaciales</span></span></a>
   </div>
 </li>
@@ -186,7 +186,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./integracion_datos.html" class="sidebar-item-text sidebar-link">
+  <a href="./integracion_datos.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Integración de Datos</span></span></a>
   </div>
 </li>
@@ -384,39 +384,42 @@ div.csl-indent {
   <ul>
   <li><a href="#resumen-ejecutivo" id="toc-resumen-ejecutivo" class="nav-link active" data-scroll-target="#resumen-ejecutivo">Resumen ejecutivo</a></li>
   <li><a href="#contenidos-de-la-sesión" id="toc-contenidos-de-la-sesión" class="nav-link" data-scroll-target="#contenidos-de-la-sesión">Contenidos de la sesión</a></li>
-  <li><a href="#las-preguntas-del-territorio-son-operaciones-espaciales" id="toc-las-preguntas-del-territorio-son-operaciones-espaciales" class="nav-link" data-scroll-target="#las-preguntas-del-territorio-son-operaciones-espaciales"><span class="header-section-number">3.1</span> Las preguntas del territorio son operaciones espaciales</a>
+  <li><a href="#dos-mundos-de-datos-que-no-se-hablan" id="toc-dos-mundos-de-datos-que-no-se-hablan" class="nav-link" data-scroll-target="#dos-mundos-de-datos-que-no-se-hablan"><span class="header-section-number">6.1</span> Dos mundos de datos que no se hablan</a>
   <ul class="collapse">
-  <li><a href="#para-despertar-qué-quieren-saber-de-su-territorio" id="toc-para-despertar-qué-quieren-saber-de-su-territorio" class="nav-link" data-scroll-target="#para-despertar-qué-quieren-saber-de-su-territorio"><span class="header-section-number">3.1.1</span> Para despertar: qué quieren saber de su territorio</a></li>
-  <li><a href="#el-buffer-ya-lo-conocen" id="toc-el-buffer-ya-lo-conocen" class="nav-link" data-scroll-target="#el-buffer-ya-lo-conocen"><span class="header-section-number">3.1.2</span> El buffer ya lo conocen</a></li>
+  <li><a href="#lo-que-ya-hiciste-con-ambos" id="toc-lo-que-ya-hiciste-con-ambos" class="nav-link" data-scroll-target="#lo-que-ya-hiciste-con-ambos"><span class="header-section-number">6.1.1</span> Lo que ya hiciste con ambos</a></li>
+  <li><a href="#representatividad-sin-esconderse-detrás-de-una-palabra" id="toc-representatividad-sin-esconderse-detrás-de-una-palabra" class="nav-link" data-scroll-target="#representatividad-sin-esconderse-detrás-de-una-palabra"><span class="header-section-number">6.1.2</span> Representatividad sin esconderse detrás de una palabra</a></li>
   </ul></li>
-  <li><a href="#coordenadas-y-proyecciones-lo-mínimo-que-evita-desastres" id="toc-coordenadas-y-proyecciones-lo-mínimo-que-evita-desastres" class="nav-link" data-scroll-target="#coordenadas-y-proyecciones-lo-mínimo-que-evita-desastres"><span class="header-section-number">3.2</span> Coordenadas y proyecciones: lo mínimo que evita desastres</a>
+  <li><a href="#el-método-del-cruce" id="toc-el-método-del-cruce" class="nav-link" data-scroll-target="#el-método-del-cruce"><span class="header-section-number">6.2</span> El método del cruce</a>
   <ul class="collapse">
-  <li><a href="#el-problema-antes-que-la-teoría" id="toc-el-problema-antes-que-la-teoría" class="nav-link" data-scroll-target="#el-problema-antes-que-la-teoría"><span class="header-section-number">3.2.1</span> El problema antes que la teoría</a></li>
-  <li><a href="#la-tierra-es-curva-el-mapa-es-plano" id="toc-la-tierra-es-curva-el-mapa-es-plano" class="nav-link" data-scroll-target="#la-tierra-es-curva-el-mapa-es-plano"><span class="header-section-number">3.2.2</span> La Tierra es curva, el mapa es plano</a></li>
-  <li><a href="#lo-único-que-hay-que-memorizar" id="toc-lo-único-que-hay-que-memorizar" class="nav-link" data-scroll-target="#lo-único-que-hay-que-memorizar"><span class="header-section-number">3.2.3</span> Lo único que hay que memorizar</a></li>
-  <li><a href="#diagnóstico-express" id="toc-diagnóstico-express" class="nav-link" data-scroll-target="#diagnóstico-express"><span class="header-section-number">3.2.4</span> Diagnóstico express</a></li>
-  <li><a href="#chile-el-país-difícil-de-aplanar" id="toc-chile-el-país-difícil-de-aplanar" class="nav-link" data-scroll-target="#chile-el-país-difícil-de-aplanar"><span class="header-section-number">3.2.5</span> Chile: el país difícil de aplanar</a></li>
+  <li><a href="#una-unidad-territorial-común" id="toc-una-unidad-territorial-común" class="nav-link" data-scroll-target="#una-unidad-territorial-común"><span class="header-section-number">6.2.1</span> Una unidad territorial común</a></li>
+  <li><a href="#kit-de-la-florida-continuidad-con-la-sesión-6.1" id="toc-kit-de-la-florida-continuidad-con-la-sesión-6.1" class="nav-link" data-scroll-target="#kit-de-la-florida-continuidad-con-la-sesión-6.1"><span class="header-section-number">6.2.2</span> Kit de La Florida: continuidad con la sesión 6.1</a></li>
+  <li><a href="#el-mapa-de-cuadrantes" id="toc-el-mapa-de-cuadrantes" class="nav-link" data-scroll-target="#el-mapa-de-cuadrantes"><span class="header-section-number">6.2.3</span> El mapa de cuadrantes</a></li>
+  <li><a href="#cuatro-barrios-cuatro-lecturas" id="toc-cuatro-barrios-cuatro-lecturas" class="nav-link" data-scroll-target="#cuatro-barrios-cuatro-lecturas"><span class="header-section-number">6.2.4</span> Cuatro barrios, cuatro lecturas</a></li>
   </ul></li>
-  <li><a href="#actividades" id="toc-actividades" class="nav-link" data-scroll-target="#actividades"><span class="header-section-number">3.3</span> Actividades</a>
+  <li><a href="#cuadernillo-de-prompts-para-la-integración" id="toc-cuadernillo-de-prompts-para-la-integración" class="nav-link" data-scroll-target="#cuadernillo-de-prompts-para-la-integración"><span class="header-section-number">6.3</span> Cuadernillo de prompts para la integración</a>
   <ul class="collapse">
-  <li><a href="#taller-análisis-de-cobertura-de-mi-comuna-35-min" id="toc-taller-análisis-de-cobertura-de-mi-comuna-35-min" class="nav-link" data-scroll-target="#taller-análisis-de-cobertura-de-mi-comuna-35-min"><span class="header-section-number">3.3.1</span> Taller: análisis de cobertura de mi comuna (35 min)</a></li>
-  <li><a href="#antes-de-mostrar-esa-cifra" id="toc-antes-de-mostrar-esa-cifra" class="nav-link" data-scroll-target="#antes-de-mostrar-esa-cifra"><span class="header-section-number">3.3.2</span> Antes de mostrar esa cifra</a></li>
-  <li><a href="#para-qué-sirve-esta-cifra" id="toc-para-qué-sirve-esta-cifra" class="nav-link" data-scroll-target="#para-qué-sirve-esta-cifra"><span class="header-section-number">3.3.3</span> Para qué sirve esta cifra</a></li>
-  <li><a href="#checklist-de-autodiagnóstico-del-módulo-1" id="toc-checklist-de-autodiagnóstico-del-módulo-1" class="nav-link" data-scroll-target="#checklist-de-autodiagnóstico-del-módulo-1"><span class="header-section-number">3.3.4</span> Checklist de autodiagnóstico del Módulo 1</a></li>
-  <li><a href="#tarea-puente-al-módulo-2" id="toc-tarea-puente-al-módulo-2" class="nav-link" data-scroll-target="#tarea-puente-al-módulo-2"><span class="header-section-number">3.3.5</span> Tarea puente al Módulo 2</a></li>
+  <li><a href="#antes-de-copiar-un-prompt-prepara-el-contexto" id="toc-antes-de-copiar-un-prompt-prepara-el-contexto" class="nav-link" data-scroll-target="#antes-de-copiar-un-prompt-prepara-el-contexto"><span class="header-section-number">6.3.1</span> Antes de copiar un prompt: prepara el contexto</a></li>
+  <li><a href="#prompt-a-agregar-el-small-data-sin-borrar-silencios" id="toc-prompt-a-agregar-el-small-data-sin-borrar-silencios" class="nav-link" data-scroll-target="#prompt-a-agregar-el-small-data-sin-borrar-silencios"><span class="header-section-number">6.3.2</span> Prompt A — Agregar el Small Data sin borrar silencios</a></li>
+  <li><a href="#prompt-b-traer-el-big-data-un-join-que-no-puede-perder-barrios" id="toc-prompt-b-traer-el-big-data-un-join-que-no-puede-perder-barrios" class="nav-link" data-scroll-target="#prompt-b-traer-el-big-data-un-join-que-no-puede-perder-barrios"><span class="header-section-number">6.3.3</span> Prompt B — Traer el Big Data: un join que no puede perder barrios</a></li>
+  <li><a href="#prompt-c-clasificar-cuadrantes-con-el-vacío-primero" id="toc-prompt-c-clasificar-cuadrantes-con-el-vacío-primero" class="nav-link" data-scroll-target="#prompt-c-clasificar-cuadrantes-con-el-vacío-primero"><span class="header-section-number">6.3.4</span> Prompt C — Clasificar cuadrantes con el vacío primero</a></li>
+  <li><a href="#prompt-d-hacer-visible-el-cruce-con-vibe-coding" id="toc-prompt-d-hacer-visible-el-cruce-con-vibe-coding" class="nav-link" data-scroll-target="#prompt-d-hacer-visible-el-cruce-con-vibe-coding"><span class="header-section-number">6.3.5</span> Prompt D — Hacer visible el cruce con vibe coding</a></li>
+  <li><a href="#prompt-e-redactar-la-ficha-de-evidencia-territorial" id="toc-prompt-e-redactar-la-ficha-de-evidencia-territorial" class="nav-link" data-scroll-target="#prompt-e-redactar-la-ficha-de-evidencia-territorial"><span class="header-section-number">6.3.6</span> Prompt E — Redactar la ficha de evidencia territorial</a></li>
   </ul></li>
-  <li><a href="#resumen" id="toc-resumen" class="nav-link" data-scroll-target="#resumen"><span class="header-section-number">3.4</span> Resumen</a></li>
-  <li><a href="#recursos" id="toc-recursos" class="nav-link" data-scroll-target="#recursos"><span class="header-section-number">3.5</span> Recursos</a></li>
+  <li><a href="#actividad-construir-la-ficha-de-evidencia" id="toc-actividad-construir-la-ficha-de-evidencia" class="nav-link" data-scroll-target="#actividad-construir-la-ficha-de-evidencia"><span class="header-section-number">6.4</span> Actividad: construir la ficha de evidencia</a></li>
+  <li><a href="#extrapolar-sin-mentir" id="toc-extrapolar-sin-mentir" class="nav-link" data-scroll-target="#extrapolar-sin-mentir"><span class="header-section-number">6.5</span> Extrapolar sin mentir</a></li>
+  <li><a href="#cierre-del-módulo-2" id="toc-cierre-del-módulo-2" class="nav-link" data-scroll-target="#cierre-del-módulo-2"><span class="header-section-number">6.6</span> Cierre del Módulo 2</a></li>
+  <li><a href="#resumen" id="toc-resumen" class="nav-link" data-scroll-target="#resumen"><span class="header-section-number">6.7</span> Resumen</a></li>
+  <li><a href="#recursos" id="toc-recursos" class="nav-link" data-scroll-target="#recursos"><span class="header-section-number">6.8</span> Recursos</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./vibe_coding.html">Módulo 1: Conceptos &amp; Casos</a></li><li class="breadcrumb-item"><a href="./operaciones_espaciales.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Operaciones Espaciales</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./nlp_participacion.html">Módulo 2: Modelos IA</a></li><li class="breadcrumb-item"><a href="./integracion_datos.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Integración de Datos</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Operaciones Espaciales</span></h1>
-<p class="subtitle lead">Manipulación de geometrías y proyecciones cartográficas</p>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Integración de Datos</span></h1>
+<p class="subtitle lead">Small Data comunitario + Big Data institucional</p>
 </div>
 
 
@@ -433,45 +436,155 @@ div.csl-indent {
 </header>
 
 
-<p><strong>Sesión 3.2 · Día 3 · 1,5 horas · Modalidad Meet · Docente: Denis Berroeta (UAI)</strong></p>
+<p><strong>Sesión 6.2 · Día 6 · 1,5 horas · Modalidad Meet · Docente: Denis Berroeta (UAI)</strong></p>
 <section id="resumen-ejecutivo" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="resumen-ejecutivo">Resumen ejecutivo</h2>
-<p>La sesión anterior te dejó con capas de datos de tu comuna. Esta sesión te entrega lo que falta para que esas capas <strong>respondan preguntas</strong>: las <strong>operaciones espaciales</strong> —medir distancias y superficies, crear zonas de influencia (buffers), cruzar capas para saber qué cae dentro de qué— y la noción mínima indispensable de <strong>sistemas de coordenadas y proyecciones</strong>, la causa número uno de errores en análisis territorial: capas que no calzan, distancias en unidades absurdas, mapas desplazados.</p>
-<p>La promesa es concreta: al terminar habrás respondido con datos una pregunta del tipo <em>“¿cuántas personas viven a más de 500 metros de un área verde en mi comuna?”</em> — exactamente la clase de evidencia que un profesional público necesita para fundamentar un proyecto, priorizar inversión o respaldar una postulación a fondos. Todo mediante vibe coding: la IA ejecuta las operaciones; tú aportas la pregunta, el criterio y la validación.</p>
-<p>El principio territorial de fondo cambia de nivel: en la 3.1 dijimos que <em>todo pasa en alguna parte</em>; ahora agregamos que <strong>el mapa no es el territorio</strong>. La escala y la proyección no son tecnicismos: son decisiones que afectan cuánto mide una plaza, qué población queda fuera de cobertura y qué tan defendible es la cifra frente a un municipio, una comunidad o una postulación a fondos.</p>
+<p>Esta sesión cierra el recorrido técnico del Módulo 2. Ya capturaste datos con mapeos y sensores, procesaste opiniones mediante NLP y mediste la capa perceptual del territorio. Ahora toca reunir esas piezas con censos, registros administrativos y cartografía oficial.</p>
+<p>El <strong>Small Data comunitario</strong> es rico, situado y cargado de experiencia vivida, pero parcial: habla de las personas, territorios y momentos que efectivamente participaron. El <strong>Big Data institucional</strong> es exhaustivo, sistemático y comparable, pero no sabe cómo se vive un problema y puede ser grueso o estar desactualizado <span class="citation" data-cites="kitchin_data_2014">(<a href="references.html#ref-kitchin_data_2014" role="doc-biblioref">Kitchin 2014</a>)</span>. Ninguno representa por sí solo el territorio completo. La evidencia más útil nace de cruzarlos: el dato comunitario dice <strong>qué importa y dónde duele</strong>; el institucional dice <strong>cuánto, para cuántas personas y comparado con qué</strong>.</p>
+<p>La práctica usa el mismo caso sintético y declarado de La Florida de la sesión 6.1: el tablero de percepción de 1.632 comentarios se cruza con condiciones de infraestructura por los mismos diez barrios. El entregable es una <strong>ficha de evidencia territorial</strong> de dos páginas: evidencia trazable para la sesión 7.1, no una recomendación de política pública adelantada.</p>
 <p>Al finalizar la sesión serás capaz de:</p>
 <ol type="1">
-<li><strong>Formular preguntas territoriales como operaciones espaciales</strong>: traducir “¿qué tan lejos está X de Y?” a distancia, buffer, intersección y unión.</li>
-<li><strong>Solicitar mediante prompts las operaciones fundamentales</strong>: áreas y distancias, buffers, intersección y cruce de capas, conteo dentro de polígonos.</li>
-<li><strong>Comprender funcionalmente qué es un sistema de coordenadas</strong> y las dos “familias” que importan: geográficas (grados, para ubicar) y proyectadas (metros, para medir).</li>
-<li><strong>Diagnosticar los síntomas clásicos de errores de proyección</strong> y pedir la corrección (para Chile central: EPSG:32719 / UTM 19S).</li>
-<li><strong>Aplicar la regla de oro</strong>: <em>para medir, siempre en metros; para publicar en mapas web, en geográficas</em>.</li>
-<li><strong>Producir un análisis de accesibilidad o cobertura completo</strong> de tu comuna, integrando capas de distintas fuentes.</li>
-<li><strong>Declarar los supuestos y limitaciones</strong> de una cifra sensible, diferenciando un ejercicio pedagógico de una cifra oficial.</li>
+<li><strong>Distinguir</strong> Small Data comunitario y Big Data institucional, con sus fortalezas y puntos ciegos.</li>
+<li><strong>Evaluar</strong> la cobertura de un dato comunitario antes de generalizarlo.</li>
+<li><strong>Llevar</strong> ambas fuentes a una unidad territorial común y verificar que el cruce no pierde ningún territorio.</li>
+<li><strong>Construir</strong> un índice de percepción y un índice de condición con reglas, pesos y umbrales declarados.</li>
+<li><strong>Clasificar</strong> territorios como convergencia, divergencia o vacío, siempre evaluando primero la cobertura insuficiente.</li>
+<li><strong>Producir</strong> una ficha de evidencia que separe hecho, interpretación, acción de verificación y vacíos de información.</li>
 </ol>
 </section>
 <section id="contenidos-de-la-sesión" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="contenidos-de-la-sesión">Contenidos de la sesión</h2>
 <ul>
-<li>Las preguntas del territorio como operaciones espaciales: medir, buffer, intersección, conteo espacial.</li>
-<li>Dinámica inicial: traducir preguntas reales de los proyectos a operaciones.</li>
-<li>Coordenadas y proyecciones: lo mínimo que evita desastres.</li>
-<li>EPSG:4326 vs.&nbsp;EPSG:32719: cuándo usar cada uno.</li>
-<li>Taller: análisis de cobertura de áreas verdes de mi comuna.</li>
-<li>Lectura responsable de cifras de descobertura.</li>
-<li>Síntesis del Módulo 1 y proyección al Módulo 2.</li>
+<li>Dos mundos de datos que no se hablan: aportes y límites.</li>
+<li>Representatividad práctica: quién habla, por quién y desde dónde.</li>
+<li>Unidad territorial común, normalización y uniones de tablas seguras.</li>
+<li>Mapa de cuadrantes: convergencia, dos divergencias, sin prioridad y vacío.</li>
+<li>Cuadernillo de cinco prompts para construir la ficha de evidencia.</li>
+<li>Extrapolación honesta, chequeos de control y cierre del Módulo 2.</li>
 </ul>
 </section>
-<section id="las-preguntas-del-territorio-son-operaciones-espaciales" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="las-preguntas-del-territorio-son-operaciones-espaciales"><span class="header-section-number">3.1</span> Las preguntas del territorio son operaciones espaciales</h2>
-<section id="para-despertar-qué-quieren-saber-de-su-territorio" class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="para-despertar-qué-quieren-saber-de-su-territorio"><span class="header-section-number">3.1.1</span> Para despertar: qué quieren saber de su territorio</h3>
-<p>La sesión parte con una pregunta en el chat:</p>
-<blockquote class="blockquote">
-<p><em>“¿Dónde falta X?”, “¿quiénes quedan lejos de Y?”, “¿cuánto Z hay dentro de W?”</em></p>
-</blockquote>
-<p>Cada equipo escribe una pregunta real de su proyecto con ese formato. No buscamos todavía el dato perfecto ni el mapa final: buscamos detectar qué operación espacial está escondida detrás de la pregunta. Si se puede dibujar, casi siempre se puede calcular.</p>
-<p>Casi todas las preguntas reales de gestión territorial —“¿dónde falta X?”, “¿quiénes están lejos de Y?”— se descomponen en cuatro operaciones:</p>
+<section id="dos-mundos-de-datos-que-no-se-hablan" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="dos-mundos-de-datos-que-no-se-hablan"><span class="header-section-number">6.1</span> Dos mundos de datos que no se hablan</h2>
+<section id="lo-que-ya-hiciste-con-ambos" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="lo-que-ya-hiciste-con-ambos"><span class="header-section-number">6.1.1</span> Lo que ya hiciste con ambos</h3>
+<p>Lo producido en las sesiones previas ya es Small Data: mapeos participativos (4.1–4.2), sensores ciudadanos (5.1), opiniones sistematizadas (5.2) y percepción por tema, lugar y tiempo (6.1). Los censos, registros, capas oficiales y datos de movilidad trabajados en el Módulo 1 son Big Data institucional.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Criterio</th>
+<th>Small Data comunitario</th>
+<th>Big Data institucional</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cobertura</td>
+<td>Parcial: voces y lugares que participaron</td>
+<td>Amplia y sistemática</td>
+</tr>
+<tr class="even">
+<td>Actualidad</td>
+<td>Cercana al momento vivido</td>
+<td>Puede estar rezagada</td>
+</tr>
+<tr class="odd">
+<td>Significado</td>
+<td>Alto: experiencia y contexto local</td>
+<td>Menor: categorías homogéneas</td>
+</tr>
+<tr class="even">
+<td>Sesgo</td>
+<td>Participación, canal y territorio</td>
+<td>Definiciones administrativas y escala</td>
+</tr>
+<tr class="odd">
+<td>Pregunta que responde mejor</td>
+<td>¿Qué importa y dónde duele?</td>
+<td>¿Cuánto, para quiénes y frente a qué comparación?</td>
+</tr>
+</tbody>
+</table>
+<p>Cada fuente aislada puede engañar de una forma distinta. Un diseño puede ser técnicamente impecable y fracasar si ignora cómo se mueve o percibe la gente; una demanda intensa, en cambio, puede corresponder a un sector pequeño y no a la totalidad de la comuna. El caso de Transantiago recuerda el primer riesgo; la experiencia de Google Flu Trends recuerda el segundo: los datos masivos necesitan una lectura situada que los calibre.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Analogía: el examen y la conversación">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Analogía: el examen y la conversación
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>El Big Data se parece a un examen de laboratorio: es comparable y preciso en lo que mide, pero no sabe cómo se siente el paciente. El Small Data es la conversación clínica: rica y directa, pero parcial. Un diagnóstico responsable necesita ambas cosas.</p>
+</div>
+</div>
+</section>
+<section id="representatividad-sin-esconderse-detrás-de-una-palabra" class="level3" data-number="6.1.2">
+<h3 data-number="6.1.2" class="anchored" data-anchor-id="representatividad-sin-esconderse-detrás-de-una-palabra"><span class="header-section-number">6.1.2</span> Representatividad sin esconderse detrás de una palabra</h3>
+<p>Antes de generalizar una observación comunitaria, responde tres preguntas:</p>
+<ol type="1">
+<li>¿Quién participó y quién no: edad, sector, canal o condición de acceso?</li>
+<li>¿Qué territorios cubre el dato y cuáles quedaron en silencio?</li>
+<li>¿Qué tan distinta es la población cubierta de aquella que no lo está?</li>
+</ol>
+<p>El dato de un taller, una aplicación o una red social puede valer mucho; sólo debe hablar con honestidad por quienes estuvieron allí. Estas tres respuestas forman parte de la ficha final, no son una nota al pie.</p>
+</section>
+</section>
+<section id="el-método-del-cruce" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="el-método-del-cruce"><span class="header-section-number">6.2</span> El método del cruce</h2>
+<section id="una-unidad-territorial-común" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="una-unidad-territorial-común"><span class="header-section-number">6.2.1</span> Una unidad territorial común</h3>
+<p>Dos fuentes sólo se pueden cruzar cuando comparten una unidad territorial: manzana, zona censal, barrio o grilla. El equipo elige la unidad según la decisión que quiere informar y la disponibilidad de datos; la IA puede traducir escalas —puntos a conteos por zona, comentarios a indicadores por barrio—, pero no decide por el equipo qué escala tiene sentido.</p>
+<p>La validación conserva el hábito de todas las sesiones: revisar una muestra, los identificadores y las sumas antes de creer una tabla atractiva.</p>
+</section>
+<section id="kit-de-la-florida-continuidad-con-la-sesión-6.1" class="level3" data-number="6.2.2">
+<h3 data-number="6.2.2" class="anchored" data-anchor-id="kit-de-la-florida-continuidad-con-la-sesión-6.1"><span class="header-section-number">6.2.2</span> Kit de La Florida: continuidad con la sesión 6.1</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Componente</th>
+<th>Archivo del kit</th>
+<th>Contenido</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Small Data</td>
+<td><code>small_data_percepcion_barrio.csv</code></td>
+<td>n de comentarios, % negativo, índice de percepción, emoción, tema y cobertura.</td>
+</tr>
+<tr class="even">
+<td>Big Data</td>
+<td><code>big_data_institucional_barrio.csv</code></td>
+<td>Luminarias, denuncias, delitos, áreas verdes, cámaras y fase del plan.</td>
+</tr>
+<tr class="odd">
+<td>Geometría</td>
+<td><code>barrios_la_florida.geojson</code></td>
+<td>Diez barrios construidos desde manzanas censales INE, con población y viviendas.</td>
+</tr>
+<tr class="even">
+<td>Unidad fina</td>
+<td><code>manzanas_la_florida.geojson</code></td>
+<td>Capa para explorar un cruce de mayor resolución cuando corresponda.</td>
+</tr>
+</tbody>
+</table>
+<p>Cualquier material propio entra al mismo método: cambia la tabla, no la lógica. Si un equipo no dispone de información completa, usar el kit no es un fracaso; permite practicar el flujo completo y reconocer qué faltaría levantar en un caso propio.</p>
+</section>
+<section id="el-mapa-de-cuadrantes" class="level3" data-number="6.2.3">
+<h3 data-number="6.2.3" class="anchored" data-anchor-id="el-mapa-de-cuadrantes"><span class="header-section-number">6.2.3</span> El mapa de cuadrantes</h3>
+<p>El cruce se lee en tres imágenes: percepción por barrio, condición objetiva por barrio y mapa categórico de cuadrantes. Primero se revisa el <strong>vacío</strong>: una unidad con cobertura insuficiente no se clasifica con un porcentaje inestable, aunque parezca alto.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 25%">
@@ -481,165 +594,45 @@ div.csl-indent {
 </colgroup>
 <thead>
 <tr class="header">
-<th>Operación</th>
-<th>Qué responde</th>
-<th>Ejemplo municipal</th>
-<th>Frase de prompt típica</th>
+<th>Resultado</th>
+<th>Condición</th>
+<th>Lectura inicial</th>
+<th>Siguiente paso</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Medir</strong></td>
-<td>Longitud, superficie, distancia</td>
-<td>¿Cuántas hectáreas de áreas verdes hay?</td>
-<td><em>“Calcula la superficie total en hectáreas”</em></td>
+<td><strong>Vacío</strong></td>
+<td>Cobertura comunitaria insuficiente</td>
+<td>Territorio sin voz suficiente</td>
+<td>Ir a terreno y levantar datos.</td>
 </tr>
 <tr class="even">
-<td><strong>Buffer</strong></td>
-<td>Zona de influencia: “a 500 m de…”</td>
-<td>¿Qué sector queda a 500 m de cada consultorio?</td>
-<td><em>“Crea un buffer de 500 metros alrededor de cada punto”</em></td>
+<td><strong>Convergencia</strong></td>
+<td>Percepción mala + condición objetiva baja</td>
+<td>Ambos mundos coinciden</td>
+<td>Prioridad de intervención y verificación operativa.</td>
 </tr>
 <tr class="odd">
-<td><strong>Intersección / cruce</strong></td>
-<td>Qué parte de A está dentro de B</td>
-<td>¿Qué porcentaje de la zona inundable es residencial?</td>
-<td><em>“Intersecta la capa A con la capa B y calcula el área resultante”</em></td>
+<td><strong>Divergencia A</strong></td>
+<td>Percepción mala + condición objetiva alta</td>
+<td>Malestar con indicadores relativamente favorables</td>
+<td>Investigar, comunicar y activar conversación.</td>
 </tr>
 <tr class="even">
-<td><strong>Conteo / join espacial</strong></td>
-<td>Cuántos puntos caen en cada polígono</td>
-<td>¿Cuántos reclamos hay por barrio?</td>
-<td><em>“Cuenta cuántos puntos caen dentro de cada polígono y agrega la columna”</em></td>
+<td><strong>Divergencia B</strong></td>
+<td>Percepción buena + condición objetiva baja</td>
+<td>Problema físico silencioso</td>
+<td>Verificar e intervenir antes del conflicto.</td>
+</tr>
+<tr class="odd">
+<td><strong>Sin prioridad</strong></td>
+<td>Percepción baja + condición objetiva alta</td>
+<td>Sin señal crítica en este cruce</td>
+<td>Mantener observación; no equivale a “problema resuelto”.</td>
 </tr>
 </tbody>
 </table>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/operaciones.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Analogía: las preguntas del vecino">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Analogía: las preguntas del vecino
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Estas operaciones son las preguntas que cualquier vecino hace sin saber que hace geometría: “¿me queda cerca el consultorio?” (distancia), “¿a cuánta gente le sirve esta plaza?” (buffer + conteo), “¿mi casa está en la zona de riesgo?” (intersección). El análisis espacial es sentido común territorial, formalizado.</p>
-</div>
-</div>
-</section>
-<section id="el-buffer-ya-lo-conocen" class="level3" data-number="3.1.2">
-<h3 data-number="3.1.2" class="anchored" data-anchor-id="el-buffer-ya-lo-conocen"><span class="header-section-number">3.1.2</span> El buffer ya lo conocen</h3>
-<p>Un buffer no es una abstracción rara. Cuando una pizzería dice “repartimos hasta 2 km a la redonda”, está dibujando un buffer. La pregunta municipal “¿a cuántos vecinos les llega el punto limpio?” es la misma operación: dibujar la zona de cobertura y contar quién queda adentro.</p>
-<p>También tiene una versión histórica: los barrios antiguos llegaban hasta donde se oía la campana de la iglesia. Era un buffer acústico, solo que nadie lo llamaba así.</p>
-</section>
-</section>
-<section id="coordenadas-y-proyecciones-lo-mínimo-que-evita-desastres" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="coordenadas-y-proyecciones-lo-mínimo-que-evita-desastres"><span class="header-section-number">3.2</span> Coordenadas y proyecciones: lo mínimo que evita desastres</h2>
-<section id="el-problema-antes-que-la-teoría" class="level3" data-number="3.2.1">
-<h3 data-number="3.2.1" class="anchored" data-anchor-id="el-problema-antes-que-la-teoría"><span class="header-section-number">3.2.1</span> El problema antes que la teoría</h3>
-<p>La demostración de la sesión: dos capas reales de la misma comuna que <strong>no calzan en el mapa</strong>, y un cálculo de superficie que da un número ridículo: “La superficie de La Florida me dio 0,0000019 unidades y las áreas verdes aparecen en el mar”. ¿Qué pasó? Las capas estaban en sistemas de coordenadas distintos.</p>
-<!-- ::: {.callout-note appearance="simple" icon="false"} -->
-<!-- 📷 **IMAGEN PENDIENTE**: Captura del "desastre": dos capas de la misma -->
-<!-- comuna visiblemente desplazadas entre sí en el mapa, junto a una tabla -->
-<!-- con una superficie absurda (ej. "área de la comuna: 0,0021"). Al lado, -->
-<!-- la versión corregida tras reproyectar, con las capas calzando. -->
-<!-- ::: -->
-<div class="callout callout-style-default callout-warning callout-titled" title="Marte, 1999: el costo de mezclar unidades">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Marte, 1999: el costo de mezclar unidades
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>La Mars Climate Orbiter de la NASA se perdió porque un equipo trabajó con unidades imperiales y otro con unidades métricas. Nadie se equivocó “en la física”; se equivocaron en el sistema de referencia. Cuando tu mapa dice que una plaza mide <code>0,000004</code> unidades, estás viendo la misma clase de problema. La diferencia es que aquí se corrige con un prompt.</p>
-</div>
-</div>
-</section>
-<section id="la-tierra-es-curva-el-mapa-es-plano" class="level3" data-number="3.2.2">
-<h3 data-number="3.2.2" class="anchored" data-anchor-id="la-tierra-es-curva-el-mapa-es-plano"><span class="header-section-number">3.2.2</span> La Tierra es curva, el mapa es plano</h3>
-<div class="callout callout-style-default callout-tip callout-titled" title="Analogía: la naranja aplastada">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Analogía: la naranja aplastada
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Intenta aplanar la cáscara de una naranja sobre la mesa: se rompe, se estira, se deforma. Eso le pasa a la Tierra cada vez que la dibujamos plana. Toda representación plana distorsiona algo, y por eso existen distintos sistemas de proyección: cada uno elige qué deformar y qué preservar <span class="citation" data-cites="Tobler_1970">(<a href="references.html#ref-Tobler_1970" role="doc-biblioref">Tobler 1970</a>)</span>.</p>
-</div>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/crs.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<p>En un mapa escolar, Groenlandia puede parecer del tamaño de África, aunque África es alrededor de 14 veces más grande. La pregunta profesional no es “¿qué mapa es el verdadero?”, sino “¿en qué me está mintiendo este mapa, y me importa para esta decisión?”.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Principio territorial Nº 3">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Principio territorial Nº 3
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>El mapa no es el territorio.</strong> Toda medición depende de cómo aplanamos el mundo. La escala y la proyección son decisiones, no tecnicismos; quien decide sin saberlo puede medir mal sin enterarse.</p>
-</div>
-</div>
-</section>
-<section id="lo-único-que-hay-que-memorizar" class="level3" data-number="3.2.3">
-<h3 data-number="3.2.3" class="anchored" data-anchor-id="lo-único-que-hay-que-memorizar"><span class="header-section-number">3.2.3</span> Lo único que hay que memorizar</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/crs2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
-</figure>
-</div>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Sistema</th>
-<th>Unidad</th>
-<th>Sirve para</th>
-<th>No sirve para</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Geográficas (EPSG:4326)</strong></td>
-<td>Grados de latitud/longitud</td>
-<td>Ubicar, compartir, mapas web</td>
-<td><strong>Medir</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Proyectadas UTM 19S (EPSG:32719)</strong></td>
-<td>Metros</td>
-<td><strong>Medir cualquier cosa en Chile central</strong></td>
-<td>—</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Síntoma → acción</strong>: capas desplazadas o números absurdos →</p>
-<blockquote class="blockquote">
-<p><em>“Reproyecta todas las capas a EPSG:32719 antes de calcular.”</em></p>
-</blockquote>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -650,154 +643,277 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Regla de oro del curso</strong>: para <strong>medir</strong>, siempre en metros (EPSG:32719); para <strong>publicar</strong> en mapas web, en geográficas (EPSG:4326). No necesitas entender la matemática: necesitas reconocer el síntoma y pedir la corrección.</p>
+<p><strong>El vacío gana siempre.</strong> Un 88% negativo sobre 24 comentarios no es una tendencia: es una anécdota con decimales. El vacío es una ausencia de evidencia para leer ese territorio, no una categoría de mal desempeño.</p>
 </div>
 </div>
 </section>
-<section id="diagnóstico-express" class="level3" data-number="3.2.4">
-<h3 data-number="3.2.4" class="anchored" data-anchor-id="diagnóstico-express"><span class="header-section-number">3.2.4</span> Diagnóstico express</h3>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Síntoma</th>
-<th>Prompt de corrección</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Las capas no se superponen o el mapa sale desplazado</td>
-<td><em>“Reproyecta todas las capas a EPSG:32719 antes de cruzarlas.”</em></td>
-</tr>
-<tr class="even">
-<td>Áreas o distancias absurdas: <code>0,000004</code>, <code>0,0000019</code> o miles de millones</td>
-<td><em>“Reproyecta todas las capas a EPSG:32719 antes de calcular áreas, distancias o buffers.”</em></td>
-</tr>
-<tr class="odd">
-<td>El resultado parece plausible, pero necesitas defenderlo</td>
-<td><em>“Compara la superficie calculada con la superficie oficial de la comuna según BCN o SUBDERE.”</em></td>
-</tr>
-</tbody>
-</table>
-<p>La verificación en vivo cierra el ciclo: se le pide a la IA diagnosticar y corregir el problema inicial, y el resultado se valida contra una medida conocida, como la superficie oficial de la comuna.</p>
-</section>
-<section id="chile-el-país-difícil-de-aplanar" class="level3" data-number="3.2.5">
-<h3 data-number="3.2.5" class="anchored" data-anchor-id="chile-el-país-difícil-de-aplanar"><span class="header-section-number">3.2.5</span> Chile: el país difícil de aplanar</h3>
-<p>Chile cruza miles de kilómetros de norte a sur y varios husos UTM. Es uno de los países donde elegir mal la proyección puede distorsionar más rápido las mediciones. La buena noticia pedagógica es que si aprendes a revisar proyecciones aquí, el criterio te sirve en cualquier parte.</p>
+<section id="cuatro-barrios-cuatro-lecturas" class="level3" data-number="6.2.4">
+<h3 data-number="6.2.4" class="anchored" data-anchor-id="cuatro-barrios-cuatro-lecturas"><span class="header-section-number">6.2.4</span> Cuatro barrios, cuatro lecturas</h3>
+<p>En el caso de La Florida, Walker Martínez combina percepción 75, condición 29 y <code>n=329</code>: es convergencia. Municipalidad combina percepción 74, condición 89 y <code>n=399</code>: divergencia A; el sector que más comenta no es necesariamente el peor servido. Balneario Municipal presenta percepción 45, condición 27 y <code>n=114</code>: divergencia B, un problema físico que aún no se expresa con fuerza.</p>
+<p>Rojas Magallanes tiene una condición muy baja, pero sólo 24 comentarios: es vacío. Precisamente por eso se prioriza levantar información allí, no estimar su percepción ni relegarlo por tener pocos reclamos. Buscar sólo donde hay datos es como buscar las llaves bajo el farol: hay luz, pero quizá no están ahí.</p>
 </section>
 </section>
-<section id="actividades" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="actividades"><span class="header-section-number">3.3</span> Actividades</h2>
-<section id="taller-análisis-de-cobertura-de-mi-comuna-35-min" class="level3" data-number="3.3.1">
-<h3 data-number="3.3.1" class="anchored" data-anchor-id="taller-análisis-de-cobertura-de-mi-comuna-35-min"><span class="header-section-number">3.3.1</span> Taller: análisis de cobertura de mi comuna (35 min)</h3>
-<p>Caso modelado con La Florida y replicado por cada equipo con su comuna y su equipamiento de interés. Secuencia de prompts:</p>
+<section id="cuadernillo-de-prompts-para-la-integración" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="cuadernillo-de-prompts-para-la-integración"><span class="header-section-number">6.3</span> Cuadernillo de prompts para la integración</h2>
+<section id="antes-de-copiar-un-prompt-prepara-el-contexto" class="level3" data-number="6.3.1">
+<h3 data-number="6.3.1" class="anchored" data-anchor-id="antes-de-copiar-un-prompt-prepara-el-contexto"><span class="header-section-number">6.3.1</span> Antes de copiar un prompt: prepara el contexto</h3>
+<p>Los cinco prompts <strong>no son instrucciones autónomas</strong>. La frase “te entrego” significa que, antes de enviarlo, el equipo debe adjuntar los archivos o pegar las tablas reales y reemplazar cada texto entre corchetes. Un modelo no conoce el territorio, los archivos de sesiones anteriores ni las decisiones del equipo si no se le entregan en esa misma conversación.</p>
+<p>Usa los prompts en orden (A → B → C → D → E) y conserva los resultados de cada paso para alimentar el siguiente. Al abrir una conversación nueva, vuelve a pegar este bloque mínimo de contexto:</p>
+<pre class="text"><code>CONTEXTO DEL PROYECTO
+- Problema territorial: [pregunta concreta].
+- Territorio y período analizado: [comuna/sector] — [fechas].
+- Unidad territorial e identificador: [por ejemplo, barrio] — [por ejemplo,
+  id_barrio].
+- Decisiones ya tomadas: umbral de cobertura [n], indicadores y pesos
+  [lista], y qué significa una condición alta/baja.
+- Fuentes adjuntas o pegadas en este mensaje: [nombres exactos de archivos o
+  tablas].
+- Restricción: trabaja sólo con los datos entregados; no inventes unidades,
+  valores, fuentes ni contexto. Si falta algo, detente y enumera qué falta.</code></pre>
+<p>Si se usa el kit, los archivos de ese bloque son <code>small_data_percepcion_barrio.csv</code>, <code>big_data_institucional_barrio.csv</code> y, para el mapa, <code>barrios_la_florida.geojson</code>. Si se usan datos propios, se reemplazan por los archivos equivalentes. Nunca basta con enviar sólo el texto del prompt: hay que adjuntar o pegar sus <strong>entradas indicadas</strong>.</p>
+</section>
+<section id="prompt-a-agregar-el-small-data-sin-borrar-silencios" class="level3" data-number="6.3.2">
+<h3 data-number="6.3.2" class="anchored" data-anchor-id="prompt-a-agregar-el-small-data-sin-borrar-silencios"><span class="header-section-number">6.3.2</span> Prompt A — Agregar el Small Data sin borrar silencios</h3>
+<p>Este paso toma los registros fila a fila de las sesiones anteriores y deja una fila por unidad territorial. Si vienes de la 6.1, el tablero de percepción por barrio ya es el resultado de este prompt.</p>
+<pre class="text"><code>Usa el CONTEXTO DEL PROYECTO y estas dos entradas adjuntas: (1) la tabla de
+datos comunitarios fila por fila —id, fecha, fuente, territorio, tema,
+polaridad o medición— y (2) la lista maestra completa de unidades del
+territorio con su identificador. Si falta una de las dos, no proceses.
+
+Agrégalos por [UNIDAD TERRITORIAL] y devuelve UNA fila por cada unidad de la
+lista maestra, incluidas las que tienen pocos datos o ninguno.
+
+COLUMNAS
+unidad | n_registros | n_por_fuente | pct_negativo |
+indice_percepcion | emocion_dominante | tema_dominante | cobertura
+
+`indice_percepcion` es el porcentaje de registros negativos, entre 0 y 100.
+`cobertura` es `suficiente` si n &gt;= [UMBRAL] e `INSUFICIENTE` en otro caso.
+
+REGLAS
+1. Excluye filas vacías o fuera de tema.
+2. No omitas, completes con vecinas ni estimes una unidad con pocos registros:
+   conserva su n real y marca cobertura INSUFICIENTE.
+3. Bajo el umbral no calcules porcentaje: deja esa celda vacía.
+4. Declara al final total de filas agregadas y filas sin unidad declarada;
+   ambos deben sumar el total de entrada.</code></pre>
+<p>El umbral lo elige el equipo y se justifica por el contexto. En el kit de La Florida es <code>n &gt;= 40</code>; en un proyecto pequeño puede ser menor, pero nunca se debe ajustar después de mirar qué barrio queda arriba.</p>
+</section>
+<section id="prompt-b-traer-el-big-data-un-join-que-no-puede-perder-barrios" class="level3" data-number="6.3.3">
+<h3 data-number="6.3.3" class="anchored" data-anchor-id="prompt-b-traer-el-big-data-un-join-que-no-puede-perder-barrios"><span class="header-section-number">6.3.3</span> Prompt B — Traer el Big Data: un join que no puede perder barrios</h3>
+<pre class="text"><code>Usa el CONTEXTO DEL PROYECTO y estas dos entradas adjuntas: (1) el resultado
+completo del Prompt A y (2) la tabla institucional por [UNIDAD TERRITORIAL]
+—población, viviendas y registros pertinentes—. Confirma primero que ambas
+tablas usan el identificador [NOMBRE_DEL_IDENTIFICADOR]. Si no lo usan o falta
+una tabla, detente y explica la incompatibilidad.
+
+1. Únela con la tabla comunitaria por el identificador de unidad.
+2. Convierte valores absolutos en tasas comparables por 1.000 habitantes o
+   km², según corresponda. Declara la unidad y por qué se eligió.
+3. Construye `indice_condicion` entre 0 y 100, donde 100 es la mejor condición
+   objetiva, con estos pesos definidos por el equipo:
+   - [INDICADOR 1] 30% (más/mejor o menos/mejor)
+   - [INDICADOR 2] 25% (más/mejor o menos/mejor)
+   - [INDICADOR 3] 25% (más/mejor o menos/mejor)
+   - [INDICADOR 4] 20% (más/mejor o menos/mejor)
+   Normaliza min–max sobre estas unidades y explica qué significan 0 y 100.
+
+REGLAS
+1. El join no puede perder ni duplicar unidades. Declara filas de cada tabla y
+   filas del resultado.
+2. Nombra toda unidad presente en una tabla y ausente en la otra.
+3. No inventes valores faltantes: usa `sin_dato`.</code></pre>
+<p>Los pesos no son un detalle técnico. En La Florida se consideran porcentaje de luminarias operativas, denuncias por mil habitantes, delitos por mil habitantes y m² de área verde por habitante. En otro problema, el equipo debe explicar por qué esos indicadores y esos pesos expresan la condición relevante.</p>
+</section>
+<section id="prompt-c-clasificar-cuadrantes-con-el-vacío-primero" class="level3" data-number="6.3.4">
+<h3 data-number="6.3.4" class="anchored" data-anchor-id="prompt-c-clasificar-cuadrantes-con-el-vacío-primero"><span class="header-section-number">6.3.4</span> Prompt C — Clasificar cuadrantes con el vacío primero</h3>
+<pre class="text"><code>Usa el CONTEXTO DEL PROYECTO y la tabla unida completa producida en el Prompt
+B. No clasifiques si faltan `n_registros`, `cobertura`,
+`indice_percepcion` o `indice_condicion`; informa las columnas o unidades que
+faltan.
+
+Sobre esa tabla, clasifica cada unidad territorial.
+
+Calcula y declara ANTES de clasificar:
+- umbral_percepcion: promedio de `indice_percepcion` con cobertura suficiente;
+- umbral_condicion: promedio de `indice_condicion`;
+- umbral_lectura: n_registros &gt;= [UMBRAL].
+
+Aplica estas reglas en este orden exacto:
+1. cobertura INSUFICIENTE -&gt; VACÍO
+2. percepción alta y condición baja -&gt; CONVERGENCIA
+3. percepción alta y condición alta -&gt; DIVERGENCIA A
+4. percepción baja y condición baja -&gt; DIVERGENCIA B
+5. percepción baja y condición alta -&gt; SIN PRIORIDAD
+
+El VACÍO gana siempre. Devuelve:
+unidad | n | indice_percepcion | indice_condicion | cuadrante | que_hacer
+
+En `que_hacer`, escribe una sola línea de acción. Al final informa los tres
+umbrales y el número de unidades en cada cuadrante.</code></pre>
+<p>Un cuadrante sin umbrales explícitos no se puede discutir en una reunión. La regla de orden evita que un porcentaje construido sobre pocos registros se disfrace de convergencia y llegue injustificadamente al primer lugar de una lista de prioridades.</p>
+</section>
+<section id="prompt-d-hacer-visible-el-cruce-con-vibe-coding" class="level3" data-number="6.3.5">
+<h3 data-number="6.3.5" class="anchored" data-anchor-id="prompt-d-hacer-visible-el-cruce-con-vibe-coding"><span class="header-section-number">6.3.5</span> Prompt D — Hacer visible el cruce con vibe coding</h3>
+<pre class="text"><code>Usa el CONTEXTO DEL PROYECTO y adjunta: (1) [ARCHIVO].geojson, (2) el CSV o la
+tabla completa de cuadrantes producida en el Prompt C y (3) los nombres
+exactos de las columnas de unión en cada archivo. No supongas rutas, columnas
+ni sistema de coordenadas: si no están disponibles, pídemelos.
+
+Escribe código Python, comentado en español, para generar el mapa de
+cuadrantes a partir de esos archivos.
+
+1. Une geometría y tabla por el identificador territorial; antes de dibujar,
+   imprime cuántas unidades no encontraron par.
+2. Dibuja categorías: CONVERGENCIA rojo; DIVERGENCIA A naranjo;
+   DIVERGENCIA B azul; VACÍO gris con achurado o textura; SIN PRIORIDAD gris
+   muy claro. Rotula los nombres de las unidades.
+3. Incluye leyenda con cada cuadrante y su n de unidades.
+4. Al lado, genera un gráfico de dispersión: X = indice_condicion, Y =
+   indice_percepcion, líneas de ambos umbrales y puntos rotulados.
+
+REGLAS
+- El VACÍO debe verse distinto: es ausencia de dato, no un valor bajo.
+- No uses escalas continuas; son cinco categorías.
+- Explícame qué hará el código antes de ejecutarlo.</code></pre>
+<p><img src="images/mapa_cuadrantes.png" class="img-fluid"></p>
+<p>El mapa y el gráfico de dispersión son dos formas de revisar la misma lógica: el primero sitúa las decisiones; el segundo permite verificar visualmente los umbrales y las cuatro zonas del cruce.</p>
+</section>
+<section id="prompt-e-redactar-la-ficha-de-evidencia-territorial" class="level3" data-number="6.3.6">
+<h3 data-number="6.3.6" class="anchored" data-anchor-id="prompt-e-redactar-la-ficha-de-evidencia-territorial"><span class="header-section-number">6.3.6</span> Prompt E — Redactar la ficha de evidencia territorial</h3>
+<p>La ficha es el puente hacia el Módulo 3. Su tarea es dejar evidencia legible y auditada; las recomendaciones de política pública se construyen después, con más contexto institucional. En ese módulo el equipo identificará y priorizará casos de uso, dimensionará capacidades y riesgos —incluido el marco NIST de IA responsable— y construirá una hoja de ruta para su institución.</p>
+<pre class="text"><code>Usa el CONTEXTO DEL PROYECTO y adjunta el resultado completo del Prompt C,
+incluidos sus umbrales, además de la lista de fuentes usada en los Prompts A y
+B. Añade este contexto de destinatario: la ficha será usada en el Módulo 3
+para priorizar casos de uso institucionales, capacidades, riesgos y una hoja
+de ruta; aún no se decide una política pública.
+
+Redacta una ficha de evidencia territorial de máximo dos páginas para el
+equipo que trabajará el Módulo 3. Si no cuentas con la tabla clasificada, los
+umbrales y las fuentes, no redactes una ficha: indica exactamente qué insumo
+falta.
+
+ESTRUCTURA OBLIGATORIA
+1. PROBLEMÁTICA: pregunta territorial en una frase.
+2. DATOS USADOS: dos listas separadas —comunitarios e institucionales— con
+   fecha, cobertura y responsable de cada fuente.
+3. HALLAZGO: HECHO (con n) / INTERPRETACIÓN (hipótesis declarada) / ACCIÓN
+   (de verificación o gestión).
+4. TERRITORIOS PRIORITARIOS: cinco primeros, cuadrante y una línea de por qué.
+5. VACÍOS DECLARADOS: territorios y grupos sin dato, y qué falta levantar.
+6. PREGUNTA AL MÓDULO 3: la que el equipo llevará a la sesión 7.1.
+
+REGLAS
+1. Ninguna afirmación sin n; toda interpretación debe estar marcada como
+   hipótesis.
+2. Los vacíos son resultado, no descargo de responsabilidad.
+3. Declara en la misma frase si algo es estimación y no observación.
+4. No recomiendes políticas públicas: entrega evidencia para decidir.
+5. Lenguaje claro para alguien que no asistió a las sesiones.</code></pre>
+<p><img src="images/ficha.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="actividad-construir-la-ficha-de-evidencia" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="actividad-construir-la-ficha-de-evidencia"><span class="header-section-number">6.4</span> Actividad: construir la ficha de evidencia</h2>
+<p>En salas por familia temática —residuos, verde-hídrico, movilidad o plataformas y datos— cada equipo aplica los cinco prompts sobre su material. Un vocero comunica bloqueos y decisiones al curso. Si no hay material propio completo, se utiliza el kit de La Florida; el objetivo es dominar el método, no simular una completitud inexistente.</p>
 <ol type="1">
-<li><blockquote class="blockquote">
-<p><em>“Carga el límite comunal y las áreas verdes (de la sesión anterior) y reproyecta todo a EPSG:32719.”</em></p>
-</blockquote></li>
-<li><blockquote class="blockquote">
-<p><em>“Crea un buffer de 500 metros alrededor de cada área verde y muéstralo en el mapa.”</em></p>
-</blockquote></li>
-<li><blockquote class="blockquote">
-<p><em>“Une todos los buffers y calcula qué porcentaje de la superficie comunal queda cubierto.”</em></p>
-</blockquote></li>
-<li><blockquote class="blockquote">
-<p><em>“Carga las manzanas censales con población y calcula cuánta población queda FUERA de la cobertura.”</em></p>
-</blockquote></li>
-<li><blockquote class="blockquote">
-<p><em>“Haz un mapa final: zonas cubiertas en verde, zonas descubiertas en rojo, con un título y la cifra de población sin cobertura.”</em></p>
-</blockquote></li>
+<li>Agrega el Small Data por la unidad territorial elegida.</li>
+<li>Normaliza y une el Big Data sin perder ni duplicar unidades.</li>
+<li>Clasifica cuadrantes con umbrales y cobertura declarados.</li>
+<li>Genera el mapa categórico y el gráfico de dispersión.</li>
+<li>Redacta la ficha de dos páginas y revisa los chequeos antes de entregarla.</li>
 </ol>
-<p>Cada paso incluye una micro-validación: ¿el porcentaje es plausible?, ¿el mapa calza con lo que tú sabes de tu comuna?</p>
-<p>Prompt compacto para equipos:</p>
-<blockquote class="blockquote">
-<p><em>“Crea un buffer de 500 metros alrededor de cada [equipamiento] de [TU COMUNA], une los buffers y dime qué porcentaje de la superficie y cuánta población queda fuera.”</em></p>
-</blockquote>
-<p>La capa censal del INE viene pre-procesada por comuna para que el foco esté en la operación espacial y no en resolver descargas durante el taller. Si el paso censal se traba, se revisa en pantalla y queda como tarea guiada.</p>
-<p><img src="images/mapas-cobveg.png" class="img-fluid" data-fig-aling="&quot;center"></p>
-<!-- ::: {.callout-note appearance="simple" icon="false"} -->
-<!-- 📷 **IMAGEN PENDIENTE**: El mapa final del taller para La Florida: zonas -->
-<!-- cubiertas por buffers de áreas verdes en verde, zonas descubiertas en -->
-<!-- rojo, título y cifra destacada de población sin cobertura. Es el -->
-<!-- "diploma emocional" del Módulo 1 y debe verse presentable, digno de una -->
-<!-- minuta para el alcalde. -->
-<!-- ::: -->
-<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout callout-style-default callout-tip callout-titled" title="Cinco chequeos antes de creer la tabla">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Warning
+Cinco chequeos antes de creer la tabla
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Resultado sensible</strong>: la cifra de población “fuera de cobertura” es un ejercicio pedagógico, no una cifra oficial. Depende de la calidad del dato OSM y del supuesto de distancia euclidiana (línea recta) en vez de caminable. Declarar estas limitaciones es un hábito profesional, no una debilidad.</p>
+<p>El join no pierde unidades; nadie queda huérfano entre las dos tablas; ningún porcentaje se lee bajo el umbral; cada valor distingue observado de estimado; la suma de unidades por cuadrante coincide con el total del territorio. Treinta segundos por chequeo separan una ficha defendible de una ficha sólo bonita.</p>
 </div>
 </div>
 </section>
-<section id="antes-de-mostrar-esa-cifra" class="level3" data-number="3.3.2">
-<h3 data-number="3.3.2" class="anchored" data-anchor-id="antes-de-mostrar-esa-cifra"><span class="header-section-number">3.3.2</span> Antes de mostrar esa cifra</h3>
-<p>Una cifra de población “fuera de cobertura” no es solo un resultado metodológico: en municipios, gobiernos regionales y servicios públicos también es un punto político. Puede orientar prioridades, abrir una discusión presupuestaria o respaldar una postulación. Por eso hay que declarar el método antes de usarla fuera del taller:</p>
-<ul>
-<li>Fuente de equipamientos: OpenStreetMap u otra capa oficial.</li>
-<li>Distancia usada: línea recta o red caminable.</li>
-<li>Proyección usada para medir: EPSG:32719 en Chile central.</li>
-<li>Capa poblacional: manzanas o zonas censales del INE.</li>
-<li>Validación: comparación con cifras oficiales o conocimiento local.</li>
-</ul>
-<p>Declarar supuestos no debilita la evidencia; la hace defendible.</p>
-</section>
-<section id="para-qué-sirve-esta-cifra" class="level3" data-number="3.3.3">
-<h3 data-number="3.3.3" class="anchored" data-anchor-id="para-qué-sirve-esta-cifra"><span class="header-section-number">3.3.3</span> Para qué sirve esta cifra</h3>
-<p>El buffer es geometría, pero la pregunta es de justicia territorial: ¿quién queda cerca de un servicio y quién queda sistemáticamente lejos? La referencia habitual para áreas verdes y equipamientos de proximidad se expresa como distancia caminable del hogar, del orden de 300 a 500 metros según estándar y contexto.</p>
-<p>El mismo flujo sirve para áreas verdes, consultorios, puntos limpios, paraderos o ferias. Cambia la capa; no cambia el método. En la práctica puede fundamentar priorización de paradas, decisiones de transporte con enfoque de género, inversión comunal o proyectos de sostenibilidad.</p>
-</section>
-<section id="checklist-de-autodiagnóstico-del-módulo-1" class="level3" data-number="3.3.4">
-<h3 data-number="3.3.4" class="anchored" data-anchor-id="checklist-de-autodiagnóstico-del-módulo-1"><span class="header-section-number">3.3.4</span> Checklist de autodiagnóstico del Módulo 1</h3>
-<p>Cierre con autoevaluación rápida en 5 preguntas:</p>
+<section id="extrapolar-sin-mentir" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="extrapolar-sin-mentir"><span class="header-section-number">6.5</span> Extrapolar sin mentir</h2>
+<p>Cuando una IA “completa” un territorio sin dato, busca similitudes entre características conocidas: si barrios observados se parecen a otro en ciertas variables, puede proponer una estimación. No ha observado ese barrio; ha producido una hipótesis basada en semejanza.</p>
+<p>Dos reglas no tienen excepción:</p>
 <ol type="1">
-<li>¿Puedo escribir un prompt con contexto, datos, resultado esperado y restricciones?</li>
-<li>¿Puedo traer el límite y los equipamientos de mi comuna con una frase?</li>
-<li>¿Sé qué operación responde mi pregunta: medir, buffer, intersectar o contar?</li>
-<li>¿Sé qué hacer cuando las capas no calzan o los números salen absurdos?</li>
-<li>¿Validé mi cifra contra algo que ya conocía?</li>
+<li>Declarar siempre qué es <strong>observado</strong> y qué es <strong>estimado</strong>.</li>
+<li>No tomar una decisión irreversible sobre un territorio que sólo cuenta con una estimación.</li>
 </ol>
+<p>El modelamiento territorial representativo es una brújula para decidir dónde levantar más información. Una estimación bien declarada orienta; una estimación disfrazada de dato miente.</p>
 </section>
-<section id="tarea-puente-al-módulo-2" class="level3" data-number="3.3.5">
-<h3 data-number="3.3.5" class="anchored" data-anchor-id="tarea-puente-al-módulo-2"><span class="header-section-number">3.3.5</span> Tarea puente al Módulo 2</h3>
-<p>Repite el análisis con el equipamiento central de la problemática de tu equipo y lleva el mapa a la sesión 4.1. Guarda también los prompts: la hoja de ruta final se construye sobre ellos.</p>
+<section id="cierre-del-módulo-2" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="cierre-del-módulo-2"><span class="header-section-number">6.6</span> Cierre del Módulo 2</h2>
+<p>El ciclo completo del dato ciudadano queda así:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Momento</th>
+<th>Sesiones</th>
+<th>Producto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Capturar</strong></td>
+<td>4.1–4.2 y 5.1</td>
+<td>Territorio dibujado y medido.</td>
+</tr>
+<tr class="even">
+<td><strong>Procesar</strong></td>
+<td>5.2</td>
+<td>Opiniones organizadas con trazabilidad.</td>
+</tr>
+<tr class="odd">
+<td><strong>Percibir</strong></td>
+<td>6.1</td>
+<td>Sentimiento por tema, tiempo y territorio.</td>
+</tr>
+<tr class="even">
+<td><strong>Integrar</strong></td>
+<td>6.2</td>
+<td>Evidencia comparada, priorizada y con vacíos declarados.</td>
+</tr>
+</tbody>
+</table>
+<p>El principio territorial que cierra el módulo es simple: <strong>ningún dato representa al territorio completo</strong>. La ficha declara sus silencios porque un mapa sin vacío aparente puede estar ocultando precisamente el lugar donde más falta aprender.</p>
+<p>Del prompt al mapa; del mapa a la evidencia; de la evidencia a la decisión. El Módulo 3 lleva ese recorrido a la institución de cada equipo.</p>
 </section>
-</section>
-<section id="resumen" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="resumen"><span class="header-section-number">3.4</span> Resumen</h2>
+<section id="resumen" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="resumen"><span class="header-section-number">6.7</span> Resumen</h2>
 <ul>
-<li>Casi toda pregunta territorial se descompone en cuatro operaciones: <strong>medir, buffer, intersección y conteo espacial</strong>. Formular bien la pregunta es traducirla a estas operaciones.</li>
-<li>La Tierra es curva y el mapa es plano: por eso existen los sistemas de coordenadas. Dos familias bastan: <strong>EPSG:4326</strong> (grados, para ubicar y publicar) y <strong>EPSG:32719</strong> (metros, para medir en Chile central).</li>
-<li>Síntoma de error de proyección (capas desplazadas, cifras absurdas) → prompt de corrección: <em>“reproyecta todo a EPSG:32719 antes de calcular”</em>.</li>
-<li>El mapa no es el territorio: toda cifra espacial depende de escala, proyección, fuente de datos y método de medición. Declarar esos supuestos hace que la evidencia sea defendible.</li>
-<li>El arco del Módulo 1 quedó completo: <strong>prompting (2.1) → vibe coding (2.2) → datos del territorio (3.1) → análisis espacial (3.2)</strong>. Ya tienes el flujo: pregunta → datos → análisis → mapa con evidencia.</li>
-<li>Lo que viene en el Módulo 2: hasta ahora usamos datos que ya existían; lo siguiente es <strong>crear datos nuevos con la ciudadanía</strong>, completar mapas donde falten datos y procesar lo que la gente dice y siente.</li>
+<li>Small Data y Big Data son complementarios: uno aporta experiencia situada; el otro, cobertura y comparación. Cada uno por separado tiene puntos ciegos.</li>
+<li>Para integrarlos, ambos deben compartir una unidad territorial y un identificador verificable; un join que pierde barrios invalida el mapa.</li>
+<li>La cobertura insuficiente se evalúa primero: el vacío es hallazgo y orienta el siguiente levantamiento participativo.</li>
+<li>Convergencia y divergencias no son sentencias automáticas: son lentes para verificar, comunicar e investigar con mejor evidencia.</li>
+<li>Los umbrales, pesos, tasas y estimaciones se declaran; la IA calcula y traduce, mientras el equipo conserva las decisiones de sentido.</li>
+<li>La ficha de evidencia territorial cierra el Módulo 2 y es insumo formal de la sesión 7.1.</li>
 </ul>
 </section>
-<section id="recursos" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="recursos"><span class="header-section-number">3.5</span> Recursos</h2>
+<section id="recursos" class="level2" data-number="6.8">
+<h2 data-number="6.8" class="anchored" data-anchor-id="recursos"><span class="header-section-number">6.8</span> Recursos</h2>
 <ul>
-<li><strong>Notebook Colab “Cobertura comunal”</strong>: continúa el de la sesión 3.1, con la secuencia completa del taller y celdas de validación.</li>
-<li><strong>Capa censal pre-procesada</strong> (manzanas/zonas censales con población, Censo INE) para las comunas de los participantes.</li>
-<li><strong>Ficha “Coordenadas sin lágrimas” (1 página)</strong>: geográficas vs. proyectadas, EPSG:4326 vs.&nbsp;EPSG:32719, tabla síntoma → prompt de corrección.</li>
-<li><strong>Prompt-book de la sesión</strong>: la secuencia de 5 prompts del taller + variantes (otras distancias de buffer, otros equipamientos, comparación entre comunas).</li>
-<li><strong>Checklist de cierre del Módulo 1</strong> (autoevaluación de 5 puntos).</li>
-<li>Referencia breve sobre estándares de accesibilidad a áreas verdes (recomendación OMS y estándares MINVU) para dar contexto normativo a la cifra producida.</li>
+<li><strong>Kit La Florida</strong>: <code>small_data_percepcion_barrio.csv</code>, <code>big_data_institucional_barrio.csv</code>, <code>barrios_la_florida.geojson</code> y <code>manzanas_la_florida.geojson</code>.</li>
+<li><strong>Prompt-book de integración</strong>: agregación, join seguro, cuadrantes, mapa y ficha de evidencia.</li>
+<li><strong>Plantilla “Ficha de evidencia territorial”</strong>: problemática, fuentes, hallazgo, prioridades, vacíos y pregunta para el Módulo 3.</li>
+<li><strong>Checklist del cruce</strong>: unidades, huérfanos, umbral, observado/estimado y mapa que cuadra.</li>
+<li>Capa censal y unidades territoriales INE trabajadas desde la sesión 3.2.</li>
 </ul>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-Tobler_1970" class="csl-entry" role="listitem">
-Tobler, W. R. 1970. <span>“A Computer Movie Simulating Urban Growth in the Detroit Region.”</span> <em>Economic Geography</em> 46 (June): 234. <a href="https://doi.org/10.2307/143141">https://doi.org/10.2307/143141</a>.
+<div id="ref-kitchin_data_2014" class="csl-entry" role="listitem">
+Kitchin, Rob. 2014. <em>The Data Revolution: Big Data, Open Data, Data Infrastructures and Their Consequences</em>. London: SAGE Publications. <a href="https://doi.org/10.4135/9781473909472">https://doi.org/10.4135/9781473909472</a>.
 </div>
 </div>
 </section>
@@ -1204,13 +1320,13 @@ Tobler, W. R. 1970. <span>“A Computer Movie Simulating Urban Growth in the Det
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./ecosistema_python.html" class="pagination-link" aria-label="Ecosistema Python">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Ecosistema Python</span></span>
+      <a href="./analisis_sentimientos.html" class="pagination-link" aria-label="Análisis de Sentimientos">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Análisis de Sentimientos</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./nlp_participacion.html" class="pagination-link" aria-label="NLP Comunitario">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">NLP Comunitario</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./recursos_complementarios.html" class="pagination-link" aria-label="Recursos Complementarios">
+        <span class="nav-page-text">Recursos Complementarios</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
