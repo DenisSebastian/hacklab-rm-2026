@@ -810,7 +810,52 @@ REGLAS
 3. Declara en la misma frase si algo es estimación y no observación.
 4. No recomiendes políticas públicas: entrega evidencia para decidir.
 5. Lenguaje claro para alguien que no asistió a las sesiones.</code></pre>
-<p><img src="images/ficha.png" class="img-fluid"></p>
+<div class="ficha-evidencia-interactiva">
+<p><iframe src="html-apps/ficha_evidencia_interactiva.html" title="Ficha de evidencia territorial interactiva de La Florida" loading="lazy" allowfullscreen=""> </iframe></p>
+</div>
+<p class="ficha-evidencia-ayuda">
+Explora la ficha, el mapa y la matriz de priorización. Puedes interactuar con los barrios directamente en el mapa o en la matriz.
+</p>
+<style>
+.ficha-evidencia-interactiva {
+  width: 100%;
+  height: min(78vh, 880px);
+  min-height: 620px;
+  margin: 1.5rem 0 0.75rem;
+  overflow: hidden;
+  border: 1px solid #d7dce5;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.6rem 1.8rem rgba(17, 24, 39, 0.13);
+  background: #090d16;
+}
+
+.ficha-evidencia-interactiva > p {
+  height: 100%;
+  margin: 0;
+}
+
+.ficha-evidencia-interactiva iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.ficha-evidencia-ayuda {
+  margin: 0 0 2rem;
+  color: #5b6573;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .ficha-evidencia-interactiva {
+    height: 76vh;
+    min-height: 560px;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+  }
+}
+</style>
 </section>
 </section>
 <section id="actividad-construir-la-ficha-de-evidencia" class="level2" data-number="6.4">
