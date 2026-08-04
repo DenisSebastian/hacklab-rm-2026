@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto Limpio La Florida | Mapa de Reciclaje Interactivo</title>
+    
+    <!-- Meta tags de SEO -->
+    <meta name="description" content="Mapa interactivo del Punto Limpio Club Vive en La Florida, Santiago. Consulta horarios, materiales aceptados y visualiza el radio de cobertura peatonal de 500 metros.">
+    <meta name="keywords" content="reciclaje, punto limpio, la florida, santiago, mapa, medio ambiente, ecologia, chile">
+    
+    <!-- Google Fonts - Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome para Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Leaflet.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    
+    <!-- CSS Propio -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Panel Lateral Informativo -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-area">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <div>
+                        <h1>EcoLaFlorida</h1>
+                        <p class="tagline">Gestión de Residuos y Reciclaje</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-scrollable">
+                <!-- Tarjeta Principal de Ubicación -->
+                <section class="info-section">
+                    <div class="card status-card">
+                        <div class="card-header">
+                            <span class="badge" id="status-badge">Cargando...</span>
+                            <span class="badge badge-primary"><i class="fa-solid fa-location-dot"></i> Municipal</span>
+                        </div>
+                        <h2 id="punto-nombre">Punto Limpio Club Vive</h2>
+                        <p class="address-text">
+                            <i class="fa-solid fa-map-marker-alt"></i> <span>El Ulmo 824, La Florida, Santiago</span>
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Sección de Horarios y Contacto -->
+                <section class="info-section">
+                    <h3><i class="fa-solid fa-clock"></i> Horario de Atención</h3>
+                    <div class="card">
+                        <div class="schedule-list">
+                            <div class="schedule-item" id="day-mon-sat">
+                                <span class="days">Lunes a Sábado</span>
+                                <span class="hours">10:00 - 20:00 hrs.</span>
+                            </div>
+                            <div class="schedule-item" id="day-sun">
+                                <span class="days">Domingo</span>
+                                <span class="hours closed">Cerrado</span>
+                            </div>
+                        </div>
+                        <div class="info-alert">
+                            <i class="fa-solid fa-info-circle"></i>
+                            <p>El punto limpio permanece cerrado los días feriados nacionales.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sección de Materiales Aceptados -->
+                <section class="info-section">
+                    <h3><i class="fa-solid fa-recycle"></i> Materiales Aceptados</h3>
+                    <div class="materials-grid">
+                        <div class="material-chip plastic">
+                            <div class="chip-icon"><i class="fa-solid fa-bottle-water"></i></div>
+                            <div class="chip-info">
+                                <span class="chip-name">Plásticos</span>
+                                <span class="chip-desc">PET 1, PEAD 2, PP 5</span>
+                            </div>
+                        </div>
+                        <div class="material-chip paper">
+                            <div class="chip-icon"><i class="fa-solid fa-newspaper"></i></div>
+                            <div class="chip-info">
+                                <span class="chip-name">Papel y Cartón</span>
+                                <span class="chip-desc">Diarios, cajas, revistas</span>
+                            </div>
+                        </div>
+                        <div class="material-chip glass">
+                            <div class="chip-icon"><i class="fa-solid fa-wine-glass"></i></div>
+                            <div class="chip-info">
+                                <span class="chip-name">Vidrio</span>
+                                <span class="chip-desc">Botellas y frascos</span>
+                            </div>
+                        </div>
+                        <div class="material-chip metal">
+                            <div class="chip-icon"><i class="fa-solid fa-drum"></i></div>
+                            <div class="chip-info">
+                                <span class="chip-name">Metal y Latas</span>
+                                <span class="chip-desc">Aluminio y conserva</span>
+                            </div>
+                        </div>
+                        <div class="material-chip tetrapak">
+                            <div class="chip-icon"><i class="fa-solid fa-box-open"></i></div>
+                            <div class="chip-info">
+                                <span class="chip-name">Tetra Pak</span>
+                                <span class="chip-desc">Envases de líquidos</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Información del Radio de 500m -->
+                <section class="info-section">
+                    <h3><i class="fa-solid fa-person-walking"></i> Área de Cobertura</h3>
+                    <div class="card coverage-card">
+                        <div class="coverage-graphic">
+                            <div class="pulse-ring"></div>
+                            <i class="fa-solid fa-street-view"></i>
+                        </div>
+                        <div class="coverage-details">
+                            <h4>Radio de 500 Metros</h4>
+                            <p>El círculo verde en el mapa delimita la zona de cobertura peatonal recomendada (aprox. 5 a 7 minutos caminando).</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Calculadora de Impacto Estimado (Interactiva) -->
+                <section class="info-section">
+                    <h3><i class="fa-solid fa-chart-line"></i> Simula tu Impacto</h3>
+                    <div class="card simulator-card">
+                        <p class="simulator-intro">Ingresa una cantidad estimada de residuos semanales para ver el CO₂ evitado:</p>
+                        <div class="input-group">
+                            <label for="kg-slider">Residuos reciclados (kg/semana):</label>
+                            <div class="slider-container">
+                                <input type="range" id="kg-slider" min="1" max="50" value="5" class="slider">
+                                <span class="slider-value" id="kg-value">5 kg</span>
+                            </div>
+                        </div>
+                        <div class="simulator-results">
+                            <div class="result-box">
+                                <span class="result-number" id="co2-saved">5.8</span>
+                                <span class="result-label">kg CO₂ Evitados / mes</span>
+                            </div>
+                            <div class="result-box">
+                                <span class="result-number" id="water-saved">150</span>
+                                <span class="result-label">Litros de agua salvados</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="sidebar-footer">
+                <p>Municipalidad de La Florida &copy; 2026</p>
+                <p class="footer-sub">Desarrollado con fines ecológicos</p>
+            </div>
+        </aside>
+
+        <!-- Contenedor del Mapa -->
+        <main class="map-wrapper">
+            <div id="map"></div>
+            
+            <!-- Controles flotantes en el mapa -->
+            <div class="map-controls">
+                <button class="map-btn" id="btn-recenter" title="Re-centrar en Punto Limpio">
+                    <i class="fa-solid fa-crosshairs"></i>
+                </button>
+                <button class="map-btn" id="btn-toggle-theme" title="Cambiar Estilo de Mapa">
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                </button>
+            </div>
+
+            <!-- Leyenda flotante -->
+            <div class="map-legend-overlay">
+                <div class="legend-item">
+                    <span class="legend-color marker-color"></span>
+                    <span class="legend-text">Punto Limpio Club Vive</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color circle-color"></span>
+                    <span class="legend-text">Área Peatonal (500m)</span>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Leaflet.js Script -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    
+    <!-- Script Propio -->
+    <script src="app.js"></script>
+</body>
+</html>

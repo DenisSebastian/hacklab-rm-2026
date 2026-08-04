@@ -1,5 +1,8 @@
 project:
   type: book
+  resources:
+    - html-apps/style.css
+    - html-apps/app.js
 
 book:
   title: "AcademIA HackLab: Santiago Región Sustentable"
